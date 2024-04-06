@@ -7,7 +7,7 @@ from django.contrib.auth.hashers import make_password, check_password
 from django.contrib import messages
 from django.core.mail import send_mail
 from django.db.models import Q
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render, redirect
 from django.views import View
 from django.views.decorators.csrf import csrf_exempt
@@ -18,9 +18,10 @@ from mydjango.settings import EMAIL_HOST_USER
 
 
 class IndexView(View):
+
     def get(self, request):
-        if not request.session.get('is_login', None):
-            return redirect('/login/')
+        user_id = request.session.get('user_id', None)
+        user = User.objects.filter(id=user_id).first()
         return render(request, 'index.html', locals())
 
 
@@ -218,3 +219,18 @@ class ModifyPasswordView(View):
         user.save()
         time.sleep(1)
         return redirect('login')
+
+
+class UploadAvatar(View):
+
+    def  get(self,request):
+        return render(request,'uploadavatar.html')
+
+    def post(self,request):
+        user_id = request.session.get('user_id', None)
+        avatar = request.FILES.get('avatar',None)
+        if 'image' in avatar.content_type and avatar.content_type.split('/')[-1] in ['jpg','png','jpeg','webp']:
+            user = User.objects.filter(id=user_id).first()
+            user.avatar = avatar
+            user.save()
+            return redirect('index')

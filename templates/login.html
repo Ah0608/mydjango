@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome后台登录</title>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.1.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="{% static 'user/css/login.css' %}">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
             <form class="login-form" action="" method="post">
                 {% csrf_token %}
                 {{ login_form.username }}
-                <label><img src="../static/images/close.png" id="eyes" alt=""></label>
+                <label><img src="../static/user/images/close.png" id="eyes" alt=""></label>
                 {{ login_form.password }}
                 <div class="code-pane">
                     {{ login_form.captcha }}
@@ -46,6 +46,6 @@
 </div>
 </body>
 
-<script src="{% static 'js/login.js' %}"></script>
+<script src="{% static 'user/js/login.js' %}"></script>
 
 </html>

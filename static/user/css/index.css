@@ -81,22 +81,32 @@ body {
 }
 
 .sidebar {
-    width: 200px;
-    background-color: #f4f4f4;
+    width: 150px;
+    background-color: gainsboro;
     float: left;
     height: 100vh;
 }
 
 .sidebar li {
     margin-top: 20px;
+    margin-left: -20px;
     color: cornflowerblue;
 }
 
 .sidebar li a {
     text-decoration: none;
     color: cadetblue;
+    font-size: 17px;
+}
+
+.sidebar li a:hover {
+    color: #66afe9;
 }
 
 #userinfo {
     padding-right: 100px;
+}
+
+.sidebar ul {
+    list-style-type: none;
 }

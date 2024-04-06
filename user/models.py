@@ -11,7 +11,7 @@ class User(AbstractUser, BaseModel):  # 同时继承AbstractUser表和BaseModel�
         ('female', "女"),
     )
     mobile = models.CharField(max_length=11, default='', verbose_name='手机号')
-    avatar = models.ImageField(blank=True, null=True, verbose_name='头像')
+    avatar = models.ImageField(upload_to='avatars/',default='avatars/default_avatar.png', verbose_name='头像')
 
     class Meta:
         db_table = 'users'
