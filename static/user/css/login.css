@@ -136,7 +136,7 @@ body,
 #error-message {
     color: red;
     height: 20px;
-    font-size: 8px;
+    font-size: 0.8em;
 }
 
 #captcha_1 {

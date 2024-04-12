@@ -12,10 +12,10 @@ eyeIcon.addEventListener('click', function () {
     const type = passwordInput.getAttribute('type')
     console.log(type)
     if (type === 'password') {
-        eyeIcon.setAttribute("src", "../static/images/open.png")
+        eyeIcon.setAttribute("src", "../static/user/images/open.png")
         passwordInput.setAttribute('type', 'text');
     } else {
-        eyeIcon.setAttribute("src", "../static/images/close.png")
+        eyeIcon.setAttribute("src", "../static/user/images/close.png")
         passwordInput.setAttribute('type', 'password');
     }
 });

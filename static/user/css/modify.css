@@ -175,7 +175,7 @@ body,
     margin-top: -15px;
     height: 20px;
     color: red;
-    font-size: 5px;
+    font-size: 0.8em;
 }
 
 #email_error {

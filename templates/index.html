@@ -4,22 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{% static 'user/css/index.css' %}" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <title>Awesome后台首页</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.1.2/jquery.min.js"></script>
+    <link href="{% static 'bootstrap-3.4.1/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'user/css/index.css' %}" rel="stylesheet">
 </head>
 <body>
 <div class="header">
+    <div class="log-icon"></div>
     <div class="system-name">Awesome系统</div>
-    {#    <div class="search-box">#}
-    {#        <input type="text" class="search-input" placeholder="搜索...">#}
-    {#    </div>#}
     <div class="user-info dropdown" id="userinfo">
         <img src="{{ MEDIA_URL }}{{ user.avatar }}" alt="">
         <div class="username">欢迎：{{ user.username }}</div>
         <div class="dropdown-content">
-            <a href="{% url 'UploadAvatar' %}">修改头像</a>
-            <a href="#">修改密码</a>
+            <a data-toggle="modal" data-target="#AvatarModal">修改头像</a>
+            <a data-toggle="modal" data-target="#passwordModal">修改密码</a>
             <a href="{% url 'logout' %}">注销</a>
         </div>
     </div>
@@ -33,42 +32,114 @@
     </ul>
 </div>
 <div class="content">
-    <!-- 这里放置后台页面内容 -->
     <h1>欢迎来到后台管理</h1>
     <p>这是您的后台页面内容。</p>
 </div>
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+{#修改头像模态框#}
+<div class="modal fade" id="AvatarModal" tabindex="-1" role="dialog" aria-labelledby="AvatarModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="AvatarModalLabel">修改个人头像</h4>
+            </div>
+            <div class="modal-body">
+                <img src="{{ MEDIA_URL }}{{ user.avatar }}" alt="" class="avatar-detail">
+                <form method="post" enctype="multipart/form-data" action="{% url 'UploadAvatar' %}">
+                    {% csrf_token %}
+                    <div class="form-group" id="select-avatar">
+                        <input type="file" class="form-control-file" name="avatar" id="avatar" accept="image/*">
+                    </div>
+                    <div class="modal-footer">
+                        <input class="btn btn-info" type="submit" value="确认修改">
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-  </div>
+</div>
+
+{#修改密码#}
+<div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="passwordModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="passwordModalLabel">修改账户密码</h4>
+            </div>
+            <div class="modal-body">
+                <form class="setpassword-form" method="post" action="">
+                    {% csrf_token %}
+                    <input type="password" name="initial-password" maxlength="16" minlength="8" class="form-control"
+                           placeholder="请输入初始密码" required="">
+                    <span class="modify_tip" id="newpassword_error"></span>
+                    <input type="password" name="new-password" maxlength="16" minlength="8" class="form-control"
+                           placeholder="请输入新的密码" required="" id="new-pwd">
+                    <span class="modify_tip" id="password_feedback"></span>
+                    <input type="password" name="confirm-password" maxlength="16" minlength="8" class="form-control"
+                           placeholder="请输入确认密码" required="" id="confirm-pwd">
+                    <span class="modify_tip" id="password_error"></span>
+                    <div class="modal-footer">
+                        <button class="btn btn-info" type="submit">确认修改</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 
 </body>
 
+<script src="{% static 'bootstrap-3.4.1/js/bootstrap.min.js' %}"></script>
+
 <script>
-    $('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
+    $('#AvatarModal').on('show.bs.modal', function (event) {
+        $(event.relatedTarget)
+    })
+    $('#passwordModal').on('show.bs.modal', function (event) {
+        $(event.relatedTarget)
+    })
+
+    // 检查密码是否合法
+    $(document).ready(function () {
+        $('#new-pwd').on('input', function () {
+            const password = $(this).val();
+            const regexDigit = /\d/;
+            const regexLetter = /[a-zA-Z]/;
+            if (password.length > 0) {
+                if (regexDigit.test(password) && regexLetter.test(password)) {
+                    if (password.length >= 8 && password.length <= 16) {
+                        $('#password_feedback').text('密码合法');
+                    } else {
+                        $('#password_feedback').text('密码长度应在8到16之间');
+                    }
+                } else {
+                    $('#password_feedback').text('密码须同时包含至少一个字母和一个数字');
+                }
+            } else
+                $('#password_feedback').text('');
+        });
+    });
+
+    // 检查两次输入的密码是否相同
+    $(document).ready(function () {
+        $('#confirm-pwd').on('input', function () {
+            const password = $('#new-pwd').val();
+            const confirm_pwd = $(this).val();
+            if (confirm_pwd.length > 0) {
+                if (password !== confirm_pwd) {
+                    $('#password_error').text('两次输入的密码不一样');
+                } else {
+                    $('#password_error').text('');
+                }
+            } else {
+                $('#password_error').text('');
+            }
+        });
+    });
 </script>
 
 </html>

@@ -72,8 +72,7 @@ def forget_sendmeail(request):  # 重置密码
         message = '''
         用户{}，您好！
             您重置的验证码为：{}
-            切勿把验证码泄露给他人，该验证码有效时间为五分钟，请及时进行验证。
-            如非本人操作，请忽略本次短信。
+            切勿把验证码泄露给他人，该验证码有效时间为五分钟，请及时进行验证。如非本人操作，请忽略本次短信。
 
         Awesome开发团队
         '''.format(username, random_code)
@@ -222,9 +221,6 @@ class ModifyPasswordView(View):
 
 
 class UploadAvatar(View):
-
-    def  get(self,request):
-        return render(request,'uploadavatar.html')
 
     def post(self,request):
         user_id = request.session.get('user_id', None)

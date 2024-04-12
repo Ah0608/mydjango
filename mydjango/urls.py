@@ -18,7 +18,6 @@ urlpatterns = [
     path('forgetpassword/', ForgetPasswordView.as_view(), name='forgetpassword'),
     path('modifypassword/', ModifyPasswordView.as_view(), name='modifypassword'),
     path('uploadavatar/', UploadAvatar.as_view(), name='UploadAvatar'),
-    # path(r'^media/(?P<path>.*)', serve,{'document_root': MEDIA_ROOT})
 ]+static(MEDIA_URL, document_root=MEDIA_ROOT)
 
 
