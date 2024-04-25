@@ -1,0 +1,23 @@
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#save {
+    float: right;
+}
+
+.create > form  {
+    padding-top: 40px;
+}
+
+#id_title, #id_category {
+    width: 350px;
+    height: 35px;
+}
+
+#id_intro {
+    width: 350px;
+    height: 100px;
+}

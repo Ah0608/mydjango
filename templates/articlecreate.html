@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extracss %}
+    <link rel="stylesheet" href="{% static 'article/css/mdeditor.css' %}">
+{% endblock %}
+
+{% block title %}
+    创建文章
+{% endblock %}
+
+{% block main_content %}
+    <div class="create">
+        <form method="post" action="./">
+        {% csrf_token %}
+        {{ form.media }}
+        {{ form.as_p }}
+        <p><input type="submit" value="保存" id="save"></p>
+    </form>
+    </div>
+{% endblock %}

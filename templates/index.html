@@ -1,145 +1,51 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome后台首页</title>
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.1.2/jquery.min.js"></script>
-    <link href="{% static 'bootstrap-3.4.1/css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'user/css/index.css' %}" rel="stylesheet">
-</head>
-<body>
-<div class="header">
-    <div class="log-icon"></div>
-    <div class="system-name">Awesome系统</div>
-    <div class="user-info dropdown" id="userinfo">
-        <img src="{{ MEDIA_URL }}{{ user.avatar }}" alt="">
-        <div class="username">欢迎：{{ user.username }}</div>
-        <div class="dropdown-content">
-            <a data-toggle="modal" data-target="#AvatarModal">修改头像</a>
-            <a data-toggle="modal" data-target="#passwordModal">修改密码</a>
-            <a href="{% url 'logout' %}">注销</a>
+
+{% block title %}Awesome后台首页{% endblock %}
+
+{% block extracss %}
+    <link rel="stylesheet" href="{% static 'user/css/index.css' %}">
+{% endblock %}
+
+{% block main_content %}
+    <h1>首页</h1>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="{% static 'user/images/login.jpg' %}" alt="...">
+                <div class="carousel-caption">
+                    ...
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'user/images/register.jpg' %}" alt="...">
+                <div class="carousel-caption">
+                    ...
+                </div>
+            </div>
+            ...
         </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-</div>
-<div class="sidebar">
-    <ul>
-        <li><a href="#">代理池</a></li>
-        <li><a href="#">数据库</a></li>
-        <li><a href="https://note.youdao.com/web/#">笔记</a></li>
-        <li><a href="https://github.com/Ah0608">GitHub</a></li>
-    </ul>
-</div>
-<div class="content">
-    <h1>欢迎来到后台管理</h1>
-    <p>这是您的后台页面内容。</p>
-</div>
+{% endblock %}
 
-{#修改头像模态框#}
-<div class="modal fade" id="AvatarModal" tabindex="-1" role="dialog" aria-labelledby="AvatarModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title" id="AvatarModalLabel">修改个人头像</h4>
-            </div>
-            <div class="modal-body">
-                <img src="{{ MEDIA_URL }}{{ user.avatar }}" alt="" class="avatar-detail">
-                <form method="post" enctype="multipart/form-data" action="{% url 'UploadAvatar' %}">
-                    {% csrf_token %}
-                    <div class="form-group" id="select-avatar">
-                        <input type="file" class="form-control-file" name="avatar" id="avatar" accept="image/*">
-                    </div>
-                    <div class="modal-footer">
-                        <input class="btn btn-info" type="submit" value="确认修改">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-{#修改密码#}
-<div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="passwordModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title" id="passwordModalLabel">修改账户密码</h4>
-            </div>
-            <div class="modal-body">
-                <form class="setpassword-form" method="post" action="">
-                    {% csrf_token %}
-                    <input type="password" name="initial-password" maxlength="16" minlength="8" class="form-control"
-                           placeholder="请输入初始密码" required="">
-                    <span class="modify_tip" id="newpassword_error"></span>
-                    <input type="password" name="new-password" maxlength="16" minlength="8" class="form-control"
-                           placeholder="请输入新的密码" required="" id="new-pwd">
-                    <span class="modify_tip" id="password_feedback"></span>
-                    <input type="password" name="confirm-password" maxlength="16" minlength="8" class="form-control"
-                           placeholder="请输入确认密码" required="" id="confirm-pwd">
-                    <span class="modify_tip" id="password_error"></span>
-                    <div class="modal-footer">
-                        <button class="btn btn-info" type="submit">确认修改</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-</body>
-
-<script src="{% static 'bootstrap-3.4.1/js/bootstrap.min.js' %}"></script>
-
-<script>
-    $('#AvatarModal').on('show.bs.modal', function (event) {
-        $(event.relatedTarget)
-    })
-    $('#passwordModal').on('show.bs.modal', function (event) {
-        $(event.relatedTarget)
-    })
-
-    // 检查密码是否合法
-    $(document).ready(function () {
-        $('#new-pwd').on('input', function () {
-            const password = $(this).val();
-            const regexDigit = /\d/;
-            const regexLetter = /[a-zA-Z]/;
-            if (password.length > 0) {
-                if (regexDigit.test(password) && regexLetter.test(password)) {
-                    if (password.length >= 8 && password.length <= 16) {
-                        $('#password_feedback').text('密码合法');
-                    } else {
-                        $('#password_feedback').text('密码长度应在8到16之间');
-                    }
-                } else {
-                    $('#password_feedback').text('密码须同时包含至少一个字母和一个数字');
-                }
-            } else
-                $('#password_feedback').text('');
-        });
-    });
-
-    // 检查两次输入的密码是否相同
-    $(document).ready(function () {
-        $('#confirm-pwd').on('input', function () {
-            const password = $('#new-pwd').val();
-            const confirm_pwd = $(this).val();
-            if (confirm_pwd.length > 0) {
-                if (password !== confirm_pwd) {
-                    $('#password_error').text('两次输入的密码不一样');
-                } else {
-                    $('#password_error').text('');
-                }
-            } else {
-                $('#password_error').text('');
-            }
-        });
-    });
-</script>
-
-</html>
+{% block extrajs %}
+    <script src="{% static 'user/js/base.js' %}"></script>
+{% endblock %}

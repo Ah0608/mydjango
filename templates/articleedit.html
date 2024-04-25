@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extracss %}
+    <link rel="stylesheet" href="{% static 'article/css/articleedit.css' %}">
+{% endblock %}
+
+{% block title %}文章修改页{% endblock %}
+
+{% block main_content %}
+    <div class="update">
+        <form method="post" action="./">
+            {% csrf_token %}
+            {{ form.media }}
+            {{ form.as_p }}
+            <button type="submit" id="update">保存修改</button>
+        </form>
+    </div>
+{% endblock %}
+
+{% block extrajs %}
+
+{% endblock %}

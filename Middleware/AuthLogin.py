@@ -3,16 +3,17 @@
 # @Author :HuangPeng
 # @File : login_middleware
 # @Project : mydjango
+import re
+
 from django.shortcuts import redirect
 from django.utils.deprecation import MiddlewareMixin
 
-AuthLogin_list = ['/index/'] #需要登录认证的路由
+AuthLogin_list = ['/article/', '/proxypool/']  # 需要登录认证的路由
 
 
 class LoginMiddleware(MiddlewareMixin):
 
     def process_request(self, request):
-        if request.path in AuthLogin_list:
-            if not request.session.get('is_login', None):
+        if any(re.match(r'^{}'.format(pattern), request.path) for pattern in AuthLogin_list):
+            if not request.user.is_authenticated:
                 return redirect('/login/')
-

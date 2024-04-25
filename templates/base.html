@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}基础模板{% endblock %}</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.1.2/jquery.min.js"></script>
+    <link href="{% static 'bootstrap-3.4.1/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'user/images/awe.ico' %}" rel="shortcut icon">
+    <link href="{% static 'user/css/base.css' %}" rel="stylesheet">
+    {% block extracss %}
+
+    {% endblock %}
+</head>
+<body>
+<div class="header">
+    <div class="log-icon"></div>
+    <div class="system-name">Awesome系统</div>
+    {% if user.is_authenticated %}
+        <div class="user-info dropdown " id="userinfo">
+            <img src="{{ MEDIA_URL }}{{ user.avatar }}" alt="">
+            <div class="username">Hi,{{ user.username }},<span class="greeting"></span></div>
+            <div class="dropdown-content">
+                <a data-toggle="modal" data-target="#AvatarModal">修改头像</a>
+                <a data-toggle="modal" data-target="#passwordModal">修改密码</a>
+                <a href="{% url 'logout' %}">注销</a>
+            </div>
+        </div>
+    {% else %}
+        <div class="login-info" id="userinfo">
+            <span>请登录或注册：</span>
+            <a href="{% url 'login' %}">登录</a> |
+            <a href="{% url 'register' %}">注册</a>
+        </div>
+    {% endif %}
+</div>
+<div class="sidebar">
+    <ul>
+        <li>
+            <img class="e-icon" src="{% static 'user/images/home.png' %}" alt="">
+            <a href="{% url 'index' %}">首页</a>
+        </li>
+        <li>
+            <img class="e-icon" src="{% static 'user/images/ippool.png' %}" alt="">
+            <a href="{% url 'proxypool' %}">代理池</a>
+        </li>
+        <li>
+            <img class="e-icon" src="{% static 'user/images/note.png' %}" alt="">
+            <a href="{% url 'article_list' %}">笔记</a>
+        </li>
+        <li>
+            <img class="e-icon" src="{% static 'user/images/github.png' %}" alt="">
+            <a href="https://github.com/Ah0608" target="_blank">GitHub</a>
+        </li>
+    </ul>
+</div>
+
+
+<div class="content">
+    {% block main_content %}
+
+    {% endblock %}
+</div>
+
+{#修改头像模态框#}
+<div class="modal fade" id="AvatarModal" tabindex="-1" role="dialog" aria-labelledby="AvatarModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="AvatarModalLabel">修改个人头像</h4>
+            </div>
+            <div class="modal-body">
+                <img src="{{ MEDIA_URL }}{{ user.avatar }}" alt="" class="avatar-detail">
+                <form method="post" enctype="multipart/form-data" action="{% url 'UploadAvatar' %}">
+                    {% csrf_token %}
+                    <div class="form-group" id="select-avatar">
+                        <input type="file" class="form-control-file" name="avatar" id="avatar" accept="image/*">
+                    </div>
+                    <div class="modal-footer">
+                        <input class="btn btn-info" type="submit" value="确认修改">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{#修改密码#}
+<div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="passwordModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="passwordModalLabel">修改账户密码</h4>
+            </div>
+            <div class="modal-body">
+                <form class="setpassword-form" method="post" action="{% url 'resetpassword' %}">
+                    {% csrf_token %}
+                    <input type="password" name="initial-password" maxlength="16" minlength="8" class="form-control"
+                           placeholder="请输入初始密码" required="">
+                    <span class="modify_tip" id="newpassword_error"></span>
+                    <input type="password" name="new-password" maxlength="16" minlength="8" class="form-control"
+                           placeholder="请输入新的密码" required="" id="new-pwd">
+                    <span class="modify_tip" id="password_feedback"></span>
+                    <input type="password" name="confirm-password" maxlength="16" minlength="8" class="form-control"
+                           placeholder="请输入确认密码" required="" id="confirm-pwd">
+                    <span class="modify_tip" id="password_error"></span>
+                    <div class="modal-footer">
+                        <button class="btn btn-info" type="submit">确认修改</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    {% if messages %}
+        {% for message in messages %}
+            alert("{{ message }}");
+        {% endfor %}
+    {% endif %}
+</script>
+</body>
+
+<script src="{% static 'bootstrap-3.4.1/js/bootstrap.min.js' %}"></script>
+
+<script src="{% static 'user/js/base.js' %}"></script>
+
+{% block extrajs %}
+
+{% endblock %}
+
+</html>

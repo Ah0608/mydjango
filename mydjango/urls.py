@@ -1,13 +1,13 @@
 from django.conf.urls.static import static
-from django.views.static import serve
 
+from mydjango import settings
 from mydjango.settings import MEDIA_ROOT, MEDIA_URL
 from user.views import RegisterView, CheckUsernameView, Logoutview, IndexView, res_sendmeail, LoginView, \
-    ForgetPasswordView, forget_sendmeail, ModifyPasswordView,UploadAvatar
+    ForgetPasswordView, forget_sendmeail, ModifyPasswordView, UploadAvatar, ResetPassword
 from django.urls import path, include
 
 urlpatterns = [
-    path('index/', IndexView.as_view(), name='index'),
+    path('', IndexView.as_view(), name='index'),
     path('register/', RegisterView.as_view(), name='register'),
     path("login/", LoginView.as_view(), name='login'),
     path("logout/", Logoutview.as_view(), name='logout'),
@@ -18,7 +18,13 @@ urlpatterns = [
     path('forgetpassword/', ForgetPasswordView.as_view(), name='forgetpassword'),
     path('modifypassword/', ModifyPasswordView.as_view(), name='modifypassword'),
     path('uploadavatar/', UploadAvatar.as_view(), name='UploadAvatar'),
-]+static(MEDIA_URL, document_root=MEDIA_ROOT)
+    path('resetpassword/', ResetPassword.as_view(), name='resetpassword'),
 
+    path('proxypool/', include('proxypool.urls')),
 
-# bootstrap3中文文档 https://code.z01.com/v4/components/modal.html  https://xiaohuochai.site
+    path('mdeditor/', include('mdeditor.urls')),
+    path('article/', include('article.urls')),
+]
+# + static(MEDIA_URL, document_root=MEDIA_ROOT)
+if settings.DEBUG:
+    urlpatterns += static(MEDIA_URL, document_root=MEDIA_ROOT)

@@ -3,26 +3,29 @@ import random
 import re
 import time
 
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.hashers import make_password, check_password
 from django.contrib import messages
+from django.contrib.sessions.models import Session
 from django.core.mail import send_mail
 from django.db.models import Q
-from django.http import JsonResponse, HttpResponse
+from django.http import JsonResponse
 from django.shortcuts import render, redirect
+from django.utils import timezone
 from django.views import View
 from django.views.decorators.csrf import csrf_exempt
 
 from user.forms import LoginForm, RegisterForm, ForgetForm
-from user.models import EmailVerify,User
+from user.models import EmailVerify, User
 from mydjango.settings import EMAIL_HOST_USER
 
 
 class IndexView(View):
 
     def get(self, request):
-        user_id = request.session.get('user_id', None)
-        user = User.objects.filter(id=user_id).first()
+        user = request.user
         return render(request, 'index.html', locals())
+
 
 
 @csrf_exempt
@@ -94,8 +97,8 @@ def forget_sendmeail(request):  # 重置密码
 
 class Logoutview(View):
     def get(self, request):
-        request.session.flush()  # 清除session数据
-        return redirect('/login/')
+        logout(request)
+        return redirect('login')
 
 
 class CheckUsernameView(View):
@@ -126,20 +129,17 @@ class LoginView(View):
         if login_form.is_valid():
             username = login_form.cleaned_data.get('username')
             password_new = login_form.cleaned_data.get('password')
-            try:
-                user = User.objects.get(Q(username=username) | Q(email=username))
-            except:
-                messages.error(request, '您输入的账号不存在')
-                return render(request, 'login.html', {'login_form': login_form})
-            if check_password(password_new, user.password):
-                request.session['is_login'] = True
-                request.session['user_id'] = user.id
-                request.session['user_name'] = user.username
-                request.session.set_expiry(1 * 12 * 3600)
-                time.sleep(2)
+            user = authenticate(request, username=username, password=password_new)
+            if user:
+                login(request, user)
+                session_key = request.session.session_key
+                for session in Session.objects.filter(~Q(session_key=session_key), expire_date__gte=timezone.now()):
+                    data = session.get_decoded()
+                    if data.get('_auth_user_id', None) == str(request.user.id):
+                        session.delete()
                 return redirect('index')
             else:
-                messages.error(request, '您的输入密码有误')
+                messages.error(request, '您的输入用户名或密码有误')
                 return render(request, 'login.html', {'login_form': login_form})
         else:
             # 处理表单验证失败的情况
@@ -222,11 +222,26 @@ class ModifyPasswordView(View):
 
 class UploadAvatar(View):
 
-    def post(self,request):
-        user_id = request.session.get('user_id', None)
-        avatar = request.FILES.get('avatar',None)
-        if 'image' in avatar.content_type and avatar.content_type.split('/')[-1] in ['jpg','png','jpeg','webp']:
-            user = User.objects.filter(id=user_id).first()
+    def post(self, request):
+        user = request.user
+        avatar = request.FILES.get('avatar', None)
+        if 'image' in avatar.content_type and avatar.content_type.split('/')[-1] in ['jpg', 'png', 'jpeg', 'webp']:
             user.avatar = avatar
             user.save()
             return redirect('index')
+
+
+class ResetPassword(View):
+
+    def post(self, request):
+        user = request.user
+        initial_password = request.POST.get('initial-password', None)
+        new_password = request.POST.get('new-password', None)
+        if check_password(initial_password, user.password):
+            user.password = make_password(new_password)
+            user.save()
+            request.session.flush()  # 清除session数据
+            return redirect('/login/')
+        else:
+            messages.error(request, '输入的初始密码有误')
+            return render(request, 'index.html', locals())

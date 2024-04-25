@@ -181,7 +181,7 @@ body,
 
 .captcha_error {
     color: red;
-    font-size: 8px;
+    font-size: 0.8em;
     float: right;
     margin-top: -30px;
     margin-right: 150px;
