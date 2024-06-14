@@ -8,18 +8,16 @@
 {% block title %}Awesome后台代理池{% endblock %}
 
 {% block main_content %}
-    <div class="container">
-
-    </div>
+{#    <div class="container">#}
+{#    </div>#}
     <h1>代理池</h1>
-    <form class="check-form" action="{% url 'checkproxy' %}" method="post">
-        {% csrf_token %}
-        <div class="check-content">
-            <input type="text" name="check" class="form-control" placeholder="检测目标网站" id="check" required="">
-            <span class="tip" id="request-error"></span>
-            <button type="submit" class="btn btn-success check-button" id="start-check">开始检测</button>
-        </div>
-    </form>
+
+    <div class="check-content">
+        <input type="text" name="check" class="form-control" placeholder="检测目标网站" id="check" required="">
+        <span class="tip" id="request-error"></span>
+        <button type="submit" class="btn btn-success check-button" id="start-check">开始检测</button>
+    </div>
+
     <table>
         <thead>
         <tr>
@@ -38,12 +36,8 @@
                 <td>{{ proxy.validation_time }}</td>
                 <td>{{ proxy.speed }}/s</td>
                 <td class="option">
-                    {#                    <form action="{% url 'delete_proxy' proxy.id %}" method="post">#}
-                    <form action="" method="post">
-                        {% csrf_token %}
-                        <button type="submit" class="btn btn-danger">删除</button>
-                        <button type="button" class="btn btn-info" id="del{{ forloop.counter }}">复制IP</button>
-                    </form>
+                <button type="submit" class="btn btn-danger del-btn" data-id="{{ proxy.id }}">删除</button>
+                <button type="button" class="btn btn-info" id="copy{{ forloop.counter }}">复制IP</button>
                 </td>
             </tr>
         {% endfor %}
@@ -73,5 +67,6 @@
 {% endblock %}
 
 {% block extrajs %}
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="{% static 'proxypool/js/proxy.js' %}"></script>
 {% endblock %}

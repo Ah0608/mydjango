@@ -1,8 +1,10 @@
 .content {
+    margin: 0 auto;
+    width: 800px;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 #carousel-example-generic {

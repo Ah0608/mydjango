@@ -14,55 +14,79 @@
     {% endblock %}
 </head>
 <body>
-<div class="header">
-    <div class="log-icon"></div>
-    <div class="system-name">Awesome系统</div>
-    {% if user.is_authenticated %}
-        <div class="user-info dropdown " id="userinfo">
-            <img src="{{ MEDIA_URL }}{{ user.avatar }}" alt="">
-            <div class="username">Hi,{{ user.username }},<span class="greeting"></span></div>
-            <div class="dropdown-content">
-                <a data-toggle="modal" data-target="#AvatarModal">修改头像</a>
-                <a data-toggle="modal" data-target="#passwordModal">修改密码</a>
-                <a href="{% url 'logout' %}">注销</a>
-            </div>
+<div class="app-container">
+    <div class="sidebar">
+        <div class="log-icon"></div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <img class="e-icon" src="{% static 'user/images/home.png' %}" alt="">
+                    <a href="{% url 'index' %}">首页</a>
+                </li>
+                <li>
+                    <img class="e-icon" src="{% static 'user/images/ippool.png' %}" alt="">
+                    <a href="{% url 'proxypool' %}">代理池</a>
+                </li>
+                <li>
+                    <img class="e-icon" src="{% static 'user/images/note.png' %}" alt="">
+                    <a href="{% url 'article_list' %}">我的笔记</a>
+                </li>
+                <li>
+                    <img class="e-icon" src="{% static 'user/images/plan.png' %}" alt="">
+                    <a href="{% url 'calendar' %}">工作计划</a>
+                </li>
+                <li>
+                    <img class="e-icon" src="{% static 'user/images/mind.png' %}" alt="">
+                    <a href="{% url 'platform_list' %}">调度平台</a>
+                </li>
+                <li>
+                    <img class="e-icon" src="{% static 'user/images/github.png' %}" alt="">
+                    <a href="https://github.com/Ah0608" target="_blank">GitHub</a>
+                </li>
+            </ul>
         </div>
-    {% else %}
-        <div class="login-info" id="userinfo">
-            <span>请登录或注册：</span>
-            <a href="{% url 'login' %}">登录</a> |
-            <a href="{% url 'register' %}">注册</a>
+
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <i>
+                <img class="h-icon" src="{% static 'user/images/category.png' %}" alt="">
+            </i>
+            <i>
+                <img class="h-icon" src="{% static 'user/images/home.png' %}" alt="">
+                <a href="{% url 'index' %}">首页</a>
+            </i>
+            {% if user.is_authenticated %}
+                <i class="i-message">
+                    <img class="h-icon" src="{% static 'user/images/message.png' %}" alt="">
+                </i>
+                <i class="i-notice">
+                    <img class="h-icon" src="{% static 'user/images/notice.png' %}" alt="">
+                </i>
+                <div class="user-info dropdown " id="userinfo">
+                    <img src="{{ MEDIA_URL }}{{ user.avatar }}" alt="">
+                    <div class="username">Hi,{{ user.username }},<span class="greeting"></span></div>
+                    <div class="dropdown-content">
+                        <a data-toggle="modal" data-target="#AvatarModal">修改头像</a>
+                        <a data-toggle="modal" data-target="#passwordModal">修改密码</a>
+                        <a href="{% url 'logout' %}">注销</a>
+                    </div>
+                </div>
+            {% else %}
+                <div class="login-info" id="userinfo">
+                    <span>请登录或注册：</span>
+                    <a href="{% url 'login' %}">登录</a> |
+                    <a href="{% url 'register' %}">注册</a>
+                </div>
+            {% endif %}
         </div>
-    {% endif %}
+        <div class="content">
+            {% block main_content %}
+
+            {% endblock %}
+        </div>
+    </div>
 </div>
-<div class="sidebar">
-    <ul>
-        <li>
-            <img class="e-icon" src="{% static 'user/images/home.png' %}" alt="">
-            <a href="{% url 'index' %}">首页</a>
-        </li>
-        <li>
-            <img class="e-icon" src="{% static 'user/images/ippool.png' %}" alt="">
-            <a href="{% url 'proxypool' %}">代理池</a>
-        </li>
-        <li>
-            <img class="e-icon" src="{% static 'user/images/note.png' %}" alt="">
-            <a href="{% url 'article_list' %}">笔记</a>
-        </li>
-        <li>
-            <img class="e-icon" src="{% static 'user/images/github.png' %}" alt="">
-            <a href="https://github.com/Ah0608" target="_blank">GitHub</a>
-        </li>
-    </ul>
-</div>
-
-
-<div class="content">
-    {% block main_content %}
-
-    {% endblock %}
-</div>
-
 {#修改头像模态框#}
 <div class="modal fade" id="AvatarModal" tabindex="-1" role="dialog" aria-labelledby="AvatarModalLabel">
     <div class="modal-dialog" role="document">

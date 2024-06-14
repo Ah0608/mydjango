@@ -8,6 +8,13 @@
 {% block title %}文章修改页{% endblock %}
 
 {% block main_content %}
+    <div class="breadcrumb-area">
+        <ol class="breadcrumb">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'article_list' %}">List</a></li>
+            <li class="active">Edit</li>
+        </ol>
+    </div>
     <div class="update">
         <form method="post" action="./">
             {% csrf_token %}
@@ -16,6 +23,7 @@
             <button type="submit" id="update">保存修改</button>
         </form>
     </div>
+
 {% endblock %}
 
 {% block extrajs %}

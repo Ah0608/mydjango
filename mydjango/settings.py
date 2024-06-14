@@ -38,9 +38,12 @@ INSTALLED_APPS = [
     'user.apps.UserConfig',
     'article.apps.ArticleConfig',
     'proxypool.apps.ProxypoolConfig',
+    'plan',
+    'dispatchplatform',
     'captcha',
     'rest_framework',
     'mdeditor',
+    'django_apscheduler',
 ]
 
 MIDDLEWARE = [
@@ -51,7 +54,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'Middleware.AuthLogin.LoginMiddleware', # 自定义权限登录中间件
+    'Middleware.AuthLogin.LoginMiddleware',  # 自定义权限登录中间件
 ]
 
 # 自定义用户验证
@@ -119,11 +122,13 @@ TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_L10N = True
+
+USE_TZ = False
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR),'static']
+STATICFILES_DIRS = [os.path.join(BASE_DIR), 'static']
 
 # 媒体文件
 MEDIA_URL = '/media/'
@@ -139,56 +144,78 @@ AUTH_USER_MODEL = 'user.User'
 # # 验证码配置
 CAPTCHA_OUTPUT_FORMAT = '%(image)s %(text_field)s %(hidden_field)s '
 CAPTCHA_NOISE_FUNCTIONS = (
-    'captcha.helpers.noise_arcs', # 线
-    'captcha.helpers.noise_dots', # 点
+    'captcha.helpers.noise_arcs',  # 线
+    'captcha.helpers.noise_dots',  # 点
 )
 # 图片中的文字为随机英文字母，如 mdsh
 CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.random_char_challenge'
- # 图片中的文字为数字表达式，如2+2=
+# 图片中的文字为数字表达式，如2+2=
 # CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.math_challenge'
 # 超时(minutes)
 CAPTCHA_TIMEOUT = 1
 
 # 邮箱配置
-EMAIL_HOST = "smtp.163.com"     # 服务器
-EMAIL_PORT = 25                 # 一般情况下都为25
-EMAIL_HOST_USER = "awesomeoffice@163.com"     # 账号
-EMAIL_HOST_PASSWORD = "HUXDNJEUFOZQOQEG"          # 密码 (注意：这里的密码指的是授权码)
+EMAIL_HOST = "smtp.163.com"  # 服务器
+EMAIL_PORT = 25  # 一般情况下都为25
+EMAIL_HOST_USER = "awesomeoffice@163.com"  # 账号
+EMAIL_HOST_PASSWORD = "HUXDNJEUFOZQOQEG"  # 密码 (注意：这里的密码指的是授权码)
 EMAIL_USE_SSL = False
-EMAIL_USE_TLS = True # 一般都为False
+EMAIL_USE_TLS = True  # 一般都为False
 
 # markdown配置
 MDEDITOR_CONFIGS = {
-'default':{
-    'width': '1000',  # 自定义编辑框宽度
-    'heigth': 700,   # 自定义编辑框高度
-    'toolbar': ["undo", "redo", "|",
-                "bold", "del", "italic", "quote", "ucwords", "uppercase", "lowercase", "|",
-                "h1", "h2", "h3", "h5", "h6", "|",
-                "list-ul", "list-ol", "hr", "|",
-                "link", "reference-link", "image", "code", "preformatted-text", "code-block", "table", "datetime",
-                "emoji", "html-entities", "pagebreak", "goto-line", "|",
-                "help", "info",
-                "||", "preview", "watch", "fullscreen"],  # 自定义编辑框工具栏
-    'upload_image_formats': ["jpg", "jpeg", "gif", "png", "bmp", "webp"],  # 图片上传格式类型
-    'image_folder': 'editor',  # 图片保存文件夹名称
-    'theme': 'default',  # 编辑框主题 ，dark / default
-    'preview_theme': 'default',  # 预览区域主题， dark / default
-    'editor_theme': 'default',  # edit区域主题，pastel-on-dark / default
-    'toolbar_autofixed': True,  # 工具栏是否吸顶
-    'search_replace': True,  # 是否开启查找替换
-    'emoji': True,  # 是否开启表情功能
-    'tex': True,  # 是否开启 tex 图表功能
-    'flow_chart': True,  # 是否开启流程图功能
-    'sequence': True,  # 是否开启序列图功能
-    'watch': True,  # 实时预览
-    'lineWrapping': False,  # 自动换行
-    'lineNumbers': False  # 行号
+    'default': {
+        'width': '1000',  # 自定义编辑框宽度
+        'heigth': 700,  # 自定义编辑框高度
+        'toolbar': ["undo", "redo", "|",
+                    "bold", "del", "italic", "quote", "ucwords", "uppercase", "lowercase", "|",
+                    "h1", "h2", "h3", "h5", "h6", "|",
+                    "list-ul", "list-ol", "hr", "|",
+                    "link", "reference-link", "image", "code", "preformatted-text", "code-block", "table", "datetime",
+                    "emoji", "html-entities", "pagebreak", "goto-line", "|",
+                    "help", "info",
+                    "||", "preview", "watch", "fullscreen"],  # 自定义编辑框工具栏
+        'upload_image_formats': ["jpg", "jpeg", "gif", "png", "bmp", "webp"],  # 图片上传格式类型
+        'image_folder': 'editor',  # 图片保存文件夹名称
+        'theme': 'default',  # 编辑框主题 ，dark / default
+        'preview_theme': 'default',  # 预览区域主题， dark / default
+        'editor_theme': 'default',  # edit区域主题，pastel-on-dark / default
+        'toolbar_autofixed': True,  # 工具栏是否吸顶
+        'search_replace': True,  # 是否开启查找替换
+        'emoji': True,  # 是否开启表情功能
+        'tex': True,  # 是否开启 tex 图表功能
+        'flow_chart': True,  # 是否开启流程图功能
+        'sequence': True,  # 是否开启序列图功能
+        'watch': True,  # 实时预览
+        'lineWrapping': False,  # 自动换行
+        'lineNumbers': False  # 行号
     }
 }
 
-# maarkdown上传图片报错
+# markdown上传图片报错
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 # 关闭浏览器session失效
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+# markdown显示高亮配置
+mark_config = [
+    'markdown.extensions.extra',
+    'markdown.extensions.abbr',
+    'markdown.extensions.attr_list',
+    'markdown.extensions.def_list',
+    'markdown.extensions.fenced_code',
+    'markdown.extensions.footnotes',
+    'markdown.extensions.md_in_html',
+    'markdown.extensions.tables',
+    'markdown.extensions.admonition',
+    'markdown.extensions.codehilite',
+    'markdown.extensions.legacy_attrs',
+    'markdown.extensions.legacy_em',
+    'markdown.extensions.meta',
+    'markdown.extensions.nl2br',
+    'markdown.extensions.sane_lists',
+    'markdown.extensions.smarty',
+    'markdown.extensions.toc',
+    'markdown.extensions.wikilinks'
+]

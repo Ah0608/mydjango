@@ -9,7 +9,7 @@ from django.contrib import messages
 from django.contrib.sessions.models import Session
 from django.core.mail import send_mail
 from django.db.models import Q
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render, redirect
 from django.utils import timezone
 from django.views import View
@@ -245,3 +245,11 @@ class ResetPassword(View):
         else:
             messages.error(request, '输入的初始密码有误')
             return render(request, 'index.html', locals())
+
+
+class GetIP(View):
+
+    def get(self,request):
+        # 获取用户IP地址
+        user_ip = request.META.get('REMOTE_ADDR')
+        return HttpResponse("Your IP address is: {}".format(user_ip))

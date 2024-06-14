@@ -8,7 +8,7 @@ import re
 from django.shortcuts import redirect
 from django.utils.deprecation import MiddlewareMixin
 
-AuthLogin_list = ['/article/', '/proxypool/']  # 需要登录认证的路由
+AuthLogin_list = ['/article/',]  # 需要登录认证的路由
 
 
 class LoginMiddleware(MiddlewareMixin):

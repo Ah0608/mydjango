@@ -3,7 +3,7 @@ from django.conf.urls.static import static
 from mydjango import settings
 from mydjango.settings import MEDIA_ROOT, MEDIA_URL
 from user.views import RegisterView, CheckUsernameView, Logoutview, IndexView, res_sendmeail, LoginView, \
-    ForgetPasswordView, forget_sendmeail, ModifyPasswordView, UploadAvatar, ResetPassword
+    ForgetPasswordView, forget_sendmeail, ModifyPasswordView, UploadAvatar, ResetPassword, GetIP
 from django.urls import path, include
 
 urlpatterns = [
@@ -19,11 +19,16 @@ urlpatterns = [
     path('modifypassword/', ModifyPasswordView.as_view(), name='modifypassword'),
     path('uploadavatar/', UploadAvatar.as_view(), name='UploadAvatar'),
     path('resetpassword/', ResetPassword.as_view(), name='resetpassword'),
+    path('getip/', GetIP.as_view(), name='getip'),
 
     path('proxypool/', include('proxypool.urls')),
 
     path('mdeditor/', include('mdeditor.urls')),
     path('article/', include('article.urls')),
+
+    path('plan/', include('plan.urls')),
+
+    path('dispatchplatform/', include('dispatchplatform.urls')),
 ]
 # + static(MEDIA_URL, document_root=MEDIA_ROOT)
 if settings.DEBUG:

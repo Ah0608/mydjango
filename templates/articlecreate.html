@@ -10,6 +10,13 @@
 {% endblock %}
 
 {% block main_content %}
+    <div class="breadcrumb-area">
+        <ol class="breadcrumb">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'article_list' %}">List</a></li>
+            <li class="active">Create</li>
+        </ol>
+    </div>
     <div class="create">
         <form method="post" action="./">
         {% csrf_token %}

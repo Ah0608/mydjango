@@ -1,3 +1,12 @@
+.content {
+    margin: 0 auto;
+    width: 800px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 table {
     border-collapse: collapse;
     width: 800px;
@@ -16,13 +25,6 @@ th {
 
 tr:nth-child(even) {
     background-color: #f2f2f2;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .check-content {
@@ -69,14 +71,15 @@ tr:nth-child(even) {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     width: 170px;
-    height: 70px;
+    padding-top: 10px;
+    height: 40px;
 }
 
 .message {
+    display: flex;
+    align-items: center;
     font-size: 18px;
-    margin-bottom: 10px;
 }
 
 .spinner {

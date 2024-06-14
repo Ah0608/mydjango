@@ -4,6 +4,7 @@
 {% block extracss %}
     <link rel="stylesheet" href="{% static 'article/css/articledetail.css' %}">
     <link rel="stylesheet" href="{% static 'article/css/code.css' %}">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
 {% endblock %}
 
 {% block title %}文章详情页{% endblock %}
@@ -36,24 +37,32 @@
             <br>
             {{ article.content | safe }}
         </div>
+        <hr>
         <div class="page">
-            <p>上一篇：
-                <a href="{% url 'article_detail' previous_article_obj.id %}">{{ previous_article_obj.title }}</a>
-            </p>
-            <p>下一篇：
-                <a href="{% url 'article_detail' next_article_obj.id %}">{{ next_article_obj.title }}</a>
-            </p>
-        </div>
-        <div class="option">
-            <a type="button" class="btn btn-info editor" href="{% url 'article_edit' article.id %}">重新编辑</a>
-            <a type="button" class="btn btn-danger delete" href="{% url 'article_delete' article.id %}">删除</a>
+            {% if previous_article_obj %}
+                <p>上一篇：
+                    <a href="{% url 'article_detail' previous_article_obj.id %}">{{ previous_article_obj.title }}</a>
+                </p>
+            {% endif %}
+            {% if next_article_obj %}
+                <p>下一篇：
+                    <a href="{% url 'article_detail' next_article_obj.id %}">{{ next_article_obj.title }}</a>
+                </p>
+            {% endif %}
         </div>
     </div>
-
+    <div class="option">
+        <a type="button" class="btn btn-info editor" href="{% url 'article_edit' article.id %}">重新编辑</a>
+        <a type="button" class="btn btn-danger delete" href="{% url 'article_delete' article.id %}">删除</a>
+    </div>
+    <div id="backToTopBtn">
+        <img src="{% static 'user/images/rocket.png' %}" alt="返回顶部">
+        <p class="top-msg">返回顶部</p>
+    </div>
 {% endblock %}
 
 {% block extrajs %}
     <script src="{% static 'article/js/articledetail.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 {% endblock %}

@@ -21,7 +21,7 @@ def fetch_url(ip):
     proxy = {"http": ip, "https": ip}
     IP_RATING = 100
     retry_count = 0
-    max_retries = 2
+    max_retries = 5
     speed_five = 0
     while retry_count < max_retries:
         try:
@@ -33,7 +33,7 @@ def fetch_url(ip):
             speed = end_time - start_time
             speed_five += speed
         except:
-            IP_RATING = IP_RATING - 50
+            IP_RATING = IP_RATING - 20
         retry_count = retry_count + 1
     if IP_RATING == 100:
         print(('{} --的评分是:{}').format(ip,IP_RATING))

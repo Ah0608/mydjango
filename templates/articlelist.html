@@ -21,9 +21,9 @@
     <br>
     {% for item in page_obj %}
         <div class="article-item">
-            <h3>
+            <h4>
                 <a href="{% url 'article_detail' item.id %}" target="_blank">{{ item.title }}</a>
-            </h3>
+            </h4>
             <div class="article-intro">{{ item.intro }}</div>
             <div class="article-footer">
                 <span>{{ item.author }}</span>
