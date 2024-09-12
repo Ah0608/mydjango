@@ -6,10 +6,10 @@
 }
 
 table {
-    width: 1500px;
-    margin: 20px 20px;
+    width: 95%;
     border-collapse: collapse;
     border-spacing: 0;
+    margin: auto;
 }
 
 th, td {
@@ -86,22 +86,29 @@ tr:nth-child(even) {
 }
 
 .dropdown-menu > li > button:hover {
-    color: #3c8dbc;
+    background-color: #3c8dbc;
 }
 
 .platform-head {
     display: flex;
-    justify-content: right;
     align-items: center;
-    width: 1500px;
     height: 30px;
-    margin: 20px 20px;
+    width: 95%;
+    margin: 15px auto;
 }
 
 .task-search {
     display: flex;
     align-items: center;
-    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.add-task {
+    margin-left: 10px;
+}
+
+.more-option {
+    margin-right: auto;
 }
 
 #inputBox {

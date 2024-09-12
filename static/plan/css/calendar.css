@@ -14,7 +14,9 @@
 }
 
 .fc-title {
-    display: block;
+    word-wrap: break-word; /* 对长单词进行换行 */
+    overflow-wrap: break-word; /* 处理旧浏览器 */
+    white-space: normal; /* 确保文本可以正常换行 */
 }
 
 .legend {
@@ -43,4 +45,8 @@
 
 .fc-left {
     margin-left: 5px;
+}
+
+.has-feedback .form-control {
+    padding-right: 0;
 }

@@ -50,14 +50,21 @@
                 </p>
             {% endif %}
         </div>
-    </div>
-    <div class="option">
-        <a type="button" class="btn btn-info editor" href="{% url 'article_edit' article.id %}">重新编辑</a>
-        <a type="button" class="btn btn-danger delete" href="{% url 'article_delete' article.id %}">删除</a>
+        <div class="option">
+            <a type="button" class="btn btn-info editor" href="{% url 'article_edit' article.id %}">重新编辑</a>
+            <a type="button" class="btn btn-danger delete" href="{% url 'article_delete' article.id %}">删除</a>
+        </div>
     </div>
     <div id="backToTopBtn">
         <img src="{% static 'user/images/rocket.png' %}" alt="返回顶部">
         <p class="top-msg">返回顶部</p>
+    </div>
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img id="modal-img" src="" alt="Expanded view">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+        <button class="rotate"><i class="fa-solid fa-rotate"></i></button>
     </div>
 {% endblock %}
 

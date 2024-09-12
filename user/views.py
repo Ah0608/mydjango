@@ -8,13 +8,18 @@ from django.contrib.auth.hashers import make_password, check_password
 from django.contrib import messages
 from django.contrib.sessions.models import Session
 from django.core.mail import send_mail
-from django.db.models import Q
+from django.db.models import Q, Max
 from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render, redirect
 from django.utils import timezone
 from django.views import View
 from django.views.decorators.csrf import csrf_exempt
+from django_apscheduler.models import DjangoJobExecution,DjangoJob
 
+from article.models import Article
+from dispatchplatform.models import DisPlatform
+from plan.models import DailyReport
+from proxypool.models import ProxyPool
 from user.forms import LoginForm, RegisterForm, ForgetForm
 from user.models import EmailVerify, User
 from mydjango.settings import EMAIL_HOST_USER
@@ -23,8 +28,18 @@ from mydjango.settings import EMAIL_HOST_USER
 class IndexView(View):
 
     def get(self, request):
+        current_time = timezone.now()
         user = request.user
-        return render(request, 'index.html', locals())
+        events = DailyReport.objects.filter(Q(start_time__lte=current_time) & Q(end_time__gte=current_time))
+        ip_num = ProxyPool.objects.count()
+        last_check_time = DjangoJobExecution.objects.filter(job_id='proxy_check').aggregate(Max('run_time'))['run_time__max']
+        tasks_num= DisPlatform.objects.all().count()
+        running_num = DjangoJob.objects.filter(id__in=('9224','9225')).filter(next_run_time__isnull=False).count()
+        note_num = Article.objects.count()
+        current_notes = Article.objects.order_by('-created_at')[:3]
+        return render(request, 'index.html', {'ip_num':ip_num,'user':user,'last_check_time':last_check_time,
+                                              'events':events,'tasks_num':tasks_num,'running_num':running_num,
+                                              'note_num':note_num,'current_notes':current_notes})
 
 
 
@@ -121,6 +136,8 @@ class CheckUsernameView(View):
 
 class LoginView(View):
     def get(self, request):
+        if request.user.is_authenticated:
+            return redirect('/')
         login_form = LoginForm()
         return render(request, 'login.html', {'login_form': login_form})
 

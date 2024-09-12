@@ -24,3 +24,7 @@
 #btnSave, #btnDelete {
     margin-bottom: 15px;
 }
+
+.has-feedback .form-control {
+    padding-right: 0;
+}

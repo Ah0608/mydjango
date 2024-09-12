@@ -16,7 +16,7 @@
             <input type="text" name="query" class="search-input" placeholder="输入关键字检索文章">
             <button type="submit" class="btn btn-danger search-btn">搜索</button>
         </form>
-        <a type="button" class="btn btn-info add-btn" href="{% url 'article_create' %}">新增</a>
+        <button type="button" class="btn btn-info add-btn" id="add_article">新增</button>
     </div>
     <br>
     {% for item in page_obj %}

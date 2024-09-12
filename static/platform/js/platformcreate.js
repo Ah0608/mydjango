@@ -1,11 +1,21 @@
-$(function () {
-    $('#date-input').datetimepicker({
-        format: 'YYYY-MM-DD HH:mm:ss'
-    });
-});
+function swalAlter(icon, title, width = '150px') {
+    return Swal.fire({
+        icon: icon,
+        toast: true,
+        position: 'top',
+        showConfirmButton: false,
+        timer: 3000,
+        title: title,
+        width: width,
+    })
+}
 
 
 $(document).ready(function () {
+    $('#date-input').datetimepicker({
+        format: 'YYYY-MM-DD HH:mm:ss'
+    });
+
     $('#select-field').change(function () {
         const selectedOption = $(this).val();
         if (selectedOption === "date") {
@@ -56,28 +66,12 @@ $(document).ready(function () {
                 data: formData,
                 success: function (response) {
                     $("#PlatFormModal").modal('hide');
-                    Swal.fire({
-                        icon: 'success',
-                        toast: true,
-                        position: 'top',
-                        showConfirmButton: false,
-                        timer: 3000,
-                        title: '创建成功',
-                        width: '150px',
-                    }).then(function () {
+                    swalAlter('success', '创建成功').then(function () {
                         location.reload();
                     });
                 },
                 error: function () {
-                    Swal.fire({
-                        icon: 'error',
-                        toast: true,
-                        position: 'top',
-                        showConfirmButton: false,
-                        timer: 3000,
-                        title: '创建失败',
-                        width: '150px',
-                    })
+                    swalAlter('error', '创建失败')
                 }
             });
         } else {
@@ -88,148 +82,84 @@ $(document).ready(function () {
                 data: formData,
                 success: function (response) {
                     $("#ModifyModal").modal('hide');
-                    Swal.fire({
-                        icon: 'success',
-                        toast: true,
-                        position: 'top',
-                        showConfirmButton: false,
-                        timer: 3000,
-                        title: '修改成功',
-                        width: '150px',
-                    }).then(function () {
+                    swalAlter('success', '修改成功').then(function () {
                         location.reload();
                     });
                 },
                 error: function () {
-                    Swal.fire({
-                        icon: 'error',
-                        toast: true,
-                        position: 'top',
-                        showConfirmButton: false,
-                        timer: 3000,
-                        title: '修改失败',
-                        width: '150px',
-                    })
+                    swalAlter('error', '修改失败')
                 }
             });
         }
     });
-});
 
-$(document).ready(function () {
     $('.start-btn').click(function () {
-        const pk = $(this).data('id');
+        const task_id = $(this).data('id');
+        let IdArray = []
+        IdArray.push(task_id)
         $.ajax({
-            url: '/dispatchplatform/start/' + pk + '/',
+            url: '/dispatchplatform/start/',
             type: 'POST',
-            data: {},
+            data: {
+                ids: JSON.stringify(IdArray)
+            },
             success: function (response) {
-                Swal.fire({
-                    icon: 'success',
-                    toast: true,
-                    position: 'top',
-                    showConfirmButton: false,
-                    timer: 3000,
-                    title: '启动成功',
-                    width: '150px',
-                }).then(function () {
+                swalAlter('success', '启动成功').then(function () {
                     location.reload();
                 });
             },
             error: function () {
-                Swal.fire({
-                    icon: 'error',
-                    toast: true,
-                    position: 'top',
-                    showConfirmButton: false,
-                    timer: 3000,
-                    title: '启动失败',
-                    width: '150px',
-                }).then(function () {
-                    location.reload();
-                });
+                swalAlter('error', '启动失败');
             }
         });
     });
-});
 
-$(document).ready(function () {
     $('.pause-btn').click(function () {
         const task_id = $(this).data('id');
+        let IdArray = []
+        IdArray.push(task_id)
         $.ajax({
-            url: '/dispatchplatform/pause/' + task_id + '/',
+            url: '/dispatchplatform/pause/',
             type: 'POST',
-            data: {},
+            data: {
+                ids: JSON.stringify(IdArray)
+            },
             success: function (response) {
-                Swal.fire({
-                    icon: 'success',
-                    toast: true,
-                    position: 'top',
-                    showConfirmButton: false,
-                    timer: 3000,
-                    title: '暂停成功',
-                    width: '150px',
-                }).then(function () {
+                swalAlter('success', '暂停成功').then(function () {
                     location.reload();
                 });
             },
             error: function () {
-                Swal.fire({
-                    icon: 'error',
-                    toast: true,
-                    position: 'top',
-                    showConfirmButton: false,
-                    timer: 3000,
-                    title: '暂停失败',
-                    width: '150px',
-                }).then(function () {
-                    location.reload();
-                });
+                swalAlter('error', '暂停失败');
             }
         });
     });
-});
 
-$(document).ready(function () {
     $('.resume-btn').click(function () {
         const task_id = $(this).data('id');
+        let IdArray = []
+        IdArray.push(task_id)
         $.ajax({
-            url: '/dispatchplatform/resume/' + task_id + '/',
+            url: '/dispatchplatform/resume/',
             type: 'POST',
-            data: {},
+            data: {
+                ids: JSON.stringify(IdArray)
+            },
             success: function (response) {
-                Swal.fire({
-                    icon: 'success',
-                    toast: true,
-                    position: 'top',
-                    showConfirmButton: false,
-                    timer: 3000,
-                    title: '恢复成功',
-                    width: '150px',
-                }).then(function () {
+                swalAlter('success', '恢复成功').then(function () {
                     location.reload();
                 });
             },
             error: function () {
-                Swal.fire({
-                    icon: 'error',
-                    toast: true,
-                    position: 'top',
-                    showConfirmButton: false,
-                    timer: 3000,
-                    title: '恢复失败',
-                    width: '150px',
-                }).then(function () {
-                    location.reload();
-                });
+                swalAlter('error', '恢复失败')
             }
         });
     });
-});
 
-$(document).ready(function () {
     $('.remove-btn').click(function () {
         const task_id = $(this).data('id');
+        let IdArray = []
+        IdArray.push(task_id)
         Swal.fire({
             type: 'warning', // 弹框类型
             title: '删除定时任务', //标题
@@ -245,43 +175,25 @@ $(document).ready(function () {
             //判断 是否 点击的 确定按钮
             if (isConfirm.value) {
                 $.ajax({
-                    url: '/dispatchplatform/remove/' + task_id + '/',
+                    url: '/dispatchplatform/remove/',
                     type: 'POST',
-                    data: {},
+                    data: {
+                        ids: JSON.stringify(IdArray),
+                    },
                     success: function (response) {
-                        Swal.fire({
-                            icon: 'success',
-                            toast: true,
-                            position: 'top',
-                            showConfirmButton: false,
-                            timer: 3000,
-                            title: '删除成功',
-                            width: '150px',
-                        }).then(function () {
+                        swalAlter('success', '删除成功').then(function () {
                             location.reload();
                         });
                     },
                     error: function () {
-                        Swal.fire({
-                            icon: 'error',
-                            toast: true,
-                            position: 'top',
-                            showConfirmButton: false,
-                            timer: 3000,
-                            title: '删除失败',
-                            width: '150px',
-                        }).then(function () {
-                            location.reload();
-                        });
+                        swalAlter('error', '删除失败');
                     }
                 });
             } else {
             }
         });
     });
-});
 
-$(document).ready(function () {
     $(".modify-btn").click(function () {
         $("#PlatFormModal").modal();
         $("#PlatFormModalLabel").text('修改任务');
@@ -298,6 +210,7 @@ $(document).ready(function () {
                 $("#taskname").val(response.task_name);
                 $("#python-path").val(response.python_path);
                 $("#taskfile").val(response.task_file);
+                $("#env").val(response.env_variable);
                 $("#job_id").val(response.job_id);
             },
             error: function () {
@@ -309,24 +222,152 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $('#inputBox').keypress(function (event) {
-        // 判断按下的键是否是回车键
         if (event.which === 13) {
             event.preventDefault();
             $('#search-form').submit();
         }
     });
-});
 
-
-$(document).ready(function () {
-    // 禁用“确认重新提交表单”
     window.history.replaceState(null, null, '/dispatchplatform/list/');
-});
 
-
-$(document).ready(function () {
     $('.view-log').click(function () {
         const job_id = $(this).data('id');
         window.location.href = '/dispatchplatform/viewlog/' + job_id + '/';
     });
 });
+
+
+$(function () {
+    const checkAllBox = document.getElementById('checkAll');
+    const rowCheckboxes = document.querySelectorAll('.row-checkbox');
+
+    checkAllBox.addEventListener('change', function () {
+        rowCheckboxes.forEach(function (checkbox) {
+            checkbox.checked = checkAllBox.checked;
+        });
+    });
+
+    rowCheckboxes.forEach(function (checkbox) {
+        checkbox.addEventListener('change', function () {
+            checkAllBox.checked = Array.from(rowCheckboxes).every(function (cb) {
+                return cb.checked;
+            });
+        });
+    });
+
+    function getIdArray() {
+        return $('input[class="row-checkbox"]:checked').map(function () {
+            return $(this).val();
+        }).get()
+    }
+
+    $('#pause-tasks').on('click', function () {
+        const IdArray = getIdArray()
+        if (IdArray.length !== 0) {
+            $.ajax({
+                url: '/dispatchplatform/pause/',
+                type: 'POST',
+                data: {
+                    ids: JSON.stringify(IdArray)
+                },
+                success: function (response) {
+                    swalAlter('success', '暂停成功').then(function () {
+                        location.reload();
+                    });
+                },
+                error: function () {
+                    swalAlter('error', '暂停失败')
+                }
+            });
+        } else {
+            swalAlter('error', '请选择至少一条数据！', '250px')
+        }
+    });
+
+
+    $('#resume-tasks').on('click', function () {
+        const IdArray = getIdArray()
+        if (IdArray.length !== 0) {
+            $.ajax({
+                url: '/dispatchplatform/resume/',
+                type: 'POST',
+                data: {
+                    ids: JSON.stringify(IdArray)
+                },
+                success: function (response) {
+                    swalAlter('success', '恢复成功').then(function () {
+                        location.reload();
+                    });
+                },
+                error: function () {
+                    swalAlter('error', '恢复失败')
+                }
+            });
+        } else {
+            swalAlter('error', '请选择至少一条数据！', '250px')
+        }
+    });
+
+    $('#remove-tasks').on('click', function () {
+        const IdArray = getIdArray()
+        if (IdArray.length !== 0) {
+            Swal.fire({
+                type: 'warning',
+                title: '删除定时任务',
+                text: "删除后将无法恢复，请谨慎操作！",
+                confirmButtonColor: '#3085d6',
+                confirmButtonText: '确定',
+                showCancelButton: true,
+                cancelButtonColor: '#d33',
+                cancelButtonText: "取消",
+                focusCancel: true,
+                reverseButtons: false
+            }).then((isConfirm) => {
+                if (isConfirm.value) {
+                    $.ajax({
+                        url: '/dispatchplatform/remove/',
+                        type: 'POST',
+                        data: {
+                            ids: JSON.stringify(IdArray)
+                        },
+                        success: function (response) {
+                            swalAlter('success', '删除成功').then(function () {
+                                location.reload();
+                            });
+                        },
+                        error: function () {
+                            swalAlter('error', '删除失败')
+                        }
+                    });
+                } else {
+                }
+            });
+        } else {
+            swalAlter('error', '请选择至少一条数据！', '250px')
+        }
+    });
+
+    $('#start-tasks').on('click', function () {
+        const IdArray = getIdArray()
+        if (IdArray.length !== 0) {
+            $.ajax({
+                url: '/dispatchplatform/start/',
+                type: 'POST',
+                data: {
+                    ids: JSON.stringify(IdArray)
+                },
+                success: function (response) {
+                    swalAlter('success', '启动成功').then(function () {
+                        location.reload();
+                    });
+                },
+                error: function () {
+                    swalAlter('error', '启动失败')
+                }
+            });
+        } else {
+            swalAlter('error', '请选择至少一条数据！', '250px')
+        }
+    });
+
+})

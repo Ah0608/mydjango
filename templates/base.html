@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}基础模板{% endblock %}</title>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.1.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="{% static 'bootstrap-3.4.1/css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'user/images/awe.ico' %}" rel="shortcut icon">
     <link href="{% static 'user/css/base.css' %}" rel="stylesheet">
@@ -20,41 +21,64 @@
         <div class="menu">
             <ul>
                 <li>
-                    <img class="e-icon" src="{% static 'user/images/home.png' %}" alt="">
-                    <a href="{% url 'index' %}">首页</a>
+                    <a href="{% url 'index' %}" class="menu-link"><i class="fa-solid fa-house menu-icon"></i>首页</a>
                 </li>
                 <li>
-                    <img class="e-icon" src="{% static 'user/images/ippool.png' %}" alt="">
-                    <a href="{% url 'proxypool' %}">代理池</a>
+                    <a href="{% url 'proxypool' %}" class="menu-link"><i class="fa-solid fa-globe menu-icon"></i>代理池</a>
                 </li>
                 <li>
-                    <img class="e-icon" src="{% static 'user/images/note.png' %}" alt="">
-                    <a href="{% url 'article_list' %}">我的笔记</a>
+                    <a href="{% url 'article_list' %}" class="menu-link"><i
+                            class="fa-solid fa-pen-to-square menu-icon"></i>我的笔记</a>
                 </li>
                 <li>
-                    <img class="e-icon" src="{% static 'user/images/plan.png' %}" alt="">
-                    <a href="{% url 'calendar' %}">工作计划</a>
+                    <a href="{% url 'calendar' %}" class="menu-link"><i
+                            class="fa-regular fa-calendar-check menu-icon"></i>工作计划</a>
                 </li>
                 <li>
-                    <img class="e-icon" src="{% static 'user/images/mind.png' %}" alt="">
-                    <a href="{% url 'platform_list' %}">调度平台</a>
+                    <a href="{% url 'platform_list' %}" class="menu-link"><i
+                            class="fa-solid fa-list-check menu-icon"></i>调度平台</a>
                 </li>
                 <li>
-                    <img class="e-icon" src="{% static 'user/images/github.png' %}" alt="">
-                    <a href="https://github.com/Ah0608" target="_blank">GitHub</a>
+                    <a href="{% url 'toollist' %}" class="menu-link"><i class="fa-solid fa-toolbox menu-icon"></i>工具</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="menu-link"><i
+                            class="fa-brands fa-github menu-icon"></i>GitHub</a>
                 </li>
             </ul>
         </div>
-
     </div>
     <div class="main-content">
         <div class="header">
+            <div class="main-weather-container">
+                <div id="city-name"></div>
+                <div id="city-weather">
+                    <img id="weather-img" src="" alt="">
+                </div>
+                <div id="city-temperature"></div>
+                <div class="weather-container">
+                    <div class="realtime_weather">
+                        <div id="recently_temperature"></div>
+                        <div>
+                            <div class="recently_weather">
+                                <span id="hour_weather"></span>
+                                <span id="wind_direction"></span>
+                            </div>
+                            <div class="weather-range" id="temperature-range"></div>
+                        </div>
+                        <div class="updatetime" id="update-time"></div>
+                    </div>
+                    <div class="weather-timeline-wrapper">
+                        <div class="arrow left-arrow"><i class="fa-solid fa-circle-chevron-left"></i></div>
+                        <div id="weather-timeline" class="weather-timeline"></div>
+                        <div class="arrow right-arrow"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                    </div>
+                    <ul class="weather-list">
+                    </ul>
+                </div>
+            </div>
             <i>
                 <img class="h-icon" src="{% static 'user/images/category.png' %}" alt="">
-            </i>
-            <i>
-                <img class="h-icon" src="{% static 'user/images/home.png' %}" alt="">
-                <a href="{% url 'index' %}">首页</a>
             </i>
             {% if user.is_authenticated %}
                 <i class="i-message">
@@ -142,21 +166,233 @@
     </div>
 </div>
 
-<script>
-    {% if messages %}
-        {% for message in messages %}
-            alert("{{ message }}");
-        {% endfor %}
-    {% endif %}
-</script>
 </body>
-
-<script src="{% static 'bootstrap-3.4.1/js/bootstrap.min.js' %}"></script>
 
 <script src="{% static 'user/js/base.js' %}"></script>
 
-{% block extrajs %}
+<script>
+    $(document).ready(function () {
+        const scrollAmount = 350;
+        const timeline = $('#weather-timeline')
 
+        $('.left-arrow').click(function () {
+            timeline.scrollLeft(timeline.scrollLeft() - scrollAmount);
+        });
+
+        $('.right-arrow').click(function () {
+            timeline.scrollLeft(timeline.scrollLeft() + scrollAmount);
+        });
+    });
+
+    function timeDifferenceLessThan30Minutes(time1, time2) {
+
+        const date1 = new Date(time1);
+        const date2 = new Date(time2);
+        const differenceInMs = Math.abs(date1 - date2);
+        const differenceInMinutes = differenceInMs / (1000 * 60);
+
+        return differenceInMinutes < 30;
+    }
+
+    function getTime() {
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = String(now.getMonth() + 1).padStart(2, '0');
+        const day = String(now.getDate()).padStart(2, '0');
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+
+        return `${year}-${month}-${day} ${hours}:${minutes}`;
+    }
+
+    function updateweatherDate(weatherData, weatherData1) {
+        const currentDateTime = new Date();
+        const currentHour = currentDateTime.getHours();
+        const hourlyData = weatherData[0].hourly;
+
+        const currentData = hourlyData.find(function (entry) {
+            var entryHour = new Date(entry.time).getHours();
+            return entryHour === currentHour;
+        });
+
+        // 更新天气信息
+        $('#recently_temperature').text(`${currentData.temperature}°`)
+        $('#hour_weather').text(`${currentData.text}`)
+        $('#wind_direction').text(`${currentData.wind_direction}风`)
+        $('#city-name').text(`${weatherData[0].location.name}`)
+        $('#city-weather').append(currentData.text);
+        $('#city-temperature').text(`${currentData.temperature}°`)
+        $('#weather-img').attr('src', `/media/weather/${currentData.code}@1x.png`);
+
+        const weatherCondition = currentData.text;
+        let background;
+
+        switch (weatherCondition) {
+            case '晴':
+                background = 'linear-gradient(rgb(40, 105, 233), rgb(121, 191, 255))';
+                break;
+            case '多云':
+                background = 'linear-gradient(rgb(111, 124, 133), rgb(145, 155, 159))';
+                break;
+            case '阴':
+                background = 'linear-gradient(rgb(111, 124, 133), rgb(145, 155, 159))';
+                break;
+            case '小雨':
+            case '中雨':
+            case '大雨':
+                background = '#4682B4';
+                break;
+            default:
+                background = '#D3D3D3';
+                break;
+        }
+
+        $('.weather-container').css('background', background);
+
+        const weatherTimeline = $('#weather-timeline');
+        weatherTimeline.empty();
+
+        hourlyData.forEach(function (hourly) {
+            const weatherTime = new Date(hourly.time);
+            const isCurrent = currentDateTime.getHours() === weatherTime.getHours();
+            const tem = hourly.temperature
+            const timeDisplay = isCurrent ? '现在' : `${weatherTime.getHours()}:00`;
+            const weatherItem = `
+                <div class="weather-item ${isCurrent ? 'current' : ''}">
+                    <p>${timeDisplay}</p>
+                    <p><img class="weather-icon" src="/media/weather/${hourly.code}@1x.png"></p>
+                    <p>${tem}°</p>
+                </div>`;
+            weatherTimeline.append(weatherItem);
+        });
+
+        // 日期和天气信息
+        function getWeekday(dateString) {
+            const date = new Date(dateString);
+            const weekdays = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+            return weekdays[date.getDay()];
+        }
+
+        // 日期格式转换为 MM/DD
+        function formatDateToMMDD(dateString) {
+            const date = new Date(dateString);
+            const month = (date.getMonth() + 1).toString().padStart(2, '0');
+            const day = date.getDate().toString().padStart(2, '0');
+            return `${month}/${day}`;
+        }
+
+        const today = new Date();
+        const tomorrow = new Date(today);
+        tomorrow.setDate(today.getDate() + 1);
+
+        // 清空并更新天气预报列表
+        const weatherList = $('.weather-list');
+        weatherList.empty(); // 清空内容
+
+        weatherData1.forEach((data, index) => {
+            const displayDate = formatDateToMMDD(data.date);
+            const humidity = parseInt(data.humidity)
+
+            let weekday;
+            if (index === 0) {
+                weekday = "今天";
+                $('#temperature-range').text(`${data.low}°~${data.high}°`)
+            } else if (index === 1) {
+                weekday = "明天";
+            } else {
+                weekday = getWeekday(data.date);
+            }
+
+            let all_day_weather;
+            if (data.text_day === data.text_night) {
+                all_day_weather = data.text_day
+            } else {
+                all_day_weather = `${data.text_day}转${data.text_night}`
+            }
+            const HumidityLevel = {
+                VERY_DRY: '极干燥',
+                DRY: '干燥',
+                MODERATE: '适中',
+                HUMID: '潮湿',
+                VERY_HUMID: '极潮湿',
+                INVALID: '无效的湿度值'
+            };
+            let level;
+            if (humidity < 20) {
+                level = HumidityLevel.VERY_DRY;
+            } else if (humidity >= 20 && humidity < 40) {
+                level = HumidityLevel.DRY;
+            } else if (humidity >= 40 && humidity < 60) {
+                level = HumidityLevel.MODERATE;
+            } else if (humidity >= 60 && humidity < 80) {
+                level = HumidityLevel.HUMID;
+            } else if (humidity >= 80) {
+                level = HumidityLevel.VERY_HUMID;
+            } else {
+                level = HumidityLevel.INVALID;
+            }
+
+            const weatherItem1 = `
+                <li class="weather-item1">
+                    <div class="date">${displayDate}</div>
+                    <div class="week">${weekday}</div>
+                    <div class="day_weather">
+                        <img src="/media/weather/${data.code_day}@1x.png">
+                        ${all_day_weather}
+                    </div>
+                    <div class="temperature">
+                        <span>${data.low}°</span> <span>${data.high}°</span>
+                    </div>
+                    <div class="humidity">${level}</div>
+                </li>`;
+            weatherList.append(weatherItem1);
+        });
+    }
+
+    function sendDate() {
+        $.ajax({
+            url: '/tools/getweather/',
+            type: 'GET',
+            success: function (response) {
+                weatherData = response.hours_data
+                weatherData1 = response.days_data
+                updateweatherDate(weatherData, weatherData1)
+                const updatetime = getTime()
+                $('#update-time').html(`${updatetime}更新`)
+                localStorage.setItem('lasttime', updatetime);
+                localStorage.setItem('hourdata', JSON.stringify(weatherData));
+                localStorage.setItem('daydata', JSON.stringify(weatherData1));
+            },
+            error: function (xhr, status, error) {
+                console.log('失败:', error);
+            },
+        });
+    }
+
+    function getweather() {
+        const last_time = localStorage.getItem('lasttime');
+        if (last_time === null) {
+            sendDate()
+        } else {
+            now_time = getTime()
+            res = timeDifferenceLessThan30Minutes(now_time, last_time)
+            if (res === false) {
+                sendDate()
+            } else {
+                const weatherData = JSON.parse(localStorage.getItem('hourdata'));
+                const weatherData1 = JSON.parse(localStorage.getItem('daydata'));
+                updateweatherDate(weatherData, weatherData1)
+                $('#update-time').html(`${last_time}更新`)
+            }
+        }
+    }
+
+    $(document).ready(function () {
+        {#getweather();#}
+    });
+</script>
+
+{% block extrajs %}
 {% endblock %}
 
 </html>

@@ -40,10 +40,12 @@ INSTALLED_APPS = [
     'proxypool.apps.ProxypoolConfig',
     'plan',
     'dispatchplatform',
+    'tools',
     'captcha',
     'rest_framework',
     'mdeditor',
     'django_apscheduler',
+
 ]
 
 MIDDLEWARE = [
@@ -165,8 +167,8 @@ EMAIL_USE_TLS = True  # 一般都为False
 # markdown配置
 MDEDITOR_CONFIGS = {
     'default': {
-        'width': '1000',  # 自定义编辑框宽度
-        'heigth': 700,  # 自定义编辑框高度
+        'width': '100%',  # 自定义编辑框宽度
+        'height': 800,  # 自定义编辑框高度
         'toolbar': ["undo", "redo", "|",
                     "bold", "del", "italic", "quote", "ucwords", "uppercase", "lowercase", "|",
                     "h1", "h2", "h3", "h5", "h6", "|",

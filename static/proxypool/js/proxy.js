@@ -1,13 +1,6 @@
 // 禁止开始检测按钮
 $("#start-check").prop("disabled", true);
 
-// $(document).ready(function () {
-//     $("#start-check").click(function () {
-//         $(".container").append("<div class=\"message\">检测中</div>\n" +
-//             "<div class=\"spinner\"></div>");
-//     });
-// });
-
 // 检测url是否合法
 $(document).ready(function () {
     $('#check').on('input', function () {
@@ -35,7 +28,7 @@ $(document).ready(function () {
         $.ajax({
             type: "POST",
             url: '/proxypool/checkproxy/',
-            data: {'url':url},
+            data: {'url': url},
             success: function (response) {
                 // $("#start-check").prop("disabled", false);
                 // $(".message").remove();
@@ -80,34 +73,49 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('.del-btn').click(function () {
         const del_id = $(this).data('id');
-        $.ajax({
-            url: '/proxypool/deleteproxy/',
-            type: 'POST',
-            data: {'del_id':del_id},
-            success: function (response) {
-                Swal.fire({
-                    icon: 'success',
-                    toast: true,
-                    position: 'top',
-                    showConfirmButton: false,
-                    timer: 3000,
-                    title: 'IP删除成功',
-                    width: '150px',
-                })
-                window.location.reload();
-            },
-            error: function () {
-                Swal.fire({
-                    icon: 'error',
-                    toast: true,
-                    position: 'top',
-                    showConfirmButton: false,
-                    timer: 3000,
-                    title: 'IP删除失败',
-                    width: '150px',
-                })
+        Swal.fire({
+            type: 'warning',
+            title: '删除该IP！',
+            text: "删除后将无法恢复，请谨慎操作！",
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: '确定',
+            showCancelButton: true,
+            cancelButtonColor: '#d33',
+            cancelButtonText: "取消",
+            focusCancel: true,
+            reverseButtons: false
+        }).then((isConfirm) => {
+            if (isConfirm.value) {
+                $.ajax({
+                    url: '/proxypool/deleteproxy/',
+                    type: 'POST',
+                    data: {'del_id': del_id},
+                    success: function (response) {
+                        Swal.fire({
+                            icon: 'success',
+                            toast: true,
+                            position: 'top',
+                            showConfirmButton: false,
+                            timer: 3000,
+                            title: 'IP删除成功',
+                            width: '150px',
+                        })
+                        window.location.reload();
+                    },
+                    error: function () {
+                        Swal.fire({
+                            icon: 'error',
+                            toast: true,
+                            position: 'top',
+                            showConfirmButton: false,
+                            timer: 3000,
+                            title: 'IP删除失败',
+                            width: '150px',
+                        })
+                    }
+                });
             }
-        });
+        })
     });
 });
 

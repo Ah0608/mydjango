@@ -11,6 +11,22 @@
 
 {% block main_content %}
     <div class="platform-head">
+        <li role="presentation" class="dropdown more-option">
+            <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+               aria-haspopup="true" aria-expanded="false">
+                操作
+                <span class="caret"></span>
+            </a>
+            <ul id="menu{{ forloop.counter }}" class="dropdown-menu dropdown-menu-left more_menu"
+                aria-labelledby="drop4">
+                <li>
+                    <button class="more-start" id="start-tasks">一键启动</button>
+                    <button class="more-pause" id="pause-tasks">一键暂停</button>
+                    <button class="more-resume" id="resume-tasks">一键恢复</button>
+                    <button class="more-remove" id="remove-tasks">一键删除</button>
+                </li>
+            </ul>
+        </li>
         <span class="task-search">任务名：
             <form id="search-form" action="{% url 'platform_search' %}" method="post">
                 {% csrf_token %}
@@ -23,9 +39,10 @@
         <table>
             <thead>
             <tr>
+                <th><input type="checkbox" id="checkAll"></th>
                 <th>ID</th>
                 <th>任务名</th>
-                <th>启动命令</th>
+                <th>执行文件</th>
                 <th>运行状态</th>
                 <th>调度状态</th>
                 <th>调度时间</th>
@@ -36,9 +53,10 @@
             <tbody>
             {% for task in tasks %}
                 <tr>
-                    <td>{{ task.id }}</td>
+                    <td><input type="checkbox" class="row-checkbox" value="{{ task.job_id }}"></td>
+                    <td>{{ task.job_id }}</td>
                     <td>{{ task.task_name }}</td>
-                    <td>{{ task.python_path }} {{ task.task_file }}</td>
+                    <td>{{ task.task_file }}</td>
                     <td>
                         {% if task.job_id in id_list %}
                             running
@@ -68,7 +86,7 @@
                     </td>
                     <td>{{ task.time_type }}</td>
                     <td>
-                        <button class="btn btn-info start-btn" data-id="{{ task.pk }}">启动</button>
+                        <button class="btn btn-info start-btn" data-id="{{ task.job_id }}">启动</button>
                         <li role="presentation" class="dropdown">
                             <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-haspopup="true" aria-expanded="false">

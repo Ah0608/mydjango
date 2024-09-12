@@ -44,18 +44,31 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
 
-      const hour = new Date().getHours();
-      let greeting;
-      if (hour >= 5 && hour < 12) {
+    const hour = new Date().getHours();
+    let greeting;
+    if (hour >= 5 && hour < 12) {
         greeting = "早上好";
-      } else if (hour >= 12 && hour < 18) {
+    } else if (hour >= 12 && hour < 18) {
         greeting = "下午好";
-      } else {
+    } else {
         greeting = "晚上好";
-      }
+    }
 
-      // 将问候语显示在页面上
-      $(".greeting").text(greeting);
-    });
+    // 将问候语显示在页面上
+    $(".greeting").text(greeting);
+
+    function updateDateTime() {
+        // 获取当前日期和时间
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = now.getMonth() + 1;
+        const date = now.getDate();
+
+        const formattedTime = year + '年' + month + '月' + date + '日 '
+        $('#currentDateTime').text(formattedTime);
+    }
+
+    updateDateTime()
+});

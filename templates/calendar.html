@@ -94,7 +94,6 @@
     <script type="text/javascript">
         // 重置表单所有内容
         $("#resetBtn").click(function () {
-            // 使用 jQuery 选择器选择所有输入字段，并将它们的值设置为空字符串
             $("form input[type='text'],form textarea").val("");
         });
 
@@ -194,7 +193,7 @@
                     const end_tTime = event.end.format('MM-DD HH:mm');
 
                     // 在事件元素中添加结束时间
-                    element.find('.fc-time').text(star_tTime + ' —— ' + end_tTime);
+                    element.find('.fc-time').text(star_tTime + ' 至 ' + end_tTime);
                 },
                 events: [
                     {% for my_report in my_report_all %}

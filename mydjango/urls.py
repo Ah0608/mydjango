@@ -29,6 +29,8 @@ urlpatterns = [
     path('plan/', include('plan.urls')),
 
     path('dispatchplatform/', include('dispatchplatform.urls')),
+
+    path('tools/', include('tools.urls')),
 ]
 # + static(MEDIA_URL, document_root=MEDIA_ROOT)
 if settings.DEBUG:

@@ -20,7 +20,9 @@
             {% csrf_token %}
             {{ form.media }}
             {{ form.as_p }}
-            <button type="submit" id="update">保存修改</button>
+            <div class="center-button">
+                <button type="submit" id="update" class="btn btn-info">保存修改</button>
+            </div>
         </form>
     </div>
 
