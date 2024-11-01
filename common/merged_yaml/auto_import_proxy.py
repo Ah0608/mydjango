@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import psutil
 import signal
 import os
@@ -73,28 +75,36 @@ def auto_import_proxy():
             pid = find_pid_by_name(process_name)
             if pid:
                 logger.info('代理程序启动成功')
-                return True
-        except subprocess.CalledProcessError as e:
-            logger.info(f"命令执行失败: {e}")
-            raise e
+            else:
+                raise RuntimeError('启动失败')
+        except:
+            raise RuntimeError('节点导入失败')
 
 
 def merge_and_import_proxy():
+    relative_path = Path('common/merged_yaml/config.yaml')
+    try:
+        relative_path.unlink()
+        print(f"{relative_path} 已删除")
+    except FileNotFoundError:
+        print("文件未找到")
+    except PermissionError:
+        print("没有权限删除文件")
+    except Exception as e:
+        print(f"发生错误: {e}")
+
     folder_path = 'common/merged_yaml/yaml_list'
     yaml_files = os.listdir(folder_path)
     all_combinations = []
 
     for i in range(1, len(yaml_files) + 1):
         all_combinations.extend(combinations(yaml_files, i))
-
     for combo in all_combinations:
         try:
             logger.info(f"尝试排除文件组合: {combo}")
             merge_yaml(exclude_files=list(combo))
-            if auto_import_proxy():
-                return
-            logger.info(f"排除文件组合 {combo} 后未报错")
-        except subprocess.CalledProcessError:
+            auto_import_proxy()
+            return
+        except:
             logger.error(f"排除文件组合 {combo} 后仍然报错")
-        finally:
             logger.info(f"恢复文件组合 {combo} 的合并")

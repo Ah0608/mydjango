@@ -10,6 +10,6 @@ urlpatterns = [
     path('remove/', views.Remove, name='platform_remove'),
     path('modify/', views.Modify, name='platform_modify'),
     path('search/', views.Search, name='platform_search'),
-    path('viewlog/<int:job_id>/', views.Viewlog, name='viewlog'),
-    path('realtimelog/<int:job_id>/', views.Realtimelog, name='realtimelog'),
+    path('viewlog/<str:job_id>/', views.Viewlog, name='viewlog'),
+    path('realtimelog/<str:job_id>/', views.Realtimelog, name='realtimelog'),
 ]

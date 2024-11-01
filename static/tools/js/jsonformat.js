@@ -150,19 +150,25 @@ $(function () {
     renderJson();
 });
 
-// function convertString(input) {
-//     return input.replace(/(\w+)(\[\d+\])?/g, function (match, p1, p2) {
-//         return `["${p1}"]${p2 || ''}`;
-//     });
-// }
 
+function getPath(s) {
+    const plist = [];
+    s.split('.').forEach(i => {
+        if (i.includes('[') && i.includes(']')) {
+            // 如果包含数组索引部分
+            const index = i.indexOf('[');
+            const p1 = i.slice(0, index); // 获取属性名
+            const p2 = i.slice(index);    // 获取索引部分
+            const part = `['${p1}']${p2}`;
+            plist.push(part);
+        } else {
+            // 普通属性名部分
+            const part = `['${i}']`;
+            plist.push(part);
+        }
+    });
 
-function convertString(input) {
-    return input.split('.').map(part => {
-        return part.replace(/([\w-]+)(\[\d+\])?/g, function (match, p1, p2) {
-            return `["${p1}"]${p2 || ''}`;
-        });
-    }).join('');
+    return plist.join('');
 }
 
 (function ($) {
@@ -256,7 +262,7 @@ function convertString(input) {
             }).on('click', 'li', function (e) {
                 e.stopPropagation();
                 const path = $(this).data('path');
-                const newPath = convertString(path)
+                const newPath = getPath(path)
                 $('#path-display').text('路径：' + newPath);
                 $('#path-info').show();
                 $('#copy-path-btn').css('display', 'inline');

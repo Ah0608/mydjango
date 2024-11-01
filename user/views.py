@@ -34,7 +34,7 @@ class IndexView(View):
         ip_num = ProxyPool.objects.count()
         last_check_time = DjangoJobExecution.objects.filter(job_id='proxy_check').aggregate(Max('run_time'))['run_time__max']
         tasks_num= DisPlatform.objects.all().count()
-        running_num = DjangoJob.objects.filter(id__in=('9224','9225')).filter(next_run_time__isnull=False).count()
+        running_num = DjangoJob.objects.exclude(id__in=('proxy_crawl','proxy_check')).filter(next_run_time__isnull=False).count()
         note_num = Article.objects.count()
         current_notes = Article.objects.order_by('-created_at')[:3]
         return render(request, 'index.html', {'ip_num':ip_num,'user':user,'last_check_time':last_check_time,

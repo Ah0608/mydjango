@@ -117,18 +117,18 @@ div.detail-area p img {
     display: none;
     position: fixed;
     z-index: 1;
-    left: 500px;
-    top: 120px;
-    width: 1200px;
-    height: 650px;
+    left: 250px;
+    top: 100px;
+    width: 1500px;
+    height: 700px;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
 #modal-img {
-    max-width: 650px;
-    min-width: 200px;
-    max-height: 550px;
+    max-width: 800px;
+    min-width: 400px;
+    max-height: 600px;
     min-height: 300px;
     height: auto;
 }
@@ -181,8 +181,8 @@ div.detail-area p img {
 .rotate {
     border: none;
     position: absolute;
-    top: 620px;
-    left: 600px;
+    top: 670px;
+    left: 750px;
     background-color: transparent;
     color: white;
     font-size: 1.2em

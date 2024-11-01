@@ -12,13 +12,13 @@ headers = {
 proxies = {'http': 'socks5://192.168.1.171:1080', 'https': 'socks5://192.168.1.171:1080'}
 
 
-def get_clash(url, method='GET', headers=None, data=None, proxies=None, params=None,
-              cookies=None, timeout=30, verify=False):
+def get_clash(url, proxies=None,headers=None):
     try:
-        response = requests.request(url=url, method=method, headers=headers, proxies=proxies, params=params,
-                                    data=data, cookies=cookies, impersonate='chrome110', timeout=timeout, verify=verify)
-        response.raise_for_status()
-        return response
+        response = requests.get(url=url,proxies=proxies,headers=headers)
+        if response.status_code == 200:
+            return response
+        else:
+            raise RuntimeError(f"请求失败，状态码：{response.status_code}")
     except Exception:
         return False
 
@@ -50,6 +50,8 @@ def freeclashnode():
     node_urls = [
         f'https://oneclash.githubrowcontent.com/{year}/{month.zfill(2)}/{year}{month.zfill(2)}{day.zfill(2)}.yaml',
         'https://proxy.v2gh.com/https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub',
+        'https://raw.githubusercontent.com/ssrsub/ssr/master/ss-sub',
+        f'http://wzm.api-node.shop/node/{date.replace("-","")}-clash.yaml'
     ]
     url = 'https://www.freeclashnode.com/free-node/'
     res = get_clash(url)
@@ -63,23 +65,21 @@ def freeclashnode():
     try:
         res2 = get_clash(f'https://telegeam.github.io/clashnode/free-nodes/{year}-{month}-{day}-clash-ssr.htm', proxies=proxies).text
         sel2 = Selector(res2)
-        node_urls1 = sel2.xpath("//p[contains(text(),'ml')]/text()").getall()
+        node_urls1 = sel2.xpath("//p[contains(text(),'ml')]/text()").getall()[:2]
         yaml_url_list.extend(node_urls1)
-    except:
-        pass
+    except Exception as e:
+        logger.error(f'请求失败: {e}')
     if yaml_url_list:
         delete_all_files_in_directory('common/merged_yaml/yaml_list')
         logger.success('文件清除成功')
         for index, yaml_url in enumerate(yaml_url_list):
-            if index == 2:
-                continue
             logger.info('正在请求：{}'.format(yaml_url))
             file_name = 'common/merged_yaml/yaml_list/{}_{}.yaml'.format(date, index)
             try:
                 res = get_clash(yaml_url, proxies=proxies, headers=headers)
                 yaml_content = res.text
-            except Exception:
-                logger.error('请求失败')
+            except Exception as e:
+                logger.error('请求失败:{}'.format(e))
                 continue
             with open(file_name, mode='w', encoding='utf-8', newline='') as file:
                 file.write(yaml_content.strip())
