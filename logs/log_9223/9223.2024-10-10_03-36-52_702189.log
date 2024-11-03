@@ -1,0 +1,1704 @@
+2024-10-10 03:36:52-9223-INFO-登陆成功
+2024-10-10 03:36:52-9223-INFO-{'Cookie': 'AWSALBAPP-1=_remove_; AWSALBAPP-2=_remove_; AWSALBAPP-3=_remove_; WLSESSION=2030268938.47873.0000; TS016349ac=01f15fc87cbc334880ca61c82c8b6788631e5f6323f1dd2577d101f8c492c41f9c378b71884c0f66b720c1b0af05cec7b064e1656d; JSESSIONID=B11B10ABC4587AED642DDEE44751893E; ERIGHTS=nxxtMYJWYlUK4b9LtdIeYwmNlqpgvQooG-18x2dimjpRKx2Bhi3BRG56W8kjGUQx3Dx3DZNhR7bX7KDuxxBPXGQwlkMwx3Dx3D-6x2FElvnhdxxWsZrF2g6I0ckwx3Dx3D-X32Vx2FNg8j7SzyFTcKkmYqwx3Dx3D; xpluserinfo=eyJpc0luc3QiOiJ0cnVlIiwiaW5zdE5hbWUiOiJTb3V0aGVhc3QgVW5pdmVyc2l0eSIsInByb2R1Y3RzIjoiRHJhZnR8RUJPT0tTOjE5NzQ6MjAxN3xJQk06MTg3MjoyMDIwfElFTHxWREV8Tk9LSUEgQkVMTCBMQUJTfCJ9; seqId=9472; ipList=113.249.13.17; AWSALBAPP-0=AAAAAAAAAABCMvp1kAUd6E6C4EajKdH1jG2sO7vh/088hXr7MjOBfpxCH220ACpMYuhtQ1kocAbDyMGgCJzNvJxd7gcrS4q8c1Ml8fVIQyJgehmRC7lYGnbZOaPocnKDm09Nvjh4qOH2BoIbTfG5kJLxCsyB22Gwsxoxr03guG/3PujII/Xqwc54G0BxS/7dDEFLAPRNteyXoINEgHuFQg==; TSaf720a17029=0807dc117eab2800f989ec8232d3facf360d5b21f71c99fea9bc5cf0144fc1ab0ed2fd8c90c4dd75ed5d950c859b7ab3; TS8b476361027=0807dc117eab2000db6b6f32d4cbb373f9f3180c787230d4442ac6d07a029ce60f423833e686c885088f294fb5113000ced971279173823e28d2727f7ab79d8e9785878c0a9edeb0926292269c9fc305b1b5c9614d5c952e40687f865a865f6b'}
+2024-10-10 03:36:52-9223-INFO-2024-10-10 03:36:52,609 - INFO - Pika version 1.3.2 connecting to ('192.168.1.186', 5672)
+2024-10-10 03:36:52-9223-INFO-2024-10-10 03:36:52,609 - INFO - Socket connected: <socket.socket fd=2272, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.186', 61734), raddr=('192.168.1.186', 5672)>
+2024-10-10 03:36:52-9223-INFO-2024-10-10 03:36:52,610 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000277ACEBDEE0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000277ACEBDEE0> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>).
+2024-10-10 03:36:52-9223-INFO-2024-10-10 03:36:52,614 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000277ACEBDEE0> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 03:36:52-9223-INFO-2024-10-10 03:36:52,614 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000277ACEBDEE0> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 03:36:52-9223-INFO-2024-10-10 03:36:52,615 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000277ACEBDEE0> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 03:36:52-9223-INFO-2024-10-10 03:36:52,615 - INFO - Created channel=1
+2024-10-10 03:36:52-9223-INFO-2024-10-10 03:36:52,621 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 03:36:53-9223-INFO-2024-10-10 03:36:53,500 - INFO - PDF IS ERROR!
+2024-10-10 03:36:57-9223-INFO-2024-10-10 03:36:57,516 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 03:36:57-9223-INFO-2024-10-10 03:36:57,866 - INFO - PDF IS ERROR!
+2024-10-10 03:37:01-9223-INFO-2024-10-10 03:37:01,874 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 03:37:02-9223-INFO-2024-10-10 03:37:02,653 - INFO - PDF IS ERROR!
+2024-10-10 03:37:07-9223-INFO-2024-10-10 03:37:07,664 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 03:37:07-9223-INFO-2024-10-10 03:37:07,994 - INFO - PDF IS ERROR!
+2024-10-10 03:37:11-9223-INFO-2024-10-10 03:37:11,009 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 03:37:11-9223-INFO-2024-10-10 03:37:11,353 - INFO - PDF IS ERROR!
+2024-10-10 03:37:15-9223-INFO-2024-10-10 03:37:15,355 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 03:37:16-9223-INFO-2024-10-10 03:37:16,145 - INFO - 请求失败！
+2024-10-10 03:37:21-9223-INFO-2024-10-10 03:37:21,147 - INFO - 连续请求失败五次退出程序
+2024-10-10 03:37:21-9223-ERROR-Traceback (most recent call last):
+2024-10-10 03:37:21-9223-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9223.py", line 114, in <module>
+2024-10-10 03:37:21-9223-ERROR-main()
+2024-10-10 03:37:21-9223-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9223.py", line 108, in main
+2024-10-10 03:37:21-9223-ERROR-Consumer('IEEE').read_message(callback)
+2024-10-10 03:37:21-9223-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\message_que\rabbitmq.py", line 66, in read_message
+2024-10-10 03:37:21-9223-ERROR-self._channel.start_consuming()
+2024-10-10 03:37:21-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1883, in start_consuming
+2024-10-10 03:37:21-9223-ERROR-self._process_data_events(time_limit=None)
+2024-10-10 03:37:21-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 2044, in _process_data_events
+2024-10-10 03:37:21-9223-ERROR-self.connection.process_data_events(time_limit=time_limit)
+2024-10-10 03:37:21-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 851, in process_data_events
+2024-10-10 03:37:21-9223-ERROR-self._dispatch_channel_events()
+2024-10-10 03:37:21-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 567, in _dispatch_channel_events
+2024-10-10 03:37:21-9223-ERROR-impl_channel._get_cookie()._dispatch_events()
+2024-10-10 03:37:21-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1510, in _dispatch_events
+2024-10-10 03:37:21-9223-ERROR-consumer_info.on_message_callback(self, evt.method,
+2024-10-10 03:37:21-9223-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9223.py", line 57, in callback
+2024-10-10 03:37:21-9223-ERROR-raise RuntimeError('cookies失效')
+2024-10-10 03:37:21-9223-ERROR-RuntimeError: cookies失效
+2024-10-10 07:37:01-9223-INFO-登陆成功
+2024-10-10 07:37:01-9223-INFO-{'Cookie': 'AWSALBAPP-1=_remove_; AWSALBAPP-2=_remove_; AWSALBAPP-3=_remove_; WLSESSION=3439489546.47873.0000; TS016349ac=01f15fc87c57fa7b6f08f7bcd7f141a254f2fc7147a2ad2552d1797619591e67fc361193dfd44b0fd47c775d37132b06706463b93f; JSESSIONID=67A680621A6F68A2FF1F776631FE2381; ERIGHTS=x2Fok1NF92Bm6PdZQbxxHrHHdqOtLAtEr25-18x2d2x2Fmx2BB4ntG4oyLIVbMYBu7Ax3Dx3D0OgpXiHqHLhjNszLrY4YSwx3Dx3D-xxSjPuM2fUIr39FKIZ7DE4wx3Dx3D-UVhlBx2FP29HQDntaSxx2dV2wx3Dx3D; ipList=113.249.13.17; xpluserinfo=eyJpc0luc3QiOiJ0cnVlIiwiaW5zdE5hbWUiOiJTb3V0aGVhc3QgVW5pdmVyc2l0eSIsInByb2R1Y3RzIjoiRHJhZnR8RUJPT0tTOjE5NzQ6MjAxN3xJQk06MTg3MjoyMDIwfElFTHxWREV8Tk9LSUEgQkVMTCBMQUJTfCJ9; seqId=9472; AWSALBAPP-0=AAAAAAAAAACBpWTZXqg7MmYsHwnLE1kTX7WugGZ0wilxuyqH8ShcuPXLvvPeApT+h2b2iuJoKl4hSGL57M94Suf/XRQdS/ve5mF+SII5PIOognU1PBPYEZolfF6I0DSgU2/zioYcI0eiHuiueHl70u/f+7KiUjgPZIYQ+eGfym2myeuGEklDJSDElnuUw6SgSryDAjzcMwtmOS5x8bcbKA==; TSaf720a17029=0807dc117eab2800975579a8a1c1d68ab1a184a8626fa8561b93752b0b2cae4e3c2fbb383a97f4bec4eb0c77ec5ce00c; TS8b476361027=0807dc117eab2000a89de6385b39577f6ab516c9825d88e336dd9e305dd47197faf0c80ad289afea08a4fef1ef11300098d8f7b4053eba494b7856bec17d36f310cc3dac4af76a9b46ccab726965777dc4e38076580c1fc443e338de261794ad'}
+2024-10-10 07:37:01-9223-INFO-2024-10-10 07:37:01,771 - INFO - Pika version 1.3.2 connecting to ('192.168.1.186', 5672)
+2024-10-10 07:37:01-9223-INFO-2024-10-10 07:37:01,772 - INFO - Socket connected: <socket.socket fd=852, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.186', 61462), raddr=('192.168.1.186', 5672)>
+2024-10-10 07:37:01-9223-INFO-2024-10-10 07:37:01,772 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001996789CE50>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001996789CE50> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>).
+2024-10-10 07:37:01-9223-INFO-2024-10-10 07:37:01,775 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001996789CE50> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 07:37:01-9223-INFO-2024-10-10 07:37:01,776 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001996789CE50> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 07:37:01-9223-INFO-2024-10-10 07:37:01,776 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001996789CE50> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 07:37:01-9223-INFO-2024-10-10 07:37:01,776 - INFO - Created channel=1
+2024-10-10 07:37:01-9223-INFO-2024-10-10 07:37:01,780 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 07:37:02-9223-INFO-2024-10-10 07:37:02,566 - INFO - 请求失败！
+2024-10-10 07:37:07-9223-INFO-2024-10-10 07:37:07,573 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 07:37:08-9223-INFO-2024-10-10 07:37:08,463 - INFO - PDF IS ERROR!
+2024-10-10 07:37:13-9223-INFO-2024-10-10 07:37:13,468 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 07:37:13-9223-INFO-2024-10-10 07:37:13,777 - INFO - PDF IS ERROR!
+2024-10-10 07:37:16-9223-INFO-2024-10-10 07:37:16,791 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 07:37:17-9223-INFO-2024-10-10 07:37:17,079 - INFO - PDF IS ERROR!
+2024-10-10 07:37:22-9223-INFO-2024-10-10 07:37:22,087 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 07:37:22-9223-INFO-2024-10-10 07:37:22,861 - INFO - PDF IS ERROR!
+2024-10-10 07:37:27-9223-INFO-2024-10-10 07:37:27,873 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 07:37:28-9223-INFO-2024-10-10 07:37:28,175 - INFO - PDF IS ERROR!
+2024-10-10 07:37:31-9223-INFO-2024-10-10 07:37:31,188 - INFO - 连续请求失败五次退出程序
+2024-10-10 07:37:31-9223-ERROR-Traceback (most recent call last):
+2024-10-10 07:37:31-9223-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9223.py", line 114, in <module>
+2024-10-10 07:37:31-9223-ERROR-main()
+2024-10-10 07:37:31-9223-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9223.py", line 108, in main
+2024-10-10 07:37:31-9223-ERROR-Consumer('IEEE').read_message(callback)
+2024-10-10 07:37:31-9223-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\message_que\rabbitmq.py", line 66, in read_message
+2024-10-10 07:37:31-9223-ERROR-self._channel.start_consuming()
+2024-10-10 07:37:31-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1883, in start_consuming
+2024-10-10 07:37:31-9223-ERROR-self._process_data_events(time_limit=None)
+2024-10-10 07:37:31-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 2044, in _process_data_events
+2024-10-10 07:37:31-9223-ERROR-self.connection.process_data_events(time_limit=time_limit)
+2024-10-10 07:37:31-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 851, in process_data_events
+2024-10-10 07:37:31-9223-ERROR-self._dispatch_channel_events()
+2024-10-10 07:37:31-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 567, in _dispatch_channel_events
+2024-10-10 07:37:31-9223-ERROR-impl_channel._get_cookie()._dispatch_events()
+2024-10-10 07:37:31-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1510, in _dispatch_events
+2024-10-10 07:37:31-9223-ERROR-consumer_info.on_message_callback(self, evt.method,
+2024-10-10 07:37:31-9223-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9223.py", line 57, in callback
+2024-10-10 07:37:31-9223-ERROR-raise RuntimeError('cookies失效')
+2024-10-10 07:37:31-9223-ERROR-RuntimeError: cookies失效
+2024-10-10 11:36:58-9223-INFO-登陆成功
+2024-10-10 11:36:58-9223-INFO-{'Cookie': 'AWSALBAPP-1=_remove_; AWSALBAPP-2=_remove_; AWSALBAPP-3=_remove_; WLSESSION=1224831498.47873.0000; TS016349ac=01f15fc87c8a3c1ecada1ff7f4110aa1508a657d04cd653b08af9f49d0c0f25bdcf97cdc1cf83be241246c6abe0563ba48723458e2; JSESSIONID=0CFDF59AF23C655FD6A194628EF52EF0; ERIGHTS=h84sjZEIaA7mfJPi92vPbox2Fsh3nPGBz6-18x2dWz2N4YH4zieQoeywVqVEigx3Dx3Dx2FWfP1T9IOnrXSD21KoYUrwx3Dx3D-eI3qZRBPEpptHrsBwmDJWwx3Dx3D-PHtmiFx2BHcxxRmFWzvhDaEhQx3Dx3D; ipList=113.251.70.115; xpluserinfo=eyJpc0luc3QiOiJ0cnVlIiwiaW5zdE5hbWUiOiJTb3V0aGVhc3QgVW5pdmVyc2l0eSIsInByb2R1Y3RzIjoiRHJhZnR8RUJPT0tTOjE5NzQ6MjAxN3xJQk06MTg3MjoyMDIwfElFTHxWREV8Tk9LSUEgQkVMTCBMQUJTfCJ9; seqId=9472; AWSALBAPP-0=AAAAAAAAAAB3SeyJYRghNWMXeglsrKN6GWlG9/ByH+bR3jmaEv5L1ZSwfi9+MtwPV4R5zLMM7ImGPJyHYsjQyII2n8GQrMR0u5Lwax5+a5HsZ1GC/PCAI1zt88BcRwm3o8CppaVfDAdMdowx0+bLAnSFl5rKRjPHm10zX4MtBGyAhtJYB1A2q2rC9vQCwg+bfyw3fOxl/DKbr1UG5BkaSQ==; TSaf720a17029=0807dc117eab28006938fc03d94c45771df820e114cc46263d772dc992dc640c0b72e64299fec8b58175c13f4872b51c; TS8b476361027=0807dc117eab200044173ebe34399a5473119a42b951c0a6e45a6029ba16829a23da031baa41f7810838212d95113000db94a3aac05082059b93aa663425f807cbb910c3df27353b9b169a275c2fc669c3d8c7c927eea9b50a755755064c0037'}
+2024-10-10 11:36:58-9223-INFO-2024-10-10 11:36:58,698 - INFO - Pika version 1.3.2 connecting to ('192.168.1.186', 5672)
+2024-10-10 11:36:58-9223-INFO-2024-10-10 11:36:58,699 - INFO - Socket connected: <socket.socket fd=2316, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.186', 58482), raddr=('192.168.1.186', 5672)>
+2024-10-10 11:36:58-9223-INFO-2024-10-10 11:36:58,699 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C2DBA25A00>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C2DBA25A00> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>).
+2024-10-10 11:36:58-9223-INFO-2024-10-10 11:36:58,703 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C2DBA25A00> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 11:36:58-9223-INFO-2024-10-10 11:36:58,703 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C2DBA25A00> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 11:36:58-9223-INFO-2024-10-10 11:36:58,703 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C2DBA25A00> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 11:36:58-9223-INFO-2024-10-10 11:36:58,703 - INFO - Created channel=1
+2024-10-10 11:36:58-9223-INFO-2024-10-10 11:36:58,706 - INFO - ('9694657', '/stamp/stamp.jsp?tp=&arnumber=9694657')
+2024-10-10 11:37:06-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4657\9694657\9694657.pdf
+2024-10-10 11:37:06-9223-INFO-2024-10-10 11:37:06,432 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4657\9694657\9694657.pdf)
+2024-10-10 11:37:06-9223-INFO-2024-10-10 11:37:06,528 - INFO - 下载完成9694657
+2024-10-10 11:37:22-9223-INFO-2024-10-10 11:37:22,535 - INFO - ('9694659', '/stamp/stamp.jsp?tp=&arnumber=9694659')
+2024-10-10 11:37:39-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4659\9694659\9694659.pdf
+2024-10-10 11:37:39-9223-INFO-2024-10-10 11:37:39,069 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4659\9694659\9694659.pdf)
+2024-10-10 11:37:39-9223-INFO-2024-10-10 11:37:39,222 - INFO - 下载完成9694659
+2024-10-10 11:37:57-9223-INFO-2024-10-10 11:37:57,225 - INFO - ('9695441', '/stamp/stamp.jsp?tp=&arnumber=9695441')
+2024-10-10 11:38:10-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5441\9695441\9695441.pdf
+2024-10-10 11:38:10-9223-INFO-2024-10-10 11:38:10,790 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5441\9695441\9695441.pdf)
+2024-10-10 11:38:10-9223-INFO-2024-10-10 11:38:10,948 - INFO - 下载完成9695441
+2024-10-10 11:38:28-9223-INFO-2024-10-10 11:38:28,962 - INFO - ('9695447', '/stamp/stamp.jsp?tp=&arnumber=9695447')
+2024-10-10 11:38:44-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5447\9695447\9695447.pdf
+2024-10-10 11:38:44-9223-INFO-2024-10-10 11:38:44,618 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5447\9695447\9695447.pdf)
+2024-10-10 11:38:44-9223-INFO-2024-10-10 11:38:44,721 - INFO - 下载完成9695447
+2024-10-10 11:39:00-9223-INFO-2024-10-10 11:39:00,736 - INFO - ('9695467', '/stamp/stamp.jsp?tp=&arnumber=9695467')
+2024-10-10 11:39:10-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5467\9695467\9695467.pdf
+2024-10-10 11:39:10-9223-INFO-2024-10-10 11:39:10,893 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5467\9695467\9695467.pdf)
+2024-10-10 11:39:10-9223-INFO-2024-10-10 11:39:10,982 - INFO - 下载完成9695467
+2024-10-10 11:39:26-9223-INFO-2024-10-10 11:39:26,993 - INFO - ('9695408', '/stamp/stamp.jsp?tp=&arnumber=9695408')
+2024-10-10 11:39:44-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5408\9695408\9695408.pdf
+2024-10-10 11:39:44-9223-INFO-2024-10-10 11:39:44,349 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5408\9695408\9695408.pdf)
+2024-10-10 11:39:44-9223-INFO-2024-10-10 11:39:44,497 - INFO - 下载完成9695408
+2024-10-10 11:39:59-9223-INFO-2024-10-10 11:39:59,504 - INFO - ('9694578', '/stamp/stamp.jsp?tp=&arnumber=9694578')
+2024-10-10 11:40:13-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4578\9694578\9694578.pdf
+2024-10-10 11:40:13-9223-INFO-2024-10-10 11:40:13,692 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4578\9694578\9694578.pdf)
+2024-10-10 11:40:13-9223-INFO-2024-10-10 11:40:13,785 - INFO - 下载完成9694578
+2024-10-10 11:40:29-9223-INFO-2024-10-10 11:40:29,800 - INFO - ('9694606', '/stamp/stamp.jsp?tp=&arnumber=9694606')
+2024-10-10 11:40:39-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4606\9694606\9694606.pdf
+2024-10-10 11:40:39-9223-INFO-2024-10-10 11:40:39,319 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4606\9694606\9694606.pdf)
+2024-10-10 11:40:39-9223-INFO-2024-10-10 11:40:39,385 - INFO - 下载完成9694606
+2024-10-10 11:40:57-9223-INFO-2024-10-10 11:40:57,387 - INFO - ('9684417', '/stamp/stamp.jsp?tp=&arnumber=9684417')
+2024-10-10 11:41:32-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4417\9684417\9684417.pdf
+2024-10-10 11:41:32-9223-INFO-2024-10-10 11:41:32,670 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4417\9684417\9684417.pdf)
+2024-10-10 11:41:32-9223-INFO-2024-10-10 11:41:32,817 - INFO - 下载完成9684417
+2024-10-10 11:41:50-9223-INFO-2024-10-10 11:41:50,830 - INFO - ('9535488', '/stamp/stamp.jsp?tp=&arnumber=9535488')
+2024-10-10 11:42:20-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5488\9535488\9535488.pdf
+2024-10-10 11:42:20-9223-INFO-2024-10-10 11:42:20,311 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5488\9535488\9535488.pdf)
+2024-10-10 11:42:20-9223-INFO-2024-10-10 11:42:20,457 - INFO - 下载完成9535488
+2024-10-10 11:42:35-9223-INFO-2024-10-10 11:42:35,471 - INFO - ('9564043', '/stamp/stamp.jsp?tp=&arnumber=9564043')
+2024-10-10 11:43:03-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4043\9564043\9564043.pdf
+2024-10-10 11:43:03-9223-INFO-2024-10-10 11:43:03,484 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4043\9564043\9564043.pdf)
+2024-10-10 11:43:03-9223-INFO-2024-10-10 11:43:03,689 - INFO - 下载完成9564043
+2024-10-10 11:43:19-9223-INFO-2024-10-10 11:43:19,698 - INFO - ('9481267', '/stamp/stamp.jsp?tp=&arnumber=9481267')
+2024-10-10 11:43:29-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1267\9481267\9481267.pdf
+2024-10-10 11:43:29-9223-INFO-2024-10-10 11:43:29,408 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1267\9481267\9481267.pdf)
+2024-10-10 11:43:29-9223-INFO-2024-10-10 11:43:29,501 - INFO - 下载完成9481267
+2024-10-10 11:43:44-9223-INFO-2024-10-10 11:43:44,515 - INFO - ('9454478', '/stamp/stamp.jsp?tp=&arnumber=9454478')
+2024-10-10 11:44:02-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4478\9454478\9454478.pdf
+2024-10-10 11:44:02-9223-INFO-2024-10-10 11:44:02,083 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4478\9454478\9454478.pdf)
+2024-10-10 11:44:02-9223-INFO-2024-10-10 11:44:02,191 - INFO - 下载完成9454478
+2024-10-10 11:44:17-9223-INFO-2024-10-10 11:44:17,193 - INFO - ('9500208', '/stamp/stamp.jsp?tp=&arnumber=9500208')
+2024-10-10 11:44:32-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0208\9500208\9500208.pdf
+2024-10-10 11:44:32-9223-INFO-2024-10-10 11:44:32,279 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0208\9500208\9500208.pdf)
+2024-10-10 11:44:32-9223-INFO-2024-10-10 11:44:32,381 - INFO - 下载完成9500208
+2024-10-10 11:44:51-9223-INFO-2024-10-10 11:44:51,392 - INFO - ('9455358', '/stamp/stamp.jsp?tp=&arnumber=9455358')
+2024-10-10 11:45:07-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5358\9455358\9455358.pdf
+2024-10-10 11:45:07-9223-INFO-2024-10-10 11:45:07,580 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5358\9455358\9455358.pdf)
+2024-10-10 11:45:07-9223-INFO-2024-10-10 11:45:07,687 - INFO - 下载完成9455358
+2024-10-10 11:45:25-9223-INFO-2024-10-10 11:45:25,703 - INFO - ('9656761', '/stamp/stamp.jsp?tp=&arnumber=9656761')
+2024-10-10 11:45:43-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6761\9656761\9656761.pdf
+2024-10-10 11:45:43-9223-INFO-2024-10-10 11:45:43,953 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6761\9656761\9656761.pdf)
+2024-10-10 11:45:44-9223-INFO-2024-10-10 11:45:44,038 - INFO - 下载完成9656761
+2024-10-10 11:45:59-9223-INFO-2024-10-10 11:45:59,046 - INFO - ('9391692', '/stamp/stamp.jsp?tp=&arnumber=9391692')
+2024-10-10 11:46:52-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1692\9391692\9391692.pdf
+2024-10-10 11:46:52-9223-INFO-2024-10-10 11:46:52,711 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1692\9391692\9391692.pdf)
+2024-10-10 11:46:52-9223-INFO-2024-10-10 11:46:52,903 - INFO - 下载完成9391692
+2024-10-10 11:47:08-9223-INFO-2024-10-10 11:47:08,908 - INFO - ('9690851', '/stamp/stamp.jsp?tp=&arnumber=9690851')
+2024-10-10 11:47:33-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0851\9690851\9690851.pdf
+2024-10-10 11:47:33-9223-INFO-2024-10-10 11:47:33,724 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0851\9690851\9690851.pdf)
+2024-10-10 11:47:33-9223-INFO-2024-10-10 11:47:33,822 - INFO - 下载完成9690851
+2024-10-10 11:47:52-9223-INFO-2024-10-10 11:47:52,824 - INFO - ('9665777', '/stamp/stamp.jsp?tp=&arnumber=9665777')
+2024-10-10 11:48:01-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5777\9665777\9665777.pdf
+2024-10-10 11:48:01-9223-INFO-2024-10-10 11:48:01,719 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5777\9665777\9665777.pdf)
+2024-10-10 11:48:01-9223-INFO-2024-10-10 11:48:01,811 - INFO - 下载完成9665777
+2024-10-10 11:48:18-9223-INFO-2024-10-10 11:48:18,819 - INFO - ('9666881', '/stamp/stamp.jsp?tp=&arnumber=9666881')
+2024-10-10 11:48:35-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6881\9666881\9666881.pdf
+2024-10-10 11:48:35-9223-INFO-2024-10-10 11:48:35,996 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6881\9666881\9666881.pdf)
+2024-10-10 11:48:36-9223-INFO-2024-10-10 11:48:36,116 - INFO - 下载完成9666881
+2024-10-10 11:48:51-9223-INFO-2024-10-10 11:48:51,131 - INFO - ('9664640', '/stamp/stamp.jsp?tp=&arnumber=9664640')
+2024-10-10 11:49:05-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4640\9664640\9664640.pdf
+2024-10-10 11:49:05-9223-INFO-2024-10-10 11:49:05,940 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4640\9664640\9664640.pdf)
+2024-10-10 11:49:06-9223-INFO-2024-10-10 11:49:06,013 - INFO - 下载完成9664640
+2024-10-10 11:49:25-9223-INFO-2024-10-10 11:49:25,021 - INFO - ('9664540', '/stamp/stamp.jsp?tp=&arnumber=9664540')
+2024-10-10 11:49:38-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4540\9664540\9664540.pdf
+2024-10-10 11:49:38-9223-INFO-2024-10-10 11:49:38,156 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4540\9664540\9664540.pdf)
+2024-10-10 11:49:38-9223-INFO-2024-10-10 11:49:38,262 - INFO - 下载完成9664540
+2024-10-10 11:49:57-9223-INFO-2024-10-10 11:49:57,268 - INFO - ('9663285', '/stamp/stamp.jsp?tp=&arnumber=9663285')
+2024-10-10 11:50:21-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3285\9663285\9663285.pdf
+2024-10-10 11:50:21-9223-INFO-2024-10-10 11:50:21,681 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3285\9663285\9663285.pdf)
+2024-10-10 11:50:21-9223-INFO-2024-10-10 11:50:21,802 - INFO - 下载完成9663285
+2024-10-10 11:50:41-9223-INFO-2024-10-10 11:50:41,812 - INFO - ('9663289', '/stamp/stamp.jsp?tp=&arnumber=9663289')
+2024-10-10 11:51:01-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3289\9663289\9663289.pdf
+2024-10-10 11:51:01-9223-INFO-2024-10-10 11:51:01,540 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3289\9663289\9663289.pdf)
+2024-10-10 11:51:01-9223-INFO-2024-10-10 11:51:01,634 - INFO - 下载完成9663289
+2024-10-10 11:51:17-9223-INFO-2024-10-10 11:51:17,638 - INFO - ('9656740', '/stamp/stamp.jsp?tp=&arnumber=9656740')
+2024-10-10 11:51:33-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6740\9656740\9656740.pdf
+2024-10-10 11:51:33-9223-INFO-2024-10-10 11:51:33,560 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6740\9656740\9656740.pdf)
+2024-10-10 11:51:33-9223-INFO-2024-10-10 11:51:33,663 - INFO - 下载完成9656740
+2024-10-10 11:51:51-9223-INFO-2024-10-10 11:51:51,671 - INFO - ('9656793', '/stamp/stamp.jsp?tp=&arnumber=9656793')
+2024-10-10 11:52:18-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6793\9656793\9656793.pdf
+2024-10-10 11:52:18-9223-INFO-2024-10-10 11:52:18,915 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6793\9656793\9656793.pdf)
+2024-10-10 11:52:19-9223-INFO-2024-10-10 11:52:19,012 - INFO - 下载完成9656793
+2024-10-10 11:52:34-9223-INFO-2024-10-10 11:52:34,015 - INFO - ('9654168', '/stamp/stamp.jsp?tp=&arnumber=9654168')
+2024-10-10 11:52:47-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4168\9654168\9654168.pdf
+2024-10-10 11:52:47-9223-INFO-2024-10-10 11:52:47,462 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4168\9654168\9654168.pdf)
+2024-10-10 11:52:47-9223-INFO-2024-10-10 11:52:47,546 - INFO - 下载完成9654168
+2024-10-10 11:53:04-9223-INFO-2024-10-10 11:53:04,547 - INFO - ('9648344', '/stamp/stamp.jsp?tp=&arnumber=9648344')
+2024-10-10 11:53:22-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8344\9648344\9648344.pdf
+2024-10-10 11:53:22-9223-INFO-2024-10-10 11:53:22,935 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8344\9648344\9648344.pdf)
+2024-10-10 11:53:23-9223-INFO-2024-10-10 11:53:23,119 - INFO - 下载完成9648344
+2024-10-10 11:53:38-9223-INFO-2024-10-10 11:53:38,128 - INFO - ('9646922', '/stamp/stamp.jsp?tp=&arnumber=9646922')
+2024-10-10 11:53:47-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6922\9646922\9646922.pdf
+2024-10-10 11:53:47-9223-INFO-2024-10-10 11:53:47,844 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6922\9646922\9646922.pdf)
+2024-10-10 11:53:47-9223-INFO-2024-10-10 11:53:47,932 - INFO - 下载完成9646922
+2024-10-10 11:54:07-9223-INFO-2024-10-10 11:54:07,935 - INFO - ('9646873', '/stamp/stamp.jsp?tp=&arnumber=9646873')
+2024-10-10 11:54:24-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6873\9646873\9646873.pdf
+2024-10-10 11:54:24-9223-INFO-2024-10-10 11:54:24,702 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6873\9646873\9646873.pdf)
+2024-10-10 11:54:24-9223-INFO-2024-10-10 11:54:24,863 - INFO - 下载完成9646873
+2024-10-10 11:54:42-9223-INFO-2024-10-10 11:54:42,865 - INFO - ('9645581', '/stamp/stamp.jsp?tp=&arnumber=9645581')
+2024-10-10 11:54:58-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5581\9645581\9645581.pdf
+2024-10-10 11:54:58-9223-INFO-2024-10-10 11:54:58,864 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5581\9645581\9645581.pdf)
+2024-10-10 11:54:58-9223-INFO-2024-10-10 11:54:58,966 - INFO - 下载完成9645581
+2024-10-10 11:55:17-9223-INFO-2024-10-10 11:55:17,981 - INFO - ('9635796', '/stamp/stamp.jsp?tp=&arnumber=9635796')
+2024-10-10 11:55:44-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5796\9635796\9635796.pdf
+2024-10-10 11:55:44-9223-INFO-2024-10-10 11:55:44,376 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5796\9635796\9635796.pdf)
+2024-10-10 11:55:44-9223-INFO-2024-10-10 11:55:44,536 - INFO - 下载完成9635796
+2024-10-10 11:56:04-9223-INFO-2024-10-10 11:56:04,544 - INFO - ('9635784', '/stamp/stamp.jsp?tp=&arnumber=9635784')
+2024-10-10 11:56:14-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5784\9635784\9635784.pdf
+2024-10-10 11:56:14-9223-INFO-2024-10-10 11:56:14,016 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5784\9635784\9635784.pdf)
+2024-10-10 11:56:14-9223-INFO-2024-10-10 11:56:14,112 - INFO - 下载完成9635784
+2024-10-10 11:56:32-9223-INFO-2024-10-10 11:56:32,126 - INFO - ('9617602', '/stamp/stamp.jsp?tp=&arnumber=9617602')
+2024-10-10 11:56:44-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7602\9617602\9617602.pdf
+2024-10-10 11:56:44-9223-INFO-2024-10-10 11:56:44,030 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7602\9617602\9617602.pdf)
+2024-10-10 11:56:44-9223-INFO-2024-10-10 11:56:44,137 - INFO - 下载完成9617602
+2024-10-10 11:57:02-9223-INFO-2024-10-10 11:57:02,148 - INFO - ('9624969', '/stamp/stamp.jsp?tp=&arnumber=9624969')
+2024-10-10 11:57:46-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4969\9624969\9624969.pdf
+2024-10-10 11:57:46-9223-INFO-2024-10-10 11:57:46,241 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4969\9624969\9624969.pdf)
+2024-10-10 11:57:46-9223-INFO-2024-10-10 11:57:46,417 - INFO - 下载完成9624969
+2024-10-10 11:58:01-9223-INFO-2024-10-10 11:58:01,431 - INFO - ('9615222', '/stamp/stamp.jsp?tp=&arnumber=9615222')
+2024-10-10 11:59:00-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5222\9615222\9615222.pdf
+2024-10-10 11:59:00-9223-INFO-2024-10-10 11:59:00,379 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5222\9615222\9615222.pdf)
+2024-10-10 11:59:00-9223-INFO-2024-10-10 11:59:00,576 - INFO - 下载完成9615222
+2024-10-10 11:59:18-9223-INFO-2024-10-10 11:59:18,592 - INFO - ('9597521', '/stamp/stamp.jsp?tp=&arnumber=9597521')
+2024-10-10 11:59:46-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7521\9597521\9597521.pdf
+2024-10-10 11:59:46-9223-INFO-2024-10-10 11:59:46,804 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7521\9597521\9597521.pdf)
+2024-10-10 11:59:46-9223-INFO-2024-10-10 11:59:46,951 - INFO - 下载完成9597521
+2024-10-10 12:00:04-9223-INFO-2024-10-10 12:00:04,958 - INFO - ('9591232', '/stamp/stamp.jsp?tp=&arnumber=9591232')
+2024-10-10 12:00:24-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1232\9591232\9591232.pdf
+2024-10-10 12:00:24-9223-INFO-2024-10-10 12:00:24,374 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1232\9591232\9591232.pdf)
+2024-10-10 12:00:24-9223-INFO-2024-10-10 12:00:24,501 - INFO - 下载完成9591232
+2024-10-10 12:00:44-9223-INFO-2024-10-10 12:00:44,515 - INFO - ('9591237', '/stamp/stamp.jsp?tp=&arnumber=9591237')
+2024-10-10 12:01:02-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1237\9591237\9591237.pdf
+2024-10-10 12:01:02-9223-INFO-2024-10-10 12:01:02,666 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1237\9591237\9591237.pdf)
+2024-10-10 12:01:02-9223-INFO-2024-10-10 12:01:02,765 - INFO - 下载完成9591237
+2024-10-10 12:01:22-9223-INFO-2024-10-10 12:01:22,780 - INFO - ('9591223', '/stamp/stamp.jsp?tp=&arnumber=9591223')
+2024-10-10 12:01:41-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1223\9591223\9591223.pdf
+2024-10-10 12:01:41-9223-INFO-2024-10-10 12:01:41,843 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1223\9591223\9591223.pdf)
+2024-10-10 12:01:41-9223-INFO-2024-10-10 12:01:41,963 - INFO - 下载完成9591223
+2024-10-10 12:01:59-9223-INFO-2024-10-10 12:01:59,975 - INFO - ('9526567', '/stamp/stamp.jsp?tp=&arnumber=9526567')
+2024-10-10 12:02:28-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6567\9526567\9526567.pdf
+2024-10-10 12:02:28-9223-INFO-2024-10-10 12:02:28,729 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6567\9526567\9526567.pdf)
+2024-10-10 12:02:28-9223-INFO-2024-10-10 12:02:28,867 - INFO - 下载完成9526567
+2024-10-10 12:02:47-9223-INFO-2024-10-10 12:02:47,881 - INFO - ('9584906', '/stamp/stamp.jsp?tp=&arnumber=9584906')
+2024-10-10 12:03:22-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4906\9584906\9584906.pdf
+2024-10-10 12:03:22-9223-INFO-2024-10-10 12:03:22,085 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4906\9584906\9584906.pdf)
+2024-10-10 12:03:22-9223-INFO-2024-10-10 12:03:22,220 - INFO - 下载完成9584906
+2024-10-10 12:03:42-9223-INFO-2024-10-10 12:03:42,235 - INFO - ('9583231', '/stamp/stamp.jsp?tp=&arnumber=9583231')
+2024-10-10 12:03:55-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3231\9583231\9583231.pdf
+2024-10-10 12:03:55-9223-INFO-2024-10-10 12:03:55,564 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3231\9583231\9583231.pdf)
+2024-10-10 12:03:55-9223-INFO-2024-10-10 12:03:55,664 - INFO - 下载完成9583231
+2024-10-10 12:04:12-9223-INFO-2024-10-10 12:04:12,668 - INFO - ('9580892', '/stamp/stamp.jsp?tp=&arnumber=9580892')
+2024-10-10 12:04:22-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0892\9580892\9580892.pdf
+2024-10-10 12:04:22-9223-INFO-2024-10-10 12:04:22,642 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0892\9580892\9580892.pdf)
+2024-10-10 12:04:22-9223-INFO-2024-10-10 12:04:22,736 - INFO - 下载完成9580892
+2024-10-10 12:04:39-9223-INFO-2024-10-10 12:04:39,746 - INFO - ('9580891', '/stamp/stamp.jsp?tp=&arnumber=9580891')
+2024-10-10 12:04:51-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0891\9580891\9580891.pdf
+2024-10-10 12:04:51-9223-INFO-2024-10-10 12:04:51,387 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0891\9580891\9580891.pdf)
+2024-10-10 12:04:51-9223-INFO-2024-10-10 12:04:51,453 - INFO - 下载完成9580891
+2024-10-10 12:05:08-9223-INFO-2024-10-10 12:05:08,462 - INFO - ('9580916', '/stamp/stamp.jsp?tp=&arnumber=9580916')
+2024-10-10 12:05:34-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0916\9580916\9580916.pdf
+2024-10-10 12:05:34-9223-INFO-2024-10-10 12:05:34,680 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0916\9580916\9580916.pdf)
+2024-10-10 12:05:34-9223-INFO-2024-10-10 12:05:34,803 - INFO - 下载完成9580916
+2024-10-10 12:05:53-9223-INFO-2024-10-10 12:05:53,805 - INFO - ('9576823', '/stamp/stamp.jsp?tp=&arnumber=9576823')
+2024-10-10 12:06:15-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6823\9576823\9576823.pdf
+2024-10-10 12:06:15-9223-INFO-2024-10-10 12:06:15,396 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6823\9576823\9576823.pdf)
+2024-10-10 12:06:15-9223-INFO-2024-10-10 12:06:15,513 - INFO - 下载完成9576823
+2024-10-10 12:06:32-9223-INFO-2024-10-10 12:06:32,515 - INFO - ('9579426', '/stamp/stamp.jsp?tp=&arnumber=9579426')
+2024-10-10 12:06:42-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9426\9579426\9579426.pdf
+2024-10-10 12:06:42-9223-INFO-2024-10-10 12:06:42,570 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9426\9579426\9579426.pdf)
+2024-10-10 12:06:42-9223-INFO-2024-10-10 12:06:42,633 - INFO - 下载完成9579426
+2024-10-10 12:07:02-9223-INFO-2024-10-10 12:07:02,634 - INFO - ('9580918', '/stamp/stamp.jsp?tp=&arnumber=9580918')
+2024-10-10 12:07:13-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0918\9580918\9580918.pdf
+2024-10-10 12:07:13-9223-INFO-2024-10-10 12:07:13,864 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0918\9580918\9580918.pdf)
+2024-10-10 12:07:13-9223-INFO-2024-10-10 12:07:13,959 - INFO - 下载完成9580918
+2024-10-10 12:07:29-9223-INFO-2024-10-10 12:07:29,972 - INFO - ('9579430', '/stamp/stamp.jsp?tp=&arnumber=9579430')
+2024-10-10 12:07:49-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9430\9579430\9579430.pdf
+2024-10-10 12:07:49-9223-INFO-2024-10-10 12:07:49,334 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9430\9579430\9579430.pdf)
+2024-10-10 12:07:49-9223-INFO-2024-10-10 12:07:49,429 - INFO - 下载完成9579430
+2024-10-10 12:08:05-9223-INFO-2024-10-10 12:08:05,436 - INFO - ('9552853', '/stamp/stamp.jsp?tp=&arnumber=9552853')
+2024-10-10 12:08:13-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2853\9552853\9552853.pdf
+2024-10-10 12:08:13-9223-INFO-2024-10-10 12:08:13,879 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2853\9552853\9552853.pdf)
+2024-10-10 12:08:13-9223-INFO-2024-10-10 12:08:13,958 - INFO - 下载完成9552853
+2024-10-10 12:08:31-9223-INFO-2024-10-10 12:08:31,970 - INFO - ('9376898', '/stamp/stamp.jsp?tp=&arnumber=9376898')
+2024-10-10 12:08:57-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6898\9376898\9376898.pdf
+2024-10-10 12:08:57-9223-INFO-2024-10-10 12:08:57,479 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6898\9376898\9376898.pdf)
+2024-10-10 12:08:57-9223-INFO-2024-10-10 12:08:57,609 - INFO - 下载完成9376898
+2024-10-10 12:09:17-9223-INFO-2024-10-10 12:09:17,610 - INFO - ('9504566', '/stamp/stamp.jsp?tp=&arnumber=9504566')
+2024-10-10 12:09:32-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4566\9504566\9504566.pdf
+2024-10-10 12:09:32-9223-INFO-2024-10-10 12:09:32,884 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4566\9504566\9504566.pdf)
+2024-10-10 12:09:32-9223-INFO-2024-10-10 12:09:32,998 - INFO - 下载完成9504566
+2024-10-10 12:09:48-9223-INFO-2024-10-10 12:09:48,014 - INFO - ('9504455', '/stamp/stamp.jsp?tp=&arnumber=9504455')
+2024-10-10 12:10:02-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4455\9504455\9504455.pdf
+2024-10-10 12:10:02-9223-INFO-2024-10-10 12:10:02,959 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4455\9504455\9504455.pdf)
+2024-10-10 12:10:03-9223-INFO-2024-10-10 12:10:03,098 - INFO - 下载完成9504455
+2024-10-10 12:10:19-9223-INFO-2024-10-10 12:10:19,102 - INFO - ('9502717', '/stamp/stamp.jsp?tp=&arnumber=9502717')
+2024-10-10 12:10:32-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2717\9502717\9502717.pdf
+2024-10-10 12:10:32-9223-INFO-2024-10-10 12:10:32,921 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2717\9502717\9502717.pdf)
+2024-10-10 12:10:33-9223-INFO-2024-10-10 12:10:33,024 - INFO - 下载完成9502717
+2024-10-10 12:10:49-9223-INFO-2024-10-10 12:10:49,037 - INFO - ('9502601', '/stamp/stamp.jsp?tp=&arnumber=9502601')
+2024-10-10 12:10:57-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2601\9502601\9502601.pdf
+2024-10-10 12:10:57-9223-INFO-2024-10-10 12:10:57,012 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2601\9502601\9502601.pdf)
+2024-10-10 12:10:57-9223-INFO-2024-10-10 12:10:57,106 - INFO - 下载完成9502601
+2024-10-10 12:11:16-9223-INFO-2024-10-10 12:11:16,111 - INFO - ('9502704', '/stamp/stamp.jsp?tp=&arnumber=9502704')
+2024-10-10 12:11:25-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2704\9502704\9502704.pdf
+2024-10-10 12:11:25-9223-INFO-2024-10-10 12:11:25,981 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2704\9502704\9502704.pdf)
+2024-10-10 12:11:26-9223-INFO-2024-10-10 12:11:26,097 - INFO - 下载完成9502704
+2024-10-10 12:11:46-9223-INFO-2024-10-10 12:11:46,105 - INFO - ('9502735', '/stamp/stamp.jsp?tp=&arnumber=9502735')
+2024-10-10 12:12:16-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2735\9502735\9502735.pdf
+2024-10-10 12:12:16-9223-INFO-2024-10-10 12:12:16,701 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2735\9502735\9502735.pdf)
+2024-10-10 12:12:16-9223-INFO-2024-10-10 12:12:16,823 - INFO - 下载完成9502735
+2024-10-10 12:12:35-9223-INFO-2024-10-10 12:12:35,832 - INFO - ('9502111', '/stamp/stamp.jsp?tp=&arnumber=9502111')
+2024-10-10 12:12:50-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2111\9502111\9502111.pdf
+2024-10-10 12:12:50-9223-INFO-2024-10-10 12:12:50,896 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2111\9502111\9502111.pdf)
+2024-10-10 12:12:50-9223-INFO-2024-10-10 12:12:50,984 - INFO - 下载完成9502111
+2024-10-10 12:13:10-9223-INFO-2024-10-10 12:13:10,985 - INFO - ('9500201', '/stamp/stamp.jsp?tp=&arnumber=9500201')
+2024-10-10 12:13:18-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0201\9500201\9500201.pdf
+2024-10-10 12:13:18-9223-INFO-2024-10-10 12:13:18,212 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0201\9500201\9500201.pdf)
+2024-10-10 12:13:18-9223-INFO-2024-10-10 12:13:18,302 - INFO - 下载完成9500201
+2024-10-10 12:13:37-9223-INFO-2024-10-10 12:13:37,304 - INFO - ('9499086', '/stamp/stamp.jsp?tp=&arnumber=9499086')
+2024-10-10 12:13:53-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9086\9499086\9499086.pdf
+2024-10-10 12:13:53-9223-INFO-2024-10-10 12:13:53,357 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9086\9499086\9499086.pdf)
+2024-10-10 12:13:53-9223-INFO-2024-10-10 12:13:53,473 - INFO - 下载完成9499086
+2024-10-10 12:14:09-9223-INFO-2024-10-10 12:14:09,477 - INFO - ('9499060', '/stamp/stamp.jsp?tp=&arnumber=9499060')
+2024-10-10 12:14:28-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9060\9499060\9499060.pdf
+2024-10-10 12:14:28-9223-INFO-2024-10-10 12:14:28,475 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9060\9499060\9499060.pdf)
+2024-10-10 12:14:28-9223-INFO-2024-10-10 12:14:28,586 - INFO - 下载完成9499060
+2024-10-10 12:14:47-9223-INFO-2024-10-10 12:14:47,597 - INFO - ('9492043', '/stamp/stamp.jsp?tp=&arnumber=9492043')
+2024-10-10 12:15:32-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2043\9492043\9492043.pdf
+2024-10-10 12:15:32-9223-INFO-2024-10-10 12:15:32,716 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2043\9492043\9492043.pdf)
+2024-10-10 12:15:32-9223-INFO-2024-10-10 12:15:32,886 - INFO - 下载完成9492043
+2024-10-10 12:15:51-9223-INFO-2024-10-10 12:15:51,901 - INFO - ('9481152', '/stamp/stamp.jsp?tp=&arnumber=9481152')
+2024-10-10 12:16:05-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1152\9481152\9481152.pdf
+2024-10-10 12:16:05-9223-INFO-2024-10-10 12:16:05,355 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1152\9481152\9481152.pdf)
+2024-10-10 12:16:05-9223-INFO-2024-10-10 12:16:05,459 - INFO - 下载完成9481152
+2024-10-10 12:16:25-9223-INFO-2024-10-10 12:16:25,468 - INFO - ('9469780', '/stamp/stamp.jsp?tp=&arnumber=9469780')
+2024-10-10 12:16:39-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9780\9469780\9469780.pdf
+2024-10-10 12:16:39-9223-INFO-2024-10-10 12:16:39,662 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9780\9469780\9469780.pdf)
+2024-10-10 12:16:39-9223-INFO-2024-10-10 12:16:39,774 - INFO - 下载完成9469780
+2024-10-10 12:16:54-9223-INFO-2024-10-10 12:16:54,783 - INFO - ('9478928', '/stamp/stamp.jsp?tp=&arnumber=9478928')
+2024-10-10 12:17:10-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8928\9478928\9478928.pdf
+2024-10-10 12:17:10-9223-INFO-2024-10-10 12:17:10,611 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8928\9478928\9478928.pdf)
+2024-10-10 12:17:10-9223-INFO-2024-10-10 12:17:10,717 - INFO - 下载完成9478928
+2024-10-10 12:17:26-9223-INFO-2024-10-10 12:17:26,727 - INFO - ('9478929', '/stamp/stamp.jsp?tp=&arnumber=9478929')
+2024-10-10 12:17:45-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8929\9478929\9478929.pdf
+2024-10-10 12:17:45-9223-INFO-2024-10-10 12:17:45,556 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8929\9478929\9478929.pdf)
+2024-10-10 12:17:45-9223-INFO-2024-10-10 12:17:45,655 - INFO - 下载完成9478929
+2024-10-10 12:18:00-9223-INFO-2024-10-10 12:18:00,663 - INFO - ('9477618', '/stamp/stamp.jsp?tp=&arnumber=9477618')
+2024-10-10 12:18:47-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7618\9477618\9477618.pdf
+2024-10-10 12:18:47-9223-INFO-2024-10-10 12:18:47,375 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7618\9477618\9477618.pdf)
+2024-10-10 12:18:47-9223-INFO-2024-10-10 12:18:47,538 - INFO - 下载完成9477618
+2024-10-10 12:19:06-9223-INFO-2024-10-10 12:19:06,554 - INFO - ('9477589', '/stamp/stamp.jsp?tp=&arnumber=9477589')
+2024-10-10 12:19:43-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7589\9477589\9477589.pdf
+2024-10-10 12:19:43-9223-INFO-2024-10-10 12:19:43,862 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7589\9477589\9477589.pdf)
+2024-10-10 12:19:44-9223-INFO-2024-10-10 12:19:44,012 - INFO - 下载完成9477589
+2024-10-10 12:19:59-9223-INFO-2024-10-10 12:19:59,021 - INFO - ('9475061', '/stamp/stamp.jsp?tp=&arnumber=9475061')
+2024-10-10 12:20:31-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5061\9475061\9475061.pdf
+2024-10-10 12:20:31-9223-INFO-2024-10-10 12:20:31,783 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5061\9475061\9475061.pdf)
+2024-10-10 12:20:31-9223-INFO-2024-10-10 12:20:31,925 - INFO - 下载完成9475061
+2024-10-10 12:20:47-9223-INFO-2024-10-10 12:20:47,930 - INFO - ('9474453', '/stamp/stamp.jsp?tp=&arnumber=9474453')
+2024-10-10 12:21:20-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4453\9474453\9474453.pdf
+2024-10-10 12:21:20-9223-INFO-2024-10-10 12:21:20,581 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4453\9474453\9474453.pdf)
+2024-10-10 12:21:20-9223-INFO-2024-10-10 12:21:20,722 - INFO - 下载完成9474453
+2024-10-10 12:21:40-9223-INFO-2024-10-10 12:21:40,733 - INFO - ('9462073', '/stamp/stamp.jsp?tp=&arnumber=9462073')
+2024-10-10 12:22:11-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2073\9462073\9462073.pdf
+2024-10-10 12:22:11-9223-INFO-2024-10-10 12:22:11,661 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2073\9462073\9462073.pdf)
+2024-10-10 12:22:11-9223-INFO-2024-10-10 12:22:11,800 - INFO - 下载完成9462073
+2024-10-10 12:22:30-9223-INFO-2024-10-10 12:22:30,807 - INFO - ('9455402', '/stamp/stamp.jsp?tp=&arnumber=9455402')
+2024-10-10 12:23:08-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5402\9455402\9455402.pdf
+2024-10-10 12:23:08-9223-INFO-2024-10-10 12:23:08,717 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5402\9455402\9455402.pdf)
+2024-10-10 12:23:08-9223-INFO-2024-10-10 12:23:08,954 - INFO - 下载完成9455402
+2024-10-10 12:23:28-9223-INFO-2024-10-10 12:23:28,959 - INFO - ('9455403', '/stamp/stamp.jsp?tp=&arnumber=9455403')
+2024-10-10 12:24:01-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5403\9455403\9455403.pdf
+2024-10-10 12:24:01-9223-INFO-2024-10-10 12:24:01,918 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5403\9455403\9455403.pdf)
+2024-10-10 12:24:02-9223-INFO-2024-10-10 12:24:02,080 - INFO - 下载完成9455403
+2024-10-10 12:24:18-9223-INFO-2024-10-10 12:24:18,085 - INFO - ('9453761', '/stamp/stamp.jsp?tp=&arnumber=9453761')
+2024-10-10 12:24:54-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3761\9453761\9453761.pdf
+2024-10-10 12:24:54-9223-INFO-2024-10-10 12:24:54,287 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3761\9453761\9453761.pdf)
+2024-10-10 12:24:54-9223-INFO-2024-10-10 12:24:54,441 - INFO - 下载完成9453761
+2024-10-10 12:25:13-9223-INFO-2024-10-10 12:25:13,456 - INFO - ('9453813', '/stamp/stamp.jsp?tp=&arnumber=9453813')
+2024-10-10 12:25:46-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3813\9453813\9453813.pdf
+2024-10-10 12:25:46-9223-INFO-2024-10-10 12:25:46,339 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3813\9453813\9453813.pdf)
+2024-10-10 12:25:46-9223-INFO-2024-10-10 12:25:46,476 - INFO - 下载完成9453813
+2024-10-10 12:26:05-9223-INFO-2024-10-10 12:26:05,480 - INFO - ('9452092', '/stamp/stamp.jsp?tp=&arnumber=9452092')
+2024-10-10 12:26:41-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2092\9452092\9452092.pdf
+2024-10-10 12:26:41-9223-INFO-2024-10-10 12:26:41,632 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2092\9452092\9452092.pdf)
+2024-10-10 12:26:41-9223-INFO-2024-10-10 12:26:41,782 - INFO - 下载完成9452092
+2024-10-10 12:26:59-9223-INFO-2024-10-10 12:26:59,785 - INFO - ('9449849', '/stamp/stamp.jsp?tp=&arnumber=9449849')
+2024-10-10 12:27:07-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9849\9449849\9449849.pdf
+2024-10-10 12:27:07-9223-INFO-2024-10-10 12:27:07,131 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9849\9449849\9449849.pdf)
+2024-10-10 12:27:07-9223-INFO-2024-10-10 12:27:07,208 - INFO - 下载完成9449849
+2024-10-10 12:27:22-9223-INFO-2024-10-10 12:27:22,213 - INFO - ('9449844', '/stamp/stamp.jsp?tp=&arnumber=9449844')
+2024-10-10 12:27:30-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9844\9449844\9449844.pdf
+2024-10-10 12:27:30-9223-INFO-2024-10-10 12:27:30,731 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9844\9449844\9449844.pdf)
+2024-10-10 12:27:30-9223-INFO-2024-10-10 12:27:30,805 - INFO - 下载完成9449844
+2024-10-10 12:27:48-9223-INFO-2024-10-10 12:27:48,810 - INFO - ('9449892', '/stamp/stamp.jsp?tp=&arnumber=9449892')
+2024-10-10 12:28:03-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9892\9449892\9449892.pdf
+2024-10-10 12:28:03-9223-INFO-2024-10-10 12:28:03,016 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9892\9449892\9449892.pdf)
+2024-10-10 12:28:03-9223-INFO-2024-10-10 12:28:03,125 - INFO - 下载完成9449892
+2024-10-10 12:28:23-9223-INFO-2024-10-10 12:28:23,127 - INFO - ('9449900', '/stamp/stamp.jsp?tp=&arnumber=9449900')
+2024-10-10 12:28:33-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9900\9449900\9449900.pdf
+2024-10-10 12:28:33-9223-INFO-2024-10-10 12:28:33,171 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9900\9449900\9449900.pdf)
+2024-10-10 12:28:33-9223-INFO-2024-10-10 12:28:33,265 - INFO - 下载完成9449900
+2024-10-10 12:28:49-9223-INFO-2024-10-10 12:28:49,276 - INFO - ('9448237', '/stamp/stamp.jsp?tp=&arnumber=9448237')
+2024-10-10 12:29:02-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8237\9448237\9448237.pdf
+2024-10-10 12:29:02-9223-INFO-2024-10-10 12:29:02,203 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8237\9448237\9448237.pdf)
+2024-10-10 12:29:02-9223-INFO-2024-10-10 12:29:02,299 - INFO - 下载完成9448237
+2024-10-10 12:29:20-9223-INFO-2024-10-10 12:29:20,306 - INFO - ('9448196', '/stamp/stamp.jsp?tp=&arnumber=9448196')
+2024-10-10 12:29:41-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8196\9448196\9448196.pdf
+2024-10-10 12:29:41-9223-INFO-2024-10-10 12:29:41,613 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8196\9448196\9448196.pdf)
+2024-10-10 12:29:41-9223-INFO-2024-10-10 12:29:41,727 - INFO - 下载完成9448196
+2024-10-10 12:29:59-9223-INFO-2024-10-10 12:29:59,733 - INFO - ('9448090', '/stamp/stamp.jsp?tp=&arnumber=9448090')
+2024-10-10 12:30:24-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8090\9448090\9448090.pdf
+2024-10-10 12:30:24-9223-INFO-2024-10-10 12:30:24,855 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8090\9448090\9448090.pdf)
+2024-10-10 12:30:24-9223-INFO-2024-10-10 12:30:24,996 - INFO - 下载完成9448090
+2024-10-10 12:30:42-9223-INFO-2024-10-10 12:30:42,003 - INFO - ('9446861', '/stamp/stamp.jsp?tp=&arnumber=9446861')
+2024-10-10 12:31:04-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6861\9446861\9446861.pdf
+2024-10-10 12:31:04-9223-INFO-2024-10-10 12:31:04,595 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6861\9446861\9446861.pdf)
+2024-10-10 12:31:04-9223-INFO-2024-10-10 12:31:04,731 - INFO - 下载完成9446861
+2024-10-10 12:31:20-9223-INFO-2024-10-10 12:31:20,744 - INFO - ('9446902', '/stamp/stamp.jsp?tp=&arnumber=9446902')
+2024-10-10 12:31:34-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6902\9446902\9446902.pdf
+2024-10-10 12:31:34-9223-INFO-2024-10-10 12:31:34,238 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6902\9446902\9446902.pdf)
+2024-10-10 12:31:34-9223-INFO-2024-10-10 12:31:34,330 - INFO - 下载完成9446902
+2024-10-10 12:31:49-9223-INFO-2024-10-10 12:31:49,342 - INFO - ('9446133', '/stamp/stamp.jsp?tp=&arnumber=9446133')
+2024-10-10 12:32:12-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6133\9446133\9446133.pdf
+2024-10-10 12:32:12-9223-INFO-2024-10-10 12:32:12,372 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6133\9446133\9446133.pdf)
+2024-10-10 12:32:12-9223-INFO-2024-10-10 12:32:12,502 - INFO - 下载完成9446133
+2024-10-10 12:32:28-9223-INFO-2024-10-10 12:32:28,516 - INFO - ('9445103', '/stamp/stamp.jsp?tp=&arnumber=9445103')
+2024-10-10 12:32:44-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5103\9445103\9445103.pdf
+2024-10-10 12:32:44-9223-INFO-2024-10-10 12:32:44,222 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5103\9445103\9445103.pdf)
+2024-10-10 12:32:44-9223-INFO-2024-10-10 12:32:44,318 - INFO - 下载完成9445103
+2024-10-10 12:33:00-9223-INFO-2024-10-10 12:33:00,324 - INFO - ('9444425', '/stamp/stamp.jsp?tp=&arnumber=9444425')
+2024-10-10 12:33:06-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4425\9444425\9444425.pdf
+2024-10-10 12:33:06-9223-INFO-2024-10-10 12:33:06,516 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4425\9444425\9444425.pdf)
+2024-10-10 12:33:06-9223-INFO-2024-10-10 12:33:06,662 - INFO - 下载完成9444425
+2024-10-10 12:33:23-9223-INFO-2024-10-10 12:33:23,667 - INFO - ('9443168', '/stamp/stamp.jsp?tp=&arnumber=9443168')
+2024-10-10 12:33:51-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3168\9443168\9443168.pdf
+2024-10-10 12:33:51-9223-INFO-2024-10-10 12:33:51,823 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3168\9443168\9443168.pdf)
+2024-10-10 12:33:51-9223-INFO-2024-10-10 12:33:51,948 - INFO - 下载完成9443168
+2024-10-10 12:34:09-9223-INFO-2024-10-10 12:34:09,953 - INFO - ('9443178', '/stamp/stamp.jsp?tp=&arnumber=9443178')
+2024-10-10 12:34:53-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3178\9443178\9443178.pdf
+2024-10-10 12:34:53-9223-INFO-2024-10-10 12:34:53,800 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3178\9443178\9443178.pdf)
+2024-10-10 12:34:53-9223-INFO-2024-10-10 12:34:53,949 - INFO - 下载完成9443178
+2024-10-10 12:35:08-9223-INFO-2024-10-10 12:35:08,951 - INFO - ('9442690', '/stamp/stamp.jsp?tp=&arnumber=9442690')
+2024-10-10 12:35:27-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2690\9442690\9442690.pdf
+2024-10-10 12:35:27-9223-INFO-2024-10-10 12:35:27,415 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2690\9442690\9442690.pdf)
+2024-10-10 12:35:27-9223-INFO-2024-10-10 12:35:27,520 - INFO - 下载完成9442690
+2024-10-10 12:35:46-9223-INFO-2024-10-10 12:35:46,529 - INFO - ('9440919', '/stamp/stamp.jsp?tp=&arnumber=9440919')
+2024-10-10 12:36:04-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0919\9440919\9440919.pdf
+2024-10-10 12:36:04-9223-INFO-2024-10-10 12:36:04,589 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0919\9440919\9440919.pdf)
+2024-10-10 12:36:04-9223-INFO-2024-10-10 12:36:04,710 - INFO - 下载完成9440919
+2024-10-10 12:36:24-9223-INFO-2024-10-10 12:36:24,712 - INFO - ('9440943', '/stamp/stamp.jsp?tp=&arnumber=9440943')
+2024-10-10 12:37:03-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0943\9440943\9440943.pdf
+2024-10-10 12:37:03-9223-INFO-2024-10-10 12:37:03,320 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0943\9440943\9440943.pdf)
+2024-10-10 12:37:03-9223-INFO-2024-10-10 12:37:03,546 - INFO - 下载完成9440943
+2024-10-10 12:37:20-9223-INFO-2024-10-10 12:37:20,551 - INFO - ('9440974', '/stamp/stamp.jsp?tp=&arnumber=9440974')
+2024-10-10 12:37:20-9223-INFO-2024-10-10 12:37:20,908 - INFO - PDF IS ERROR!
+2024-10-10 12:37:23-9223-INFO-2024-10-10 12:37:23,918 - INFO - ('9439500', '/stamp/stamp.jsp?tp=&arnumber=9439500')
+2024-10-10 12:37:24-9223-INFO-2024-10-10 12:37:24,753 - INFO - 请求失败！
+2024-10-10 12:37:29-9223-INFO-2024-10-10 12:37:29,762 - INFO - ('9439500', '/stamp/stamp.jsp?tp=&arnumber=9439500')
+2024-10-10 12:37:30-9223-INFO-2024-10-10 12:37:30,528 - INFO - 请求失败！
+2024-10-10 12:37:34-9223-INFO-2024-10-10 12:37:34,536 - INFO - ('9439500', '/stamp/stamp.jsp?tp=&arnumber=9439500')
+2024-10-10 12:37:35-9223-INFO-2024-10-10 12:37:35,310 - INFO - PDF IS ERROR!
+2024-10-10 12:37:38-9223-INFO-2024-10-10 12:37:38,323 - INFO - ('9435328', '/stamp/stamp.jsp?tp=&arnumber=9435328')
+2024-10-10 12:37:38-9223-INFO-2024-10-10 12:37:38,677 - INFO - PDF IS ERROR!
+2024-10-10 12:37:43-9223-INFO-2024-10-10 12:37:43,690 - INFO - ('9435339', '/stamp/stamp.jsp?tp=&arnumber=9435339')
+2024-10-10 12:37:44-9223-INFO-2024-10-10 12:37:44,041 - INFO - PDF IS ERROR!
+2024-10-10 12:37:48-9223-INFO-2024-10-10 12:37:48,047 - INFO - 连续请求失败五次退出程序
+2024-10-10 12:37:48-9223-ERROR-Traceback (most recent call last):
+2024-10-10 12:37:48-9223-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9223.py", line 114, in <module>
+2024-10-10 12:37:48-9223-ERROR-main()
+2024-10-10 12:37:48-9223-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9223.py", line 108, in main
+2024-10-10 12:37:48-9223-ERROR-Consumer('IEEE').read_message(callback)
+2024-10-10 12:37:48-9223-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\message_que\rabbitmq.py", line 66, in read_message
+2024-10-10 12:37:48-9223-ERROR-self._channel.start_consuming()
+2024-10-10 12:37:48-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1883, in start_consuming
+2024-10-10 12:37:48-9223-ERROR-self._process_data_events(time_limit=None)
+2024-10-10 12:37:48-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 2044, in _process_data_events
+2024-10-10 12:37:48-9223-ERROR-self.connection.process_data_events(time_limit=time_limit)
+2024-10-10 12:37:48-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 851, in process_data_events
+2024-10-10 12:37:48-9223-ERROR-self._dispatch_channel_events()
+2024-10-10 12:37:48-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 567, in _dispatch_channel_events
+2024-10-10 12:37:48-9223-ERROR-impl_channel._get_cookie()._dispatch_events()
+2024-10-10 12:37:48-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1510, in _dispatch_events
+2024-10-10 12:37:48-9223-ERROR-consumer_info.on_message_callback(self, evt.method,
+2024-10-10 12:37:48-9223-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9223.py", line 57, in callback
+2024-10-10 12:37:48-9223-ERROR-raise RuntimeError('cookies失效')
+2024-10-10 12:37:48-9223-ERROR-RuntimeError: cookies失效
+2024-10-10 15:36:57-9223-INFO-登陆成功
+2024-10-10 15:36:57-9223-INFO-{'Cookie': 'AWSALBAPP-1=_remove_; AWSALBAPP-2=_remove_; AWSALBAPP-3=_remove_; WLSESSION=3439489546.47873.0000; TS016349ac=01f15fc87c00ae28ce7db235892b5077969b7d9757c99a538b7d550d88f7c6f8e3dbfaa0f2c431f883016751017414fee078044133; JSESSIONID=43C8630D7DE6518B48349F928A832A81; ERIGHTS=nQwex2BkN73qpUPfmHaVEGHv1XTx2BVbXOnM-18x2dQNyox2FsbkkVNA5ND06HJcaAx3Dx3DtuNaA4f47GjZ8625P9BVQAx3Dx3D-eI3qZRBPEpptHrsBwmDJWwx3Dx3D-PHtmiFx2BHcxxRmFWzvhDaEhQx3Dx3D; ipList=113.251.70.115; xpluserinfo=eyJpc0luc3QiOiJ0cnVlIiwiaW5zdE5hbWUiOiJTb3V0aGVhc3QgVW5pdmVyc2l0eSIsInByb2R1Y3RzIjoiRHJhZnR8RUJPT0tTOjE5NzQ6MjAxN3xJQk06MTg3MjoyMDIwfElFTHxWREV8Tk9LSUEgQkVMTCBMQUJTfCJ9; seqId=9472; AWSALBAPP-0=AAAAAAAAAABARjCoF8iPLxM5qVeyB8+U3aMicrSVISoyyNh7aFW6d8yNo6nz/X3ok/LWL8ti5lcmCC/Zp6YUbufhGalQTcaDF3p2efNyaCYYieI/ysHGr/kmNJoxbjc70lOkTLffvWSqpLqwqJGqac5XF0zyEEZqhIwTk+Sg72roYQ5KGFWfEab6PF4uLFNM8NMGm/5W+EwR+X+YFw+3yg==; TSaf720a17029=0807dc117eab280056ea5bd8ee085c6552e0ca3ac66b0c8c9042365807cbb48cbd0a75ce5058a1314ca5d64f225732ad; TS8b476361027=0807dc117eab2000c37a3b285f04f6b4feaea00be7a6ae8e3b7c40174e110096246691187f17c47808f86747e811300051a625a3bed5144c37e656012d778df4dd1f39ffae27adfcadfc524408ec843f6ff4c4dfe10a098ba0a0ca37ccc162d4'}
+2024-10-10 15:36:57-9223-INFO-2024-10-10 15:36:57,104 - INFO - Pika version 1.3.2 connecting to ('192.168.1.186', 5672)
+2024-10-10 15:36:57-9223-INFO-2024-10-10 15:36:57,105 - INFO - Socket connected: <socket.socket fd=2272, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.186', 61394), raddr=('192.168.1.186', 5672)>
+2024-10-10 15:36:57-9223-INFO-2024-10-10 15:36:57,106 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001EAE00ACF70>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001EAE00ACF70> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>).
+2024-10-10 15:36:57-9223-INFO-2024-10-10 15:36:57,110 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001EAE00ACF70> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 15:36:57-9223-INFO-2024-10-10 15:36:57,110 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001EAE00ACF70> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 15:36:57-9223-INFO-2024-10-10 15:36:57,111 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001EAE00ACF70> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 15:36:57-9223-INFO-2024-10-10 15:36:57,111 - INFO - Created channel=1
+2024-10-10 15:36:57-9223-INFO-2024-10-10 15:36:57,115 - INFO - ('9775141', '/stamp/stamp.jsp?tp=&arnumber=9775141')
+2024-10-10 15:36:57-9223-INFO-2024-10-10 15:36:57,964 - INFO - 请求失败！
+2024-10-10 15:37:01-9223-INFO-2024-10-10 15:37:01,975 - INFO - ('9775141', '/stamp/stamp.jsp?tp=&arnumber=9775141')
+2024-10-10 15:37:07-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5141\9775141\9775141.pdf
+2024-10-10 15:37:07-9223-INFO-2024-10-10 15:37:07,884 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5141\9775141\9775141.pdf)
+2024-10-10 15:37:08-9223-INFO-2024-10-10 15:37:08,017 - INFO - 下载完成9775141
+2024-10-10 15:37:28-9223-INFO-2024-10-10 15:37:28,026 - INFO - ('9775671', '/stamp/stamp.jsp?tp=&arnumber=9775671')
+2024-10-10 15:37:41-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5671\9775671\9775671.pdf
+2024-10-10 15:37:41-9223-INFO-2024-10-10 15:37:41,131 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5671\9775671\9775671.pdf)
+2024-10-10 15:37:41-9223-INFO-2024-10-10 15:37:41,276 - INFO - 下载完成9775671
+2024-10-10 15:37:56-9223-INFO-2024-10-10 15:37:56,290 - INFO - ('9775993', '/stamp/stamp.jsp?tp=&arnumber=9775993')
+2024-10-10 15:38:09-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5993\9775993\9775993.pdf
+2024-10-10 15:38:09-9223-INFO-2024-10-10 15:38:09,864 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5993\9775993\9775993.pdf)
+2024-10-10 15:38:09-9223-INFO-2024-10-10 15:38:09,984 - INFO - 下载完成9775993
+2024-10-10 15:38:29-9223-INFO-2024-10-10 15:38:29,987 - INFO - ('9775943', '/stamp/stamp.jsp?tp=&arnumber=9775943')
+2024-10-10 15:38:43-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5943\9775943\9775943.pdf
+2024-10-10 15:38:43-9223-INFO-2024-10-10 15:38:43,591 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5943\9775943\9775943.pdf)
+2024-10-10 15:38:43-9223-INFO-2024-10-10 15:38:43,709 - INFO - 下载完成9775943
+2024-10-10 15:39:00-9223-INFO-2024-10-10 15:39:00,716 - INFO - ('9775661', '/stamp/stamp.jsp?tp=&arnumber=9775661')
+2024-10-10 15:39:13-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5661\9775661\9775661.pdf
+2024-10-10 15:39:13-9223-INFO-2024-10-10 15:39:13,111 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5661\9775661\9775661.pdf)
+2024-10-10 15:39:13-9223-INFO-2024-10-10 15:39:13,255 - INFO - 下载完成9775661
+2024-10-10 15:39:32-9223-INFO-2024-10-10 15:39:32,271 - INFO - ('9759295', '/stamp/stamp.jsp?tp=&arnumber=9759295')
+2024-10-10 15:39:38-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9295\9759295\9759295.pdf
+2024-10-10 15:39:38-9223-INFO-2024-10-10 15:39:38,162 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9295\9759295\9759295.pdf)
+2024-10-10 15:39:38-9223-INFO-2024-10-10 15:39:38,261 - INFO - 下载完成9759295
+2024-10-10 15:39:53-9223-INFO-2024-10-10 15:39:53,263 - INFO - ('9759307', '/stamp/stamp.jsp?tp=&arnumber=9759307')
+2024-10-10 15:39:56-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9307\9759307\9759307.pdf
+2024-10-10 15:39:56-9223-INFO-2024-10-10 15:39:56,473 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9307\9759307\9759307.pdf)
+2024-10-10 15:39:56-9223-INFO-2024-10-10 15:39:56,556 - INFO - 下载完成9759307
+2024-10-10 15:40:11-9223-INFO-2024-10-10 15:40:11,564 - INFO - ('9757187', '/stamp/stamp.jsp?tp=&arnumber=9757187')
+2024-10-10 15:40:21-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7187\9757187\9757187.pdf
+2024-10-10 15:40:21-9223-INFO-2024-10-10 15:40:21,500 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7187\9757187\9757187.pdf)
+2024-10-10 15:40:21-9223-INFO-2024-10-10 15:40:21,608 - INFO - 下载完成9757187
+2024-10-10 15:40:40-9223-INFO-2024-10-10 15:40:40,618 - INFO - ('9681833', '/stamp/stamp.jsp?tp=&arnumber=9681833')
+2024-10-10 15:40:54-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1833\9681833\9681833.pdf
+2024-10-10 15:40:54-9223-INFO-2024-10-10 15:40:54,618 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1833\9681833\9681833.pdf)
+2024-10-10 15:40:54-9223-INFO-2024-10-10 15:40:54,761 - INFO - 下载完成9681833
+2024-10-10 15:41:12-9223-INFO-2024-10-10 15:41:12,774 - INFO - ('9763471', '/stamp/stamp.jsp?tp=&arnumber=9763471')
+2024-10-10 15:41:41-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3471\9763471\9763471.pdf
+2024-10-10 15:41:41-9223-INFO-2024-10-10 15:41:41,051 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3471\9763471\9763471.pdf)
+2024-10-10 15:41:41-9223-INFO-2024-10-10 15:41:41,279 - INFO - 下载完成9763471
+2024-10-10 15:41:59-9223-INFO-2024-10-10 15:41:59,292 - INFO - ('9762737', '/stamp/stamp.jsp?tp=&arnumber=9762737')
+2024-10-10 15:42:09-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2737\9762737\9762737.pdf
+2024-10-10 15:42:09-9223-INFO-2024-10-10 15:42:09,097 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2737\9762737\9762737.pdf)
+2024-10-10 15:42:09-9223-INFO-2024-10-10 15:42:09,211 - INFO - 下载完成9762737
+2024-10-10 15:42:25-9223-INFO-2024-10-10 15:42:25,223 - INFO - ('9763085', '/stamp/stamp.jsp?tp=&arnumber=9763085')
+2024-10-10 15:42:31-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3085\9763085\9763085.pdf
+2024-10-10 15:42:31-9223-INFO-2024-10-10 15:42:31,392 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3085\9763085\9763085.pdf)
+2024-10-10 15:42:31-9223-INFO-2024-10-10 15:42:31,498 - INFO - 下载完成9763085
+2024-10-10 15:42:49-9223-INFO-2024-10-10 15:42:49,505 - INFO - ('9763377', '/stamp/stamp.jsp?tp=&arnumber=9763377')
+2024-10-10 15:42:55-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3377\9763377\9763377.pdf
+2024-10-10 15:42:55-9223-INFO-2024-10-10 15:42:55,881 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3377\9763377\9763377.pdf)
+2024-10-10 15:42:56-9223-INFO-2024-10-10 15:42:56,050 - INFO - 下载完成9763377
+2024-10-10 15:43:13-9223-INFO-2024-10-10 15:43:13,059 - INFO - ('9762459', '/stamp/stamp.jsp?tp=&arnumber=9762459')
+2024-10-10 15:43:20-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2459\9762459\9762459.pdf
+2024-10-10 15:43:20-9223-INFO-2024-10-10 15:43:20,835 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2459\9762459\9762459.pdf)
+2024-10-10 15:43:20-9223-INFO-2024-10-10 15:43:20,975 - INFO - 下载完成9762459
+2024-10-10 15:43:36-9223-INFO-2024-10-10 15:43:36,989 - INFO - ('9743948', '/stamp/stamp.jsp?tp=&arnumber=9743948')
+2024-10-10 15:43:46-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3948\9743948\9743948.pdf
+2024-10-10 15:43:46-9223-INFO-2024-10-10 15:43:46,296 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3948\9743948\9743948.pdf)
+2024-10-10 15:43:46-9223-INFO-2024-10-10 15:43:46,443 - INFO - 下载完成9743948
+2024-10-10 15:44:04-9223-INFO-2024-10-10 15:44:04,451 - INFO - ('9743392', '/stamp/stamp.jsp?tp=&arnumber=9743392')
+2024-10-10 15:44:13-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3392\9743392\9743392.pdf
+2024-10-10 15:44:13-9223-INFO-2024-10-10 15:44:13,126 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3392\9743392\9743392.pdf)
+2024-10-10 15:44:13-9223-INFO-2024-10-10 15:44:13,231 - INFO - 下载完成9743392
+2024-10-10 15:44:33-9223-INFO-2024-10-10 15:44:33,236 - INFO - ('9743943', '/stamp/stamp.jsp?tp=&arnumber=9743943')
+2024-10-10 15:44:42-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3943\9743943\9743943.pdf
+2024-10-10 15:44:42-9223-INFO-2024-10-10 15:44:42,932 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3943\9743943\9743943.pdf)
+2024-10-10 15:44:43-9223-INFO-2024-10-10 15:44:43,059 - INFO - 下载完成9743943
+2024-10-10 15:44:59-9223-INFO-2024-10-10 15:44:59,071 - INFO - ('9740633', '/stamp/stamp.jsp?tp=&arnumber=9740633')
+2024-10-10 15:45:14-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0633\9740633\9740633.pdf
+2024-10-10 15:45:14-9223-INFO-2024-10-10 15:45:14,501 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0633\9740633\9740633.pdf)
+2024-10-10 15:45:14-9223-INFO-2024-10-10 15:45:14,638 - INFO - 下载完成9740633
+2024-10-10 15:45:31-9223-INFO-2024-10-10 15:45:31,647 - INFO - ('9736943', '/stamp/stamp.jsp?tp=&arnumber=9736943')
+2024-10-10 15:45:57-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6943\9736943\9736943.pdf
+2024-10-10 15:45:57-9223-INFO-2024-10-10 15:45:57,199 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6943\9736943\9736943.pdf)
+2024-10-10 15:45:57-9223-INFO-2024-10-10 15:45:57,354 - INFO - 下载完成9736943
+2024-10-10 15:46:13-9223-INFO-2024-10-10 15:46:13,367 - INFO - ('9726171', '/stamp/stamp.jsp?tp=&arnumber=9726171')
+2024-10-10 15:46:20-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6171\9726171\9726171.pdf
+2024-10-10 15:46:20-9223-INFO-2024-10-10 15:46:20,295 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6171\9726171\9726171.pdf)
+2024-10-10 15:46:20-9223-INFO-2024-10-10 15:46:20,415 - INFO - 下载完成9726171
+2024-10-10 15:46:35-9223-INFO-2024-10-10 15:46:35,420 - INFO - ('9726232', '/stamp/stamp.jsp?tp=&arnumber=9726232')
+2024-10-10 15:46:58-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6232\9726232\9726232.pdf
+2024-10-10 15:46:58-9223-INFO-2024-10-10 15:46:58,763 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6232\9726232\9726232.pdf)
+2024-10-10 15:46:58-9223-INFO-2024-10-10 15:46:58,933 - INFO - 下载完成9726232
+2024-10-10 15:47:15-9223-INFO-2024-10-10 15:47:15,941 - INFO - ('9724283', '/stamp/stamp.jsp?tp=&arnumber=9724283')
+2024-10-10 15:47:25-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4283\9724283\9724283.pdf
+2024-10-10 15:47:25-9223-INFO-2024-10-10 15:47:25,075 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4283\9724283\9724283.pdf)
+2024-10-10 15:47:25-9223-INFO-2024-10-10 15:47:25,200 - INFO - 下载完成9724283
+2024-10-10 15:47:40-9223-INFO-2024-10-10 15:47:40,201 - INFO - ('9722838', '/stamp/stamp.jsp?tp=&arnumber=9722838')
+2024-10-10 15:47:46-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2838\9722838\9722838.pdf
+2024-10-10 15:47:46-9223-INFO-2024-10-10 15:47:46,048 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2838\9722838\9722838.pdf)
+2024-10-10 15:47:46-9223-INFO-2024-10-10 15:47:46,168 - INFO - 下载完成9722838
+2024-10-10 15:48:02-9223-INFO-2024-10-10 15:48:02,180 - INFO - ('9851606', '/stamp/stamp.jsp?tp=&arnumber=9851606')
+2024-10-10 15:48:09-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1606\9851606\9851606.pdf
+2024-10-10 15:48:09-9223-INFO-2024-10-10 15:48:09,200 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1606\9851606\9851606.pdf)
+2024-10-10 15:48:09-9223-INFO-2024-10-10 15:48:09,343 - INFO - 下载完成9851606
+2024-10-10 15:48:24-9223-INFO-2024-10-10 15:48:24,353 - INFO - ('9852129', '/stamp/stamp.jsp?tp=&arnumber=9852129')
+2024-10-10 15:48:32-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2129\9852129\9852129.pdf
+2024-10-10 15:48:32-9223-INFO-2024-10-10 15:48:32,207 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2129\9852129\9852129.pdf)
+2024-10-10 15:48:32-9223-INFO-2024-10-10 15:48:32,318 - INFO - 下载完成9852129
+2024-10-10 15:48:51-9223-INFO-2024-10-10 15:48:51,332 - INFO - ('9850977', '/stamp/stamp.jsp?tp=&arnumber=9850977')
+2024-10-10 15:48:56-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0977\9850977\9850977.pdf
+2024-10-10 15:48:56-9223-INFO-2024-10-10 15:48:56,447 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0977\9850977\9850977.pdf)
+2024-10-10 15:48:56-9223-INFO-2024-10-10 15:48:56,553 - INFO - 下载完成9850977
+2024-10-10 15:49:11-9223-INFO-2024-10-10 15:49:11,560 - INFO - ('9843918', '/stamp/stamp.jsp?tp=&arnumber=9843918')
+2024-10-10 15:49:18-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3918\9843918\9843918.pdf
+2024-10-10 15:49:18-9223-INFO-2024-10-10 15:49:18,544 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3918\9843918\9843918.pdf)
+2024-10-10 15:49:18-9223-INFO-2024-10-10 15:49:18,645 - INFO - 下载完成9843918
+2024-10-10 15:49:38-9223-INFO-2024-10-10 15:49:38,655 - INFO - ('9667351', '/stamp/stamp.jsp?tp=&arnumber=9667351')
+2024-10-10 15:49:51-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7351\9667351\9667351.pdf
+2024-10-10 15:49:51-9223-INFO-2024-10-10 15:49:51,437 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7351\9667351\9667351.pdf)
+2024-10-10 15:49:51-9223-INFO-2024-10-10 15:49:51,658 - INFO - 下载完成9667351
+2024-10-10 15:50:10-9223-INFO-2024-10-10 15:50:10,666 - INFO - ('9681054', '/stamp/stamp.jsp?tp=&arnumber=9681054')
+2024-10-10 15:50:19-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1054\9681054\9681054.pdf
+2024-10-10 15:50:19-9223-INFO-2024-10-10 15:50:19,178 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1054\9681054\9681054.pdf)
+2024-10-10 15:50:19-9223-INFO-2024-10-10 15:50:19,287 - INFO - 下载完成9681054
+2024-10-10 15:50:38-9223-INFO-2024-10-10 15:50:38,292 - INFO - ('9648295', '/stamp/stamp.jsp?tp=&arnumber=9648295')
+2024-10-10 15:50:44-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8295\9648295\9648295.pdf
+2024-10-10 15:50:44-9223-INFO-2024-10-10 15:50:44,827 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8295\9648295\9648295.pdf)
+2024-10-10 15:50:44-9223-INFO-2024-10-10 15:50:44,931 - INFO - 下载完成9648295
+2024-10-10 15:51:04-9223-INFO-2024-10-10 15:51:04,935 - INFO - ('9520403', '/stamp/stamp.jsp?tp=&arnumber=9520403')
+2024-10-10 15:51:24-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0403\9520403\9520403.pdf
+2024-10-10 15:51:24-9223-INFO-2024-10-10 15:51:24,220 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0403\9520403\9520403.pdf)
+2024-10-10 15:51:24-9223-INFO-2024-10-10 15:51:24,435 - INFO - 下载完成9520403
+2024-10-10 15:51:39-9223-INFO-2024-10-10 15:51:39,449 - INFO - ('9527227', '/stamp/stamp.jsp?tp=&arnumber=9527227')
+2024-10-10 15:51:52-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7227\9527227\9527227.pdf
+2024-10-10 15:51:52-9223-INFO-2024-10-10 15:51:52,045 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7227\9527227\9527227.pdf)
+2024-10-10 15:51:52-9223-INFO-2024-10-10 15:51:52,216 - INFO - 下载完成9527227
+2024-10-10 15:52:09-9223-INFO-2024-10-10 15:52:09,220 - INFO - ('9779341', '/stamp/stamp.jsp?tp=&arnumber=9779341')
+2024-10-10 15:52:23-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9341\9779341\9779341.pdf
+2024-10-10 15:52:23-9223-INFO-2024-10-10 15:52:23,835 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9341\9779341\9779341.pdf)
+2024-10-10 15:52:23-9223-INFO-2024-10-10 15:52:23,989 - INFO - 下载完成9779341
+2024-10-10 15:52:41-9223-INFO-2024-10-10 15:52:41,996 - INFO - ('9201133', '/stamp/stamp.jsp?tp=&arnumber=9201133')
+2024-10-10 15:53:20-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1133\9201133\9201133.pdf
+2024-10-10 15:53:20-9223-INFO-2024-10-10 15:53:20,626 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1133\9201133\9201133.pdf)
+2024-10-10 15:53:20-9223-INFO-2024-10-10 15:53:20,897 - INFO - 下载完成9201133
+2024-10-10 15:53:38-9223-INFO-2024-10-10 15:53:38,904 - INFO - ('9606767', '/stamp/stamp.jsp?tp=&arnumber=9606767')
+2024-10-10 15:53:49-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6767\9606767\9606767.pdf
+2024-10-10 15:53:49-9223-INFO-2024-10-10 15:53:49,004 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6767\9606767\9606767.pdf)
+2024-10-10 15:53:49-9223-INFO-2024-10-10 15:53:49,102 - INFO - 下载完成9606767
+2024-10-10 15:54:06-9223-INFO-2024-10-10 15:54:06,104 - INFO - ('9486888', '/stamp/stamp.jsp?tp=&arnumber=9486888')
+2024-10-10 15:54:18-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6888\9486888\9486888.pdf
+2024-10-10 15:54:18-9223-INFO-2024-10-10 15:54:18,988 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6888\9486888\9486888.pdf)
+2024-10-10 15:54:19-9223-INFO-2024-10-10 15:54:19,164 - INFO - 下载完成9486888
+2024-10-10 15:54:36-9223-INFO-2024-10-10 15:54:36,178 - INFO - ('9258992', '/stamp/stamp.jsp?tp=&arnumber=9258992')
+2024-10-10 15:54:44-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8992\9258992\9258992.pdf
+2024-10-10 15:54:44-9223-INFO-2024-10-10 15:54:44,458 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8992\9258992\9258992.pdf)
+2024-10-10 15:54:44-9223-INFO-2024-10-10 15:54:44,582 - INFO - 下载完成9258992
+2024-10-10 15:54:59-9223-INFO-2024-10-10 15:54:59,585 - INFO - ('9438684', '/stamp/stamp.jsp?tp=&arnumber=9438684')
+2024-10-10 15:55:16-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8684\9438684\9438684.pdf
+2024-10-10 15:55:16-9223-INFO-2024-10-10 15:55:16,038 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8684\9438684\9438684.pdf)
+2024-10-10 15:55:16-9223-INFO-2024-10-10 15:55:16,164 - INFO - 下载完成9438684
+2024-10-10 15:55:34-9223-INFO-2024-10-10 15:55:34,173 - INFO - ('9233254', '/stamp/stamp.jsp?tp=&arnumber=9233254')
+2024-10-10 15:56:34-9223-INFO-2024-10-10 15:56:34,189 - INFO - 请求失败！
+2024-10-10 15:56:37-9223-INFO-2024-10-10 15:56:37,197 - INFO - ('9233254', '/stamp/stamp.jsp?tp=&arnumber=9233254')
+2024-10-10 15:56:39-9223-INFO-2024-10-10 15:56:39,589 - INFO - 请求失败！
+2024-10-10 15:56:43-9223-INFO-2024-10-10 15:56:43,593 - INFO - ('9233254', '/stamp/stamp.jsp?tp=&arnumber=9233254')
+2024-10-10 15:56:44-9223-INFO-2024-10-10 15:56:44,410 - INFO - 请求失败！
+2024-10-10 15:56:48-9223-INFO-2024-10-10 15:56:48,414 - INFO - ('9233254', '/stamp/stamp.jsp?tp=&arnumber=9233254')
+2024-10-10 15:56:49-9223-INFO-2024-10-10 15:56:49,236 - INFO - 请求失败！
+2024-10-10 15:56:53-9223-INFO-2024-10-10 15:56:53,250 - INFO - ('9233254', '/stamp/stamp.jsp?tp=&arnumber=9233254')
+2024-10-10 15:57:38-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3254\9233254\9233254.pdf
+2024-10-10 15:57:38-9223-INFO-2024-10-10 15:57:38,910 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3254\9233254\9233254.pdf)
+2024-10-10 15:57:39-9223-INFO-2024-10-10 15:57:39,292 - INFO - 下载完成9233254
+2024-10-10 15:57:55-9223-INFO-2024-10-10 15:57:55,307 - INFO - ('9327471', '/stamp/stamp.jsp?tp=&arnumber=9327471')
+2024-10-10 15:58:07-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7471\9327471\9327471.pdf
+2024-10-10 15:58:07-9223-INFO-2024-10-10 15:58:07,095 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7471\9327471\9327471.pdf)
+2024-10-10 15:58:07-9223-INFO-2024-10-10 15:58:07,249 - INFO - 下载完成9327471
+2024-10-10 15:58:23-9223-INFO-2024-10-10 15:58:23,259 - INFO - ('9244144', '/stamp/stamp.jsp?tp=&arnumber=9244144')
+2024-10-10 15:58:31-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4144\9244144\9244144.pdf
+2024-10-10 15:58:31-9223-INFO-2024-10-10 15:58:31,855 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4144\9244144\9244144.pdf)
+2024-10-10 15:58:31-9223-INFO-2024-10-10 15:58:31,961 - INFO - 下载完成9244144
+2024-10-10 15:58:49-9223-INFO-2024-10-10 15:58:49,968 - INFO - ('9343284', '/stamp/stamp.jsp?tp=&arnumber=9343284')
+2024-10-10 15:58:58-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3284\9343284\9343284.pdf
+2024-10-10 15:58:58-9223-INFO-2024-10-10 15:58:58,458 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3284\9343284\9343284.pdf)
+2024-10-10 15:58:58-9223-INFO-2024-10-10 15:58:58,574 - INFO - 下载完成9343284
+2024-10-10 15:59:15-9223-INFO-2024-10-10 15:59:15,589 - INFO - ('9316751', '/stamp/stamp.jsp?tp=&arnumber=9316751')
+2024-10-10 15:59:19-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6751\9316751\9316751.pdf
+2024-10-10 15:59:19-9223-INFO-2024-10-10 15:59:19,320 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6751\9316751\9316751.pdf)
+2024-10-10 15:59:19-9223-INFO-2024-10-10 15:59:19,408 - INFO - 下载完成9316751
+2024-10-10 15:59:35-9223-INFO-2024-10-10 15:59:35,421 - INFO - ('9335648', '/stamp/stamp.jsp?tp=&arnumber=9335648')
+2024-10-10 15:59:42-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5648\9335648\9335648.pdf
+2024-10-10 15:59:42-9223-INFO-2024-10-10 15:59:42,002 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5648\9335648\9335648.pdf)
+2024-10-10 15:59:42-9223-INFO-2024-10-10 15:59:42,123 - INFO - 下载完成9335648
+2024-10-10 16:00:01-9223-INFO-2024-10-10 16:00:01,126 - INFO - ('9305282', '/stamp/stamp.jsp?tp=&arnumber=9305282')
+2024-10-10 16:00:14-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5282\9305282\9305282.pdf
+2024-10-10 16:00:14-9223-INFO-2024-10-10 16:00:14,683 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5282\9305282\9305282.pdf)
+2024-10-10 16:00:14-9223-INFO-2024-10-10 16:00:14,811 - INFO - 下载完成9305282
+2024-10-10 16:00:30-9223-INFO-2024-10-10 16:00:30,818 - INFO - ('9277613', '/stamp/stamp.jsp?tp=&arnumber=9277613')
+2024-10-10 16:00:38-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7613\9277613\9277613.pdf
+2024-10-10 16:00:38-9223-INFO-2024-10-10 16:00:38,303 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7613\9277613\9277613.pdf)
+2024-10-10 16:00:38-9223-INFO-2024-10-10 16:00:38,415 - INFO - 下载完成9277613
+2024-10-10 16:00:56-9223-INFO-2024-10-10 16:00:56,429 - INFO - ('9333665', '/stamp/stamp.jsp?tp=&arnumber=9333665')
+2024-10-10 16:01:03-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3665\9333665\9333665.pdf
+2024-10-10 16:01:03-9223-INFO-2024-10-10 16:01:03,519 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3665\9333665\9333665.pdf)
+2024-10-10 16:01:03-9223-INFO-2024-10-10 16:01:03,640 - INFO - 下载完成9333665
+2024-10-10 16:01:18-9223-INFO-2024-10-10 16:01:18,655 - INFO - ('9737394', '/stamp/stamp.jsp?tp=&arnumber=9737394')
+2024-10-10 16:01:31-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7394\9737394\9737394.pdf
+2024-10-10 16:01:31-9223-INFO-2024-10-10 16:01:31,241 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7394\9737394\9737394.pdf)
+2024-10-10 16:01:31-9223-INFO-2024-10-10 16:01:31,402 - INFO - 下载完成9737394
+2024-10-10 16:01:51-9223-INFO-2024-10-10 16:01:51,403 - INFO - ('9745814', '/stamp/stamp.jsp?tp=&arnumber=9745814')
+2024-10-10 16:02:07-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5814\9745814\9745814.pdf
+2024-10-10 16:02:07-9223-INFO-2024-10-10 16:02:07,258 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5814\9745814\9745814.pdf)
+2024-10-10 16:02:07-9223-INFO-2024-10-10 16:02:07,416 - INFO - 下载完成9745814
+2024-10-10 16:02:23-9223-INFO-2024-10-10 16:02:23,417 - INFO - ('9320575', '/stamp/stamp.jsp?tp=&arnumber=9320575')
+2024-10-10 16:02:41-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0575\9320575\9320575.pdf
+2024-10-10 16:02:41-9223-INFO-2024-10-10 16:02:41,775 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0575\9320575\9320575.pdf)
+2024-10-10 16:02:41-9223-INFO-2024-10-10 16:02:41,953 - INFO - 下载完成9320575
+2024-10-10 16:02:56-9223-INFO-2024-10-10 16:02:56,966 - INFO - ('9328295', '/stamp/stamp.jsp?tp=&arnumber=9328295')
+2024-10-10 16:03:14-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8295\9328295\9328295.pdf
+2024-10-10 16:03:14-9223-INFO-2024-10-10 16:03:14,059 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8295\9328295\9328295.pdf)
+2024-10-10 16:03:14-9223-INFO-2024-10-10 16:03:14,337 - INFO - 下载完成9328295
+2024-10-10 16:03:34-9223-INFO-2024-10-10 16:03:34,341 - INFO - ('9296949', '/stamp/stamp.jsp?tp=&arnumber=9296949')
+2024-10-10 16:03:50-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6949\9296949\9296949.pdf
+2024-10-10 16:03:50-9223-INFO-2024-10-10 16:03:50,502 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6949\9296949\9296949.pdf)
+2024-10-10 16:03:50-9223-INFO-2024-10-10 16:03:50,683 - INFO - 下载完成9296949
+2024-10-10 16:04:08-9223-INFO-2024-10-10 16:04:08,696 - INFO - ('9257009', '/stamp/stamp.jsp?tp=&arnumber=9257009')
+2024-10-10 16:04:21-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7009\9257009\9257009.pdf
+2024-10-10 16:04:21-9223-INFO-2024-10-10 16:04:21,490 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7009\9257009\9257009.pdf)
+2024-10-10 16:04:21-9223-INFO-2024-10-10 16:04:21,659 - INFO - 下载完成9257009
+2024-10-10 16:04:37-9223-INFO-2024-10-10 16:04:37,670 - INFO - ('9866521', '/stamp/stamp.jsp?tp=&arnumber=9866521')
+2024-10-10 16:04:42-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6521\9866521\9866521.pdf
+2024-10-10 16:04:42-9223-INFO-2024-10-10 16:04:42,895 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6521\9866521\9866521.pdf)
+2024-10-10 16:04:43-9223-INFO-2024-10-10 16:04:42,999 - INFO - 下载完成9866521
+2024-10-10 16:04:58-9223-INFO-2024-10-10 16:04:58,014 - INFO - ('9847080', '/stamp/stamp.jsp?tp=&arnumber=9847080')
+2024-10-10 16:05:05-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7080\9847080\9847080.pdf
+2024-10-10 16:05:05-9223-INFO-2024-10-10 16:05:05,210 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7080\9847080\9847080.pdf)
+2024-10-10 16:05:05-9223-INFO-2024-10-10 16:05:05,333 - INFO - 下载完成9847080
+2024-10-10 16:05:25-9223-INFO-2024-10-10 16:05:25,347 - INFO - ('9795080', '/stamp/stamp.jsp?tp=&arnumber=9795080')
+2024-10-10 16:05:31-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5080\9795080\9795080.pdf
+2024-10-10 16:05:31-9223-INFO-2024-10-10 16:05:31,141 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5080\9795080\9795080.pdf)
+2024-10-10 16:05:31-9223-INFO-2024-10-10 16:05:31,250 - INFO - 下载完成9795080
+2024-10-10 16:05:49-9223-INFO-2024-10-10 16:05:49,266 - INFO - ('9788019', '/stamp/stamp.jsp?tp=&arnumber=9788019')
+2024-10-10 16:05:54-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8019\9788019\9788019.pdf
+2024-10-10 16:05:54-9223-INFO-2024-10-10 16:05:54,846 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8019\9788019\9788019.pdf)
+2024-10-10 16:05:54-9223-INFO-2024-10-10 16:05:54,963 - INFO - 下载完成9788019
+2024-10-10 16:06:12-9223-INFO-2024-10-10 16:06:12,976 - INFO - ('9777939', '/stamp/stamp.jsp?tp=&arnumber=9777939')
+2024-10-10 16:06:17-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7939\9777939\9777939.pdf
+2024-10-10 16:06:17-9223-INFO-2024-10-10 16:06:17,872 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7939\9777939\9777939.pdf)
+2024-10-10 16:06:17-9223-INFO-2024-10-10 16:06:17,985 - INFO - 下载完成9777939
+2024-10-10 16:06:35-9223-INFO-2024-10-10 16:06:35,994 - INFO - ('9779577', '/stamp/stamp.jsp?tp=&arnumber=9779577')
+2024-10-10 16:06:39-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9577\9779577\9779577.pdf
+2024-10-10 16:06:39-9223-INFO-2024-10-10 16:06:39,387 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9577\9779577\9779577.pdf)
+2024-10-10 16:06:39-9223-INFO-2024-10-10 16:06:39,502 - INFO - 下载完成9779577
+2024-10-10 16:06:57-9223-INFO-2024-10-10 16:06:57,514 - INFO - ('9774006', '/stamp/stamp.jsp?tp=&arnumber=9774006')
+2024-10-10 16:07:08-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4006\9774006\9774006.pdf
+2024-10-10 16:07:08-9223-INFO-2024-10-10 16:07:08,534 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4006\9774006\9774006.pdf)
+2024-10-10 16:07:08-9223-INFO-2024-10-10 16:07:08,669 - INFO - 下载完成9774006
+2024-10-10 16:07:25-9223-INFO-2024-10-10 16:07:25,679 - INFO - ('9772984', '/stamp/stamp.jsp?tp=&arnumber=9772984')
+2024-10-10 16:07:36-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2984\9772984\9772984.pdf
+2024-10-10 16:07:36-9223-INFO-2024-10-10 16:07:36,079 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2984\9772984\9772984.pdf)
+2024-10-10 16:07:36-9223-INFO-2024-10-10 16:07:36,177 - INFO - 下载完成9772984
+2024-10-10 16:07:56-9223-INFO-2024-10-10 16:07:56,188 - INFO - ('9770293', '/stamp/stamp.jsp?tp=&arnumber=9770293')
+2024-10-10 16:08:18-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0293\9770293\9770293.pdf
+2024-10-10 16:08:18-9223-INFO-2024-10-10 16:08:18,131 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0293\9770293\9770293.pdf)
+2024-10-10 16:08:18-9223-INFO-2024-10-10 16:08:18,284 - INFO - 下载完成9770293
+2024-10-10 16:08:33-9223-INFO-2024-10-10 16:08:33,292 - INFO - ('9800203', '/stamp/stamp.jsp?tp=&arnumber=9800203')
+2024-10-10 16:08:44-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0203\9800203\9800203.pdf
+2024-10-10 16:08:44-9223-INFO-2024-10-10 16:08:44,469 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0203\9800203\9800203.pdf)
+2024-10-10 16:08:44-9223-INFO-2024-10-10 16:08:44,619 - INFO - 下载完成9800203
+2024-10-10 16:09:01-9223-INFO-2024-10-10 16:09:01,633 - INFO - ('9782106', '/stamp/stamp.jsp?tp=&arnumber=9782106')
+2024-10-10 16:09:12-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2106\9782106\9782106.pdf
+2024-10-10 16:09:12-9223-INFO-2024-10-10 16:09:12,034 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2106\9782106\9782106.pdf)
+2024-10-10 16:09:12-9223-INFO-2024-10-10 16:09:12,145 - INFO - 下载完成9782106
+2024-10-10 16:09:31-9223-INFO-2024-10-10 16:09:31,160 - INFO - ('9790330', '/stamp/stamp.jsp?tp=&arnumber=9790330')
+2024-10-10 16:09:42-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0330\9790330\9790330.pdf
+2024-10-10 16:09:42-9223-INFO-2024-10-10 16:09:42,140 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0330\9790330\9790330.pdf)
+2024-10-10 16:09:42-9223-INFO-2024-10-10 16:09:42,269 - INFO - 下载完成9790330
+2024-10-10 16:10:00-9223-INFO-2024-10-10 16:10:00,274 - INFO - ('9769918', '/stamp/stamp.jsp?tp=&arnumber=9769918')
+2024-10-10 16:10:09-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9918\9769918\9769918.pdf
+2024-10-10 16:10:09-9223-INFO-2024-10-10 16:10:09,728 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9918\9769918\9769918.pdf)
+2024-10-10 16:10:09-9223-INFO-2024-10-10 16:10:09,847 - INFO - 下载完成9769918
+2024-10-10 16:10:27-9223-INFO-2024-10-10 16:10:27,859 - INFO - ('9774020', '/stamp/stamp.jsp?tp=&arnumber=9774020')
+2024-10-10 16:10:39-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4020\9774020\9774020.pdf
+2024-10-10 16:10:39-9223-INFO-2024-10-10 16:10:39,844 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4020\9774020\9774020.pdf)
+2024-10-10 16:10:39-9223-INFO-2024-10-10 16:10:39,947 - INFO - 下载完成9774020
+2024-10-10 16:10:58-9223-INFO-2024-10-10 16:10:58,955 - INFO - ('9772950', '/stamp/stamp.jsp?tp=&arnumber=9772950')
+2024-10-10 16:11:14-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2950\9772950\9772950.pdf
+2024-10-10 16:11:14-9223-INFO-2024-10-10 16:11:14,784 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2950\9772950\9772950.pdf)
+2024-10-10 16:11:14-9223-INFO-2024-10-10 16:11:14,962 - INFO - 下载完成9772950
+2024-10-10 16:11:33-9223-INFO-2024-10-10 16:11:33,976 - INFO - ('9769913', '/stamp/stamp.jsp?tp=&arnumber=9769913')
+2024-10-10 16:11:42-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9913\9769913\9769913.pdf
+2024-10-10 16:11:42-9223-INFO-2024-10-10 16:11:42,124 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9913\9769913\9769913.pdf)
+2024-10-10 16:11:42-9223-INFO-2024-10-10 16:11:42,254 - INFO - 下载完成9769913
+2024-10-10 16:12:00-9223-INFO-2024-10-10 16:12:00,270 - INFO - ('9906967', '/stamp/stamp.jsp?tp=&arnumber=9906967')
+2024-10-10 16:12:10-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6967\9906967\9906967.pdf
+2024-10-10 16:12:10-9223-INFO-2024-10-10 16:12:10,859 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6967\9906967\9906967.pdf)
+2024-10-10 16:12:10-9223-INFO-2024-10-10 16:12:10,959 - INFO - 下载完成9906967
+2024-10-10 16:12:29-9223-INFO-2024-10-10 16:12:29,967 - INFO - ('9893343', '/stamp/stamp.jsp?tp=&arnumber=9893343')
+2024-10-10 16:12:42-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3343\9893343\9893343.pdf
+2024-10-10 16:12:42-9223-INFO-2024-10-10 16:12:42,038 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3343\9893343\9893343.pdf)
+2024-10-10 16:12:42-9223-INFO-2024-10-10 16:12:42,163 - INFO - 下载完成9893343
+2024-10-10 16:12:59-9223-INFO-2024-10-10 16:12:59,177 - INFO - ('9900401', '/stamp/stamp.jsp?tp=&arnumber=9900401')
+2024-10-10 16:13:05-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0401\9900401\9900401.pdf
+2024-10-10 16:13:05-9223-INFO-2024-10-10 16:13:05,195 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0401\9900401\9900401.pdf)
+2024-10-10 16:13:05-9223-INFO-2024-10-10 16:13:05,334 - INFO - 下载完成9900401
+2024-10-10 16:13:23-9223-INFO-2024-10-10 16:13:23,340 - INFO - ('9894656', '/stamp/stamp.jsp?tp=&arnumber=9894656')
+2024-10-10 16:13:39-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4656\9894656\9894656.pdf
+2024-10-10 16:13:39-9223-INFO-2024-10-10 16:13:39,340 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4656\9894656\9894656.pdf)
+2024-10-10 16:13:39-9223-INFO-2024-10-10 16:13:39,472 - INFO - 下载完成9894656
+2024-10-10 16:13:55-9223-INFO-2024-10-10 16:13:55,482 - INFO - ('9887804', '/stamp/stamp.jsp?tp=&arnumber=9887804')
+2024-10-10 16:14:03-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7804\9887804\9887804.pdf
+2024-10-10 16:14:03-9223-INFO-2024-10-10 16:14:03,076 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7804\9887804\9887804.pdf)
+2024-10-10 16:14:03-9223-INFO-2024-10-10 16:14:03,239 - INFO - 下载完成9887804
+2024-10-10 16:14:21-9223-INFO-2024-10-10 16:14:21,245 - INFO - ('9891737', '/stamp/stamp.jsp?tp=&arnumber=9891737')
+2024-10-10 16:14:33-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1737\9891737\9891737.pdf
+2024-10-10 16:14:33-9223-INFO-2024-10-10 16:14:33,466 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1737\9891737\9891737.pdf)
+2024-10-10 16:14:33-9223-INFO-2024-10-10 16:14:33,595 - INFO - 下载完成9891737
+2024-10-10 16:14:49-9223-INFO-2024-10-10 16:14:49,602 - INFO - ('9887864', '/stamp/stamp.jsp?tp=&arnumber=9887864')
+2024-10-10 16:14:54-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7864\9887864\9887864.pdf
+2024-10-10 16:14:54-9223-INFO-2024-10-10 16:14:54,335 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7864\9887864\9887864.pdf)
+2024-10-10 16:14:54-9223-INFO-2024-10-10 16:14:54,432 - INFO - 下载完成9887864
+2024-10-10 16:15:14-9223-INFO-2024-10-10 16:15:14,441 - INFO - ('9878184', '/stamp/stamp.jsp?tp=&arnumber=9878184')
+2024-10-10 16:15:27-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8184\9878184\9878184.pdf
+2024-10-10 16:15:27-9223-INFO-2024-10-10 16:15:27,103 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8184\9878184\9878184.pdf)
+2024-10-10 16:15:27-9223-INFO-2024-10-10 16:15:27,241 - INFO - 下载完成9878184
+2024-10-10 16:15:42-9223-INFO-2024-10-10 16:15:42,248 - INFO - ('9881869', '/stamp/stamp.jsp?tp=&arnumber=9881869')
+2024-10-10 16:15:55-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1869\9881869\9881869.pdf
+2024-10-10 16:15:55-9223-INFO-2024-10-10 16:15:55,356 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1869\9881869\9881869.pdf)
+2024-10-10 16:15:55-9223-INFO-2024-10-10 16:15:55,556 - INFO - 下载完成9881869
+2024-10-10 16:16:14-9223-INFO-2024-10-10 16:16:14,570 - INFO - ('9856607', '/stamp/stamp.jsp?tp=&arnumber=9856607')
+2024-10-10 16:16:32-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6607\9856607\9856607.pdf
+2024-10-10 16:16:32-9223-INFO-2024-10-10 16:16:32,045 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6607\9856607\9856607.pdf)
+2024-10-10 16:16:32-9223-INFO-2024-10-10 16:16:32,195 - INFO - 下载完成9856607
+2024-10-10 16:16:49-9223-INFO-2024-10-10 16:16:49,200 - INFO - ('9851939', '/stamp/stamp.jsp?tp=&arnumber=9851939')
+2024-10-10 16:16:57-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1939\9851939\9851939.pdf
+2024-10-10 16:16:57-9223-INFO-2024-10-10 16:16:57,162 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1939\9851939\9851939.pdf)
+2024-10-10 16:16:57-9223-INFO-2024-10-10 16:16:57,287 - INFO - 下载完成9851939
+2024-10-10 16:17:12-9223-INFO-2024-10-10 16:17:12,291 - INFO - ('9815520', '/stamp/stamp.jsp?tp=&arnumber=9815520')
+2024-10-10 16:17:19-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5520\9815520\9815520.pdf
+2024-10-10 16:17:19-9223-INFO-2024-10-10 16:17:19,506 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5520\9815520\9815520.pdf)
+2024-10-10 16:17:19-9223-INFO-2024-10-10 16:17:19,721 - INFO - 下载完成9815520
+2024-10-10 16:17:34-9223-INFO-2024-10-10 16:17:34,723 - INFO - ('9834100', '/stamp/stamp.jsp?tp=&arnumber=9834100')
+2024-10-10 16:17:37-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4100\9834100\9834100.pdf
+2024-10-10 16:17:37-9223-INFO-2024-10-10 16:17:37,955 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4100\9834100\9834100.pdf)
+2024-10-10 16:17:38-9223-INFO-2024-10-10 16:17:38,056 - INFO - 下载完成9834100
+2024-10-10 16:17:54-9223-INFO-2024-10-10 16:17:54,071 - INFO - ('9844820', '/stamp/stamp.jsp?tp=&arnumber=9844820')
+2024-10-10 16:18:02-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4820\9844820\9844820.pdf
+2024-10-10 16:18:02-9223-INFO-2024-10-10 16:18:02,081 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4820\9844820\9844820.pdf)
+2024-10-10 16:18:02-9223-INFO-2024-10-10 16:18:02,191 - INFO - 下载完成9844820
+2024-10-10 16:18:17-9223-INFO-2024-10-10 16:18:17,202 - INFO - ('9695328', '/stamp/stamp.jsp?tp=&arnumber=9695328')
+2024-10-10 16:18:22-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5328\9695328\9695328.pdf
+2024-10-10 16:18:22-9223-INFO-2024-10-10 16:18:22,976 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5328\9695328\9695328.pdf)
+2024-10-10 16:18:23-9223-INFO-2024-10-10 16:18:23,082 - INFO - 下载完成9695328
+2024-10-10 16:18:40-9223-INFO-2024-10-10 16:18:40,089 - INFO - ('9874980', '/stamp/stamp.jsp?tp=&arnumber=9874980')
+2024-10-10 16:18:53-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4980\9874980\9874980.pdf
+2024-10-10 16:18:53-9223-INFO-2024-10-10 16:18:53,172 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4980\9874980\9874980.pdf)
+2024-10-10 16:18:53-9223-INFO-2024-10-10 16:18:53,368 - INFO - 下载完成9874980
+2024-10-10 16:19:11-9223-INFO-2024-10-10 16:19:11,372 - INFO - ('9873911', '/stamp/stamp.jsp?tp=&arnumber=9873911')
+2024-10-10 16:19:17-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3911\9873911\9873911.pdf
+2024-10-10 16:19:17-9223-INFO-2024-10-10 16:19:17,361 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3911\9873911\9873911.pdf)
+2024-10-10 16:19:17-9223-INFO-2024-10-10 16:19:17,445 - INFO - 下载完成9873911
+2024-10-10 16:19:33-9223-INFO-2024-10-10 16:19:33,449 - INFO - ('9869728', '/stamp/stamp.jsp?tp=&arnumber=9869728')
+2024-10-10 16:19:37-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9728\9869728\9869728.pdf
+2024-10-10 16:19:37-9223-INFO-2024-10-10 16:19:37,926 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9728\9869728\9869728.pdf)
+2024-10-10 16:19:38-9223-INFO-2024-10-10 16:19:38,100 - INFO - 下载完成9869728
+2024-10-10 16:19:58-9223-INFO-2024-10-10 16:19:58,114 - INFO - ('9850376', '/stamp/stamp.jsp?tp=&arnumber=9850376')
+2024-10-10 16:20:01-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0376\9850376\9850376.pdf
+2024-10-10 16:20:01-9223-INFO-2024-10-10 16:20:01,935 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0376\9850376\9850376.pdf)
+2024-10-10 16:20:02-9223-INFO-2024-10-10 16:20:02,019 - INFO - 下载完成9850376
+2024-10-10 16:20:18-9223-INFO-2024-10-10 16:20:18,022 - INFO - ('9868131', '/stamp/stamp.jsp?tp=&arnumber=9868131')
+2024-10-10 16:20:25-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8131\9868131\9868131.pdf
+2024-10-10 16:20:25-9223-INFO-2024-10-10 16:20:25,076 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8131\9868131\9868131.pdf)
+2024-10-10 16:20:25-9223-INFO-2024-10-10 16:20:25,191 - INFO - 下载完成9868131
+2024-10-10 16:20:42-9223-INFO-2024-10-10 16:20:42,206 - INFO - ('9865163', '/stamp/stamp.jsp?tp=&arnumber=9865163')
+2024-10-10 16:21:02-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5163\9865163\9865163.pdf
+2024-10-10 16:21:02-9223-INFO-2024-10-10 16:21:02,559 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5163\9865163\9865163.pdf)
+2024-10-10 16:21:02-9223-INFO-2024-10-10 16:21:02,693 - INFO - 下载完成9865163
+2024-10-10 16:21:18-9223-INFO-2024-10-10 16:21:18,709 - INFO - ('9864295', '/stamp/stamp.jsp?tp=&arnumber=9864295')
+2024-10-10 16:21:24-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4295\9864295\9864295.pdf
+2024-10-10 16:21:24-9223-INFO-2024-10-10 16:21:24,626 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4295\9864295\9864295.pdf)
+2024-10-10 16:21:24-9223-INFO-2024-10-10 16:21:24,745 - INFO - 下载完成9864295
+2024-10-10 16:21:44-9223-INFO-2024-10-10 16:21:44,753 - INFO - ('9865160', '/stamp/stamp.jsp?tp=&arnumber=9865160')
+2024-10-10 16:21:51-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5160\9865160\9865160.pdf
+2024-10-10 16:21:51-9223-INFO-2024-10-10 16:21:51,866 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5160\9865160\9865160.pdf)
+2024-10-10 16:21:51-9223-INFO-2024-10-10 16:21:51,968 - INFO - 下载完成9865160
+2024-10-10 16:22:06-9223-INFO-2024-10-10 16:22:06,974 - INFO - ('9864256', '/stamp/stamp.jsp?tp=&arnumber=9864256')
+2024-10-10 16:22:13-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4256\9864256\9864256.pdf
+2024-10-10 16:22:13-9223-INFO-2024-10-10 16:22:13,235 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4256\9864256\9864256.pdf)
+2024-10-10 16:22:13-9223-INFO-2024-10-10 16:22:13,397 - INFO - 下载完成9864256
+2024-10-10 16:22:33-9223-INFO-2024-10-10 16:22:33,407 - INFO - ('9864044', '/stamp/stamp.jsp?tp=&arnumber=9864044')
+2024-10-10 16:22:44-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4044\9864044\9864044.pdf
+2024-10-10 16:22:44-9223-INFO-2024-10-10 16:22:44,904 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4044\9864044\9864044.pdf)
+2024-10-10 16:22:45-9223-INFO-2024-10-10 16:22:45,056 - INFO - 下载完成9864044
+2024-10-10 16:23:03-9223-INFO-2024-10-10 16:23:03,063 - INFO - ('9864048', '/stamp/stamp.jsp?tp=&arnumber=9864048')
+2024-10-10 16:23:11-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4048\9864048\9864048.pdf
+2024-10-10 16:23:11-9223-INFO-2024-10-10 16:23:11,395 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4048\9864048\9864048.pdf)
+2024-10-10 16:23:11-9223-INFO-2024-10-10 16:23:11,557 - INFO - 下载完成9864048
+2024-10-10 16:23:28-9223-INFO-2024-10-10 16:23:28,563 - INFO - ('9864258', '/stamp/stamp.jsp?tp=&arnumber=9864258')
+2024-10-10 16:23:56-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4258\9864258\9864258.pdf
+2024-10-10 16:23:56-9223-INFO-2024-10-10 16:23:56,410 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4258\9864258\9864258.pdf)
+2024-10-10 16:23:56-9223-INFO-2024-10-10 16:23:56,597 - INFO - 下载完成9864258
+2024-10-10 16:24:13-9223-INFO-2024-10-10 16:24:13,605 - INFO - ('9855877', '/stamp/stamp.jsp?tp=&arnumber=9855877')
+2024-10-10 16:24:17-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5877\9855877\9855877.pdf
+2024-10-10 16:24:17-9223-INFO-2024-10-10 16:24:17,209 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5877\9855877\9855877.pdf)
+2024-10-10 16:24:17-9223-INFO-2024-10-10 16:24:17,300 - INFO - 下载完成9855877
+2024-10-10 16:24:35-9223-INFO-2024-10-10 16:24:35,305 - INFO - ('9860062', '/stamp/stamp.jsp?tp=&arnumber=9860062')
+2024-10-10 16:24:46-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0062\9860062\9860062.pdf
+2024-10-10 16:24:46-9223-INFO-2024-10-10 16:24:46,367 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0062\9860062\9860062.pdf)
+2024-10-10 16:24:46-9223-INFO-2024-10-10 16:24:46,520 - INFO - 下载完成9860062
+2024-10-10 16:25:06-9223-INFO-2024-10-10 16:25:06,529 - INFO - ('9860053', '/stamp/stamp.jsp?tp=&arnumber=9860053')
+2024-10-10 16:25:11-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0053\9860053\9860053.pdf
+2024-10-10 16:25:11-9223-INFO-2024-10-10 16:25:11,013 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0053\9860053\9860053.pdf)
+2024-10-10 16:25:11-9223-INFO-2024-10-10 16:25:11,107 - INFO - 下载完成9860053
+2024-10-10 16:25:29-9223-INFO-2024-10-10 16:25:29,114 - INFO - ('9855228', '/stamp/stamp.jsp?tp=&arnumber=9855228')
+2024-10-10 16:25:35-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5228\9855228\9855228.pdf
+2024-10-10 16:25:35-9223-INFO-2024-10-10 16:25:35,052 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5228\9855228\9855228.pdf)
+2024-10-10 16:25:35-9223-INFO-2024-10-10 16:25:35,188 - INFO - 下载完成9855228
+2024-10-10 16:25:51-9223-INFO-2024-10-10 16:25:51,201 - INFO - ('9773987', '/stamp/stamp.jsp?tp=&arnumber=9773987')
+2024-10-10 16:25:58-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3987\9773987\9773987.pdf
+2024-10-10 16:25:58-9223-INFO-2024-10-10 16:25:58,339 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3987\9773987\9773987.pdf)
+2024-10-10 16:25:58-9223-INFO-2024-10-10 16:25:58,648 - INFO - 下载完成9773987
+2024-10-10 16:26:17-9223-INFO-2024-10-10 16:26:17,656 - INFO - ('9759986', '/stamp/stamp.jsp?tp=&arnumber=9759986')
+2024-10-10 16:26:24-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9986\9759986\9759986.pdf
+2024-10-10 16:26:24-9223-INFO-2024-10-10 16:26:24,990 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9986\9759986\9759986.pdf)
+2024-10-10 16:26:25-9223-INFO-2024-10-10 16:26:25,093 - INFO - 下载完成9759986
+2024-10-10 16:26:40-9223-INFO-2024-10-10 16:26:40,103 - INFO - ('9829264', '/stamp/stamp.jsp?tp=&arnumber=9829264')
+2024-10-10 16:26:45-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9264\9829264\9829264.pdf
+2024-10-10 16:26:45-9223-INFO-2024-10-10 16:26:45,863 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9264\9829264\9829264.pdf)
+2024-10-10 16:26:45-9223-INFO-2024-10-10 16:26:45,976 - INFO - 下载完成9829264
+2024-10-10 16:27:05-9223-INFO-2024-10-10 16:27:05,976 - INFO - ('9809838', '/stamp/stamp.jsp?tp=&arnumber=9809838')
+2024-10-10 16:27:30-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9838\9809838\9809838.pdf
+2024-10-10 16:27:30-9223-INFO-2024-10-10 16:27:30,082 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9838\9809838\9809838.pdf)
+2024-10-10 16:27:30-9223-INFO-2024-10-10 16:27:30,224 - INFO - 下载完成9809838
+2024-10-10 16:27:45-9223-INFO-2024-10-10 16:27:45,239 - INFO - ('9793574', '/stamp/stamp.jsp?tp=&arnumber=9793574')
+2024-10-10 16:28:16-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3574\9793574\9793574.pdf
+2024-10-10 16:28:16-9223-INFO-2024-10-10 16:28:16,790 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3574\9793574\9793574.pdf)
+2024-10-10 16:28:16-9223-INFO-2024-10-10 16:28:16,933 - INFO - 下载完成9793574
+2024-10-10 16:28:31-9223-INFO-2024-10-10 16:28:31,945 - INFO - ('9779564', '/stamp/stamp.jsp?tp=&arnumber=9779564')
+2024-10-10 16:28:41-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9564\9779564\9779564.pdf
+2024-10-10 16:28:41-9223-INFO-2024-10-10 16:28:41,431 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9564\9779564\9779564.pdf)
+2024-10-10 16:28:41-9223-INFO-2024-10-10 16:28:41,548 - INFO - 下载完成9779564
+2024-10-10 16:28:59-9223-INFO-2024-10-10 16:28:59,557 - INFO - ('9779111', '/stamp/stamp.jsp?tp=&arnumber=9779111')
+2024-10-10 16:29:37-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9111\9779111\9779111.pdf
+2024-10-10 16:29:37-9223-INFO-2024-10-10 16:29:37,867 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9111\9779111\9779111.pdf)
+2024-10-10 16:29:38-9223-INFO-2024-10-10 16:29:38,038 - INFO - 下载完成9779111
+2024-10-10 16:29:54-9223-INFO-2024-10-10 16:29:54,048 - INFO - ('9772380', '/stamp/stamp.jsp?tp=&arnumber=9772380')
+2024-10-10 16:30:09-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2380\9772380\9772380.pdf
+2024-10-10 16:30:09-9223-INFO-2024-10-10 16:30:09,352 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2380\9772380\9772380.pdf)
+2024-10-10 16:30:09-9223-INFO-2024-10-10 16:30:09,496 - INFO - 下载完成9772380
+2024-10-10 16:30:27-9223-INFO-2024-10-10 16:30:27,511 - INFO - ('9759339', '/stamp/stamp.jsp?tp=&arnumber=9759339')
+2024-10-10 16:30:31-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9339\9759339\9759339.pdf
+2024-10-10 16:30:31-9223-INFO-2024-10-10 16:30:31,715 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9339\9759339\9759339.pdf)
+2024-10-10 16:30:31-9223-INFO-2024-10-10 16:30:31,830 - INFO - 下载完成9759339
+2024-10-10 16:30:51-9223-INFO-2024-10-10 16:30:51,843 - INFO - ('9772320', '/stamp/stamp.jsp?tp=&arnumber=9772320')
+2024-10-10 16:31:13-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2320\9772320\9772320.pdf
+2024-10-10 16:31:13-9223-INFO-2024-10-10 16:31:13,205 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2320\9772320\9772320.pdf)
+2024-10-10 16:31:13-9223-INFO-2024-10-10 16:31:13,364 - INFO - 下载完成9772320
+2024-10-10 16:31:32-9223-INFO-2024-10-10 16:31:32,367 - INFO - ('9764378', '/stamp/stamp.jsp?tp=&arnumber=9764378')
+2024-10-10 16:31:42-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4378\9764378\9764378.pdf
+2024-10-10 16:31:42-9223-INFO-2024-10-10 16:31:42,426 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4378\9764378\9764378.pdf)
+2024-10-10 16:31:42-9223-INFO-2024-10-10 16:31:42,578 - INFO - 下载完成9764378
+2024-10-10 16:32:02-9223-INFO-2024-10-10 16:32:02,580 - INFO - ('9760084', '/stamp/stamp.jsp?tp=&arnumber=9760084')
+2024-10-10 16:32:21-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0084\9760084\9760084.pdf
+2024-10-10 16:32:21-9223-INFO-2024-10-10 16:32:21,561 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0084\9760084\9760084.pdf)
+2024-10-10 16:32:21-9223-INFO-2024-10-10 16:32:21,768 - INFO - 下载完成9760084
+2024-10-10 16:32:39-9223-INFO-2024-10-10 16:32:39,782 - INFO - ('9762786', '/stamp/stamp.jsp?tp=&arnumber=9762786')
+2024-10-10 16:32:51-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2786\9762786\9762786.pdf
+2024-10-10 16:32:51-9223-INFO-2024-10-10 16:32:51,160 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2786\9762786\9762786.pdf)
+2024-10-10 16:32:51-9223-INFO-2024-10-10 16:32:51,487 - INFO - 下载完成9762786
+2024-10-10 16:33:08-9223-INFO-2024-10-10 16:33:08,502 - INFO - ('9762025', '/stamp/stamp.jsp?tp=&arnumber=9762025')
+2024-10-10 16:33:13-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2025\9762025\9762025.pdf
+2024-10-10 16:33:13-9223-INFO-2024-10-10 16:33:13,166 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2025\9762025\9762025.pdf)
+2024-10-10 16:33:13-9223-INFO-2024-10-10 16:33:13,260 - INFO - 下载完成9762025
+2024-10-10 16:33:30-9223-INFO-2024-10-10 16:33:30,260 - INFO - ('9762565', '/stamp/stamp.jsp?tp=&arnumber=9762565')
+2024-10-10 16:33:38-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2565\9762565\9762565.pdf
+2024-10-10 16:33:38-9223-INFO-2024-10-10 16:33:38,257 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2565\9762565\9762565.pdf)
+2024-10-10 16:33:38-9223-INFO-2024-10-10 16:33:38,340 - INFO - 下载完成9762565
+2024-10-10 16:33:56-9223-INFO-2024-10-10 16:33:56,347 - INFO - ('9749848', '/stamp/stamp.jsp?tp=&arnumber=9749848')
+2024-10-10 16:34:03-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9848\9749848\9749848.pdf
+2024-10-10 16:34:03-9223-INFO-2024-10-10 16:34:03,044 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9848\9749848\9749848.pdf)
+2024-10-10 16:34:03-9223-INFO-2024-10-10 16:34:03,174 - INFO - 下载完成9749848
+2024-10-10 16:34:18-9223-INFO-2024-10-10 16:34:18,187 - INFO - ('9751353', '/stamp/stamp.jsp?tp=&arnumber=9751353')
+2024-10-10 16:34:26-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1353\9751353\9751353.pdf
+2024-10-10 16:34:26-9223-INFO-2024-10-10 16:34:26,815 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1353\9751353\9751353.pdf)
+2024-10-10 16:34:26-9223-INFO-2024-10-10 16:34:26,930 - INFO - 下载完成9751353
+2024-10-10 16:34:45-9223-INFO-2024-10-10 16:34:45,945 - INFO - ('9743672', '/stamp/stamp.jsp?tp=&arnumber=9743672')
+2024-10-10 16:34:55-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3672\9743672\9743672.pdf
+2024-10-10 16:34:55-9223-INFO-2024-10-10 16:34:55,798 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3672\9743672\9743672.pdf)
+2024-10-10 16:34:55-9223-INFO-2024-10-10 16:34:55,909 - INFO - 下载完成9743672
+2024-10-10 16:35:12-9223-INFO-2024-10-10 16:35:12,914 - INFO - ('9733213', '/stamp/stamp.jsp?tp=&arnumber=9733213')
+2024-10-10 16:35:31-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3213\9733213\9733213.pdf
+2024-10-10 16:35:31-9223-INFO-2024-10-10 16:35:31,669 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3213\9733213\9733213.pdf)
+2024-10-10 16:35:31-9223-INFO-2024-10-10 16:35:31,824 - INFO - 下载完成9733213
+2024-10-10 16:35:49-9223-INFO-2024-10-10 16:35:49,825 - INFO - ('9732199', '/stamp/stamp.jsp?tp=&arnumber=9732199')
+2024-10-10 16:35:56-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2199\9732199\9732199.pdf
+2024-10-10 16:35:56-9223-INFO-2024-10-10 16:35:56,044 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2199\9732199\9732199.pdf)
+2024-10-10 16:35:56-9223-INFO-2024-10-10 16:35:56,166 - INFO - 下载完成9732199
+2024-10-10 16:36:15-9223-INFO-2024-10-10 16:36:15,170 - INFO - ('9720219', '/stamp/stamp.jsp?tp=&arnumber=9720219')
+2024-10-10 16:36:21-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0219\9720219\9720219.pdf
+2024-10-10 16:36:21-9223-INFO-2024-10-10 16:36:21,581 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0219\9720219\9720219.pdf)
+2024-10-10 16:36:21-9223-INFO-2024-10-10 16:36:21,707 - INFO - 下载完成9720219
+2024-10-10 16:36:40-9223-INFO-2024-10-10 16:36:40,721 - INFO - ('9709122', '/stamp/stamp.jsp?tp=&arnumber=9709122')
+2024-10-10 16:36:47-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9122\9709122\9709122.pdf
+2024-10-10 16:36:47-9223-INFO-2024-10-10 16:36:47,184 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9122\9709122\9709122.pdf)
+2024-10-10 16:36:47-9223-INFO-2024-10-10 16:36:47,357 - INFO - 下载完成9709122
+2024-10-10 16:37:02-9223-INFO-2024-10-10 16:37:02,358 - INFO - ('9743629', '/stamp/stamp.jsp?tp=&arnumber=9743629')
+2024-10-10 16:37:02-9223-INFO-2024-10-10 16:37:02,724 - INFO - PDF IS ERROR!
+2024-10-10 16:37:05-9223-INFO-2024-10-10 16:37:05,728 - INFO - ('9765333', '/stamp/stamp.jsp?tp=&arnumber=9765333')
+2024-10-10 16:37:06-9223-INFO-2024-10-10 16:37:06,085 - INFO - PDF IS ERROR!
+2024-10-10 16:37:11-9223-INFO-2024-10-10 16:37:11,090 - INFO - ('9740455', '/stamp/stamp.jsp?tp=&arnumber=9740455')
+2024-10-10 16:37:11-9223-INFO-2024-10-10 16:37:11,928 - INFO - 请求失败！
+2024-10-10 16:37:14-9223-INFO-2024-10-10 16:37:14,930 - INFO - ('9740455', '/stamp/stamp.jsp?tp=&arnumber=9740455')
+2024-10-10 16:37:15-9223-INFO-2024-10-10 16:37:15,725 - INFO - 请求失败！
+2024-10-10 16:37:18-9223-INFO-2024-10-10 16:37:18,733 - INFO - ('9740455', '/stamp/stamp.jsp?tp=&arnumber=9740455')
+2024-10-10 16:37:19-9223-INFO-2024-10-10 16:37:19,511 - INFO - 请求失败！
+2024-10-10 16:37:24-9223-INFO-2024-10-10 16:37:24,520 - INFO - ('9740455', '/stamp/stamp.jsp?tp=&arnumber=9740455')
+2024-10-10 16:37:26-9223-INFO-2024-10-10 16:37:26,927 - INFO - 请求失败！
+2024-10-10 16:37:31-9223-INFO-2024-10-10 16:37:31,930 - INFO - 连续请求失败五次退出程序
+2024-10-10 16:37:31-9223-ERROR-Traceback (most recent call last):
+2024-10-10 16:37:31-9223-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9223.py", line 114, in <module>
+2024-10-10 16:37:31-9223-ERROR-main()
+2024-10-10 16:37:31-9223-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9223.py", line 108, in main
+2024-10-10 16:37:31-9223-ERROR-Consumer('IEEE').read_message(callback)
+2024-10-10 16:37:31-9223-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\message_que\rabbitmq.py", line 66, in read_message
+2024-10-10 16:37:31-9223-ERROR-self._channel.start_consuming()
+2024-10-10 16:37:31-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1883, in start_consuming
+2024-10-10 16:37:31-9223-ERROR-self._process_data_events(time_limit=None)
+2024-10-10 16:37:31-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 2044, in _process_data_events
+2024-10-10 16:37:31-9223-ERROR-self.connection.process_data_events(time_limit=time_limit)
+2024-10-10 16:37:31-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 851, in process_data_events
+2024-10-10 16:37:31-9223-ERROR-self._dispatch_channel_events()
+2024-10-10 16:37:31-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 567, in _dispatch_channel_events
+2024-10-10 16:37:31-9223-ERROR-impl_channel._get_cookie()._dispatch_events()
+2024-10-10 16:37:31-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1510, in _dispatch_events
+2024-10-10 16:37:31-9223-ERROR-consumer_info.on_message_callback(self, evt.method,
+2024-10-10 16:37:31-9223-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9223.py", line 57, in callback
+2024-10-10 16:37:31-9223-ERROR-raise RuntimeError('cookies失效')
+2024-10-10 16:37:31-9223-ERROR-RuntimeError: cookies失效
+2024-10-10 19:36:51-9223-INFO-登陆成功
+2024-10-10 19:36:51-9223-INFO-{'Cookie': 'AWSALBAPP-1=_remove_; AWSALBAPP-2=_remove_; AWSALBAPP-3=_remove_; WLSESSION=3439489546.47873.0000; TS016349ac=01f15fc87c9c6b1321d4abfe1c45f11bbc68b5c6ee5f34069f73f0b290f69604efa635d2380c91c2ed4cff93cef0008c48d1c3b470; JSESSIONID=15A482B49F2AA3C9482ACCD6AC982BE9; ERIGHTS=SXaXv5ukY9sRLmLdIdzR4zu2xx5m97Usp-18x2dqx2FpuO1736ChwdWpUGzbpsgx3Dx3DWNxxBNuaCReNm9d81Ba9Cjgx3Dx3D-6x2FElvnhdxxWsZrF2g6I0ckwx3Dx3D-X32Vx2FNg8j7SzyFTcKkmYqwx3Dx3D; ipList=113.251.70.115; xpluserinfo=eyJpc0luc3QiOiJ0cnVlIiwiaW5zdE5hbWUiOiJTb3V0aGVhc3QgVW5pdmVyc2l0eSIsInByb2R1Y3RzIjoiRHJhZnR8RUJPT0tTOjE5NzQ6MjAxN3xJQk06MTg3MjoyMDIwfElFTHxWREV8Tk9LSUEgQkVMTCBMQUJTfCJ9; seqId=9472; AWSALBAPP-0=AAAAAAAAAABPn8nl41qNoqoTP2P16gbTUSduag+KaTbrZaBeX7DDZTX8HpXAQraW9CIRmCxTQ3iXlFNm6K7+s+SsR2W++IaBx7uaplnkvLv8qyr+i9zyTsrIhWK8Jsjxx8FWErjHEUo/m+J/MtRGUu6Q2c0yEFrI3GV2VUdq1l3O2sm53flKotsYmQ5tLrdALTonF3dvTnV12nEn+ISIag==; TSaf720a17029=0807dc117eab2800b94409637f74256a0977810f2afd54b9509b9706df9c1240f9e96f2de5e7c073f29a72a89ba4a8e9; TS8b476361027=0807dc117eab20009b4c54c0f6005cf7e4356f1b547e47697037988a04a84a6015f15b6cca90c813085c0ffa521130009dca4ec1422db3a074afddfbea8dac4b500eb8bdd91b8840bf29d6286840690a66bdac4d9c90022f4ea9368bc2a4b308'}
+2024-10-10 19:36:51-9223-INFO-2024-10-10 19:36:51,509 - INFO - Pika version 1.3.2 connecting to ('192.168.1.186', 5672)
+2024-10-10 19:36:51-9223-INFO-2024-10-10 19:36:51,509 - INFO - Socket connected: <socket.socket fd=2292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.186', 61777), raddr=('192.168.1.186', 5672)>
+2024-10-10 19:36:51-9223-INFO-2024-10-10 19:36:51,510 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000210C2A78250>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000210C2A78250> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>).
+2024-10-10 19:36:51-9223-INFO-2024-10-10 19:36:51,514 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000210C2A78250> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 19:36:51-9223-INFO-2024-10-10 19:36:51,514 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000210C2A78250> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 19:36:51-9223-INFO-2024-10-10 19:36:51,514 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000210C2A78250> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 19:36:51-9223-INFO-2024-10-10 19:36:51,515 - INFO - Created channel=1
+2024-10-10 19:36:51-9223-INFO-2024-10-10 19:36:51,519 - INFO - ('9543575', '/stamp/stamp.jsp?tp=&arnumber=9543575')
+2024-10-10 19:36:59-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3575\9543575\9543575.pdf
+2024-10-10 19:36:59-9223-INFO-2024-10-10 19:36:59,439 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3575\9543575\9543575.pdf)
+2024-10-10 19:36:59-9223-INFO-2024-10-10 19:36:59,556 - INFO - 下载完成9543575
+2024-10-10 19:37:15-9223-INFO-2024-10-10 19:37:15,569 - INFO - ('9541038', '/stamp/stamp.jsp?tp=&arnumber=9541038')
+2024-10-10 19:37:45-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1038\9541038\9541038.pdf
+2024-10-10 19:37:45-9223-INFO-2024-10-10 19:37:45,764 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1038\9541038\9541038.pdf)
+2024-10-10 19:37:45-9223-INFO-2024-10-10 19:37:45,906 - INFO - 下载完成9541038
+2024-10-10 19:38:04-9223-INFO-2024-10-10 19:38:04,913 - INFO - ('9541102', '/stamp/stamp.jsp?tp=&arnumber=9541102')
+2024-10-10 19:38:25-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1102\9541102\9541102.pdf
+2024-10-10 19:38:25-9223-INFO-2024-10-10 19:38:25,685 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1102\9541102\9541102.pdf)
+2024-10-10 19:38:25-9223-INFO-2024-10-10 19:38:25,814 - INFO - 下载完成9541102
+2024-10-10 19:38:43-9223-INFO-2024-10-10 19:38:43,830 - INFO - ('9540278', '/stamp/stamp.jsp?tp=&arnumber=9540278')
+2024-10-10 19:38:56-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0278\9540278\9540278.pdf
+2024-10-10 19:38:56-9223-INFO-2024-10-10 19:38:56,756 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0278\9540278\9540278.pdf)
+2024-10-10 19:38:56-9223-INFO-2024-10-10 19:38:56,869 - INFO - 下载完成9540278
+2024-10-10 19:39:13-9223-INFO-2024-10-10 19:39:13,872 - INFO - ('9540307', '/stamp/stamp.jsp?tp=&arnumber=9540307')
+2024-10-10 19:39:26-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0307\9540307\9540307.pdf
+2024-10-10 19:39:26-9223-INFO-2024-10-10 19:39:26,893 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0307\9540307\9540307.pdf)
+2024-10-10 19:39:26-9223-INFO-2024-10-10 19:39:26,991 - INFO - 下载完成9540307
+2024-10-10 19:39:45-9223-INFO-2024-10-10 19:39:45,003 - INFO - ('9536373', '/stamp/stamp.jsp?tp=&arnumber=9536373')
+2024-10-10 19:40:06-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6373\9536373\9536373.pdf
+2024-10-10 19:40:06-9223-INFO-2024-10-10 19:40:06,317 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6373\9536373\9536373.pdf)
+2024-10-10 19:40:06-9223-INFO-2024-10-10 19:40:06,435 - INFO - 下载完成9536373
+2024-10-10 19:40:26-9223-INFO-2024-10-10 19:40:26,445 - INFO - ('9531480', '/stamp/stamp.jsp?tp=&arnumber=9531480')
+2024-10-10 19:40:35-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1480\9531480\9531480.pdf
+2024-10-10 19:40:35-9223-INFO-2024-10-10 19:40:35,341 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1480\9531480\9531480.pdf)
+2024-10-10 19:40:35-9223-INFO-2024-10-10 19:40:35,435 - INFO - 下载完成9531480
+2024-10-10 19:40:53-9223-INFO-2024-10-10 19:40:53,440 - INFO - ('9531509', '/stamp/stamp.jsp?tp=&arnumber=9531509')
+2024-10-10 19:41:03-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1509\9531509\9531509.pdf
+2024-10-10 19:41:03-9223-INFO-2024-10-10 19:41:03,138 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1509\9531509\9531509.pdf)
+2024-10-10 19:41:03-9223-INFO-2024-10-10 19:41:03,234 - INFO - 下载完成9531509
+2024-10-10 19:41:21-9223-INFO-2024-10-10 19:41:21,236 - INFO - ('9531517', '/stamp/stamp.jsp?tp=&arnumber=9531517')
+2024-10-10 19:41:46-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1517\9531517\9531517.pdf
+2024-10-10 19:41:46-9223-INFO-2024-10-10 19:41:46,180 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1517\9531517\9531517.pdf)
+2024-10-10 19:41:46-9223-INFO-2024-10-10 19:41:46,312 - INFO - 下载完成9531517
+2024-10-10 19:42:04-9223-INFO-2024-10-10 19:42:04,318 - INFO - ('9531533', '/stamp/stamp.jsp?tp=&arnumber=9531533')
+2024-10-10 19:42:12-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1533\9531533\9531533.pdf
+2024-10-10 19:42:12-9223-INFO-2024-10-10 19:42:12,502 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1533\9531533\9531533.pdf)
+2024-10-10 19:42:12-9223-INFO-2024-10-10 19:42:12,594 - INFO - 下载完成9531533
+2024-10-10 19:42:31-9223-INFO-2024-10-10 19:42:31,605 - INFO - ('9531447', '/stamp/stamp.jsp?tp=&arnumber=9531447')
+2024-10-10 19:42:47-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1447\9531447\9531447.pdf
+2024-10-10 19:42:47-9223-INFO-2024-10-10 19:42:47,166 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1447\9531447\9531447.pdf)
+2024-10-10 19:42:47-9223-INFO-2024-10-10 19:42:47,300 - INFO - 下载完成9531447
+2024-10-10 19:43:04-9223-INFO-2024-10-10 19:43:04,304 - INFO - ('9531402', '/stamp/stamp.jsp?tp=&arnumber=9531402')
+2024-10-10 19:43:10-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1402\9531402\9531402.pdf
+2024-10-10 19:43:10-9223-INFO-2024-10-10 19:43:10,306 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1402\9531402\9531402.pdf)
+2024-10-10 19:43:10-9223-INFO-2024-10-10 19:43:10,403 - INFO - 下载完成9531402
+2024-10-10 19:43:30-9223-INFO-2024-10-10 19:43:30,405 - INFO - ('9528064', '/stamp/stamp.jsp?tp=&arnumber=9528064')
+2024-10-10 19:43:51-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8064\9528064\9528064.pdf
+2024-10-10 19:43:51-9223-INFO-2024-10-10 19:43:51,555 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8064\9528064\9528064.pdf)
+2024-10-10 19:43:51-9223-INFO-2024-10-10 19:43:51,694 - INFO - 下载完成9528064
+2024-10-10 19:44:06-9223-INFO-2024-10-10 19:44:06,703 - INFO - ('9527116', '/stamp/stamp.jsp?tp=&arnumber=9527116')
+2024-10-10 19:44:18-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7116\9527116\9527116.pdf
+2024-10-10 19:44:18-9223-INFO-2024-10-10 19:44:18,973 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7116\9527116\9527116.pdf)
+2024-10-10 19:44:19-9223-INFO-2024-10-10 19:44:19,080 - INFO - 下载完成9527116
+2024-10-10 19:44:38-9223-INFO-2024-10-10 19:44:38,083 - INFO - ('9527076', '/stamp/stamp.jsp?tp=&arnumber=9527076')
+2024-10-10 19:45:05-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7076\9527076\9527076.pdf
+2024-10-10 19:45:05-9223-INFO-2024-10-10 19:45:05,321 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7076\9527076\9527076.pdf)
+2024-10-10 19:45:05-9223-INFO-2024-10-10 19:45:05,470 - INFO - 下载完成9527076
+2024-10-10 19:45:23-9223-INFO-2024-10-10 19:45:23,485 - INFO - ('9527136', '/stamp/stamp.jsp?tp=&arnumber=9527136')
+2024-10-10 19:45:49-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7136\9527136\9527136.pdf
+2024-10-10 19:45:49-9223-INFO-2024-10-10 19:45:49,791 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7136\9527136\9527136.pdf)
+2024-10-10 19:45:49-9223-INFO-2024-10-10 19:45:49,910 - INFO - 下载完成9527136
+2024-10-10 19:46:08-9223-INFO-2024-10-10 19:46:08,913 - INFO - ('9523757', '/stamp/stamp.jsp?tp=&arnumber=9523757')
+2024-10-10 19:46:22-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3757\9523757\9523757.pdf
+2024-10-10 19:46:22-9223-INFO-2024-10-10 19:46:22,600 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3757\9523757\9523757.pdf)
+2024-10-10 19:46:22-9223-INFO-2024-10-10 19:46:22,709 - INFO - 下载完成9523757
+2024-10-10 19:46:41-9223-INFO-2024-10-10 19:46:41,726 - INFO - ('9521723', '/stamp/stamp.jsp?tp=&arnumber=9521723')
+2024-10-10 19:46:47-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1723\9521723\9521723.pdf
+2024-10-10 19:46:47-9223-INFO-2024-10-10 19:46:47,282 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1723\9521723\9521723.pdf)
+2024-10-10 19:46:47-9223-INFO-2024-10-10 19:46:47,381 - INFO - 下载完成9521723
+2024-10-10 19:47:02-9223-INFO-2024-10-10 19:47:02,392 - INFO - ('9521750', '/stamp/stamp.jsp?tp=&arnumber=9521750')
+2024-10-10 19:47:10-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1750\9521750\9521750.pdf
+2024-10-10 19:47:10-9223-INFO-2024-10-10 19:47:10,113 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1750\9521750\9521750.pdf)
+2024-10-10 19:47:10-9223-INFO-2024-10-10 19:47:10,252 - INFO - 下载完成9521750
+2024-10-10 19:47:28-9223-INFO-2024-10-10 19:47:28,262 - INFO - ('9521808', '/stamp/stamp.jsp?tp=&arnumber=9521808')
+2024-10-10 19:47:33-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1808\9521808\9521808.pdf
+2024-10-10 19:47:33-9223-INFO-2024-10-10 19:47:33,422 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1808\9521808\9521808.pdf)
+2024-10-10 19:47:33-9223-INFO-2024-10-10 19:47:33,504 - INFO - 下载完成9521808
+2024-10-10 19:47:49-9223-INFO-2024-10-10 19:47:49,518 - INFO - ('9520245', '/stamp/stamp.jsp?tp=&arnumber=9520245')
+2024-10-10 19:47:57-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0245\9520245\9520245.pdf
+2024-10-10 19:47:57-9223-INFO-2024-10-10 19:47:57,530 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0245\9520245\9520245.pdf)
+2024-10-10 19:47:57-9223-INFO-2024-10-10 19:47:57,620 - INFO - 下载完成9520245
+2024-10-10 19:48:14-9223-INFO-2024-10-10 19:48:14,629 - INFO - ('9519520', '/stamp/stamp.jsp?tp=&arnumber=9519520')
+2024-10-10 19:48:51-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9520\9519520\9519520.pdf
+2024-10-10 19:48:51-9223-INFO-2024-10-10 19:48:51,199 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9520\9519520\9519520.pdf)
+2024-10-10 19:48:51-9223-INFO-2024-10-10 19:48:51,369 - INFO - 下载完成9519520
+2024-10-10 19:49:07-9223-INFO-2024-10-10 19:49:07,372 - INFO - ('9519525', '/stamp/stamp.jsp?tp=&arnumber=9519525')
+2024-10-10 19:49:41-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9525\9519525\9519525.pdf
+2024-10-10 19:49:41-9223-INFO-2024-10-10 19:49:41,498 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9525\9519525\9519525.pdf)
+2024-10-10 19:49:41-9223-INFO-2024-10-10 19:49:41,699 - INFO - 下载完成9519525
+2024-10-10 19:50:00-9223-INFO-2024-10-10 19:50:00,704 - INFO - ('9516940', '/stamp/stamp.jsp?tp=&arnumber=9516940')
+2024-10-10 19:50:10-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6940\9516940\9516940.pdf
+2024-10-10 19:50:10-9223-INFO-2024-10-10 19:50:10,338 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6940\9516940\9516940.pdf)
+2024-10-10 19:50:10-9223-INFO-2024-10-10 19:50:10,436 - INFO - 下载完成9516940
+2024-10-10 19:50:30-9223-INFO-2024-10-10 19:50:30,440 - INFO - ('9517028', '/stamp/stamp.jsp?tp=&arnumber=9517028')
+2024-10-10 19:50:40-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7028\9517028\9517028.pdf
+2024-10-10 19:50:40-9223-INFO-2024-10-10 19:50:40,557 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7028\9517028\9517028.pdf)
+2024-10-10 19:50:40-9223-INFO-2024-10-10 19:50:40,713 - INFO - 下载完成9517028
+2024-10-10 19:50:56-9223-INFO-2024-10-10 19:50:56,726 - INFO - ('9513531', '/stamp/stamp.jsp?tp=&arnumber=9513531')
+2024-10-10 19:51:08-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3531\9513531\9513531.pdf
+2024-10-10 19:51:08-9223-INFO-2024-10-10 19:51:08,225 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3531\9513531\9513531.pdf)
+2024-10-10 19:51:08-9223-INFO-2024-10-10 19:51:08,326 - INFO - 下载完成9513531
+2024-10-10 19:51:24-9223-INFO-2024-10-10 19:51:24,339 - INFO - ('9521837', '/stamp/stamp.jsp?tp=&arnumber=9521837')
+2024-10-10 19:51:32-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1837\9521837\9521837.pdf
+2024-10-10 19:51:32-9223-INFO-2024-10-10 19:51:32,990 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1837\9521837\9521837.pdf)
+2024-10-10 19:51:33-9223-INFO-2024-10-10 19:51:33,160 - INFO - 下载完成9521837
+2024-10-10 19:51:53-9223-INFO-2024-10-10 19:51:53,171 - INFO - ('9511840', '/stamp/stamp.jsp?tp=&arnumber=9511840')
+2024-10-10 19:52:02-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1840\9511840\9511840.pdf
+2024-10-10 19:52:02-9223-INFO-2024-10-10 19:52:02,534 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1840\9511840\9511840.pdf)
+2024-10-10 19:52:02-9223-INFO-2024-10-10 19:52:02,675 - INFO - 下载完成9511840
+2024-10-10 19:52:19-9223-INFO-2024-10-10 19:52:19,689 - INFO - ('9513589', '/stamp/stamp.jsp?tp=&arnumber=9513589')
+2024-10-10 19:52:34-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3589\9513589\9513589.pdf
+2024-10-10 19:52:34-9223-INFO-2024-10-10 19:52:34,626 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3589\9513589\9513589.pdf)
+2024-10-10 19:52:34-9223-INFO-2024-10-10 19:52:34,740 - INFO - 下载完成9513589
+2024-10-10 19:52:54-9223-INFO-2024-10-10 19:52:54,754 - INFO - ('9512391', '/stamp/stamp.jsp?tp=&arnumber=9512391')
+2024-10-10 19:53:00-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2391\9512391\9512391.pdf
+2024-10-10 19:53:00-9223-INFO-2024-10-10 19:53:00,751 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2391\9512391\9512391.pdf)
+2024-10-10 19:53:00-9223-INFO-2024-10-10 19:53:00,840 - INFO - 下载完成9512391
+2024-10-10 19:53:15-9223-INFO-2024-10-10 19:53:15,843 - INFO - ('9512472', '/stamp/stamp.jsp?tp=&arnumber=9512472')
+2024-10-10 19:53:38-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2472\9512472\9512472.pdf
+2024-10-10 19:53:38-9223-INFO-2024-10-10 19:53:38,876 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2472\9512472\9512472.pdf)
+2024-10-10 19:53:39-9223-INFO-2024-10-10 19:53:39,007 - INFO - 下载完成9512472
+2024-10-10 19:53:57-9223-INFO-2024-10-10 19:53:57,019 - INFO - ('9512306', '/stamp/stamp.jsp?tp=&arnumber=9512306')
+2024-10-10 19:54:08-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2306\9512306\9512306.pdf
+2024-10-10 19:54:08-9223-INFO-2024-10-10 19:54:08,007 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2306\9512306\9512306.pdf)
+2024-10-10 19:54:08-9223-INFO-2024-10-10 19:54:08,126 - INFO - 下载完成9512306
+2024-10-10 19:54:24-9223-INFO-2024-10-10 19:54:24,143 - INFO - ('9512421', '/stamp/stamp.jsp?tp=&arnumber=9512421')
+2024-10-10 19:54:32-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2421\9512421\9512421.pdf
+2024-10-10 19:54:32-9223-INFO-2024-10-10 19:54:32,513 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2421\9512421\9512421.pdf)
+2024-10-10 19:54:32-9223-INFO-2024-10-10 19:54:32,639 - INFO - 下载完成9512421
+2024-10-10 19:54:47-9223-INFO-2024-10-10 19:54:47,642 - INFO - ('9511178', '/stamp/stamp.jsp?tp=&arnumber=9511178')
+2024-10-10 19:54:59-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1178\9511178\9511178.pdf
+2024-10-10 19:54:59-9223-INFO-2024-10-10 19:54:59,822 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1178\9511178\9511178.pdf)
+2024-10-10 19:54:59-9223-INFO-2024-10-10 19:54:59,936 - INFO - 下载完成9511178
+2024-10-10 19:55:17-9223-INFO-2024-10-10 19:55:17,952 - INFO - ('9511187', '/stamp/stamp.jsp?tp=&arnumber=9511187')
+2024-10-10 19:55:29-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1187\9511187\9511187.pdf
+2024-10-10 19:55:29-9223-INFO-2024-10-10 19:55:29,603 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1187\9511187\9511187.pdf)
+2024-10-10 19:55:29-9223-INFO-2024-10-10 19:55:29,716 - INFO - 下载完成9511187
+2024-10-10 19:55:45-9223-INFO-2024-10-10 19:55:45,729 - INFO - ('9495249', '/stamp/stamp.jsp?tp=&arnumber=9495249')
+2024-10-10 19:55:57-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5249\9495249\9495249.pdf
+2024-10-10 19:55:57-9223-INFO-2024-10-10 19:55:57,761 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5249\9495249\9495249.pdf)
+2024-10-10 19:55:57-9223-INFO-2024-10-10 19:55:57,867 - INFO - 下载完成9495249
+2024-10-10 19:56:14-9223-INFO-2024-10-10 19:56:14,884 - INFO - ('9508833', '/stamp/stamp.jsp?tp=&arnumber=9508833')
+2024-10-10 19:56:43-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8833\9508833\9508833.pdf
+2024-10-10 19:56:43-9223-INFO-2024-10-10 19:56:43,611 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8833\9508833\9508833.pdf)
+2024-10-10 19:56:43-9223-INFO-2024-10-10 19:56:43,756 - INFO - 下载完成9508833
+2024-10-10 19:56:59-9223-INFO-2024-10-10 19:56:59,764 - INFO - ('9506831', '/stamp/stamp.jsp?tp=&arnumber=9506831')
+2024-10-10 19:57:15-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6831\9506831\9506831.pdf
+2024-10-10 19:57:15-9223-INFO-2024-10-10 19:57:15,664 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6831\9506831\9506831.pdf)
+2024-10-10 19:57:15-9223-INFO-2024-10-10 19:57:15,779 - INFO - 下载完成9506831
+2024-10-10 19:57:30-9223-INFO-2024-10-10 19:57:30,791 - INFO - ('9508167', '/stamp/stamp.jsp?tp=&arnumber=9508167')
+2024-10-10 19:57:38-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8167\9508167\9508167.pdf
+2024-10-10 19:57:38-9223-INFO-2024-10-10 19:57:38,707 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8167\9508167\9508167.pdf)
+2024-10-10 19:57:38-9223-INFO-2024-10-10 19:57:38,823 - INFO - 下载完成9508167
+2024-10-10 19:57:56-9223-INFO-2024-10-10 19:57:56,833 - INFO - ('9506876', '/stamp/stamp.jsp?tp=&arnumber=9506876')
+2024-10-10 19:58:06-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6876\9506876\9506876.pdf
+2024-10-10 19:58:06-9223-INFO-2024-10-10 19:58:06,488 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6876\9506876\9506876.pdf)
+2024-10-10 19:58:06-9223-INFO-2024-10-10 19:58:06,598 - INFO - 下载完成9506876
+2024-10-10 19:58:25-9223-INFO-2024-10-10 19:58:25,602 - INFO - ('9484710', '/stamp/stamp.jsp?tp=&arnumber=9484710')
+2024-10-10 19:58:40-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4710\9484710\9484710.pdf
+2024-10-10 19:58:40-9223-INFO-2024-10-10 19:58:40,217 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4710\9484710\9484710.pdf)
+2024-10-10 19:58:40-9223-INFO-2024-10-10 19:58:40,322 - INFO - 下载完成9484710
+2024-10-10 19:59:00-9223-INFO-2024-10-10 19:59:00,336 - INFO - ('9483635', '/stamp/stamp.jsp?tp=&arnumber=9483635')
+2024-10-10 19:59:10-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3635\9483635\9483635.pdf
+2024-10-10 19:59:10-9223-INFO-2024-10-10 19:59:10,468 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3635\9483635\9483635.pdf)
+2024-10-10 19:59:10-9223-INFO-2024-10-10 19:59:10,578 - INFO - 下载完成9483635
+2024-10-10 19:59:29-9223-INFO-2024-10-10 19:59:29,591 - INFO - ('9477062', '/stamp/stamp.jsp?tp=&arnumber=9477062')
+2024-10-10 19:59:44-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7062\9477062\9477062.pdf
+2024-10-10 19:59:44-9223-INFO-2024-10-10 19:59:44,156 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7062\9477062\9477062.pdf)
+2024-10-10 19:59:44-9223-INFO-2024-10-10 19:59:44,266 - INFO - 下载完成9477062
+2024-10-10 20:00:04-9223-INFO-2024-10-10 20:00:04,273 - INFO - ('9440860', '/stamp/stamp.jsp?tp=&arnumber=9440860')
+2024-10-10 20:00:18-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0860\9440860\9440860.pdf
+2024-10-10 20:00:18-9223-INFO-2024-10-10 20:00:18,529 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0860\9440860\9440860.pdf)
+2024-10-10 20:00:18-9223-INFO-2024-10-10 20:00:18,639 - INFO - 下载完成9440860
+2024-10-10 20:00:34-9223-INFO-2024-10-10 20:00:34,656 - INFO - ('9439190', '/stamp/stamp.jsp?tp=&arnumber=9439190')
+2024-10-10 20:00:47-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9190\9439190\9439190.pdf
+2024-10-10 20:00:47-9223-INFO-2024-10-10 20:00:47,853 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9190\9439190\9439190.pdf)
+2024-10-10 20:00:47-9223-INFO-2024-10-10 20:00:47,956 - INFO - 下载完成9439190
+2024-10-10 20:01:02-9223-INFO-2024-10-10 20:01:02,966 - INFO - ('9428576', '/stamp/stamp.jsp?tp=&arnumber=9428576')
+2024-10-10 20:01:15-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8576\9428576\9428576.pdf
+2024-10-10 20:01:15-9223-INFO-2024-10-10 20:01:15,709 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8576\9428576\9428576.pdf)
+2024-10-10 20:01:15-9223-INFO-2024-10-10 20:01:15,843 - INFO - 下载完成9428576
+2024-10-10 20:01:32-9223-INFO-2024-10-10 20:01:32,845 - INFO - ('9436011', '/stamp/stamp.jsp?tp=&arnumber=9436011')
+2024-10-10 20:01:44-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6011\9436011\9436011.pdf
+2024-10-10 20:01:44-9223-INFO-2024-10-10 20:01:44,109 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6011\9436011\9436011.pdf)
+2024-10-10 20:01:44-9223-INFO-2024-10-10 20:01:44,211 - INFO - 下载完成9436011
+2024-10-10 20:02:03-9223-INFO-2024-10-10 20:02:03,214 - INFO - ('9435960', '/stamp/stamp.jsp?tp=&arnumber=9435960')
+2024-10-10 20:02:17-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5960\9435960\9435960.pdf
+2024-10-10 20:02:17-9223-INFO-2024-10-10 20:02:17,561 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5960\9435960\9435960.pdf)
+2024-10-10 20:02:17-9223-INFO-2024-10-10 20:02:17,661 - INFO - 下载完成9435960
+2024-10-10 20:02:32-9223-INFO-2024-10-10 20:02:32,671 - INFO - ('9431648', '/stamp/stamp.jsp?tp=&arnumber=9431648')
+2024-10-10 20:02:37-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1648\9431648\9431648.pdf
+2024-10-10 20:02:37-9223-INFO-2024-10-10 20:02:37,630 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1648\9431648\9431648.pdf)
+2024-10-10 20:02:37-9223-INFO-2024-10-10 20:02:37,723 - INFO - 下载完成9431648
+2024-10-10 20:02:53-9223-INFO-2024-10-10 20:02:53,728 - INFO - ('9431687', '/stamp/stamp.jsp?tp=&arnumber=9431687')
+2024-10-10 20:02:59-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1687\9431687\9431687.pdf
+2024-10-10 20:02:59-9223-INFO-2024-10-10 20:02:59,011 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1687\9431687\9431687.pdf)
+2024-10-10 20:02:59-9223-INFO-2024-10-10 20:02:59,104 - INFO - 下载完成9431687
+2024-10-10 20:03:16-9223-INFO-2024-10-10 20:03:16,113 - INFO - ('9430752', '/stamp/stamp.jsp?tp=&arnumber=9430752')
+2024-10-10 20:03:29-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0752\9430752\9430752.pdf
+2024-10-10 20:03:29-9223-INFO-2024-10-10 20:03:29,433 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0752\9430752\9430752.pdf)
+2024-10-10 20:03:29-9223-INFO-2024-10-10 20:03:29,540 - INFO - 下载完成9430752
+2024-10-10 20:03:45-9223-INFO-2024-10-10 20:03:45,549 - INFO - ('9428516', '/stamp/stamp.jsp?tp=&arnumber=9428516')
+2024-10-10 20:03:55-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8516\9428516\9428516.pdf
+2024-10-10 20:03:55-9223-INFO-2024-10-10 20:03:55,927 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8516\9428516\9428516.pdf)
+2024-10-10 20:03:56-9223-INFO-2024-10-10 20:03:56,035 - INFO - 下载完成9428516
+2024-10-10 20:04:16-9223-INFO-2024-10-10 20:04:16,048 - INFO - ('9426409', '/stamp/stamp.jsp?tp=&arnumber=9426409')
+2024-10-10 20:04:35-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6409\9426409\9426409.pdf
+2024-10-10 20:04:35-9223-INFO-2024-10-10 20:04:35,550 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6409\9426409\9426409.pdf)
+2024-10-10 20:04:35-9223-INFO-2024-10-10 20:04:35,685 - INFO - 下载完成9426409
+2024-10-10 20:04:54-9223-INFO-2024-10-10 20:04:54,692 - INFO - ('9427084', '/stamp/stamp.jsp?tp=&arnumber=9427084')
+2024-10-10 20:04:59-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7084\9427084\9427084.pdf
+2024-10-10 20:04:59-9223-INFO-2024-10-10 20:04:59,552 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7084\9427084\9427084.pdf)
+2024-10-10 20:04:59-9223-INFO-2024-10-10 20:04:59,653 - INFO - 下载完成9427084
+2024-10-10 20:05:17-9223-INFO-2024-10-10 20:05:17,661 - INFO - ('9424372', '/stamp/stamp.jsp?tp=&arnumber=9424372')
+2024-10-10 20:05:28-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4372\9424372\9424372.pdf
+2024-10-10 20:05:28-9223-INFO-2024-10-10 20:05:28,301 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4372\9424372\9424372.pdf)
+2024-10-10 20:05:28-9223-INFO-2024-10-10 20:05:28,407 - INFO - 下载完成9424372
+2024-10-10 20:05:43-9223-INFO-2024-10-10 20:05:43,416 - INFO - ('9426395', '/stamp/stamp.jsp?tp=&arnumber=9426395')
+2024-10-10 20:05:53-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6395\9426395\9426395.pdf
+2024-10-10 20:05:53-9223-INFO-2024-10-10 20:05:53,738 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6395\9426395\9426395.pdf)
+2024-10-10 20:05:53-9223-INFO-2024-10-10 20:05:53,851 - INFO - 下载完成9426395
+2024-10-10 20:06:08-9223-INFO-2024-10-10 20:06:08,861 - INFO - ('9426402', '/stamp/stamp.jsp?tp=&arnumber=9426402')
+2024-10-10 20:06:24-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6402\9426402\9426402.pdf
+2024-10-10 20:06:24-9223-INFO-2024-10-10 20:06:24,582 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6402\9426402\9426402.pdf)
+2024-10-10 20:06:24-9223-INFO-2024-10-10 20:06:24,696 - INFO - 下载完成9426402
+2024-10-10 20:06:39-9223-INFO-2024-10-10 20:06:39,708 - INFO - ('9424950', '/stamp/stamp.jsp?tp=&arnumber=9424950')
+2024-10-10 20:06:49-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4950\9424950\9424950.pdf
+2024-10-10 20:06:49-9223-INFO-2024-10-10 20:06:49,873 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4950\9424950\9424950.pdf)
+2024-10-10 20:06:49-9223-INFO-2024-10-10 20:06:49,990 - INFO - 下载完成9424950
+2024-10-10 20:07:05-9223-INFO-2024-10-10 20:07:05,992 - INFO - ('9423510', '/stamp/stamp.jsp?tp=&arnumber=9423510')
+2024-10-10 20:07:25-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3510\9423510\9423510.pdf
+2024-10-10 20:07:25-9223-INFO-2024-10-10 20:07:25,740 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3510\9423510\9423510.pdf)
+2024-10-10 20:07:25-9223-INFO-2024-10-10 20:07:25,873 - INFO - 下载完成9423510
+2024-10-10 20:07:40-9223-INFO-2024-10-10 20:07:40,881 - INFO - ('9422109', '/stamp/stamp.jsp?tp=&arnumber=9422109')
+2024-10-10 20:07:57-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2109\9422109\9422109.pdf
+2024-10-10 20:07:57-9223-INFO-2024-10-10 20:07:57,170 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2109\9422109\9422109.pdf)
+2024-10-10 20:07:57-9223-INFO-2024-10-10 20:07:57,284 - INFO - 下载完成9422109
+2024-10-10 20:08:17-9223-INFO-2024-10-10 20:08:17,290 - INFO - ('9423511', '/stamp/stamp.jsp?tp=&arnumber=9423511')
+2024-10-10 20:08:32-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3511\9423511\9423511.pdf
+2024-10-10 20:08:32-9223-INFO-2024-10-10 20:08:32,417 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3511\9423511\9423511.pdf)
+2024-10-10 20:08:32-9223-INFO-2024-10-10 20:08:32,523 - INFO - 下载完成9423511
+2024-10-10 20:08:49-9223-INFO-2024-10-10 20:08:49,530 - INFO - ('9419726', '/stamp/stamp.jsp?tp=&arnumber=9419726')
+2024-10-10 20:09:01-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9726\9419726\9419726.pdf
+2024-10-10 20:09:01-9223-INFO-2024-10-10 20:09:01,803 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9726\9419726\9419726.pdf)
+2024-10-10 20:09:01-9223-INFO-2024-10-10 20:09:01,917 - INFO - 下载完成9419726
+2024-10-10 20:09:21-9223-INFO-2024-10-10 20:09:21,927 - INFO - ('9417626', '/stamp/stamp.jsp?tp=&arnumber=9417626')
+2024-10-10 20:09:30-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7626\9417626\9417626.pdf
+2024-10-10 20:09:30-9223-INFO-2024-10-10 20:09:30,688 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7626\9417626\9417626.pdf)
+2024-10-10 20:09:30-9223-INFO-2024-10-10 20:09:30,783 - INFO - 下载完成9417626
+2024-10-10 20:09:48-9223-INFO-2024-10-10 20:09:48,789 - INFO - ('9417610', '/stamp/stamp.jsp?tp=&arnumber=9417610')
+2024-10-10 20:10:00-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7610\9417610\9417610.pdf
+2024-10-10 20:10:00-9223-INFO-2024-10-10 20:10:00,696 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7610\9417610\9417610.pdf)
+2024-10-10 20:10:00-9223-INFO-2024-10-10 20:10:00,810 - INFO - 下载完成9417610
+2024-10-10 20:10:17-9223-INFO-2024-10-10 20:10:17,812 - INFO - ('9416750', '/stamp/stamp.jsp?tp=&arnumber=9416750')
+2024-10-10 20:10:27-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6750\9416750\9416750.pdf
+2024-10-10 20:10:27-9223-INFO-2024-10-10 20:10:27,973 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6750\9416750\9416750.pdf)
+2024-10-10 20:10:28-9223-INFO-2024-10-10 20:10:28,088 - INFO - 下载完成9416750
+2024-10-10 20:10:44-9223-INFO-2024-10-10 20:10:44,090 - INFO - ('9410356', '/stamp/stamp.jsp?tp=&arnumber=9410356')
+2024-10-10 20:10:57-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0356\9410356\9410356.pdf
+2024-10-10 20:10:57-9223-INFO-2024-10-10 20:10:57,903 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0356\9410356\9410356.pdf)
+2024-10-10 20:10:58-9223-INFO-2024-10-10 20:10:58,017 - INFO - 下载完成9410356
+2024-10-10 20:11:14-9223-INFO-2024-10-10 20:11:14,026 - INFO - ('9416749', '/stamp/stamp.jsp?tp=&arnumber=9416749')
+2024-10-10 20:11:30-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6749\9416749\9416749.pdf
+2024-10-10 20:11:30-9223-INFO-2024-10-10 20:11:30,984 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6749\9416749\9416749.pdf)
+2024-10-10 20:11:31-9223-INFO-2024-10-10 20:11:31,110 - INFO - 下载完成9416749
+2024-10-10 20:11:47-9223-INFO-2024-10-10 20:11:47,123 - INFO - ('9416148', '/stamp/stamp.jsp?tp=&arnumber=9416148')
+2024-10-10 20:12:21-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6148\9416148\9416148.pdf
+2024-10-10 20:12:21-9223-INFO-2024-10-10 20:12:21,898 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6148\9416148\9416148.pdf)
+2024-10-10 20:12:22-9223-INFO-2024-10-10 20:12:22,055 - INFO - 下载完成9416148
+2024-10-10 20:12:38-9223-INFO-2024-10-10 20:12:38,067 - INFO - ('9416737', '/stamp/stamp.jsp?tp=&arnumber=9416737')
+2024-10-10 20:13:01-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6737\9416737\9416737.pdf
+2024-10-10 20:13:01-9223-INFO-2024-10-10 20:13:01,871 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6737\9416737\9416737.pdf)
+2024-10-10 20:13:02-9223-INFO-2024-10-10 20:13:02,009 - INFO - 下载完成9416737
+2024-10-10 20:13:17-9223-INFO-2024-10-10 20:13:17,023 - INFO - ('9409624', '/stamp/stamp.jsp?tp=&arnumber=9409624')
+2024-10-10 20:13:29-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9624\9409624\9409624.pdf
+2024-10-10 20:13:29-9223-INFO-2024-10-10 20:13:29,556 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9624\9409624\9409624.pdf)
+2024-10-10 20:13:29-9223-INFO-2024-10-10 20:13:29,654 - INFO - 下载完成9409624
+2024-10-10 20:13:49-9223-INFO-2024-10-10 20:13:49,665 - INFO - ('9410351', '/stamp/stamp.jsp?tp=&arnumber=9410351')
+2024-10-10 20:14:05-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0351\9410351\9410351.pdf
+2024-10-10 20:14:05-9223-INFO-2024-10-10 20:14:05,700 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0351\9410351\9410351.pdf)
+2024-10-10 20:14:05-9223-INFO-2024-10-10 20:14:05,824 - INFO - 下载完成9410351
+2024-10-10 20:14:21-9223-INFO-2024-10-10 20:14:21,839 - INFO - ('9409623', '/stamp/stamp.jsp?tp=&arnumber=9409623')
+2024-10-10 20:14:28-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9623\9409623\9409623.pdf
+2024-10-10 20:14:28-9223-INFO-2024-10-10 20:14:28,819 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9623\9409623\9409623.pdf)
+2024-10-10 20:14:28-9223-INFO-2024-10-10 20:14:28,940 - INFO - 下载完成9409623
+2024-10-10 20:14:48-9223-INFO-2024-10-10 20:14:48,948 - INFO - ('9409620', '/stamp/stamp.jsp?tp=&arnumber=9409620')
+2024-10-10 20:14:52-9223-INFO-2024-10-10 20:14:52,167 - INFO - PDF IS ERROR!
+2024-10-10 20:14:56-9223-INFO-2024-10-10 20:14:56,172 - INFO - ('9405403', '/stamp/stamp.jsp?tp=&arnumber=9405403')
+2024-10-10 20:15:10-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5403\9405403\9405403.pdf
+2024-10-10 20:15:10-9223-INFO-2024-10-10 20:15:10,432 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5403\9405403\9405403.pdf)
+2024-10-10 20:15:10-9223-INFO-2024-10-10 20:15:10,550 - INFO - 下载完成9405403
+2024-10-10 20:15:29-9223-INFO-2024-10-10 20:15:29,554 - INFO - ('9380892', '/stamp/stamp.jsp?tp=&arnumber=9380892')
+2024-10-10 20:15:37-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0892\9380892\9380892.pdf
+2024-10-10 20:15:37-9223-INFO-2024-10-10 20:15:37,264 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0892\9380892\9380892.pdf)
+2024-10-10 20:15:37-9223-INFO-2024-10-10 20:15:37,381 - INFO - 下载完成9380892
+2024-10-10 20:15:57-9223-INFO-2024-10-10 20:15:57,390 - INFO - ('9408368', '/stamp/stamp.jsp?tp=&arnumber=9408368')
+2024-10-10 20:16:06-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8368\9408368\9408368.pdf
+2024-10-10 20:16:06-9223-INFO-2024-10-10 20:16:06,572 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8368\9408368\9408368.pdf)
+2024-10-10 20:16:06-9223-INFO-2024-10-10 20:16:06,678 - INFO - 下载完成9408368
+2024-10-10 20:16:25-9223-INFO-2024-10-10 20:16:25,682 - INFO - ('9409629', '/stamp/stamp.jsp?tp=&arnumber=9409629')
+2024-10-10 20:16:30-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9629\9409629\9409629.pdf
+2024-10-10 20:16:30-9223-INFO-2024-10-10 20:16:30,716 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9629\9409629\9409629.pdf)
+2024-10-10 20:16:30-9223-INFO-2024-10-10 20:16:30,798 - INFO - 下载完成9409629
+2024-10-10 20:16:49-9223-INFO-2024-10-10 20:16:49,801 - INFO - ('9408601', '/stamp/stamp.jsp?tp=&arnumber=9408601')
+2024-10-10 20:17:01-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8601\9408601\9408601.pdf
+2024-10-10 20:17:01-9223-INFO-2024-10-10 20:17:01,474 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8601\9408601\9408601.pdf)
+2024-10-10 20:17:01-9223-INFO-2024-10-10 20:17:01,580 - INFO - 下载完成9408601
+2024-10-10 20:17:18-9223-INFO-2024-10-10 20:17:18,594 - INFO - ('9405390', '/stamp/stamp.jsp?tp=&arnumber=9405390')
+2024-10-10 20:17:28-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5390\9405390\9405390.pdf
+2024-10-10 20:17:28-9223-INFO-2024-10-10 20:17:28,292 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5390\9405390\9405390.pdf)
+2024-10-10 20:17:28-9223-INFO-2024-10-10 20:17:28,399 - INFO - 下载完成9405390
+2024-10-10 20:17:45-9223-INFO-2024-10-10 20:17:45,413 - INFO - ('9408353', '/stamp/stamp.jsp?tp=&arnumber=9408353')
+2024-10-10 20:17:59-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8353\9408353\9408353.pdf
+2024-10-10 20:17:59-9223-INFO-2024-10-10 20:17:59,915 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8353\9408353\9408353.pdf)
+2024-10-10 20:18:00-9223-INFO-2024-10-10 20:18:00,096 - INFO - 下载完成9408353
+2024-10-10 20:18:18-9223-INFO-2024-10-10 20:18:18,100 - INFO - ('9405396', '/stamp/stamp.jsp?tp=&arnumber=9405396')
+2024-10-10 20:18:25-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5396\9405396\9405396.pdf
+2024-10-10 20:18:25-9223-INFO-2024-10-10 20:18:25,723 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5396\9405396\9405396.pdf)
+2024-10-10 20:18:25-9223-INFO-2024-10-10 20:18:25,811 - INFO - 下载完成9405396
+2024-10-10 20:18:41-9223-INFO-2024-10-10 20:18:41,826 - INFO - ('9405391', '/stamp/stamp.jsp?tp=&arnumber=9405391')
+2024-10-10 20:19:07-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5391\9405391\9405391.pdf
+2024-10-10 20:19:07-9223-INFO-2024-10-10 20:19:07,661 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5391\9405391\9405391.pdf)
+2024-10-10 20:19:07-9223-INFO-2024-10-10 20:19:07,828 - INFO - 下载完成9405391
+2024-10-10 20:19:26-9223-INFO-2024-10-10 20:19:26,844 - INFO - ('9406338', '/stamp/stamp.jsp?tp=&arnumber=9406338')
+2024-10-10 20:19:45-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6338\9406338\9406338.pdf
+2024-10-10 20:19:45-9223-INFO-2024-10-10 20:19:45,137 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6338\9406338\9406338.pdf)
+2024-10-10 20:19:45-9223-INFO-2024-10-10 20:19:45,287 - INFO - 下载完成9406338
+2024-10-10 20:20:05-9223-INFO-2024-10-10 20:20:05,289 - INFO - ('9405406', '/stamp/stamp.jsp?tp=&arnumber=9405406')
+2024-10-10 20:20:22-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5406\9405406\9405406.pdf
+2024-10-10 20:20:22-9223-INFO-2024-10-10 20:20:22,855 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5406\9405406\9405406.pdf)
+2024-10-10 20:20:22-9223-INFO-2024-10-10 20:20:22,990 - INFO - 下载完成9405406
+2024-10-10 20:20:41-9223-INFO-2024-10-10 20:20:41,995 - INFO - ('9405394', '/stamp/stamp.jsp?tp=&arnumber=9405394')
+2024-10-10 20:20:56-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5394\9405394\9405394.pdf
+2024-10-10 20:20:56-9223-INFO-2024-10-10 20:20:56,606 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5394\9405394\9405394.pdf)
+2024-10-10 20:20:56-9223-INFO-2024-10-10 20:20:56,727 - INFO - 下载完成9405394
+2024-10-10 20:21:16-9223-INFO-2024-10-10 20:21:16,733 - INFO - ('9405395', '/stamp/stamp.jsp?tp=&arnumber=9405395')
+2024-10-10 20:21:26-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5395\9405395\9405395.pdf
+2024-10-10 20:21:26-9223-INFO-2024-10-10 20:21:26,582 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5395\9405395\9405395.pdf)
+2024-10-10 20:21:26-9223-INFO-2024-10-10 20:21:26,686 - INFO - 下载完成9405395
+2024-10-10 20:21:43-9223-INFO-2024-10-10 20:21:43,695 - INFO - ('9400721', '/stamp/stamp.jsp?tp=&arnumber=9400721')
+2024-10-10 20:22:09-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0721\9400721\9400721.pdf
+2024-10-10 20:22:09-9223-INFO-2024-10-10 20:22:09,382 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0721\9400721\9400721.pdf)
+2024-10-10 20:22:09-9223-INFO-2024-10-10 20:22:09,534 - INFO - 下载完成9400721
+2024-10-10 20:22:26-9223-INFO-2024-10-10 20:22:26,536 - INFO - ('9399233', '/stamp/stamp.jsp?tp=&arnumber=9399233')
+2024-10-10 20:22:39-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9233\9399233\9399233.pdf
+2024-10-10 20:22:39-9223-INFO-2024-10-10 20:22:39,456 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9233\9399233\9399233.pdf)
+2024-10-10 20:22:39-9223-INFO-2024-10-10 20:22:39,586 - INFO - 下载完成9399233
+2024-10-10 20:22:57-9223-INFO-2024-10-10 20:22:57,593 - INFO - ('9399778', '/stamp/stamp.jsp?tp=&arnumber=9399778')
+2024-10-10 20:23:18-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9778\9399778\9399778.pdf
+2024-10-10 20:23:18-9223-INFO-2024-10-10 20:23:18,561 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9778\9399778\9399778.pdf)
+2024-10-10 20:23:18-9223-INFO-2024-10-10 20:23:18,745 - INFO - 下载完成9399778
+2024-10-10 20:23:38-9223-INFO-2024-10-10 20:23:38,758 - INFO - ('9398537', '/stamp/stamp.jsp?tp=&arnumber=9398537')
+2024-10-10 20:23:44-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8537\9398537\9398537.pdf
+2024-10-10 20:23:44-9223-INFO-2024-10-10 20:23:44,582 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8537\9398537\9398537.pdf)
+2024-10-10 20:23:44-9223-INFO-2024-10-10 20:23:44,678 - INFO - 下载完成9398537
+2024-10-10 20:24:00-9223-INFO-2024-10-10 20:24:00,690 - INFO - ('9399779', '/stamp/stamp.jsp?tp=&arnumber=9399779')
+2024-10-10 20:24:07-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9779\9399779\9399779.pdf
+2024-10-10 20:24:07-9223-INFO-2024-10-10 20:24:07,398 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9779\9399779\9399779.pdf)
+2024-10-10 20:24:07-9223-INFO-2024-10-10 20:24:07,492 - INFO - 下载完成9399779
+2024-10-10 20:24:23-9223-INFO-2024-10-10 20:24:23,499 - INFO - ('9399774', '/stamp/stamp.jsp?tp=&arnumber=9399774')
+2024-10-10 20:24:31-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9774\9399774\9399774.pdf
+2024-10-10 20:24:31-9223-INFO-2024-10-10 20:24:31,215 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9774\9399774\9399774.pdf)
+2024-10-10 20:24:31-9223-INFO-2024-10-10 20:24:31,344 - INFO - 下载完成9399774
+2024-10-10 20:24:47-9223-INFO-2024-10-10 20:24:47,353 - INFO - ('9400733', '/stamp/stamp.jsp?tp=&arnumber=9400733')
+2024-10-10 20:25:08-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0733\9400733\9400733.pdf
+2024-10-10 20:25:08-9223-INFO-2024-10-10 20:25:08,661 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0733\9400733\9400733.pdf)
+2024-10-10 20:25:08-9223-INFO-2024-10-10 20:25:08,796 - INFO - 下载完成9400733
+2024-10-10 20:25:28-9223-INFO-2024-10-10 20:25:28,801 - INFO - ('9308976', '/stamp/stamp.jsp?tp=&arnumber=9308976')
+2024-10-10 20:25:40-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8976\9308976\9308976.pdf
+2024-10-10 20:25:40-9223-INFO-2024-10-10 20:25:40,657 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8976\9308976\9308976.pdf)
+2024-10-10 20:25:40-9223-INFO-2024-10-10 20:25:40,778 - INFO - 下载完成9308976
+2024-10-10 20:25:55-9223-INFO-2024-10-10 20:25:55,781 - INFO - ('9316786', '/stamp/stamp.jsp?tp=&arnumber=9316786')
+2024-10-10 20:26:07-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6786\9316786\9316786.pdf
+2024-10-10 20:26:07-9223-INFO-2024-10-10 20:26:07,682 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6786\9316786\9316786.pdf)
+2024-10-10 20:26:07-9223-INFO-2024-10-10 20:26:07,793 - INFO - 下载完成9316786
+2024-10-10 20:26:27-9223-INFO-2024-10-10 20:26:27,796 - INFO - ('9286565', '/stamp/stamp.jsp?tp=&arnumber=9286565')
+2024-10-10 20:26:36-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6565\9286565\9286565.pdf
+2024-10-10 20:26:36-9223-INFO-2024-10-10 20:26:36,946 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6565\9286565\9286565.pdf)
+2024-10-10 20:26:37-9223-INFO-2024-10-10 20:26:37,051 - INFO - 下载完成9286565
+2024-10-10 20:26:52-9223-INFO-2024-10-10 20:26:52,054 - INFO - ('9281084', '/stamp/stamp.jsp?tp=&arnumber=9281084')
+2024-10-10 20:27:01-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1084\9281084\9281084.pdf
+2024-10-10 20:27:01-9223-INFO-2024-10-10 20:27:01,323 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1084\9281084\9281084.pdf)
+2024-10-10 20:27:01-9223-INFO-2024-10-10 20:27:01,432 - INFO - 下载完成9281084
+2024-10-10 20:27:16-9223-INFO-2024-10-10 20:27:16,441 - INFO - ('9286501', '/stamp/stamp.jsp?tp=&arnumber=9286501')
+2024-10-10 20:27:23-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6501\9286501\9286501.pdf
+2024-10-10 20:27:23-9223-INFO-2024-10-10 20:27:23,815 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6501\9286501\9286501.pdf)
+2024-10-10 20:27:23-9223-INFO-2024-10-10 20:27:23,917 - INFO - 下载完成9286501
+2024-10-10 20:27:42-9223-INFO-2024-10-10 20:27:42,930 - INFO - ('9286595', '/stamp/stamp.jsp?tp=&arnumber=9286595')
+2024-10-10 20:27:59-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6595\9286595\9286595.pdf
+2024-10-10 20:27:59-9223-INFO-2024-10-10 20:27:59,665 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6595\9286595\9286595.pdf)
+2024-10-10 20:27:59-9223-INFO-2024-10-10 20:27:59,779 - INFO - 下载完成9286595
+2024-10-10 20:28:14-9223-INFO-2024-10-10 20:28:14,782 - INFO - ('9286593', '/stamp/stamp.jsp?tp=&arnumber=9286593')
+2024-10-10 20:28:25-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6593\9286593\9286593.pdf
+2024-10-10 20:28:25-9223-INFO-2024-10-10 20:28:25,597 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6593\9286593\9286593.pdf)
+2024-10-10 20:28:25-9223-INFO-2024-10-10 20:28:25,702 - INFO - 下载完成9286593
+2024-10-10 20:28:40-9223-INFO-2024-10-10 20:28:40,711 - INFO - ('9311218', '/stamp/stamp.jsp?tp=&arnumber=9311218')
+2024-10-10 20:29:11-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1218\9311218\9311218.pdf
+2024-10-10 20:29:11-9223-INFO-2024-10-10 20:29:11,446 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1218\9311218\9311218.pdf)
+2024-10-10 20:29:11-9223-INFO-2024-10-10 20:29:11,587 - INFO - 下载完成9311218
+2024-10-10 20:29:29-9223-INFO-2024-10-10 20:29:29,597 - INFO - ('9335030', '/stamp/stamp.jsp?tp=&arnumber=9335030')
+2024-10-10 20:29:41-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5030\9335030\9335030.pdf
+2024-10-10 20:29:41-9223-INFO-2024-10-10 20:29:41,208 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5030\9335030\9335030.pdf)
+2024-10-10 20:29:41-9223-INFO-2024-10-10 20:29:41,334 - INFO - 下载完成9335030
+2024-10-10 20:30:00-9223-INFO-2024-10-10 20:30:00,342 - INFO - ('9252857', '/stamp/stamp.jsp?tp=&arnumber=9252857')
+2024-10-10 20:30:35-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2857\9252857\9252857.pdf
+2024-10-10 20:30:35-9223-INFO-2024-10-10 20:30:35,549 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2857\9252857\9252857.pdf)
+2024-10-10 20:30:35-9223-INFO-2024-10-10 20:30:35,738 - INFO - 下载完成9252857
+2024-10-10 20:30:54-9223-INFO-2024-10-10 20:30:54,754 - INFO - ('9265244', '/stamp/stamp.jsp?tp=&arnumber=9265244')
+2024-10-10 20:31:04-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5244\9265244\9265244.pdf
+2024-10-10 20:31:04-9223-INFO-2024-10-10 20:31:04,092 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5244\9265244\9265244.pdf)
+2024-10-10 20:31:04-9223-INFO-2024-10-10 20:31:04,202 - INFO - 下载完成9265244
+2024-10-10 20:31:23-9223-INFO-2024-10-10 20:31:23,217 - INFO - ('9271852', '/stamp/stamp.jsp?tp=&arnumber=9271852')
+2024-10-10 20:31:31-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1852\9271852\9271852.pdf
+2024-10-10 20:31:31-9223-INFO-2024-10-10 20:31:31,617 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1852\9271852\9271852.pdf)
+2024-10-10 20:31:31-9223-INFO-2024-10-10 20:31:31,719 - INFO - 下载完成9271852
+2024-10-10 20:31:50-9223-INFO-2024-10-10 20:31:50,727 - INFO - ('9280338', '/stamp/stamp.jsp?tp=&arnumber=9280338')
+2024-10-10 20:32:07-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0338\9280338\9280338.pdf
+2024-10-10 20:32:07-9223-INFO-2024-10-10 20:32:07,368 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0338\9280338\9280338.pdf)
+2024-10-10 20:32:07-9223-INFO-2024-10-10 20:32:07,488 - INFO - 下载完成9280338
+2024-10-10 20:32:24-9223-INFO-2024-10-10 20:32:24,501 - INFO - ('9269353', '/stamp/stamp.jsp?tp=&arnumber=9269353')
+2024-10-10 20:32:42-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9353\9269353\9269353.pdf
+2024-10-10 20:32:42-9223-INFO-2024-10-10 20:32:42,531 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9353\9269353\9269353.pdf)
+2024-10-10 20:32:42-9223-INFO-2024-10-10 20:32:42,669 - INFO - 下载完成9269353
+2024-10-10 20:33:01-9223-INFO-2024-10-10 20:33:01,675 - INFO - ('9244557', '/stamp/stamp.jsp?tp=&arnumber=9244557')
+2024-10-10 20:33:11-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4557\9244557\9244557.pdf
+2024-10-10 20:33:11-9223-INFO-2024-10-10 20:33:11,203 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4557\9244557\9244557.pdf)
+2024-10-10 20:33:11-9223-INFO-2024-10-10 20:33:11,373 - INFO - 下载完成9244557
+2024-10-10 20:33:28-9223-INFO-2024-10-10 20:33:28,389 - INFO - ('9250475', '/stamp/stamp.jsp?tp=&arnumber=9250475')
+2024-10-10 20:33:45-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0475\9250475\9250475.pdf
+2024-10-10 20:33:45-9223-INFO-2024-10-10 20:33:45,912 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0475\9250475\9250475.pdf)
+2024-10-10 20:33:46-9223-INFO-2024-10-10 20:33:46,037 - INFO - 下载完成9250475
+2024-10-10 20:34:05-9223-INFO-2024-10-10 20:34:05,050 - INFO - ('9252832', '/stamp/stamp.jsp?tp=&arnumber=9252832')
+2024-10-10 20:34:21-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2832\9252832\9252832.pdf
+2024-10-10 20:34:21-9223-INFO-2024-10-10 20:34:21,563 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2832\9252832\9252832.pdf)
+2024-10-10 20:34:21-9223-INFO-2024-10-10 20:34:21,700 - INFO - 下载完成9252832
+2024-10-10 20:34:40-9223-INFO-2024-10-10 20:34:40,704 - INFO - ('9250534', '/stamp/stamp.jsp?tp=&arnumber=9250534')
+2024-10-10 20:34:51-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0534\9250534\9250534.pdf
+2024-10-10 20:34:51-9223-INFO-2024-10-10 20:34:51,221 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0534\9250534\9250534.pdf)
+2024-10-10 20:34:51-9223-INFO-2024-10-10 20:34:51,416 - INFO - 下载完成9250534
+2024-10-10 20:35:08-9223-INFO-2024-10-10 20:35:08,420 - INFO - ('9247393', '/stamp/stamp.jsp?tp=&arnumber=9247393')
+2024-10-10 20:35:15-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7393\9247393\9247393.pdf
+2024-10-10 20:35:15-9223-INFO-2024-10-10 20:35:15,763 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7393\9247393\9247393.pdf)
+2024-10-10 20:35:15-9223-INFO-2024-10-10 20:35:15,868 - INFO - 下载完成9247393
+2024-10-10 20:35:33-9223-INFO-2024-10-10 20:35:33,870 - INFO - ('9250510', '/stamp/stamp.jsp?tp=&arnumber=9250510')
+2024-10-10 20:35:40-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0510\9250510\9250510.pdf
+2024-10-10 20:35:40-9223-INFO-2024-10-10 20:35:40,486 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0510\9250510\9250510.pdf)
+2024-10-10 20:35:40-9223-INFO-2024-10-10 20:35:40,581 - INFO - 下载完成9250510
+2024-10-10 20:35:56-9223-INFO-2024-10-10 20:35:56,585 - INFO - ('9390175', '/stamp/stamp.jsp?tp=&arnumber=9390175')
+2024-10-10 20:36:03-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0175\9390175\9390175.pdf
+2024-10-10 20:36:03-9223-INFO-2024-10-10 20:36:03,473 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0175\9390175\9390175.pdf)
+2024-10-10 20:36:03-9223-INFO-2024-10-10 20:36:03,590 - INFO - 下载完成9390175
+2024-10-10 20:36:22-9223-INFO-2024-10-10 20:36:22,607 - INFO - ('9392235', '/stamp/stamp.jsp?tp=&arnumber=9392235')
+2024-10-10 20:36:28-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2235\9392235\9392235.pdf
+2024-10-10 20:36:28-9223-INFO-2024-10-10 20:36:28,628 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2235\9392235\9392235.pdf)
+2024-10-10 20:36:28-9223-INFO-2024-10-10 20:36:28,739 - INFO - 下载完成9392235
+2024-10-10 20:36:44-9223-INFO-2024-10-10 20:36:44,746 - INFO - ('9390176', '/stamp/stamp.jsp?tp=&arnumber=9390176')
+2024-10-10 20:36:49-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0176\9390176\9390176.pdf
+2024-10-10 20:36:49-9223-INFO-2024-10-10 20:36:49,304 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0176\9390176\9390176.pdf)
+2024-10-10 20:36:49-9223-INFO-2024-10-10 20:36:49,470 - INFO - 下载完成9390176
+2024-10-10 20:37:04-9223-INFO-2024-10-10 20:37:04,486 - INFO - ('9387532', '/stamp/stamp.jsp?tp=&arnumber=9387532')
+2024-10-10 20:37:04-9223-INFO-2024-10-10 20:37:04,890 - INFO - PDF IS ERROR!
+2024-10-10 20:37:08-9223-INFO-2024-10-10 20:37:08,896 - INFO - ('9387533', '/stamp/stamp.jsp?tp=&arnumber=9387533')
+2024-10-10 20:37:09-9223-INFO-2024-10-10 20:37:09,300 - INFO - PDF IS ERROR!
+2024-10-10 20:37:13-9223-INFO-2024-10-10 20:37:13,316 - INFO - ('9387534', '/stamp/stamp.jsp?tp=&arnumber=9387534')
+2024-10-10 20:37:13-9223-INFO-2024-10-10 20:37:13,771 - INFO - PDF IS ERROR!
+2024-10-10 20:37:18-9223-INFO-2024-10-10 20:37:18,774 - INFO - ('9383836', '/stamp/stamp.jsp?tp=&arnumber=9383836')
+2024-10-10 20:37:19-9223-INFO-2024-10-10 20:37:19,264 - INFO - PDF IS ERROR!
+2024-10-10 20:37:23-9223-INFO-2024-10-10 20:37:23,267 - INFO - ('9383837', '/stamp/stamp.jsp?tp=&arnumber=9383837')
+2024-10-10 20:37:23-9223-INFO-2024-10-10 20:37:23,606 - INFO - PDF IS ERROR!
+2024-10-10 20:37:28-9223-INFO-2024-10-10 20:37:28,618 - INFO - ('9385119', '/stamp/stamp.jsp?tp=&arnumber=9385119')
+2024-10-10 20:37:28-9223-INFO-2024-10-10 20:37:28,963 - INFO - PDF IS ERROR!
+2024-10-10 20:37:31-9223-INFO-2024-10-10 20:37:31,970 - INFO - 连续请求失败五次退出程序
+2024-10-10 20:37:31-9223-ERROR-Traceback (most recent call last):
+2024-10-10 20:37:31-9223-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9223.py", line 114, in <module>
+2024-10-10 20:37:31-9223-ERROR-main()
+2024-10-10 20:37:31-9223-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9223.py", line 108, in main
+2024-10-10 20:37:31-9223-ERROR-Consumer('IEEE').read_message(callback)
+2024-10-10 20:37:31-9223-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\message_que\rabbitmq.py", line 66, in read_message
+2024-10-10 20:37:31-9223-ERROR-self._channel.start_consuming()
+2024-10-10 20:37:31-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1883, in start_consuming
+2024-10-10 20:37:31-9223-ERROR-self._process_data_events(time_limit=None)
+2024-10-10 20:37:31-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 2044, in _process_data_events
+2024-10-10 20:37:31-9223-ERROR-self.connection.process_data_events(time_limit=time_limit)
+2024-10-10 20:37:31-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 851, in process_data_events
+2024-10-10 20:37:31-9223-ERROR-self._dispatch_channel_events()
+2024-10-10 20:37:31-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 567, in _dispatch_channel_events
+2024-10-10 20:37:31-9223-ERROR-impl_channel._get_cookie()._dispatch_events()
+2024-10-10 20:37:31-9223-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1510, in _dispatch_events
+2024-10-10 20:37:31-9223-ERROR-consumer_info.on_message_callback(self, evt.method,
+2024-10-10 20:37:31-9223-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9223.py", line 57, in callback
+2024-10-10 20:37:31-9223-ERROR-raise RuntimeError('cookies失效')
+2024-10-10 20:37:31-9223-ERROR-RuntimeError: cookies失效
+2024-10-10 23:36:52-9223-INFO-登陆成功
+2024-10-10 23:36:52-9223-INFO-{'Cookie': 'AWSALBAPP-1=_remove_; AWSALBAPP-2=_remove_; AWSALBAPP-3=_remove_; WLSESSION=2030268938.47873.0000; TS016349ac=01f15fc87c79c68edd6d93df19b8968cc925fd29ca3442041c5b4533567ba22783807120fbe827e3bb38195b5c867ed34991a71c2b; JSESSIONID=FC31FFC96244DE1D2E201650B3BD85DC; ERIGHTS=ON0L4l9jaZdR4qPI9eeezsWgulwcf9AV-18x2dx2FtIX0b0x2Fvz6XqW7gn9xx33Ax3Dx3DbHtv0PmixxIWLJny12BpLxxQx3Dx3D-Bx2B6Gx2BH9dz1lKd1m1Cx2BWTLQx3Dx3D-PHj1uIXuNf5L22d8rb2R2wx3Dx3D; ipList=113.251.70.115; xpluserinfo=eyJpc0luc3QiOiJ0cnVlIiwiaW5zdE5hbWUiOiJTb3V0aGVhc3QgVW5pdmVyc2l0eSIsInByb2R1Y3RzIjoiRHJhZnR8RUJPT0tTOjE5NzQ6MjAxN3xJQk06MTg3MjoyMDIwfElFTHxWREV8Tk9LSUEgQkVMTCBMQUJTfCJ9; seqId=9472; AWSALBAPP-0=AAAAAAAAAADwNwWe0Sjr+aMN9w/orLDipVkbPQXKg+nrwxPlZHr5dnEBnUQzUwhEFpJjZ28wkDMJobyXEYBS8+3TeQNfhb+AaDualTo0d6tfEQ5rLuXI4W34sZEOYIzdx6BSGMkaT8c/SsBJitcmhxiH6CRDrHq0zWG0gXoTolI9pZN+l7NtsZ1okd+nRlMtPfA7uIdUem9VCx6Ip504/g==; TSaf720a17029=0807dc117eab2800d1bca5c5ea772cff23320078b5dab61c5982a8b0a82a5d9ca4f6c7cb76d32c39dca2c4ea97cfc67b; TS8b476361027=0807dc117eab2000fba9960975135d59fc31390f1081c82d86dec958c317ed184516ff7912494a3408996c12071130002459fe6c579f9a7cd2c4be7c853b1d93367b342a8ff8ed260d6b9dd64b211c3a4631e780e9e3f211d45077f0f71b5ad6'}
+2024-10-10 23:36:52-9223-INFO-2024-10-10 23:36:52,522 - INFO - Pika version 1.3.2 connecting to ('192.168.1.186', 5672)
+2024-10-10 23:36:52-9223-INFO-2024-10-10 23:36:52,523 - INFO - Socket connected: <socket.socket fd=2240, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.186', 63068), raddr=('192.168.1.186', 5672)>
+2024-10-10 23:36:52-9223-INFO-2024-10-10 23:36:52,524 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001908B4BDC40>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001908B4BDC40> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>).
+2024-10-10 23:36:52-9223-INFO-2024-10-10 23:36:52,527 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001908B4BDC40> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 23:36:52-9223-INFO-2024-10-10 23:36:52,527 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001908B4BDC40> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 23:36:52-9223-INFO-2024-10-10 23:36:52,527 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001908B4BDC40> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 23:36:52-9223-INFO-2024-10-10 23:36:52,527 - INFO - Created channel=1
+2024-10-10 23:36:52-9223-INFO-2024-10-10 23:36:52,531 - INFO - ('9328512', '/stamp/stamp.jsp?tp=&arnumber=9328512')
+2024-10-10 23:37:05-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8512\9328512\9328512.pdf
+2024-10-10 23:37:05-9223-INFO-2024-10-10 23:37:05,164 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8512\9328512\9328512.pdf)
+2024-10-10 23:37:05-9223-INFO-2024-10-10 23:37:05,331 - INFO - 下载完成9328512
+2024-10-10 23:37:20-9223-INFO-2024-10-10 23:37:20,342 - INFO - ('9328454', '/stamp/stamp.jsp?tp=&arnumber=9328454')
+2024-10-10 23:37:39-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8454\9328454\9328454.pdf
+2024-10-10 23:37:39-9223-INFO-2024-10-10 23:37:39,136 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8454\9328454\9328454.pdf)
+2024-10-10 23:37:39-9223-INFO-2024-10-10 23:37:39,251 - INFO - 下载完成9328454
+2024-10-10 23:37:59-9223-INFO-2024-10-10 23:37:59,254 - INFO - ('9320558', '/stamp/stamp.jsp?tp=&arnumber=9320558')
+2024-10-10 23:38:24-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0558\9320558\9320558.pdf
+2024-10-10 23:38:24-9223-INFO-2024-10-10 23:38:24,537 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0558\9320558\9320558.pdf)
+2024-10-10 23:38:24-9223-INFO-2024-10-10 23:38:24,657 - INFO - 下载完成9320558
+2024-10-10 23:38:43-9223-INFO-2024-10-10 23:38:43,668 - INFO - ('9327456', '/stamp/stamp.jsp?tp=&arnumber=9327456')
+2024-10-10 23:38:52-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7456\9327456\9327456.pdf
+2024-10-10 23:38:52-9223-INFO-2024-10-10 23:38:52,273 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7456\9327456\9327456.pdf)
+2024-10-10 23:38:52-9223-INFO-2024-10-10 23:38:52,364 - INFO - 下载完成9327456
+2024-10-10 23:39:08-9223-INFO-2024-10-10 23:39:08,375 - INFO - ('9300212', '/stamp/stamp.jsp?tp=&arnumber=9300212')
+2024-10-10 23:39:13-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0212\9300212\9300212.pdf
+2024-10-10 23:39:13-9223-INFO-2024-10-10 23:39:13,478 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0212\9300212\9300212.pdf)
+2024-10-10 23:39:13-9223-INFO-2024-10-10 23:39:13,562 - INFO - 下载完成9300212
+2024-10-10 23:39:33-9223-INFO-2024-10-10 23:39:33,568 - INFO - ('9240033', '/stamp/stamp.jsp?tp=&arnumber=9240033')
+2024-10-10 23:39:42-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0033\9240033\9240033.pdf
+2024-10-10 23:39:42-9223-INFO-2024-10-10 23:39:42,679 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0033\9240033\9240033.pdf)
+2024-10-10 23:39:42-9223-INFO-2024-10-10 23:39:42,808 - INFO - 下载完成9240033
+2024-10-10 23:40:02-9223-INFO-2024-10-10 23:40:02,811 - INFO - ('9311819', '/stamp/stamp.jsp?tp=&arnumber=9311819')
+2024-10-10 23:40:41-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1819\9311819\9311819.pdf
+2024-10-10 23:40:41-9223-INFO-2024-10-10 23:40:41,364 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1819\9311819\9311819.pdf)
+2024-10-10 23:40:41-9223-INFO-2024-10-10 23:40:41,535 - INFO - 下载完成9311819
+2024-10-10 23:40:58-9223-INFO-2024-10-10 23:40:58,541 - INFO - ('9296738', '/stamp/stamp.jsp?tp=&arnumber=9296738')
+2024-10-10 23:41:19-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6738\9296738\9296738.pdf
+2024-10-10 23:41:19-9223-INFO-2024-10-10 23:41:19,066 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6738\9296738\9296738.pdf)
+2024-10-10 23:41:19-9223-INFO-2024-10-10 23:41:19,266 - INFO - 下载完成9296738
+2024-10-10 23:41:39-9223-INFO-2024-10-10 23:41:39,273 - INFO - ('9288898', '/stamp/stamp.jsp?tp=&arnumber=9288898')
+2024-10-10 23:41:44-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8898\9288898\9288898.pdf
+2024-10-10 23:41:44-9223-INFO-2024-10-10 23:41:44,909 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8898\9288898\9288898.pdf)
+2024-10-10 23:41:45-9223-INFO-2024-10-10 23:41:45,007 - INFO - 下载完成9288898
+2024-10-10 23:42:00-9223-INFO-2024-10-10 23:42:00,011 - INFO - ('9309355', '/stamp/stamp.jsp?tp=&arnumber=9309355')
+2024-10-10 23:42:13-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9355\9309355\9309355.pdf
+2024-10-10 23:42:13-9223-INFO-2024-10-10 23:42:13,949 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9355\9309355\9309355.pdf)
+2024-10-10 23:42:14-9223-INFO-2024-10-10 23:42:14,065 - INFO - 下载完成9309355
+2024-10-10 23:42:29-9223-INFO-2024-10-10 23:42:29,068 - INFO - ('9238391', '/stamp/stamp.jsp?tp=&arnumber=9238391')
+2024-10-10 23:42:54-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8391\9238391\9238391.pdf
+2024-10-10 23:42:54-9223-INFO-2024-10-10 23:42:54,572 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8391\9238391\9238391.pdf)
+2024-10-10 23:42:54-9223-INFO-2024-10-10 23:42:54,714 - INFO - 下载完成9238391
+2024-10-10 23:43:12-9223-INFO-2024-10-10 23:43:12,719 - INFO - ('10286988', '/stamp/stamp.jsp?tp=&arnumber=10286988')
+2024-10-10 23:43:25-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6988\10286988\10286988.pdf
+2024-10-10 23:43:25-9223-INFO-2024-10-10 23:43:25,150 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6988\10286988\10286988.pdf)
+2024-10-10 23:43:25-9223-INFO-2024-10-10 23:43:25,314 - INFO - 下载完成10286988
+2024-10-10 23:43:43-9223-INFO-2024-10-10 23:43:43,325 - INFO - ('10286423', '/stamp/stamp.jsp?tp=&arnumber=10286423')
+2024-10-10 23:44:03-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6423\10286423\10286423.pdf
+2024-10-10 23:44:03-9223-INFO-2024-10-10 23:44:03,194 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6423\10286423\10286423.pdf)
+2024-10-10 23:44:03-9223-INFO-2024-10-10 23:44:03,334 - INFO - 下载完成10286423
+2024-10-10 23:44:18-9223-INFO-2024-10-10 23:44:18,337 - INFO - ('10499819', '/stamp/stamp.jsp?tp=&arnumber=10499819')
+2024-10-10 23:44:36-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9819\10499819\10499819.pdf
+2024-10-10 23:44:36-9223-INFO-2024-10-10 23:44:36,483 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9819\10499819\10499819.pdf)
+2024-10-10 23:44:36-9223-INFO-2024-10-10 23:44:36,578 - INFO - 下载完成10499819
+2024-10-10 23:44:55-9223-INFO-2024-10-10 23:44:55,591 - INFO - ('10460107', '/stamp/stamp.jsp?tp=&arnumber=10460107')
+2024-10-10 23:45:08-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0107\10460107\10460107.pdf
+2024-10-10 23:45:08-9223-INFO-2024-10-10 23:45:08,589 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0107\10460107\10460107.pdf)
+2024-10-10 23:45:08-9223-INFO-2024-10-10 23:45:08,694 - INFO - 下载完成10460107
+2024-10-10 23:45:23-9223-INFO-2024-10-10 23:45:23,696 - INFO - ('10501774', '/stamp/stamp.jsp?tp=&arnumber=10501774')
+2024-10-10 23:45:34-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1774\10501774\10501774.pdf
+2024-10-10 23:45:34-9223-INFO-2024-10-10 23:45:34,104 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1774\10501774\10501774.pdf)
+2024-10-10 23:45:34-9223-INFO-2024-10-10 23:45:34,223 - INFO - 下载完成10501774
+2024-10-10 23:45:50-9223-INFO-2024-10-10 23:45:50,231 - INFO - ('10494872', '/stamp/stamp.jsp?tp=&arnumber=10494872')
+2024-10-10 23:46:03-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4872\10494872\10494872.pdf
+2024-10-10 23:46:03-9223-INFO-2024-10-10 23:46:03,712 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4872\10494872\10494872.pdf)
+2024-10-10 23:46:03-9223-INFO-2024-10-10 23:46:03,835 - INFO - 下载完成10494872
+2024-10-10 23:46:18-9223-INFO-2024-10-10 23:46:18,844 - INFO - ('10494530', '/stamp/stamp.jsp?tp=&arnumber=10494530')
+2024-10-10 23:46:37-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4530\10494530\10494530.pdf
+2024-10-10 23:46:38-9223-INFO-2024-10-10 23:46:37,999 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4530\10494530\10494530.pdf)
+2024-10-10 23:46:38-9223-INFO-2024-10-10 23:46:38,123 - INFO - 下载完成10494530
+2024-10-10 23:46:58-9223-INFO-2024-10-10 23:46:58,129 - INFO - ('10494539', '/stamp/stamp.jsp?tp=&arnumber=10494539')
+2024-10-10 23:47:07-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4539\10494539\10494539.pdf
+2024-10-10 23:47:07-9223-INFO-2024-10-10 23:47:07,439 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4539\10494539\10494539.pdf)
+2024-10-10 23:47:07-9223-INFO-2024-10-10 23:47:07,559 - INFO - 下载完成10494539
+2024-10-10 23:47:25-9223-INFO-2024-10-10 23:47:25,566 - INFO - ('10494504', '/stamp/stamp.jsp?tp=&arnumber=10494504')
+2024-10-10 23:48:01-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4504\10494504\10494504.pdf
+2024-10-10 23:48:01-9223-INFO-2024-10-10 23:48:01,135 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4504\10494504\10494504.pdf)
+2024-10-10 23:48:01-9223-INFO-2024-10-10 23:48:01,290 - INFO - 下载完成10494504
+2024-10-10 23:48:16-9223-INFO-2024-10-10 23:48:16,295 - INFO - ('10495128', '/stamp/stamp.jsp?tp=&arnumber=10495128')
+2024-10-10 23:48:48-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5128\10495128\10495128.pdf
+2024-10-10 23:48:48-9223-INFO-2024-10-10 23:48:48,880 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5128\10495128\10495128.pdf)
+2024-10-10 23:48:49-9223-INFO-2024-10-10 23:48:49,055 - INFO - 下载完成10495128
+2024-10-10 23:49:05-9223-INFO-2024-10-10 23:49:05,057 - INFO - ('10490095', '/stamp/stamp.jsp?tp=&arnumber=10490095')
+2024-10-10 23:49:35-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0095\10490095\10490095.pdf
+2024-10-10 23:49:35-9223-INFO-2024-10-10 23:49:35,102 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0095\10490095\10490095.pdf)
+2024-10-10 23:49:35-9223-INFO-2024-10-10 23:49:35,264 - INFO - 下载完成10490095
+2024-10-10 23:49:55-9223-INFO-2024-10-10 23:49:55,272 - INFO - ('10493138', '/stamp/stamp.jsp?tp=&arnumber=10493138')
+2024-10-10 23:50:11-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3138\10493138\10493138.pdf
+2024-10-10 23:50:11-9223-INFO-2024-10-10 23:50:11,428 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3138\10493138\10493138.pdf)
+2024-10-10 23:50:11-9223-INFO-2024-10-10 23:50:11,543 - INFO - 下载完成10493138
+2024-10-10 23:50:31-9223-INFO-2024-10-10 23:50:31,549 - INFO - ('10463096', '/stamp/stamp.jsp?tp=&arnumber=10463096')
+2024-10-10 23:50:46-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3096\10463096\10463096.pdf
+2024-10-10 23:50:46-9223-INFO-2024-10-10 23:50:46,125 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3096\10463096\10463096.pdf)
+2024-10-10 23:50:46-9223-INFO-2024-10-10 23:50:46,229 - INFO - 下载完成10463096
+2024-10-10 23:51:06-9223-INFO-2024-10-10 23:51:06,241 - INFO - ('10462074', '/stamp/stamp.jsp?tp=&arnumber=10462074')
+2024-10-10 23:51:31-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2074\10462074\10462074.pdf
+2024-10-10 23:51:31-9223-INFO-2024-10-10 23:51:31,679 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2074\10462074\10462074.pdf)
+2024-10-10 23:51:31-9223-INFO-2024-10-10 23:51:31,810 - INFO - 下载完成10462074
+2024-10-10 23:51:48-9223-INFO-2024-10-10 23:51:48,811 - INFO - ('10444784', '/stamp/stamp.jsp?tp=&arnumber=10444784')
+2024-10-10 23:52:22-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4784\10444784\10444784.pdf
+2024-10-10 23:52:22-9223-INFO-2024-10-10 23:52:22,453 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4784\10444784\10444784.pdf)
+2024-10-10 23:52:22-9223-INFO-2024-10-10 23:52:22,611 - INFO - 下载完成10444784
+2024-10-10 23:52:37-9223-INFO-2024-10-10 23:52:37,626 - INFO - ('10488720', '/stamp/stamp.jsp?tp=&arnumber=10488720')
+2024-10-10 23:53:14-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8720\10488720\10488720.pdf
+2024-10-10 23:53:14-9223-INFO-2024-10-10 23:53:14,389 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8720\10488720\10488720.pdf)
+2024-10-10 23:53:14-9223-INFO-2024-10-10 23:53:14,624 - INFO - 下载完成10488720
+2024-10-10 23:53:32-9223-INFO-2024-10-10 23:53:32,636 - INFO - ('10528802', '/stamp/stamp.jsp?tp=&arnumber=10528802')
+2024-10-10 23:53:53-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8802\10528802\10528802.pdf
+2024-10-10 23:53:53-9223-INFO-2024-10-10 23:53:53,413 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8802\10528802\10528802.pdf)
+2024-10-10 23:53:53-9223-INFO-2024-10-10 23:53:53,535 - INFO - 下载完成10528802
+2024-10-10 23:54:11-9223-INFO-2024-10-10 23:54:11,540 - INFO - ('10518084', '/stamp/stamp.jsp?tp=&arnumber=10518084')
+2024-10-10 23:54:38-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8084\10518084\10518084.pdf
+2024-10-10 23:54:38-9223-INFO-2024-10-10 23:54:38,354 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8084\10518084\10518084.pdf)
+2024-10-10 23:54:38-9223-INFO-2024-10-10 23:54:38,588 - INFO - 下载完成10518084
+2024-10-10 23:54:53-9223-INFO-2024-10-10 23:54:53,601 - INFO - ('10494535', '/stamp/stamp.jsp?tp=&arnumber=10494535')
+2024-10-10 23:55:25-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4535\10494535\10494535.pdf
+2024-10-10 23:55:25-9223-INFO-2024-10-10 23:55:25,707 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4535\10494535\10494535.pdf)
+2024-10-10 23:55:25-9223-INFO-2024-10-10 23:55:25,882 - INFO - 下载完成10494535
+2024-10-10 23:55:44-9223-INFO-2024-10-10 23:55:44,893 - INFO - ('10517368', '/stamp/stamp.jsp?tp=&arnumber=10517368')
+2024-10-10 23:55:54-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7368\10517368\10517368.pdf
+2024-10-10 23:55:54-9223-INFO-2024-10-10 23:55:54,216 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7368\10517368\10517368.pdf)
+2024-10-10 23:55:54-9223-INFO-2024-10-10 23:55:54,338 - INFO - 下载完成10517368
+2024-10-10 23:56:09-9223-INFO-2024-10-10 23:56:09,354 - INFO - ('10518110', '/stamp/stamp.jsp?tp=&arnumber=10518110')
+2024-10-10 23:56:23-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8110\10518110\10518110.pdf
+2024-10-10 23:56:23-9223-INFO-2024-10-10 23:56:23,509 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8110\10518110\10518110.pdf)
+2024-10-10 23:56:23-9223-INFO-2024-10-10 23:56:23,623 - INFO - 下载完成10518110
+2024-10-10 23:56:38-9223-INFO-2024-10-10 23:56:38,635 - INFO - ('10517378', '/stamp/stamp.jsp?tp=&arnumber=10517378')
+2024-10-10 23:56:55-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7378\10517378\10517378.pdf
+2024-10-10 23:56:55-9223-INFO-2024-10-10 23:56:55,742 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7378\10517378\10517378.pdf)
+2024-10-10 23:56:55-9223-INFO-2024-10-10 23:56:55,870 - INFO - 下载完成10517378
+2024-10-10 23:57:15-9223-INFO-2024-10-10 23:57:15,874 - INFO - ('10517362', '/stamp/stamp.jsp?tp=&arnumber=10517362')
+2024-10-10 23:57:54-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7362\10517362\10517362.pdf
+2024-10-10 23:57:54-9223-INFO-2024-10-10 23:57:54,266 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7362\10517362\10517362.pdf)
+2024-10-10 23:57:54-9223-INFO-2024-10-10 23:57:54,440 - INFO - 下载完成10517362
+2024-10-10 23:58:12-9223-INFO-2024-10-10 23:58:12,450 - INFO - ('10510585', '/stamp/stamp.jsp?tp=&arnumber=10510585')
+2024-10-10 23:58:32-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0585\10510585\10510585.pdf
+2024-10-10 23:58:32-9223-INFO-2024-10-10 23:58:32,520 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0585\10510585\10510585.pdf)
+2024-10-10 23:58:32-9223-INFO-2024-10-10 23:58:32,675 - INFO - 下载完成10510585
+2024-10-10 23:58:50-9223-INFO-2024-10-10 23:58:50,678 - INFO - ('10517401', '/stamp/stamp.jsp?tp=&arnumber=10517401')
+2024-10-10 23:59:05-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7401\10517401\10517401.pdf
+2024-10-10 23:59:05-9223-INFO-2024-10-10 23:59:05,990 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7401\10517401\10517401.pdf)
+2024-10-10 23:59:06-9223-INFO-2024-10-10 23:59:06,076 - INFO - 下载完成10517401
+2024-10-10 23:59:23-9223-INFO-2024-10-10 23:59:23,080 - INFO - ('10517365', '/stamp/stamp.jsp?tp=&arnumber=10517365')
+2024-10-10 23:59:39-9223-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7365\10517365\10517365.pdf
+2024-10-10 23:59:39-9223-INFO-2024-10-10 23:59:39,189 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7365\10517365\10517365.pdf)
+2024-10-10 23:59:39-9223-INFO-2024-10-10 23:59:39,306 - INFO - 下载完成10517365
+2024-10-10 23:59:58-9223-INFO-2024-10-10 23:59:58,317 - INFO - ('10510572', '/stamp/stamp.jsp?tp=&arnumber=10510572')

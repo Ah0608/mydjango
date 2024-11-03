@@ -5,116 +5,138 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US美国(mibei77.com 米贝节点分享), server: russia.com, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip11.6016725.xyz}}, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 2, server: fbi.gov, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: CA加拿大(mibei77.com 米贝节点分享), server: russia.com, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip18.6929198.xyz}}, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享), server: 52.164.203.76, port: 20143, type: ss, cipher: chacha20-ietf-poly1305, password: 81aBd6IJIgFwT1lqcojSzK, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 2, server: 156.146.38.168, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 3, server: 120.237.79.157, port: 46665, type: vmess, uuid: 3ac820af-becb-45d7-9e7a-e33d02961bb3, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 4, server: 120.232.153.71, port: 43526, type: vmess, uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 5, server: icook.tw, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 6, server: fbi.gov, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 7, server: naiu-jp.05vr9nyqg5.download, port: 13011, type: trojan, password: 5b4becce-5739-483f-97ec-68b81a855d68, sni: naiu-jp.05vr9nyqg5.download, skip-cert-verify: true, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 8, server: 120.232.153.27, port: 51582, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 9, server: malaysia.com, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 10, server: 172.66.44.203, port: 443, type: trojan, password: bpb-trojan, skip-cert-verify: true, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 11, server: 172.66.47.53, port: 443, type: trojan, password: bpb-trojan, skip-cert-verify: true, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 12, server: russia.com, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 13, server: 23.157.88.61, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 14, server: 149.22.87.240, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 15, server: russia.com, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip11.6016725.xyz}}, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 16, server: singapore.com, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 17, server: 15086.kuaiyin02.top, port: 15086, type: vmess, uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 18, server: 208.67.105.196, port: 42029, type: ss, cipher: chacha20-ietf-poly1305, password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 19, server: api.turkiye6.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: lQHuqev0bDeSuxSCL, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 20, server: exchange.gameaurela.click, port: 52952, type: ss, cipher: chacha20-ietf-poly1305, password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 21, server: 183.236.51.23, port: 51002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 22, server: usnew.lbxjc.site, port: 80, type: vmess, uuid: e6543319-0574-42ac-b778-1c4325d626f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: chunchuan.kejixiaoqi666.store}}, udp: true}
+  - {name: NL荷兰(mibei77.com 米贝节点分享), server: malaysia.com, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 23, server: speed.cloudflare.com, port: 80, type: vmess, uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /glweidf.sbs/linkws, headers: {Host: 7ehhjdelicate-unit-e634.bowik41429.workers.dev}}, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 24, server: hsj.lbxjc.online, port: 80, type: vmess, uuid: e6543319-0574-42ac-b778-1c4325d626f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: chunchuan.kejixiaoqi666.store}}, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 25, server: 212.102.47.131, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 26, server: 185.24.151.214, port: 52952, type: ss, cipher: chacha20-ietf-poly1305, password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 27, server: 38.114.114.143, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
   - {name: US美国(https://www.fuye.fun/免费节点), server: russia.com, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip11.6016725.xyz}}, udp: true}
   - {name: US美国(https://www.fuye.fun/免费节点) 2, server: fbi.gov, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
-  - {name: 6元高速机场：cczzuu.top, server: 156.146.38.168, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
-  - {name: _US_美国_2, server: 23.150.152.41, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _US_美国_3, server: 54.200.54.11, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_美国_4, server: 38.110.1.107, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国_5, server: 144.202.112.106, port: 3913, type: ss, cipher: chacha20-ietf-poly1305, password: 76dze09gQEvqS_jOuo, udp: true}
-  - {name: _FR_法国, server: 163.172.64.22, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: _GB_英国, server: 141.98.101.180, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
-  - {name: _US_美国_7, server: 63.176.54.171, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: _US_美国->🇸🇬_SG_新加坡, server: 34.210.94.67, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_美国->🇸🇬_SG_新加坡_1, server: 52.89.233.31, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _CA_加拿大, server: 64.74.163.130, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: _US_美国_8, server: 208.67.105.196, port: 42029, type: ss, cipher: chacha20-ietf-poly1305, password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD, udp: true}
-  - {name: _US_美国_9, server: 141.98.168.127, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: ZoCmoonMg5GWwpi0FCqLcQ, udp: true}
-  - {name: _CN_中国->🇺🇸_US_美国, server: 183.236.48.161, port: 33288, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 6元高速机场：cczzuu.top, server: 23.157.88.61, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国_1, server: 3.98.16.101, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: _US_美国_2, server: 35.160.185.203, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _US_美国_3, server: 18.246.235.247, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _US_美国->🇸🇬_SG_新加坡, server: 54.68.160.24, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _US_美国->🇨🇳_CN_中国, server: 54.71.237.242, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _US_美国->🇨🇳_CN_中国_1, server: 54.185.199.99, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _SG_新加坡->🇺🇸_US_美国, server: 52.221.255.53, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _US_美国->🇸🇬_SG_新加坡_1, server: 54.213.247.125, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _US_美国_8, server: 156.146.38.168, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: _US_美国_9, server: 38.114.114.143, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
   - {name: _CN_中国, server: 107.155.57.51, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, udp: true}
-  - {name: _UA_乌克兰, server: 37.19.198.160, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
-  - {name: _IN_印度, server: 159.65.149.72, port: 51348, type: ss, cipher: chacha20-ietf-poly1305, password: p7EhC8MR7o7GuRn27YF8SQNAKJ2lUbBNIjcyqSmBHsy8wLbJ, udp: true}
-  - {name: _DE_德国, server: 45.87.175.157, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
-  - {name: _US_美国_11, server: 34.220.167.70, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _AF_阿富汗, server: exchange.gameaurela.click, port: 52952, type: ss, cipher: chacha20-ietf-poly1305, password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj, udp: true}
-  - {name: _US_美国_12, server: 142.202.48.105, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _SG_新加坡, server: 54.254.7.5, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _GB_英国_1, server: 141.98.101.179, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
-  - {name: _IE_爱尔兰->🇫🇷_FR_法国, server: 52.164.203.76, port: 20143, type: ss, cipher: chacha20-ietf-poly1305, password: 81aBd6IJIgFwT1lqcojSzK, udp: true}
-  - {name: _US_美国_1, server: 23.157.88.61, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国_2 2, server: 23.134.94.168, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国->🇸🇬_SG_新加坡 2, server: 34.210.94.67, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_美国_3 2, server: 34.216.240.225, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_美国_4 2, server: 38.110.1.107, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _ES_西班牙->🇯🇵_JP_日本, server: 150.241.95.62, port: 42445, type: ss, cipher: chacha20-ietf-poly1305, password: "flj72wu+&R", udp: true}
-  - {name: _US_美国_5 2, server: 34.222.148.255, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_美国_6, server: 52.89.233.31, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_美国_7 2, server: 35.160.185.203, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _GB_英国_1 2, server: 141.98.101.179, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
-  - {name: _US_美国_8 2, server: 54.200.54.11, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _GB_英国_2, server: 141.98.101.180, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
-  - {name: 高性价比机场:https://kfyun.uk, server: 127.0.0.1, port: 443, type: ss, cipher: aes-128-gcm, password: 6601fb90e9b3, udp: true}
-  - {name: 印度 v2rayfree.eu.org, server: 202.78.162.5, port: 443, type: vmess, uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sahand.serveminecraft.net}}, udp: true}
-  - {name: 俄罗斯+v2rayfree.eu.org, server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV, udp: true}
-  - {name: 印度 v2rayfree.eu.org 2, server: 202.78.162.5, port: 443, type: vmess, uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: pendar.onthewifi.com}}, udp: true}
-  - {name: 意大利+v2rayfree.eu.org, server: service.ouluyun9803.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
+  - {name: _US_美国_11, server: 34.210.94.67, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _SG_新加坡, server: 54.169.139.18, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _US_美国->🇸🇬_SG_新加坡_2, server: 34.216.240.225, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _IE_爱尔兰, server: 52.164.203.76, port: 20143, type: ss, cipher: chacha20-ietf-poly1305, password: 81aBd6IJIgFwT1lqcojSzK, udp: true}
+  - {name: _JP_日本, server: 54.95.5.168, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: _DE_德国->🇦🇫_AF_阿富汗, server: 45.87.175.171, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
   - {name: _US_美国_1 2, server: 18.246.235.247, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _GB_英国_1 3, server: 145.239.6.202, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _GB_英国_2 2, server: 145.239.6.202, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _GB_英国_1, server: 145.239.6.202, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _GB_英国_2, server: 145.239.6.202, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
   - {name: _US_美国->🇸🇬_SG_新加坡_1 2, server: 54.213.247.125, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: _GB_英国_3, server: 145.239.6.202, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国_2 3, server: 38.114.114.143, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国->🇸🇬_SG_新加坡_2, server: 34.216.240.225, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _US_美国_2 2, server: 38.114.114.143, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国->🇸🇬_SG_新加坡_2 2, server: 34.216.240.225, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: _GB_英国->🇺🇸_US_美国, server: series-a2.varzesh360.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: mps3FwmDjLrWaOVg, udp: true}
-  - {name: _US_美国_3 3, server: 54.200.148.115, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _US_美国_3 2, server: 54.200.148.115, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: _US_美国->🇸🇬_SG_新加坡_3, server: 34.222.148.255, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_美国_4 3, server: 38.86.135.141, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _US_美国_5 3, server: 23.134.94.168, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国_4, server: 38.86.135.141, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _US_美国_5, server: 23.134.94.168, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: _GB_英国_4, server: 145.239.6.202, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国_6 2, server: 23.157.88.61, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国_6, server: 23.157.88.61, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
   - {name: _US_美国->🇸🇬_SG_新加坡_4, server: 52.10.33.211, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: _GB_英国_5, server: 145.239.6.202, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国 CloudFlare节点, server: 172.64.167.15, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: 172.64.166.28, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: 172.64.198.249, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ip11.6016725.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 4, server: 198.41.220.2, port: 443, type: trojan, password: 242a3d8eee5e4ed1a6bfa4141d549a25, sni: jobscareerfortoday.com, skip-cert-verify: true, network: ws, ws-opts: {path: /6b777a91, headers: {Host: jobscareerfortoday.com}}, udp: true}
-  - {name: 日本 东京Amazon数据中心, server: 0i4ui-g03.jp03-7d22-vm0.entry.fr0307a.art, port: 21583, type: vmess, uuid: b37b7415-1608-3fcd-aa25-d9cc4aae5ded, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 乌克兰 V2CROSS.COM, server: 185.234.64.146, port: 2053, type: trojan, password: 5c7941b5-c393-4eea-a76d-d44b59baf8a0, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 5, server: 104.26.0.56, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ip10.6016725.xyz, network: ws, ws-opts: {path: /, headers: {Host: ip10.6016725.xyz}}, udp: true}
-  - {name: 广东省广州市 移动, server: 183.236.51.23, port: 48009, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国下萨克森州萨尔茨吉特 德国电信, server: service.ouluyun9803.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
-  - {name: 美国 CloudFlare节点 6, server: 172.67.75.172, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
-  - {name: 德国下萨克森州萨尔茨吉特 德国电信 2, server: service.ouluyun9803.com, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
-  - {name: 美国 CloudFlare节点 7, server: 104.19.45.11, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 8, server: c.jannah.homes, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws, headers: {Host: c.jannah.homes}}, udp: true}
-  - {name: 美国 CloudFlare节点 9, server: 172.64.175.213, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 10, server: 172.64.167.35, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 11, server: 104.19.21.63, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
-  - {name: 意大利 V2CROSS.COM, server: 212.102.47.131, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
-  - {name: 美国 CloudFlare节点 12, server: 172.66.44.203, port: 443, type: trojan, password: bpb-trojan, sni: 403b3611-99bC-43b7-88D7-26ED5D0825A9-3.pagES.DEv, skip-cert-verify: true, network: ws, ws-opts: {path: /trSo3btsDgOHHUM6Nb, headers: {Host: 403b3611-99bC-43b7-88D7-26ED5D0825A9-3.pagES.DEv}}, udp: true}
-  - {name: 俄罗斯 莫斯科JustHost, server: n001.kovmk.website, port: 8080, type: vmess, uuid: 92f1932f-ee19-464f-900c-93df90df830d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: n001.kovmk.website, network: ws, ws-opts: {path: /xyz, headers: {Host: daohang.kovmk.website}}, udp: true}
-  - {name: 日本 V2CROSS.COM, server: ent1.imyourdaddy.top, port: 20980, type: trojan, password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a, sni: sale.alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 13, server: 104.19.45.17, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 14, server: 172.67.213.19, port: 8880, type: vmess, uuid: 237c632a-8ac0-4040-ab02-adbc3b9e6610, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-new03.daluquan.top}}, udp: true}
-  - {name: 广东省广州市 移动 2, server: aafrtpfxr.jpl03i9zjfegelp.5xfsur8v62.gosdk.xyz, port: 22271, type: trojan, password: 1a8050cd-50d8-4b7d-a73e-193222f39822, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 15, server: us-new03.daluquan.top, port: 8880, type: vmess, uuid: 237c632a-8ac0-4040-ab02-adbc3b9e6610, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-new03.daluquan.top}}, udp: true}
-  - {name: 美国 CloudFlare节点 16, server: 172.64.166.16, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 17, server: 104.26.5.113, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 18, server: 104.19.45.31, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
-  - {name: 美国 惠普HP, server: 16.171.187.8, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 丹麦 V2CROSS.COM, server: 195.85.59.95, port: 80, type: vmess, uuid: a94171be-b387-4f02-a5ef-a1b4b7a26c04, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: open.alipay.ovh}}, udp: true}
-  - {name: 美国 CloudFlare节点 19, server: 104.20.19.119, port: 443, type: trojan, password: auto, sni: b96ef9ae.trojanfree-76s.pages.dev, skip-cert-verify: true, network: ws, ws-opts: {path: /b96ef9ae.trojanfree-76s.pages.dev/, headers: {Host: b96ef9ae.trojanfree-76s.pages.dev}}, udp: true}
-  - {name: 立陶宛 NGS新闻, server: 185.176.24.2, port: 443, type: trojan, password: bpb-trojan, sni: 403B3611-99bc-43B7-88d7-26ed5d0825a9-3.PaGes.deV, skip-cert-verify: true, network: ws, ws-opts: {path: "/tr9vfP2lflALkJrNsQ?ed=2560", headers: {Host: 403B3611-99bc-43B7-88d7-26ed5d0825a9-3.PaGes.deV}}, udp: true}
-  - {name: 美国 CloudFlare节点 20, server: 172.67.165.53, port: 2086, type: vmess, uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shs.xiaoqi666.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 21, server: 104.17.147.5, port: 443, type: trojan, password: 2e3562a819634de686ade78e434c0963, sni: jobscareertoday.com, skip-cert-verify: true, network: ws, ws-opts: {path: /6b777a91, headers: {Host: jobscareertoday.com}}, udp: true}
-  - {name: 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心, server: vt50k-g01.jp05-6786-vm0.entry.fr0307a.art, port: 46482, type: vmess, uuid: 7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司, server: 38.114.114.143, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国 CloudFlare节点 22, server: 104.26.5.145, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 23, server: 172.64.167.44, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 24, server: japan.com, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 25, server: 104.19.48.236, port: 80, type: vmess, uuid: e6543319-0574-42ac-b778-1c4325d626f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: chunchuan.kejixiaoqi666.store}}, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM, server: m003.mmzhk.website, port: 8080, type: vmess, uuid: 6dde3b3f-0a00-448a-a406-26d0960d1655, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: m003.mmzhk.website, network: ws, ws-opts: {path: /xyz, headers: {Host: daohang.mmzhk.website}}, udp: true}
-  - {name: 美国 CloudFlare节点 26, server: 172.66.47.53, port: 443, type: trojan, password: bpb-trojan, sni: 403b3611-99bC-43b7-88D7-26ED5D0825A9-3.pagES.DEv, skip-cert-verify: true, network: ws, ws-opts: {path: /trSo3btsDgOHHUM6Nb, headers: {Host: 403b3611-99bC-43b7-88D7-26ED5D0825A9-3.pagES.DEv}}, udp: true}
-  - {name: 美国 CloudFlare节点 27, server: 172.64.99.22, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip12.6016725.xyz}}, udp: true}
-  - {name: 伊朗 V2CROSS.COM, server: exchange.gameaurela.click, port: 52952, type: ss, cipher: chacha20-ietf-poly1305, password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj, udp: true}
-  - {name: 美国 CloudFlare节点 28, server: 172.64.166.9, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 29, server: 104.16.61.8, port: 8080, type: vmess, uuid: 950db6aa-4926-4616-816e-ec0312dcb87b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jahfkjha.cfd/linkws, headers: {Host: hyfhhg.jadovah977.workers.dev}}, udp: true}
-  - {name: 美国 CloudFlare节点 30, server: 172.64.166.16, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 31, server: 172.66.44.141, port: 2083, type: trojan, password: bpb-trojan, sni: fB0887ca.BPB-WorkEr-pAnel-e3c.paGes.DeV, skip-cert-verify: true, network: ws, ws-opts: {path: "/trMK2zs2naPJSgJ7Pr?ed=2560", headers: {Host: fB0887ca.BPB-WorkEr-pAnel-e3c.paGes.DeV}}, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司 2, server: 38.114.114.143, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 高性价比机场:https://kfyun.uk, server: 127.0.0.1, port: 443, type: ss, cipher: aes-128-gcm, password: 6601fb90e9b3, udp: true}
+  - {name: 德国 黑森州法兰克福Amazon数据中心, server: 3.125.205.113, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点, server: be.hkddisney.org, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws, headers: {Host: be.hkddisney.org}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: 104.19.45.47, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: jannah.homes, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws, headers: {Host: jannah.homes}}, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: 172.64.166.33, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
+  - {name: 广东省广州市 移动, server: 183.236.51.23, port: 45020, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 5, server: 172.64.167.35, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 6, server: 172.64.166.20, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 7, server: 104.26.0.56, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 8, server: 104.26.5.56, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 9, server: 172.64.35.209, port: 443, type: trojan, password: auto, sni: b96ef9ae.trojanfree-76s.pages.dev, skip-cert-verify: true, network: ws, ws-opts: {path: /b96ef9ae.trojanfree-76s.pages.dev/, headers: {Host: b96ef9ae.trojanfree-76s.pages.dev}}, udp: true}
+  - {name: 美国 CloudFlare节点 10, server: gUeoAsdsoGoPtmHynEMiFyeNezJZuxjIVlWwLYB.roxifa.ir, port: 443, type: vmess, uuid: b11e80df-cb88-439b-8a4f-0aaae554a730, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "@RaFaV2Bot", headers: {Host: gUeoAsdsoGoPtmHynEMiFyeNezJZuxjIVlWwLYB.roxifa.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 11, server: 172.67.70.92, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 12, server: www.baldengineer.com, port: 443, type: vmess, uuid: f584de15-2034-4170-a723-f48c2bae5e0f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: yen63jj36j3jfflan.thelastronin.cloudns.org, network: ws, ws-opts: {path: /, headers: {Host: yelan.thelastronin.cloudns.org}}, udp: true}
+  - {name: 美国 CloudFlare节点 13, server: 104.20.18.183, port: 443, type: trojan, password: auto, sni: b96ef9ae.trojanfree-76s.pages.dev, skip-cert-verify: true, network: ws, ws-opts: {path: /b96ef9ae.trojanfree-76s.pages.dev/, headers: {Host: b96ef9ae.trojanfree-76s.pages.dev}}, udp: true}
+  - {name: 美国 CloudFlare节点 14, server: s1c.v2.v001sss.xyz, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: s1c.v2.v001sss.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 15, server: 104.19.45.17, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 16, server: server31.beheshtbaneh.com, port: 8880, type: vmess, uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server31.beheshtbaneh.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 17, server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 18, server: 172.64.167.15, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 19, server: 104.26.12.31, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip8.6016725.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 20, server: 162.159.140.33, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 21, server: 172.64.167.8, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: 亚太地区 v2rayfree.eu.org, server: 36.50.134.26, port: 443, type: trojan, password: 94d219c9-1afc-4d42-b090-8b3794764380, sni: 36.50.134.26, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 22, server: 104.18.37.111, port: 443, type: trojan, password: bpb-trojan, sni: mindrOOm-5cz.pAgEs.dEV, skip-cert-verify: true, network: ws, ws-opts: {path: "/trC8BM8bTsAF0AnLYL?ed=2560", headers: {Host: mindrOOm-5cz.pAgEs.dEV}}, udp: true}
+  - {name: 美国 CloudFlare节点 23, server: 104.16.68.38, port: 2052, type: vmess, uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /glweidf.sbs/linkws, headers: {Host: proud-union-8659.email-0kn8d.workers.dev}}, udp: true}
+  - {name: 德国 黑森州法兰克福Amazon数据中心 2, server: 52.58.64.85, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 24, server: 104.21.238.100, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 25, server: 172.64.166.33, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 26, server: 104.19.45.11, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 27, server: 172.64.150.145, port: 443, type: trojan, password: bpb-trojan, sni: mindrOOm-5cz.pAgEs.dEV, skip-cert-verify: true, network: ws, ws-opts: {path: "/trC8BM8bTsAF0AnLYL?ed=2560", headers: {Host: mindrOOm-5cz.pAgEs.dEV}}, udp: true}
+  - {name: 美国 CloudFlare节点 28, server: 104.16.61.8, port: 8080, type: vmess, uuid: 950db6aa-4926-4616-816e-ec0312dcb87b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jahfkjha.cfd/linkws, headers: {Host: hyfhhg.jadovah977.workers.dev}}, udp: true}
+  - {name: 江苏省扬州市+移动, server: gdgs.tarioblink.me, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: 0d43fd02-cb36-4f3c-be19-c9cbed362646, udp: true}
+  - {name: 美国 CloudFlare节点 29, server: 104.17.213.241, port: 80, type: vmess, uuid: e6543319-0574-42ac-b778-1c4325d626f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: chunchuan.kejixiaoqi666.store}}, udp: true}
+  - {name: 亚太地区 v2rayfree.eu.org 2, server: 36.50.134.29, port: 443, type: trojan, password: 94d219c9-1afc-4d42-b090-8b3794764380, sni: 36.50.134.29, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 30, server: 172.64.99.22, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip12.6016725.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 31, server: 104.19.38.12, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: 日本 东京Amazon数据中心, server: 8vndq-g03.jp05-6786-vm0.entry.fr0307a.art, port: 46484, type: vmess, uuid: 22acc467-7440-386a-927a-d84be554b37e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 32, server: 104.16.67.38, port: 2052, type: vmess, uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /glweidf.sbs/linkws, headers: {Host: icy-butterfly-4100.email-0kn8d.workers.dev}}, udp: true}
+  - {name: 美国 Amazon EC2服务器, server: 3.142.227.59, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 33, server: 104.17.147.5, port: 443, type: trojan, password: 2e3562a819634de686ade78e434c0963, sni: jobscareertoday.com, skip-cert-verify: true, network: ws, ws-opts: {path: /6b777a91, headers: {Host: jobscareertoday.com}}, udp: true}
+  - {name: 北美地区+v2rayfree.eu.org, server: 23.150.248.122, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国 CloudFlare节点 34, server: 172.66.44.203, port: 443, type: trojan, password: bpb-trojan, sni: 403b3611-99bC-43b7-88D7-26ED5D0825A9-3.pagES.DEv, skip-cert-verify: true, network: ws, ws-opts: {path: /trSo3btsDgOHHUM6Nb, headers: {Host: 403b3611-99bC-43b7-88D7-26ED5D0825A9-3.pagES.DEv}}, udp: true}
+  - {name: 韩国+KT电信, server: service.ouluyun9803.com, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
+  - {name: 美国 CloudFlare节点 35, server: 104.17.106.151, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 36, server: 104.19.45.47, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 37, server: 104.19.45.31, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: 广东省肇庆市 中移铁通, server: ambxxic01hk.dorabbb.top, port: 44806, type: vmess, uuid: 66fe2d6f-704c-4b39-8b9e-0f6532f1a598, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _DE_德国->🇺🇸_US_美国_1, server: 45.87.175.188, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 1RWwXhwfAB5gAEozU4G2Pg, udp: true}
+  - {name: _US_美国_1 3, server: 35.160.185.203, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _US_美国_2 3, server: 35.94.16.186, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _US_美国_3 3, server: 156.146.38.168, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: _CN_中国->🇺🇸_US_美国, server: 107.155.57.51, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, udp: true}
+  - {name: _US_美国_4 2, server: 54.71.237.242, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _US_美国_5 2, server: 54.185.199.99, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _DE_德国->🇺🇸_US_美国_2, server: beesyar.org, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa, udp: true}
+  - {name: _US_美国_6 2, server: 35.88.136.187, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _DE_德国_1, server: 45.87.175.166, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 1RWwXhwfAB5gAEozU4G2Pg, udp: true}
+  - {name: _DE_德国_2, server: 45.87.175.154, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
+  - {name: _US_美国_7, server: 18.246.235.247, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _NL_荷兰->🇨🇳_CN_中国, server: 45.144.48.63, port: 57456, type: ss, cipher: chacha20-ietf-poly1305, password: d3837224ed465f00, udp: true}
+  - {name: _US_美国->🇨🇳_CN_中国 2, server: 34.222.148.255, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 美国 CloudFlare节点 38, server: server31.beheshtbaneh.com, port: 8880, type: vmess, uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server31.beheshtbaneh.com}}, udp: true}
+  - {name: 意大利 V2CROSS.COM, server: service.ouluyun9803.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
+  - {name: 波兰 V2CROSS.COM, server: 193.243.147.128, port: 40368, type: ss, cipher: aes-256-gcm, password: 7BcLdsO1WweoGD0X, udp: true}
+  - {name: 美国 Fastly全球Anycast节点, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}, udp: true}
   - {name: 爱尔兰+V2CROSS.COM, server: 13.79.174.197, port: 63314, type: ss, cipher: chacha20-ietf-poly1305, password: nAOsWTXwwlBFd2Ez2dGK2s, udp: true}
   - {name: 北美地区+V2CROSS.COM, server: 169.197.142.216, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
   - {name: 北美地区+V2CROSS.COM 2, server: 169.197.142.216, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
@@ -372,50 +394,53 @@ proxies:
   - {name: UM😈SSRSUB_770441610, server: 23.157.40.89, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
   - {name: JP😈SSRSUB_2911587685, server: 221.181.185.71, port: 23801, type: ss, cipher: aes-256-cfb, password: JpTYrOJnIhNMXqli, udp: true}
   - {name: TG😈SSRSUB_3079588268, server: 23.157.40.89, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 6元高速机场：cczzuu.top 2, server: 23.157.88.61, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国_1 3, server: 3.98.16.101, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: _US_美国_2 4, server: 35.160.185.203, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_美国_3 4, server: 18.246.235.247, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_美国->🇸🇬_SG_新加坡 3, server: 54.68.160.24, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_美国->🇨🇳_CN_中国, server: 54.71.237.242, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_美国->🇨🇳_CN_中国_1, server: 54.185.199.99, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _SG_新加坡->🇺🇸_US_美国, server: 52.221.255.53, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_美国->🇸🇬_SG_新加坡_1 3, server: 54.213.247.125, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_美国_8 3, server: 156.146.38.168, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
-  - {name: _US_美国_9 2, server: 38.114.114.143, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CN_中国 2, server: 107.155.57.51, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, udp: true}
-  - {name: _US_美国_11 2, server: 34.210.94.67, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _SG_新加坡 2, server: 54.169.139.18, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_美国->🇸🇬_SG_新加坡_2 2, server: 34.216.240.225, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _IE_爱尔兰, server: 52.164.203.76, port: 20143, type: ss, cipher: chacha20-ietf-poly1305, password: 81aBd6IJIgFwT1lqcojSzK, udp: true}
-  - {name: _JP_日本, server: 54.95.5.168, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _GB_英国 2, server: 141.98.101.180, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
-  - {name: _US_美国_1 4, server: 38.110.1.107, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国_2 5, server: 3.136.138.228, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: _US_美国->🇸🇬_SG_新加坡 4, server: 54.200.148.115, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _CN_中国 3, server: 107.155.57.51, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, udp: true}
-  - {name: _US_美国_3 5, server: 23.157.88.61, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _TR_土耳其, server: ist1.fromblancwithlove.com, port: 21657, type: ss, cipher: chacha20-ietf-poly1305, password: 7PC4KztQwRixCS809ZFEllQpmAMn4oE0O9qdrCYo4MdEXJU577cjYeaG0tZDyRl0, udp: true}
+  - {name: _US_美国 2, server: 18.246.235.247, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _DE_德国->🇺🇸_US_美国, server: 45.87.175.188, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 1RWwXhwfAB5gAEozU4G2Pg, udp: true}
+  - {name: _DE_德国, server: 45.87.175.171, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
+  - {name: _DE_德国->🇺🇸_US_美国 2, server: beesyar.org, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa, udp: true}
+  - {name: _NL_荷兰->🇨🇳_CN_中国 2, server: 45.144.48.63, port: 57456, type: ss, cipher: chacha20-ietf-poly1305, password: d3837224ed465f00, udp: true}
+  - {name: _NL_荷兰, server: war.ssvpnapp.win, port: 57456, type: ss, cipher: chacha20-ietf-poly1305, password: d3837224ed465f00, udp: true}
+  - {name: _US_美国 3, server: 52.10.33.211, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _US_美国 4, server: 54.71.237.242, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _US_美国 5, server: 44.243.115.246, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _US_美国 7, server: 54.185.199.99, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _CN_中国->🇺🇸_US_美国 2, server: 107.155.57.51, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, udp: true}
+  - {name: _US_美国 8, server: 54.68.160.24, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _US_美国 9, server: 34.209.103.254, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _US_美国 10, server: 156.146.38.168, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: _US_美国->🇨🇳_CN_中国 3, server: 34.222.148.255, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _DE_德国 2, server: 45.87.175.166, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 1RWwXhwfAB5gAEozU4G2Pg, udp: true}
+  - {name: _US_美国 11, server: 54.213.247.125, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _CA_加拿大->🇺🇸_US_美国, server: 64.74.163.130, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: _US_美国 12, server: 34.216.240.225, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: _EE_爱沙尼亚, server: 77.247.108.24, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: _US_美国->🇸🇬_SG_新加坡_1 4, server: 35.94.16.186, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_美国->🇨🇳_CN_中国 2, server: 52.43.127.109, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_美国_4 4, server: 156.146.38.168, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: _GB_英国, server: 141.98.101.180, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: _US_美国_1 4, server: 38.110.1.107, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国_2 4, server: 3.136.138.228, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: _US_美国->🇸🇬_SG_新加坡 2, server: 54.200.148.115, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _CN_中国 2, server: 107.155.57.51, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, udp: true}
+  - {name: _US_美国_3 4, server: 23.157.88.61, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _TR_土耳其, server: ist1.fromblancwithlove.com, port: 21657, type: ss, cipher: chacha20-ietf-poly1305, password: 7PC4KztQwRixCS809ZFEllQpmAMn4oE0O9qdrCYo4MdEXJU577cjYeaG0tZDyRl0, udp: true}
+  - {name: _EE_爱沙尼亚 2, server: 77.247.108.24, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: _US_美国->🇸🇬_SG_新加坡_1 3, server: 35.94.16.186, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _US_美国->🇨🇳_CN_中国 4, server: 52.43.127.109, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _US_美国_4 3, server: 156.146.38.168, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
   - {name: _US_美国->🇯🇵_JP_日本, server: 13.213.30.242, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_美国_5 4, server: 212.102.47.131, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: _US_美国_5 3, server: 212.102.47.131, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
   - {name: _US_美国_6 3, server: 38.110.1.107, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: _JP_日本->🇸🇬_SG_新加坡, server: 54.95.5.168, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _FR_法国 2, server: 163.172.64.22, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: _IE_爱尔兰->🇫🇷_FR_法国 2, server: 52.164.203.76, port: 20143, type: ss, cipher: chacha20-ietf-poly1305, password: 81aBd6IJIgFwT1lqcojSzK, udp: true}
-  - {name: _US_美国_8 4, server: 205.134.180.150, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 5cp9Z3iWnJZ2, udp: true}
-  - {name: _US_美国_9 3, server: 54.200.54.11, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _SG_新加坡 3, server: 54.255.237.249, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _FR_法国, server: 163.172.64.22, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: _IE_爱尔兰->🇫🇷_FR_法国, server: 52.164.203.76, port: 20143, type: ss, cipher: chacha20-ietf-poly1305, password: 81aBd6IJIgFwT1lqcojSzK, udp: true}
+  - {name: _US_美国_8 2, server: 205.134.180.150, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 5cp9Z3iWnJZ2, udp: true}
+  - {name: _US_美国_9 2, server: 54.200.54.11, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _SG_新加坡 2, server: 54.255.237.249, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: _US_美国_10, server: 34.210.94.67, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: _CN_中国->🇫🇷_FR_法国, server: 120.237.79.157, port: 46665, type: vmess, uuid: 3ac820af-becb-45d7-9e7a-e33d02961bb3, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _ES_西班牙->🇯🇵_JP_日本 2, server: 150.241.95.62, port: 42445, type: ss, cipher: chacha20-ietf-poly1305, password: "flj72wu+&R", udp: true}
-  - {name: _CA_加拿大 2, server: 64.74.163.130, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: _ES_西班牙->🇯🇵_JP_日本, server: 150.241.95.62, port: 42445, type: ss, cipher: chacha20-ietf-poly1305, password: "flj72wu+&R", udp: true}
+  - {name: _CA_加拿大, server: 64.74.163.130, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
   - {name: 未知, server: naiu-us.05vr9nyqg5.download, port: 13021, type: trojan, password: 5b4becce-5739-483f-97ec-68b81a855d68, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: _DE_德国 2, server: 45.87.175.154, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
-  - {name: _GB_英国_1 4, server: 141.98.101.179, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: _DE_德国 3, server: 45.87.175.154, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
+  - {name: _GB_英国_1 2, server: 141.98.101.179, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
   - {name: _US_美国->🇮🇪_IE_爱尔兰, server: 16.170.99.198, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
@@ -423,116 +448,138 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - CA加拿大(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 2
+      - US美国(mibei77.com 米贝节点分享) 3
+      - US美国(mibei77.com 米贝节点分享) 4
+      - US美国(mibei77.com 米贝节点分享) 5
+      - US美国(mibei77.com 米贝节点分享) 6
+      - US美国(mibei77.com 米贝节点分享) 7
+      - US美国(mibei77.com 米贝节点分享) 8
+      - US美国(mibei77.com 米贝节点分享) 9
+      - US美国(mibei77.com 米贝节点分享) 10
+      - US美国(mibei77.com 米贝节点分享) 11
+      - US美国(mibei77.com 米贝节点分享) 12
+      - US美国(mibei77.com 米贝节点分享) 13
+      - US美国(mibei77.com 米贝节点分享) 14
+      - US美国(mibei77.com 米贝节点分享) 15
+      - US美国(mibei77.com 米贝节点分享) 16
+      - US美国(mibei77.com 米贝节点分享) 17
+      - US美国(mibei77.com 米贝节点分享) 18
+      - US美国(mibei77.com 米贝节点分享) 19
+      - US美国(mibei77.com 米贝节点分享) 20
+      - US美国(mibei77.com 米贝节点分享) 21
+      - US美国(mibei77.com 米贝节点分享) 22
+      - NL荷兰(mibei77.com 米贝节点分享)
+      - US美国(mibei77.com 米贝节点分享) 23
+      - US美国(mibei77.com 米贝节点分享) 24
+      - US美国(mibei77.com 米贝节点分享) 25
+      - US美国(mibei77.com 米贝节点分享) 26
+      - US美国(mibei77.com 米贝节点分享) 27
       - US美国(https://www.fuye.fun/免费节点)
       - US美国(https://www.fuye.fun/免费节点) 2
       - 6元高速机场：cczzuu.top
+      - _US_美国_1
       - _US_美国_2
       - _US_美国_3
-      - _US_美国_4
-      - _US_美国_5
-      - _FR_法国
-      - _GB_英国
-      - _US_美国_7
       - _US_美国->🇸🇬_SG_新加坡
+      - _US_美国->🇨🇳_CN_中国
+      - _US_美国->🇨🇳_CN_中国_1
+      - _SG_新加坡->🇺🇸_US_美国
       - _US_美国->🇸🇬_SG_新加坡_1
-      - _CA_加拿大
       - _US_美国_8
       - _US_美国_9
-      - _CN_中国->🇺🇸_US_美国
       - _CN_中国
-      - _UA_乌克兰
-      - _IN_印度
-      - _DE_德国
       - _US_美国_11
-      - _AF_阿富汗
-      - _US_美国_12
       - _SG_新加坡
-      - _GB_英国_1
-      - _IE_爱尔兰->🇫🇷_FR_法国
-      - _US_美国_1
-      - _US_美国_2 2
-      - _US_美国->🇸🇬_SG_新加坡 2
-      - _US_美国_3 2
-      - _US_美国_4 2
-      - _ES_西班牙->🇯🇵_JP_日本
-      - _US_美国_5 2
-      - _US_美国_6
-      - _US_美国_7 2
-      - _GB_英国_1 2
-      - _US_美国_8 2
-      - _GB_英国_2
-      - 高性价比机场:https://kfyun.uk
-      - 印度 v2rayfree.eu.org
-      - 俄罗斯+v2rayfree.eu.org
-      - 印度 v2rayfree.eu.org 2
-      - 意大利+v2rayfree.eu.org
+      - _US_美国->🇸🇬_SG_新加坡_2
+      - _IE_爱尔兰
+      - _JP_日本
       - _DE_德国->🇦🇫_AF_阿富汗
       - _US_美国_1 2
-      - _GB_英国_1 3
-      - _GB_英国_2 2
+      - _GB_英国_1
+      - _GB_英国_2
       - _US_美国->🇸🇬_SG_新加坡_1 2
       - _GB_英国_3
-      - _US_美国_2 3
-      - _US_美国->🇸🇬_SG_新加坡_2
+      - _US_美国_2 2
+      - _US_美国->🇸🇬_SG_新加坡_2 2
       - _GB_英国->🇺🇸_US_美国
-      - _US_美国_3 3
+      - _US_美国_3 2
       - _US_美国->🇸🇬_SG_新加坡_3
-      - _US_美国_4 3
-      - _US_美国_5 3
+      - _US_美国_4
+      - _US_美国_5
       - _GB_英国_4
-      - _US_美国_6 2
+      - _US_美国_6
       - _US_美国->🇸🇬_SG_新加坡_4
       - _GB_英国_5
+      - 高性价比机场:https://kfyun.uk
+      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 日本 东京Amazon数据中心
-      - 乌克兰 V2CROSS.COM
-      - 美国 CloudFlare节点 5
       - 广东省广州市 移动
-      - 德国下萨克森州萨尔茨吉特 德国电信
+      - 美国 CloudFlare节点 5
       - 美国 CloudFlare节点 6
-      - 德国下萨克森州萨尔茨吉特 德国电信 2
       - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
       - 美国 CloudFlare节点 11
-      - 意大利 V2CROSS.COM
       - 美国 CloudFlare节点 12
-      - 俄罗斯 莫斯科JustHost
-      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点 13
       - 美国 CloudFlare节点 14
-      - 广东省广州市 移动 2
       - 美国 CloudFlare节点 15
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
       - 美国 CloudFlare节点 18
-      - 美国 惠普HP
-      - 丹麦 V2CROSS.COM
       - 美国 CloudFlare节点 19
-      - 立陶宛 NGS新闻
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
-      - 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国 华盛顿Cogent通信公司
+      - 亚太地区 v2rayfree.eu.org
       - 美国 CloudFlare节点 22
       - 美国 CloudFlare节点 23
+      - 德国 黑森州法兰克福Amazon数据中心 2
       - 美国 CloudFlare节点 24
       - 美国 CloudFlare节点 25
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 26
       - 美国 CloudFlare节点 27
-      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点 28
+      - 江苏省扬州市+移动
       - 美国 CloudFlare节点 29
+      - 亚太地区 v2rayfree.eu.org 2
       - 美国 CloudFlare节点 30
       - 美国 CloudFlare节点 31
-      - 美国 华盛顿Cogent通信公司 2
+      - 日本 东京Amazon数据中心
+      - 美国 CloudFlare节点 32
+      - 美国 Amazon EC2服务器
+      - 美国 CloudFlare节点 33
+      - 北美地区+v2rayfree.eu.org
+      - 美国 CloudFlare节点 34
+      - 韩国+KT电信
+      - 美国 CloudFlare节点 35
+      - 美国 CloudFlare节点 36
+      - 美国 CloudFlare节点 37
+      - 广东省肇庆市 中移铁通
+      - _DE_德国->🇺🇸_US_美国_1
+      - _US_美国_1 3
+      - _US_美国_2 3
+      - _US_美国_3 3
+      - _CN_中国->🇺🇸_US_美国
+      - _US_美国_4 2
+      - _US_美国_5 2
+      - _DE_德国->🇺🇸_US_美国_2
+      - _US_美国_6 2
+      - _DE_德国_1
+      - _DE_德国_2
+      - _US_美国_7
+      - _NL_荷兰->🇨🇳_CN_中国
+      - _US_美国->🇨🇳_CN_中国 2
+      - 美国 CloudFlare节点 38
+      - 意大利 V2CROSS.COM
+      - 波兰 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
       - 爱尔兰+V2CROSS.COM
       - 北美地区+V2CROSS.COM
       - 北美地区+V2CROSS.COM 2
@@ -790,166 +837,191 @@ proxy-groups:
       - UM😈SSRSUB_770441610
       - JP😈SSRSUB_2911587685
       - TG😈SSRSUB_3079588268
-      - 6元高速机场：cczzuu.top 2
-      - _US_美国_1 3
-      - _US_美国_2 4
-      - _US_美国_3 4
-      - _US_美国->🇸🇬_SG_新加坡 3
-      - _US_美国->🇨🇳_CN_中国
-      - _US_美国->🇨🇳_CN_中国_1
-      - _SG_新加坡->🇺🇸_US_美国
-      - _US_美国->🇸🇬_SG_新加坡_1 3
-      - _US_美国_8 3
-      - _US_美国_9 2
-      - _CN_中国 2
-      - _US_美国_11 2
-      - _SG_新加坡 2
-      - _US_美国->🇸🇬_SG_新加坡_2 2
-      - _IE_爱尔兰
-      - _JP_日本
-      - _GB_英国 2
-      - _US_美国_1 4
-      - _US_美国_2 5
-      - _US_美国->🇸🇬_SG_新加坡 4
-      - _CN_中国 3
-      - _US_美国_3 5
-      - _TR_土耳其
+      - _US_美国 2
+      - _DE_德国->🇺🇸_US_美国
+      - _DE_德国
+      - _DE_德国->🇺🇸_US_美国 2
+      - _NL_荷兰->🇨🇳_CN_中国 2
+      - _NL_荷兰
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 7
+      - _CN_中国->🇺🇸_US_美国 2
+      - _US_美国 8
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国->🇨🇳_CN_中国 3
+      - _DE_德国 2
+      - _US_美国 11
+      - _CA_加拿大->🇺🇸_US_美国
+      - _US_美国 12
       - _EE_爱沙尼亚
-      - _US_美国->🇸🇬_SG_新加坡_1 4
-      - _US_美国->🇨🇳_CN_中国 2
-      - _US_美国_4 4
+      - _GB_英国
+      - _US_美国_1 4
+      - _US_美国_2 4
+      - _US_美国->🇸🇬_SG_新加坡 2
+      - _CN_中国 2
+      - _US_美国_3 4
+      - _TR_土耳其
+      - _EE_爱沙尼亚 2
+      - _US_美国->🇸🇬_SG_新加坡_1 3
+      - _US_美国->🇨🇳_CN_中国 4
+      - _US_美国_4 3
       - _US_美国->🇯🇵_JP_日本
-      - _US_美国_5 4
+      - _US_美国_5 3
       - _US_美国_6 3
       - _JP_日本->🇸🇬_SG_新加坡
-      - _FR_法国 2
-      - _IE_爱尔兰->🇫🇷_FR_法国 2
-      - _US_美国_8 4
-      - _US_美国_9 3
-      - _SG_新加坡 3
+      - _FR_法国
+      - _IE_爱尔兰->🇫🇷_FR_法国
+      - _US_美国_8 2
+      - _US_美国_9 2
+      - _SG_新加坡 2
       - _US_美国_10
       - _CN_中国->🇫🇷_FR_法国
-      - _ES_西班牙->🇯🇵_JP_日本 2
-      - _CA_加拿大 2
+      - _ES_西班牙->🇯🇵_JP_日本
+      - _CA_加拿大
       - 未知
-      - _DE_德国 2
-      - _GB_英国_1 4
+      - _DE_德国 3
+      - _GB_英国_1 2
       - _US_美国->🇮🇪_IE_爱尔兰
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - CA加拿大(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 2
+      - US美国(mibei77.com 米贝节点分享) 3
+      - US美国(mibei77.com 米贝节点分享) 4
+      - US美国(mibei77.com 米贝节点分享) 5
+      - US美国(mibei77.com 米贝节点分享) 6
+      - US美国(mibei77.com 米贝节点分享) 7
+      - US美国(mibei77.com 米贝节点分享) 8
+      - US美国(mibei77.com 米贝节点分享) 9
+      - US美国(mibei77.com 米贝节点分享) 10
+      - US美国(mibei77.com 米贝节点分享) 11
+      - US美国(mibei77.com 米贝节点分享) 12
+      - US美国(mibei77.com 米贝节点分享) 13
+      - US美国(mibei77.com 米贝节点分享) 14
+      - US美国(mibei77.com 米贝节点分享) 15
+      - US美国(mibei77.com 米贝节点分享) 16
+      - US美国(mibei77.com 米贝节点分享) 17
+      - US美国(mibei77.com 米贝节点分享) 18
+      - US美国(mibei77.com 米贝节点分享) 19
+      - US美国(mibei77.com 米贝节点分享) 20
+      - US美国(mibei77.com 米贝节点分享) 21
+      - US美国(mibei77.com 米贝节点分享) 22
+      - NL荷兰(mibei77.com 米贝节点分享)
+      - US美国(mibei77.com 米贝节点分享) 23
+      - US美国(mibei77.com 米贝节点分享) 24
+      - US美国(mibei77.com 米贝节点分享) 25
+      - US美国(mibei77.com 米贝节点分享) 26
+      - US美国(mibei77.com 米贝节点分享) 27
       - US美国(https://www.fuye.fun/免费节点)
       - US美国(https://www.fuye.fun/免费节点) 2
       - 6元高速机场：cczzuu.top
+      - _US_美国_1
       - _US_美国_2
       - _US_美国_3
-      - _US_美国_4
-      - _US_美国_5
-      - _FR_法国
-      - _GB_英国
-      - _US_美国_7
       - _US_美国->🇸🇬_SG_新加坡
+      - _US_美国->🇨🇳_CN_中国
+      - _US_美国->🇨🇳_CN_中国_1
+      - _SG_新加坡->🇺🇸_US_美国
       - _US_美国->🇸🇬_SG_新加坡_1
-      - _CA_加拿大
       - _US_美国_8
       - _US_美国_9
-      - _CN_中国->🇺🇸_US_美国
       - _CN_中国
-      - _UA_乌克兰
-      - _IN_印度
-      - _DE_德国
       - _US_美国_11
-      - _AF_阿富汗
-      - _US_美国_12
       - _SG_新加坡
-      - _GB_英国_1
-      - _IE_爱尔兰->🇫🇷_FR_法国
-      - _US_美国_1
-      - _US_美国_2 2
-      - _US_美国->🇸🇬_SG_新加坡 2
-      - _US_美国_3 2
-      - _US_美国_4 2
-      - _ES_西班牙->🇯🇵_JP_日本
-      - _US_美国_5 2
-      - _US_美国_6
-      - _US_美国_7 2
-      - _GB_英国_1 2
-      - _US_美国_8 2
-      - _GB_英国_2
-      - 高性价比机场:https://kfyun.uk
-      - 印度 v2rayfree.eu.org
-      - 俄罗斯+v2rayfree.eu.org
-      - 印度 v2rayfree.eu.org 2
-      - 意大利+v2rayfree.eu.org
+      - _US_美国->🇸🇬_SG_新加坡_2
+      - _IE_爱尔兰
+      - _JP_日本
       - _DE_德国->🇦🇫_AF_阿富汗
       - _US_美国_1 2
-      - _GB_英国_1 3
-      - _GB_英国_2 2
+      - _GB_英国_1
+      - _GB_英国_2
       - _US_美国->🇸🇬_SG_新加坡_1 2
       - _GB_英国_3
-      - _US_美国_2 3
-      - _US_美国->🇸🇬_SG_新加坡_2
+      - _US_美国_2 2
+      - _US_美国->🇸🇬_SG_新加坡_2 2
       - _GB_英国->🇺🇸_US_美国
-      - _US_美国_3 3
+      - _US_美国_3 2
       - _US_美国->🇸🇬_SG_新加坡_3
-      - _US_美国_4 3
-      - _US_美国_5 3
+      - _US_美国_4
+      - _US_美国_5
       - _GB_英国_4
-      - _US_美国_6 2
+      - _US_美国_6
       - _US_美国->🇸🇬_SG_新加坡_4
       - _GB_英国_5
+      - 高性价比机场:https://kfyun.uk
+      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 日本 东京Amazon数据中心
-      - 乌克兰 V2CROSS.COM
-      - 美国 CloudFlare节点 5
       - 广东省广州市 移动
-      - 德国下萨克森州萨尔茨吉特 德国电信
+      - 美国 CloudFlare节点 5
       - 美国 CloudFlare节点 6
-      - 德国下萨克森州萨尔茨吉特 德国电信 2
       - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
       - 美国 CloudFlare节点 11
-      - 意大利 V2CROSS.COM
       - 美国 CloudFlare节点 12
-      - 俄罗斯 莫斯科JustHost
-      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点 13
       - 美国 CloudFlare节点 14
-      - 广东省广州市 移动 2
       - 美国 CloudFlare节点 15
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
       - 美国 CloudFlare节点 18
-      - 美国 惠普HP
-      - 丹麦 V2CROSS.COM
       - 美国 CloudFlare节点 19
-      - 立陶宛 NGS新闻
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
-      - 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国 华盛顿Cogent通信公司
+      - 亚太地区 v2rayfree.eu.org
       - 美国 CloudFlare节点 22
       - 美国 CloudFlare节点 23
+      - 德国 黑森州法兰克福Amazon数据中心 2
       - 美国 CloudFlare节点 24
       - 美国 CloudFlare节点 25
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 26
       - 美国 CloudFlare节点 27
-      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点 28
+      - 江苏省扬州市+移动
       - 美国 CloudFlare节点 29
+      - 亚太地区 v2rayfree.eu.org 2
       - 美国 CloudFlare节点 30
       - 美国 CloudFlare节点 31
-      - 美国 华盛顿Cogent通信公司 2
+      - 日本 东京Amazon数据中心
+      - 美国 CloudFlare节点 32
+      - 美国 Amazon EC2服务器
+      - 美国 CloudFlare节点 33
+      - 北美地区+v2rayfree.eu.org
+      - 美国 CloudFlare节点 34
+      - 韩国+KT电信
+      - 美国 CloudFlare节点 35
+      - 美国 CloudFlare节点 36
+      - 美国 CloudFlare节点 37
+      - 广东省肇庆市 中移铁通
+      - _DE_德国->🇺🇸_US_美国_1
+      - _US_美国_1 3
+      - _US_美国_2 3
+      - _US_美国_3 3
+      - _CN_中国->🇺🇸_US_美国
+      - _US_美国_4 2
+      - _US_美国_5 2
+      - _DE_德国->🇺🇸_US_美国_2
+      - _US_美国_6 2
+      - _DE_德国_1
+      - _DE_德国_2
+      - _US_美国_7
+      - _NL_荷兰->🇨🇳_CN_中国
+      - _US_美国->🇨🇳_CN_中国 2
+      - 美国 CloudFlare节点 38
+      - 意大利 V2CROSS.COM
+      - 波兰 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
       - 爱尔兰+V2CROSS.COM
       - 北美地区+V2CROSS.COM
       - 北美地区+V2CROSS.COM 2
@@ -1207,50 +1279,53 @@ proxy-groups:
       - UM😈SSRSUB_770441610
       - JP😈SSRSUB_2911587685
       - TG😈SSRSUB_3079588268
-      - 6元高速机场：cczzuu.top 2
-      - _US_美国_1 3
-      - _US_美国_2 4
-      - _US_美国_3 4
-      - _US_美国->🇸🇬_SG_新加坡 3
-      - _US_美国->🇨🇳_CN_中国
-      - _US_美国->🇨🇳_CN_中国_1
-      - _SG_新加坡->🇺🇸_US_美国
-      - _US_美国->🇸🇬_SG_新加坡_1 3
-      - _US_美国_8 3
-      - _US_美国_9 2
-      - _CN_中国 2
-      - _US_美国_11 2
-      - _SG_新加坡 2
-      - _US_美国->🇸🇬_SG_新加坡_2 2
-      - _IE_爱尔兰
-      - _JP_日本
-      - _GB_英国 2
-      - _US_美国_1 4
-      - _US_美国_2 5
-      - _US_美国->🇸🇬_SG_新加坡 4
-      - _CN_中国 3
-      - _US_美国_3 5
-      - _TR_土耳其
+      - _US_美国 2
+      - _DE_德国->🇺🇸_US_美国
+      - _DE_德国
+      - _DE_德国->🇺🇸_US_美国 2
+      - _NL_荷兰->🇨🇳_CN_中国 2
+      - _NL_荷兰
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 7
+      - _CN_中国->🇺🇸_US_美国 2
+      - _US_美国 8
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国->🇨🇳_CN_中国 3
+      - _DE_德国 2
+      - _US_美国 11
+      - _CA_加拿大->🇺🇸_US_美国
+      - _US_美国 12
       - _EE_爱沙尼亚
-      - _US_美国->🇸🇬_SG_新加坡_1 4
-      - _US_美国->🇨🇳_CN_中国 2
-      - _US_美国_4 4
+      - _GB_英国
+      - _US_美国_1 4
+      - _US_美国_2 4
+      - _US_美国->🇸🇬_SG_新加坡 2
+      - _CN_中国 2
+      - _US_美国_3 4
+      - _TR_土耳其
+      - _EE_爱沙尼亚 2
+      - _US_美国->🇸🇬_SG_新加坡_1 3
+      - _US_美国->🇨🇳_CN_中国 4
+      - _US_美国_4 3
       - _US_美国->🇯🇵_JP_日本
-      - _US_美国_5 4
+      - _US_美国_5 3
       - _US_美国_6 3
       - _JP_日本->🇸🇬_SG_新加坡
-      - _FR_法国 2
-      - _IE_爱尔兰->🇫🇷_FR_法国 2
-      - _US_美国_8 4
-      - _US_美国_9 3
-      - _SG_新加坡 3
+      - _FR_法国
+      - _IE_爱尔兰->🇫🇷_FR_法国
+      - _US_美国_8 2
+      - _US_美国_9 2
+      - _SG_新加坡 2
       - _US_美国_10
       - _CN_中国->🇫🇷_FR_法国
-      - _ES_西班牙->🇯🇵_JP_日本 2
-      - _CA_加拿大 2
+      - _ES_西班牙->🇯🇵_JP_日本
+      - _CA_加拿大
       - 未知
-      - _DE_德国 2
-      - _GB_英国_1 4
+      - _DE_德国 3
+      - _GB_英国_1 2
       - _US_美国->🇮🇪_IE_爱尔兰
   - name: 🎥 NETFLIX
     type: select
@@ -1258,116 +1333,138 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - CA加拿大(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 2
+      - US美国(mibei77.com 米贝节点分享) 3
+      - US美国(mibei77.com 米贝节点分享) 4
+      - US美国(mibei77.com 米贝节点分享) 5
+      - US美国(mibei77.com 米贝节点分享) 6
+      - US美国(mibei77.com 米贝节点分享) 7
+      - US美国(mibei77.com 米贝节点分享) 8
+      - US美国(mibei77.com 米贝节点分享) 9
+      - US美国(mibei77.com 米贝节点分享) 10
+      - US美国(mibei77.com 米贝节点分享) 11
+      - US美国(mibei77.com 米贝节点分享) 12
+      - US美国(mibei77.com 米贝节点分享) 13
+      - US美国(mibei77.com 米贝节点分享) 14
+      - US美国(mibei77.com 米贝节点分享) 15
+      - US美国(mibei77.com 米贝节点分享) 16
+      - US美国(mibei77.com 米贝节点分享) 17
+      - US美国(mibei77.com 米贝节点分享) 18
+      - US美国(mibei77.com 米贝节点分享) 19
+      - US美国(mibei77.com 米贝节点分享) 20
+      - US美国(mibei77.com 米贝节点分享) 21
+      - US美国(mibei77.com 米贝节点分享) 22
+      - NL荷兰(mibei77.com 米贝节点分享)
+      - US美国(mibei77.com 米贝节点分享) 23
+      - US美国(mibei77.com 米贝节点分享) 24
+      - US美国(mibei77.com 米贝节点分享) 25
+      - US美国(mibei77.com 米贝节点分享) 26
+      - US美国(mibei77.com 米贝节点分享) 27
       - US美国(https://www.fuye.fun/免费节点)
       - US美国(https://www.fuye.fun/免费节点) 2
       - 6元高速机场：cczzuu.top
+      - _US_美国_1
       - _US_美国_2
       - _US_美国_3
-      - _US_美国_4
-      - _US_美国_5
-      - _FR_法国
-      - _GB_英国
-      - _US_美国_7
       - _US_美国->🇸🇬_SG_新加坡
+      - _US_美国->🇨🇳_CN_中国
+      - _US_美国->🇨🇳_CN_中国_1
+      - _SG_新加坡->🇺🇸_US_美国
       - _US_美国->🇸🇬_SG_新加坡_1
-      - _CA_加拿大
       - _US_美国_8
       - _US_美国_9
-      - _CN_中国->🇺🇸_US_美国
       - _CN_中国
-      - _UA_乌克兰
-      - _IN_印度
-      - _DE_德国
       - _US_美国_11
-      - _AF_阿富汗
-      - _US_美国_12
       - _SG_新加坡
-      - _GB_英国_1
-      - _IE_爱尔兰->🇫🇷_FR_法国
-      - _US_美国_1
-      - _US_美国_2 2
-      - _US_美国->🇸🇬_SG_新加坡 2
-      - _US_美国_3 2
-      - _US_美国_4 2
-      - _ES_西班牙->🇯🇵_JP_日本
-      - _US_美国_5 2
-      - _US_美国_6
-      - _US_美国_7 2
-      - _GB_英国_1 2
-      - _US_美国_8 2
-      - _GB_英国_2
-      - 高性价比机场:https://kfyun.uk
-      - 印度 v2rayfree.eu.org
-      - 俄罗斯+v2rayfree.eu.org
-      - 印度 v2rayfree.eu.org 2
-      - 意大利+v2rayfree.eu.org
+      - _US_美国->🇸🇬_SG_新加坡_2
+      - _IE_爱尔兰
+      - _JP_日本
       - _DE_德国->🇦🇫_AF_阿富汗
       - _US_美国_1 2
-      - _GB_英国_1 3
-      - _GB_英国_2 2
+      - _GB_英国_1
+      - _GB_英国_2
       - _US_美国->🇸🇬_SG_新加坡_1 2
       - _GB_英国_3
-      - _US_美国_2 3
-      - _US_美国->🇸🇬_SG_新加坡_2
+      - _US_美国_2 2
+      - _US_美国->🇸🇬_SG_新加坡_2 2
       - _GB_英国->🇺🇸_US_美国
-      - _US_美国_3 3
+      - _US_美国_3 2
       - _US_美国->🇸🇬_SG_新加坡_3
-      - _US_美国_4 3
-      - _US_美国_5 3
+      - _US_美国_4
+      - _US_美国_5
       - _GB_英国_4
-      - _US_美国_6 2
+      - _US_美国_6
       - _US_美国->🇸🇬_SG_新加坡_4
       - _GB_英国_5
+      - 高性价比机场:https://kfyun.uk
+      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 日本 东京Amazon数据中心
-      - 乌克兰 V2CROSS.COM
-      - 美国 CloudFlare节点 5
       - 广东省广州市 移动
-      - 德国下萨克森州萨尔茨吉特 德国电信
+      - 美国 CloudFlare节点 5
       - 美国 CloudFlare节点 6
-      - 德国下萨克森州萨尔茨吉特 德国电信 2
       - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
       - 美国 CloudFlare节点 11
-      - 意大利 V2CROSS.COM
       - 美国 CloudFlare节点 12
-      - 俄罗斯 莫斯科JustHost
-      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点 13
       - 美国 CloudFlare节点 14
-      - 广东省广州市 移动 2
       - 美国 CloudFlare节点 15
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
       - 美国 CloudFlare节点 18
-      - 美国 惠普HP
-      - 丹麦 V2CROSS.COM
       - 美国 CloudFlare节点 19
-      - 立陶宛 NGS新闻
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
-      - 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国 华盛顿Cogent通信公司
+      - 亚太地区 v2rayfree.eu.org
       - 美国 CloudFlare节点 22
       - 美国 CloudFlare节点 23
+      - 德国 黑森州法兰克福Amazon数据中心 2
       - 美国 CloudFlare节点 24
       - 美国 CloudFlare节点 25
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 26
       - 美国 CloudFlare节点 27
-      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点 28
+      - 江苏省扬州市+移动
       - 美国 CloudFlare节点 29
+      - 亚太地区 v2rayfree.eu.org 2
       - 美国 CloudFlare节点 30
       - 美国 CloudFlare节点 31
-      - 美国 华盛顿Cogent通信公司 2
+      - 日本 东京Amazon数据中心
+      - 美国 CloudFlare节点 32
+      - 美国 Amazon EC2服务器
+      - 美国 CloudFlare节点 33
+      - 北美地区+v2rayfree.eu.org
+      - 美国 CloudFlare节点 34
+      - 韩国+KT电信
+      - 美国 CloudFlare节点 35
+      - 美国 CloudFlare节点 36
+      - 美国 CloudFlare节点 37
+      - 广东省肇庆市 中移铁通
+      - _DE_德国->🇺🇸_US_美国_1
+      - _US_美国_1 3
+      - _US_美国_2 3
+      - _US_美国_3 3
+      - _CN_中国->🇺🇸_US_美国
+      - _US_美国_4 2
+      - _US_美国_5 2
+      - _DE_德国->🇺🇸_US_美国_2
+      - _US_美国_6 2
+      - _DE_德国_1
+      - _DE_德国_2
+      - _US_美国_7
+      - _NL_荷兰->🇨🇳_CN_中国
+      - _US_美国->🇨🇳_CN_中国 2
+      - 美国 CloudFlare节点 38
+      - 意大利 V2CROSS.COM
+      - 波兰 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
       - 爱尔兰+V2CROSS.COM
       - 北美地区+V2CROSS.COM
       - 北美地区+V2CROSS.COM 2
@@ -1625,50 +1722,53 @@ proxy-groups:
       - UM😈SSRSUB_770441610
       - JP😈SSRSUB_2911587685
       - TG😈SSRSUB_3079588268
-      - 6元高速机场：cczzuu.top 2
-      - _US_美国_1 3
-      - _US_美国_2 4
-      - _US_美国_3 4
-      - _US_美国->🇸🇬_SG_新加坡 3
-      - _US_美国->🇨🇳_CN_中国
-      - _US_美国->🇨🇳_CN_中国_1
-      - _SG_新加坡->🇺🇸_US_美国
-      - _US_美国->🇸🇬_SG_新加坡_1 3
-      - _US_美国_8 3
-      - _US_美国_9 2
-      - _CN_中国 2
-      - _US_美国_11 2
-      - _SG_新加坡 2
-      - _US_美国->🇸🇬_SG_新加坡_2 2
-      - _IE_爱尔兰
-      - _JP_日本
-      - _GB_英国 2
-      - _US_美国_1 4
-      - _US_美国_2 5
-      - _US_美国->🇸🇬_SG_新加坡 4
-      - _CN_中国 3
-      - _US_美国_3 5
-      - _TR_土耳其
+      - _US_美国 2
+      - _DE_德国->🇺🇸_US_美国
+      - _DE_德国
+      - _DE_德国->🇺🇸_US_美国 2
+      - _NL_荷兰->🇨🇳_CN_中国 2
+      - _NL_荷兰
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 7
+      - _CN_中国->🇺🇸_US_美国 2
+      - _US_美国 8
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国->🇨🇳_CN_中国 3
+      - _DE_德国 2
+      - _US_美国 11
+      - _CA_加拿大->🇺🇸_US_美国
+      - _US_美国 12
       - _EE_爱沙尼亚
-      - _US_美国->🇸🇬_SG_新加坡_1 4
-      - _US_美国->🇨🇳_CN_中国 2
-      - _US_美国_4 4
+      - _GB_英国
+      - _US_美国_1 4
+      - _US_美国_2 4
+      - _US_美国->🇸🇬_SG_新加坡 2
+      - _CN_中国 2
+      - _US_美国_3 4
+      - _TR_土耳其
+      - _EE_爱沙尼亚 2
+      - _US_美国->🇸🇬_SG_新加坡_1 3
+      - _US_美国->🇨🇳_CN_中国 4
+      - _US_美国_4 3
       - _US_美国->🇯🇵_JP_日本
-      - _US_美国_5 4
+      - _US_美国_5 3
       - _US_美国_6 3
       - _JP_日本->🇸🇬_SG_新加坡
-      - _FR_法国 2
-      - _IE_爱尔兰->🇫🇷_FR_法国 2
-      - _US_美国_8 4
-      - _US_美国_9 3
-      - _SG_新加坡 3
+      - _FR_法国
+      - _IE_爱尔兰->🇫🇷_FR_法国
+      - _US_美国_8 2
+      - _US_美国_9 2
+      - _SG_新加坡 2
       - _US_美国_10
       - _CN_中国->🇫🇷_FR_法国
-      - _ES_西班牙->🇯🇵_JP_日本 2
-      - _CA_加拿大 2
+      - _ES_西班牙->🇯🇵_JP_日本
+      - _CA_加拿大
       - 未知
-      - _DE_德国 2
-      - _GB_英国_1 4
+      - _DE_德国 3
+      - _GB_英国_1 2
       - _US_美国->🇮🇪_IE_爱尔兰
   - name: ⛔️ 广告拦截
     type: select
@@ -1688,116 +1788,138 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - CA加拿大(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 2
+      - US美国(mibei77.com 米贝节点分享) 3
+      - US美国(mibei77.com 米贝节点分享) 4
+      - US美国(mibei77.com 米贝节点分享) 5
+      - US美国(mibei77.com 米贝节点分享) 6
+      - US美国(mibei77.com 米贝节点分享) 7
+      - US美国(mibei77.com 米贝节点分享) 8
+      - US美国(mibei77.com 米贝节点分享) 9
+      - US美国(mibei77.com 米贝节点分享) 10
+      - US美国(mibei77.com 米贝节点分享) 11
+      - US美国(mibei77.com 米贝节点分享) 12
+      - US美国(mibei77.com 米贝节点分享) 13
+      - US美国(mibei77.com 米贝节点分享) 14
+      - US美国(mibei77.com 米贝节点分享) 15
+      - US美国(mibei77.com 米贝节点分享) 16
+      - US美国(mibei77.com 米贝节点分享) 17
+      - US美国(mibei77.com 米贝节点分享) 18
+      - US美国(mibei77.com 米贝节点分享) 19
+      - US美国(mibei77.com 米贝节点分享) 20
+      - US美国(mibei77.com 米贝节点分享) 21
+      - US美国(mibei77.com 米贝节点分享) 22
+      - NL荷兰(mibei77.com 米贝节点分享)
+      - US美国(mibei77.com 米贝节点分享) 23
+      - US美国(mibei77.com 米贝节点分享) 24
+      - US美国(mibei77.com 米贝节点分享) 25
+      - US美国(mibei77.com 米贝节点分享) 26
+      - US美国(mibei77.com 米贝节点分享) 27
       - US美国(https://www.fuye.fun/免费节点)
       - US美国(https://www.fuye.fun/免费节点) 2
       - 6元高速机场：cczzuu.top
+      - _US_美国_1
       - _US_美国_2
       - _US_美国_3
-      - _US_美国_4
-      - _US_美国_5
-      - _FR_法国
-      - _GB_英国
-      - _US_美国_7
       - _US_美国->🇸🇬_SG_新加坡
+      - _US_美国->🇨🇳_CN_中国
+      - _US_美国->🇨🇳_CN_中国_1
+      - _SG_新加坡->🇺🇸_US_美国
       - _US_美国->🇸🇬_SG_新加坡_1
-      - _CA_加拿大
       - _US_美国_8
       - _US_美国_9
-      - _CN_中国->🇺🇸_US_美国
       - _CN_中国
-      - _UA_乌克兰
-      - _IN_印度
-      - _DE_德国
       - _US_美国_11
-      - _AF_阿富汗
-      - _US_美国_12
       - _SG_新加坡
-      - _GB_英国_1
-      - _IE_爱尔兰->🇫🇷_FR_法国
-      - _US_美国_1
-      - _US_美国_2 2
-      - _US_美国->🇸🇬_SG_新加坡 2
-      - _US_美国_3 2
-      - _US_美国_4 2
-      - _ES_西班牙->🇯🇵_JP_日本
-      - _US_美国_5 2
-      - _US_美国_6
-      - _US_美国_7 2
-      - _GB_英国_1 2
-      - _US_美国_8 2
-      - _GB_英国_2
-      - 高性价比机场:https://kfyun.uk
-      - 印度 v2rayfree.eu.org
-      - 俄罗斯+v2rayfree.eu.org
-      - 印度 v2rayfree.eu.org 2
-      - 意大利+v2rayfree.eu.org
+      - _US_美国->🇸🇬_SG_新加坡_2
+      - _IE_爱尔兰
+      - _JP_日本
       - _DE_德国->🇦🇫_AF_阿富汗
       - _US_美国_1 2
-      - _GB_英国_1 3
-      - _GB_英国_2 2
+      - _GB_英国_1
+      - _GB_英国_2
       - _US_美国->🇸🇬_SG_新加坡_1 2
       - _GB_英国_3
-      - _US_美国_2 3
-      - _US_美国->🇸🇬_SG_新加坡_2
+      - _US_美国_2 2
+      - _US_美国->🇸🇬_SG_新加坡_2 2
       - _GB_英国->🇺🇸_US_美国
-      - _US_美国_3 3
+      - _US_美国_3 2
       - _US_美国->🇸🇬_SG_新加坡_3
-      - _US_美国_4 3
-      - _US_美国_5 3
+      - _US_美国_4
+      - _US_美国_5
       - _GB_英国_4
-      - _US_美国_6 2
+      - _US_美国_6
       - _US_美国->🇸🇬_SG_新加坡_4
       - _GB_英国_5
+      - 高性价比机场:https://kfyun.uk
+      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 日本 东京Amazon数据中心
-      - 乌克兰 V2CROSS.COM
-      - 美国 CloudFlare节点 5
       - 广东省广州市 移动
-      - 德国下萨克森州萨尔茨吉特 德国电信
+      - 美国 CloudFlare节点 5
       - 美国 CloudFlare节点 6
-      - 德国下萨克森州萨尔茨吉特 德国电信 2
       - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
       - 美国 CloudFlare节点 11
-      - 意大利 V2CROSS.COM
       - 美国 CloudFlare节点 12
-      - 俄罗斯 莫斯科JustHost
-      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点 13
       - 美国 CloudFlare节点 14
-      - 广东省广州市 移动 2
       - 美国 CloudFlare节点 15
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
       - 美国 CloudFlare节点 18
-      - 美国 惠普HP
-      - 丹麦 V2CROSS.COM
       - 美国 CloudFlare节点 19
-      - 立陶宛 NGS新闻
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
-      - 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国 华盛顿Cogent通信公司
+      - 亚太地区 v2rayfree.eu.org
       - 美国 CloudFlare节点 22
       - 美国 CloudFlare节点 23
+      - 德国 黑森州法兰克福Amazon数据中心 2
       - 美国 CloudFlare节点 24
       - 美国 CloudFlare节点 25
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 26
       - 美国 CloudFlare节点 27
-      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点 28
+      - 江苏省扬州市+移动
       - 美国 CloudFlare节点 29
+      - 亚太地区 v2rayfree.eu.org 2
       - 美国 CloudFlare节点 30
       - 美国 CloudFlare节点 31
-      - 美国 华盛顿Cogent通信公司 2
+      - 日本 东京Amazon数据中心
+      - 美国 CloudFlare节点 32
+      - 美国 Amazon EC2服务器
+      - 美国 CloudFlare节点 33
+      - 北美地区+v2rayfree.eu.org
+      - 美国 CloudFlare节点 34
+      - 韩国+KT电信
+      - 美国 CloudFlare节点 35
+      - 美国 CloudFlare节点 36
+      - 美国 CloudFlare节点 37
+      - 广东省肇庆市 中移铁通
+      - _DE_德国->🇺🇸_US_美国_1
+      - _US_美国_1 3
+      - _US_美国_2 3
+      - _US_美国_3 3
+      - _CN_中国->🇺🇸_US_美国
+      - _US_美国_4 2
+      - _US_美国_5 2
+      - _DE_德国->🇺🇸_US_美国_2
+      - _US_美国_6 2
+      - _DE_德国_1
+      - _DE_德国_2
+      - _US_美国_7
+      - _NL_荷兰->🇨🇳_CN_中国
+      - _US_美国->🇨🇳_CN_中国 2
+      - 美国 CloudFlare节点 38
+      - 意大利 V2CROSS.COM
+      - 波兰 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
       - 爱尔兰+V2CROSS.COM
       - 北美地区+V2CROSS.COM
       - 北美地区+V2CROSS.COM 2
@@ -2055,50 +2177,53 @@ proxy-groups:
       - UM😈SSRSUB_770441610
       - JP😈SSRSUB_2911587685
       - TG😈SSRSUB_3079588268
-      - 6元高速机场：cczzuu.top 2
-      - _US_美国_1 3
-      - _US_美国_2 4
-      - _US_美国_3 4
-      - _US_美国->🇸🇬_SG_新加坡 3
-      - _US_美国->🇨🇳_CN_中国
-      - _US_美国->🇨🇳_CN_中国_1
-      - _SG_新加坡->🇺🇸_US_美国
-      - _US_美国->🇸🇬_SG_新加坡_1 3
-      - _US_美国_8 3
-      - _US_美国_9 2
-      - _CN_中国 2
-      - _US_美国_11 2
-      - _SG_新加坡 2
-      - _US_美国->🇸🇬_SG_新加坡_2 2
-      - _IE_爱尔兰
-      - _JP_日本
-      - _GB_英国 2
-      - _US_美国_1 4
-      - _US_美国_2 5
-      - _US_美国->🇸🇬_SG_新加坡 4
-      - _CN_中国 3
-      - _US_美国_3 5
-      - _TR_土耳其
+      - _US_美国 2
+      - _DE_德国->🇺🇸_US_美国
+      - _DE_德国
+      - _DE_德国->🇺🇸_US_美国 2
+      - _NL_荷兰->🇨🇳_CN_中国 2
+      - _NL_荷兰
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 7
+      - _CN_中国->🇺🇸_US_美国 2
+      - _US_美国 8
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国->🇨🇳_CN_中国 3
+      - _DE_德国 2
+      - _US_美国 11
+      - _CA_加拿大->🇺🇸_US_美国
+      - _US_美国 12
       - _EE_爱沙尼亚
-      - _US_美国->🇸🇬_SG_新加坡_1 4
-      - _US_美国->🇨🇳_CN_中国 2
-      - _US_美国_4 4
+      - _GB_英国
+      - _US_美国_1 4
+      - _US_美国_2 4
+      - _US_美国->🇸🇬_SG_新加坡 2
+      - _CN_中国 2
+      - _US_美国_3 4
+      - _TR_土耳其
+      - _EE_爱沙尼亚 2
+      - _US_美国->🇸🇬_SG_新加坡_1 3
+      - _US_美国->🇨🇳_CN_中国 4
+      - _US_美国_4 3
       - _US_美国->🇯🇵_JP_日本
-      - _US_美国_5 4
+      - _US_美国_5 3
       - _US_美国_6 3
       - _JP_日本->🇸🇬_SG_新加坡
-      - _FR_法国 2
-      - _IE_爱尔兰->🇫🇷_FR_法国 2
-      - _US_美国_8 4
-      - _US_美国_9 3
-      - _SG_新加坡 3
+      - _FR_法国
+      - _IE_爱尔兰->🇫🇷_FR_法国
+      - _US_美国_8 2
+      - _US_美国_9 2
+      - _SG_新加坡 2
       - _US_美国_10
       - _CN_中国->🇫🇷_FR_法国
-      - _ES_西班牙->🇯🇵_JP_日本 2
-      - _CA_加拿大 2
+      - _ES_西班牙->🇯🇵_JP_日本
+      - _CA_加拿大
       - 未知
-      - _DE_德国 2
-      - _GB_英国_1 4
+      - _DE_德国 3
+      - _GB_英国_1 2
       - _US_美国->🇮🇪_IE_爱尔兰
   - name: 🌏 国内媒体
     type: select
@@ -2110,116 +2235,138 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - CA加拿大(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 2
+      - US美国(mibei77.com 米贝节点分享) 3
+      - US美国(mibei77.com 米贝节点分享) 4
+      - US美国(mibei77.com 米贝节点分享) 5
+      - US美国(mibei77.com 米贝节点分享) 6
+      - US美国(mibei77.com 米贝节点分享) 7
+      - US美国(mibei77.com 米贝节点分享) 8
+      - US美国(mibei77.com 米贝节点分享) 9
+      - US美国(mibei77.com 米贝节点分享) 10
+      - US美国(mibei77.com 米贝节点分享) 11
+      - US美国(mibei77.com 米贝节点分享) 12
+      - US美国(mibei77.com 米贝节点分享) 13
+      - US美国(mibei77.com 米贝节点分享) 14
+      - US美国(mibei77.com 米贝节点分享) 15
+      - US美国(mibei77.com 米贝节点分享) 16
+      - US美国(mibei77.com 米贝节点分享) 17
+      - US美国(mibei77.com 米贝节点分享) 18
+      - US美国(mibei77.com 米贝节点分享) 19
+      - US美国(mibei77.com 米贝节点分享) 20
+      - US美国(mibei77.com 米贝节点分享) 21
+      - US美国(mibei77.com 米贝节点分享) 22
+      - NL荷兰(mibei77.com 米贝节点分享)
+      - US美国(mibei77.com 米贝节点分享) 23
+      - US美国(mibei77.com 米贝节点分享) 24
+      - US美国(mibei77.com 米贝节点分享) 25
+      - US美国(mibei77.com 米贝节点分享) 26
+      - US美国(mibei77.com 米贝节点分享) 27
       - US美国(https://www.fuye.fun/免费节点)
       - US美国(https://www.fuye.fun/免费节点) 2
       - 6元高速机场：cczzuu.top
+      - _US_美国_1
       - _US_美国_2
       - _US_美国_3
-      - _US_美国_4
-      - _US_美国_5
-      - _FR_法国
-      - _GB_英国
-      - _US_美国_7
       - _US_美国->🇸🇬_SG_新加坡
+      - _US_美国->🇨🇳_CN_中国
+      - _US_美国->🇨🇳_CN_中国_1
+      - _SG_新加坡->🇺🇸_US_美国
       - _US_美国->🇸🇬_SG_新加坡_1
-      - _CA_加拿大
       - _US_美国_8
       - _US_美国_9
-      - _CN_中国->🇺🇸_US_美国
       - _CN_中国
-      - _UA_乌克兰
-      - _IN_印度
-      - _DE_德国
       - _US_美国_11
-      - _AF_阿富汗
-      - _US_美国_12
       - _SG_新加坡
-      - _GB_英国_1
-      - _IE_爱尔兰->🇫🇷_FR_法国
-      - _US_美国_1
-      - _US_美国_2 2
-      - _US_美国->🇸🇬_SG_新加坡 2
-      - _US_美国_3 2
-      - _US_美国_4 2
-      - _ES_西班牙->🇯🇵_JP_日本
-      - _US_美国_5 2
-      - _US_美国_6
-      - _US_美国_7 2
-      - _GB_英国_1 2
-      - _US_美国_8 2
-      - _GB_英国_2
-      - 高性价比机场:https://kfyun.uk
-      - 印度 v2rayfree.eu.org
-      - 俄罗斯+v2rayfree.eu.org
-      - 印度 v2rayfree.eu.org 2
-      - 意大利+v2rayfree.eu.org
+      - _US_美国->🇸🇬_SG_新加坡_2
+      - _IE_爱尔兰
+      - _JP_日本
       - _DE_德国->🇦🇫_AF_阿富汗
       - _US_美国_1 2
-      - _GB_英国_1 3
-      - _GB_英国_2 2
+      - _GB_英国_1
+      - _GB_英国_2
       - _US_美国->🇸🇬_SG_新加坡_1 2
       - _GB_英国_3
-      - _US_美国_2 3
-      - _US_美国->🇸🇬_SG_新加坡_2
+      - _US_美国_2 2
+      - _US_美国->🇸🇬_SG_新加坡_2 2
       - _GB_英国->🇺🇸_US_美国
-      - _US_美国_3 3
+      - _US_美国_3 2
       - _US_美国->🇸🇬_SG_新加坡_3
-      - _US_美国_4 3
-      - _US_美国_5 3
+      - _US_美国_4
+      - _US_美国_5
       - _GB_英国_4
-      - _US_美国_6 2
+      - _US_美国_6
       - _US_美国->🇸🇬_SG_新加坡_4
       - _GB_英国_5
+      - 高性价比机场:https://kfyun.uk
+      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 日本 东京Amazon数据中心
-      - 乌克兰 V2CROSS.COM
-      - 美国 CloudFlare节点 5
       - 广东省广州市 移动
-      - 德国下萨克森州萨尔茨吉特 德国电信
+      - 美国 CloudFlare节点 5
       - 美国 CloudFlare节点 6
-      - 德国下萨克森州萨尔茨吉特 德国电信 2
       - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
       - 美国 CloudFlare节点 11
-      - 意大利 V2CROSS.COM
       - 美国 CloudFlare节点 12
-      - 俄罗斯 莫斯科JustHost
-      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点 13
       - 美国 CloudFlare节点 14
-      - 广东省广州市 移动 2
       - 美国 CloudFlare节点 15
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
       - 美国 CloudFlare节点 18
-      - 美国 惠普HP
-      - 丹麦 V2CROSS.COM
       - 美国 CloudFlare节点 19
-      - 立陶宛 NGS新闻
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
-      - 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国 华盛顿Cogent通信公司
+      - 亚太地区 v2rayfree.eu.org
       - 美国 CloudFlare节点 22
       - 美国 CloudFlare节点 23
+      - 德国 黑森州法兰克福Amazon数据中心 2
       - 美国 CloudFlare节点 24
       - 美国 CloudFlare节点 25
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 26
       - 美国 CloudFlare节点 27
-      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点 28
+      - 江苏省扬州市+移动
       - 美国 CloudFlare节点 29
+      - 亚太地区 v2rayfree.eu.org 2
       - 美国 CloudFlare节点 30
       - 美国 CloudFlare节点 31
-      - 美国 华盛顿Cogent通信公司 2
+      - 日本 东京Amazon数据中心
+      - 美国 CloudFlare节点 32
+      - 美国 Amazon EC2服务器
+      - 美国 CloudFlare节点 33
+      - 北美地区+v2rayfree.eu.org
+      - 美国 CloudFlare节点 34
+      - 韩国+KT电信
+      - 美国 CloudFlare节点 35
+      - 美国 CloudFlare节点 36
+      - 美国 CloudFlare节点 37
+      - 广东省肇庆市 中移铁通
+      - _DE_德国->🇺🇸_US_美国_1
+      - _US_美国_1 3
+      - _US_美国_2 3
+      - _US_美国_3 3
+      - _CN_中国->🇺🇸_US_美国
+      - _US_美国_4 2
+      - _US_美国_5 2
+      - _DE_德国->🇺🇸_US_美国_2
+      - _US_美国_6 2
+      - _DE_德国_1
+      - _DE_德国_2
+      - _US_美国_7
+      - _NL_荷兰->🇨🇳_CN_中国
+      - _US_美国->🇨🇳_CN_中国 2
+      - 美国 CloudFlare节点 38
+      - 意大利 V2CROSS.COM
+      - 波兰 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
       - 爱尔兰+V2CROSS.COM
       - 北美地区+V2CROSS.COM
       - 北美地区+V2CROSS.COM 2
@@ -2477,166 +2624,191 @@ proxy-groups:
       - UM😈SSRSUB_770441610
       - JP😈SSRSUB_2911587685
       - TG😈SSRSUB_3079588268
-      - 6元高速机场：cczzuu.top 2
-      - _US_美国_1 3
-      - _US_美国_2 4
-      - _US_美国_3 4
-      - _US_美国->🇸🇬_SG_新加坡 3
-      - _US_美国->🇨🇳_CN_中国
-      - _US_美国->🇨🇳_CN_中国_1
-      - _SG_新加坡->🇺🇸_US_美国
-      - _US_美国->🇸🇬_SG_新加坡_1 3
-      - _US_美国_8 3
-      - _US_美国_9 2
-      - _CN_中国 2
-      - _US_美国_11 2
-      - _SG_新加坡 2
-      - _US_美国->🇸🇬_SG_新加坡_2 2
-      - _IE_爱尔兰
-      - _JP_日本
-      - _GB_英国 2
-      - _US_美国_1 4
-      - _US_美国_2 5
-      - _US_美国->🇸🇬_SG_新加坡 4
-      - _CN_中国 3
-      - _US_美国_3 5
-      - _TR_土耳其
+      - _US_美国 2
+      - _DE_德国->🇺🇸_US_美国
+      - _DE_德国
+      - _DE_德国->🇺🇸_US_美国 2
+      - _NL_荷兰->🇨🇳_CN_中国 2
+      - _NL_荷兰
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 7
+      - _CN_中国->🇺🇸_US_美国 2
+      - _US_美国 8
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国->🇨🇳_CN_中国 3
+      - _DE_德国 2
+      - _US_美国 11
+      - _CA_加拿大->🇺🇸_US_美国
+      - _US_美国 12
       - _EE_爱沙尼亚
-      - _US_美国->🇸🇬_SG_新加坡_1 4
-      - _US_美国->🇨🇳_CN_中国 2
-      - _US_美国_4 4
+      - _GB_英国
+      - _US_美国_1 4
+      - _US_美国_2 4
+      - _US_美国->🇸🇬_SG_新加坡 2
+      - _CN_中国 2
+      - _US_美国_3 4
+      - _TR_土耳其
+      - _EE_爱沙尼亚 2
+      - _US_美国->🇸🇬_SG_新加坡_1 3
+      - _US_美国->🇨🇳_CN_中国 4
+      - _US_美国_4 3
       - _US_美国->🇯🇵_JP_日本
-      - _US_美国_5 4
+      - _US_美国_5 3
       - _US_美国_6 3
       - _JP_日本->🇸🇬_SG_新加坡
-      - _FR_法国 2
-      - _IE_爱尔兰->🇫🇷_FR_法国 2
-      - _US_美国_8 4
-      - _US_美国_9 3
-      - _SG_新加坡 3
+      - _FR_法国
+      - _IE_爱尔兰->🇫🇷_FR_法国
+      - _US_美国_8 2
+      - _US_美国_9 2
+      - _SG_新加坡 2
       - _US_美国_10
       - _CN_中国->🇫🇷_FR_法国
-      - _ES_西班牙->🇯🇵_JP_日本 2
-      - _CA_加拿大 2
+      - _ES_西班牙->🇯🇵_JP_日本
+      - _CA_加拿大
       - 未知
-      - _DE_德国 2
-      - _GB_英国_1 4
+      - _DE_德国 3
+      - _GB_英国_1 2
       - _US_美国->🇮🇪_IE_爱尔兰
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - CA加拿大(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 2
+      - US美国(mibei77.com 米贝节点分享) 3
+      - US美国(mibei77.com 米贝节点分享) 4
+      - US美国(mibei77.com 米贝节点分享) 5
+      - US美国(mibei77.com 米贝节点分享) 6
+      - US美国(mibei77.com 米贝节点分享) 7
+      - US美国(mibei77.com 米贝节点分享) 8
+      - US美国(mibei77.com 米贝节点分享) 9
+      - US美国(mibei77.com 米贝节点分享) 10
+      - US美国(mibei77.com 米贝节点分享) 11
+      - US美国(mibei77.com 米贝节点分享) 12
+      - US美国(mibei77.com 米贝节点分享) 13
+      - US美国(mibei77.com 米贝节点分享) 14
+      - US美国(mibei77.com 米贝节点分享) 15
+      - US美国(mibei77.com 米贝节点分享) 16
+      - US美国(mibei77.com 米贝节点分享) 17
+      - US美国(mibei77.com 米贝节点分享) 18
+      - US美国(mibei77.com 米贝节点分享) 19
+      - US美国(mibei77.com 米贝节点分享) 20
+      - US美国(mibei77.com 米贝节点分享) 21
+      - US美国(mibei77.com 米贝节点分享) 22
+      - NL荷兰(mibei77.com 米贝节点分享)
+      - US美国(mibei77.com 米贝节点分享) 23
+      - US美国(mibei77.com 米贝节点分享) 24
+      - US美国(mibei77.com 米贝节点分享) 25
+      - US美国(mibei77.com 米贝节点分享) 26
+      - US美国(mibei77.com 米贝节点分享) 27
       - US美国(https://www.fuye.fun/免费节点)
       - US美国(https://www.fuye.fun/免费节点) 2
       - 6元高速机场：cczzuu.top
+      - _US_美国_1
       - _US_美国_2
       - _US_美国_3
-      - _US_美国_4
-      - _US_美国_5
-      - _FR_法国
-      - _GB_英国
-      - _US_美国_7
       - _US_美国->🇸🇬_SG_新加坡
+      - _US_美国->🇨🇳_CN_中国
+      - _US_美国->🇨🇳_CN_中国_1
+      - _SG_新加坡->🇺🇸_US_美国
       - _US_美国->🇸🇬_SG_新加坡_1
-      - _CA_加拿大
       - _US_美国_8
       - _US_美国_9
-      - _CN_中国->🇺🇸_US_美国
       - _CN_中国
-      - _UA_乌克兰
-      - _IN_印度
-      - _DE_德国
       - _US_美国_11
-      - _AF_阿富汗
-      - _US_美国_12
       - _SG_新加坡
-      - _GB_英国_1
-      - _IE_爱尔兰->🇫🇷_FR_法国
-      - _US_美国_1
-      - _US_美国_2 2
-      - _US_美国->🇸🇬_SG_新加坡 2
-      - _US_美国_3 2
-      - _US_美国_4 2
-      - _ES_西班牙->🇯🇵_JP_日本
-      - _US_美国_5 2
-      - _US_美国_6
-      - _US_美国_7 2
-      - _GB_英国_1 2
-      - _US_美国_8 2
-      - _GB_英国_2
-      - 高性价比机场:https://kfyun.uk
-      - 印度 v2rayfree.eu.org
-      - 俄罗斯+v2rayfree.eu.org
-      - 印度 v2rayfree.eu.org 2
-      - 意大利+v2rayfree.eu.org
+      - _US_美国->🇸🇬_SG_新加坡_2
+      - _IE_爱尔兰
+      - _JP_日本
       - _DE_德国->🇦🇫_AF_阿富汗
       - _US_美国_1 2
-      - _GB_英国_1 3
-      - _GB_英国_2 2
+      - _GB_英国_1
+      - _GB_英国_2
       - _US_美国->🇸🇬_SG_新加坡_1 2
       - _GB_英国_3
-      - _US_美国_2 3
-      - _US_美国->🇸🇬_SG_新加坡_2
+      - _US_美国_2 2
+      - _US_美国->🇸🇬_SG_新加坡_2 2
       - _GB_英国->🇺🇸_US_美国
-      - _US_美国_3 3
+      - _US_美国_3 2
       - _US_美国->🇸🇬_SG_新加坡_3
-      - _US_美国_4 3
-      - _US_美国_5 3
+      - _US_美国_4
+      - _US_美国_5
       - _GB_英国_4
-      - _US_美国_6 2
+      - _US_美国_6
       - _US_美国->🇸🇬_SG_新加坡_4
       - _GB_英国_5
+      - 高性价比机场:https://kfyun.uk
+      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 日本 东京Amazon数据中心
-      - 乌克兰 V2CROSS.COM
-      - 美国 CloudFlare节点 5
       - 广东省广州市 移动
-      - 德国下萨克森州萨尔茨吉特 德国电信
+      - 美国 CloudFlare节点 5
       - 美国 CloudFlare节点 6
-      - 德国下萨克森州萨尔茨吉特 德国电信 2
       - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
       - 美国 CloudFlare节点 11
-      - 意大利 V2CROSS.COM
       - 美国 CloudFlare节点 12
-      - 俄罗斯 莫斯科JustHost
-      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点 13
       - 美国 CloudFlare节点 14
-      - 广东省广州市 移动 2
       - 美国 CloudFlare节点 15
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
       - 美国 CloudFlare节点 18
-      - 美国 惠普HP
-      - 丹麦 V2CROSS.COM
       - 美国 CloudFlare节点 19
-      - 立陶宛 NGS新闻
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
-      - 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国 华盛顿Cogent通信公司
+      - 亚太地区 v2rayfree.eu.org
       - 美国 CloudFlare节点 22
       - 美国 CloudFlare节点 23
+      - 德国 黑森州法兰克福Amazon数据中心 2
       - 美国 CloudFlare节点 24
       - 美国 CloudFlare节点 25
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 26
       - 美国 CloudFlare节点 27
-      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点 28
+      - 江苏省扬州市+移动
       - 美国 CloudFlare节点 29
+      - 亚太地区 v2rayfree.eu.org 2
       - 美国 CloudFlare节点 30
       - 美国 CloudFlare节点 31
-      - 美国 华盛顿Cogent通信公司 2
+      - 日本 东京Amazon数据中心
+      - 美国 CloudFlare节点 32
+      - 美国 Amazon EC2服务器
+      - 美国 CloudFlare节点 33
+      - 北美地区+v2rayfree.eu.org
+      - 美国 CloudFlare节点 34
+      - 韩国+KT电信
+      - 美国 CloudFlare节点 35
+      - 美国 CloudFlare节点 36
+      - 美国 CloudFlare节点 37
+      - 广东省肇庆市 中移铁通
+      - _DE_德国->🇺🇸_US_美国_1
+      - _US_美国_1 3
+      - _US_美国_2 3
+      - _US_美国_3 3
+      - _CN_中国->🇺🇸_US_美国
+      - _US_美国_4 2
+      - _US_美国_5 2
+      - _DE_德国->🇺🇸_US_美国_2
+      - _US_美国_6 2
+      - _DE_德国_1
+      - _DE_德国_2
+      - _US_美国_7
+      - _NL_荷兰->🇨🇳_CN_中国
+      - _US_美国->🇨🇳_CN_中国 2
+      - 美国 CloudFlare节点 38
+      - 意大利 V2CROSS.COM
+      - 波兰 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
       - 爱尔兰+V2CROSS.COM
       - 北美地区+V2CROSS.COM
       - 北美地区+V2CROSS.COM 2
@@ -2894,50 +3066,53 @@ proxy-groups:
       - UM😈SSRSUB_770441610
       - JP😈SSRSUB_2911587685
       - TG😈SSRSUB_3079588268
-      - 6元高速机场：cczzuu.top 2
-      - _US_美国_1 3
-      - _US_美国_2 4
-      - _US_美国_3 4
-      - _US_美国->🇸🇬_SG_新加坡 3
-      - _US_美国->🇨🇳_CN_中国
-      - _US_美国->🇨🇳_CN_中国_1
-      - _SG_新加坡->🇺🇸_US_美国
-      - _US_美国->🇸🇬_SG_新加坡_1 3
-      - _US_美国_8 3
-      - _US_美国_9 2
-      - _CN_中国 2
-      - _US_美国_11 2
-      - _SG_新加坡 2
-      - _US_美国->🇸🇬_SG_新加坡_2 2
-      - _IE_爱尔兰
-      - _JP_日本
-      - _GB_英国 2
-      - _US_美国_1 4
-      - _US_美国_2 5
-      - _US_美国->🇸🇬_SG_新加坡 4
-      - _CN_中国 3
-      - _US_美国_3 5
-      - _TR_土耳其
+      - _US_美国 2
+      - _DE_德国->🇺🇸_US_美国
+      - _DE_德国
+      - _DE_德国->🇺🇸_US_美国 2
+      - _NL_荷兰->🇨🇳_CN_中国 2
+      - _NL_荷兰
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 7
+      - _CN_中国->🇺🇸_US_美国 2
+      - _US_美国 8
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国->🇨🇳_CN_中国 3
+      - _DE_德国 2
+      - _US_美国 11
+      - _CA_加拿大->🇺🇸_US_美国
+      - _US_美国 12
       - _EE_爱沙尼亚
-      - _US_美国->🇸🇬_SG_新加坡_1 4
-      - _US_美国->🇨🇳_CN_中国 2
-      - _US_美国_4 4
+      - _GB_英国
+      - _US_美国_1 4
+      - _US_美国_2 4
+      - _US_美国->🇸🇬_SG_新加坡 2
+      - _CN_中国 2
+      - _US_美国_3 4
+      - _TR_土耳其
+      - _EE_爱沙尼亚 2
+      - _US_美国->🇸🇬_SG_新加坡_1 3
+      - _US_美国->🇨🇳_CN_中国 4
+      - _US_美国_4 3
       - _US_美国->🇯🇵_JP_日本
-      - _US_美国_5 4
+      - _US_美国_5 3
       - _US_美国_6 3
       - _JP_日本->🇸🇬_SG_新加坡
-      - _FR_法国 2
-      - _IE_爱尔兰->🇫🇷_FR_法国 2
-      - _US_美国_8 4
-      - _US_美国_9 3
-      - _SG_新加坡 3
+      - _FR_法国
+      - _IE_爱尔兰->🇫🇷_FR_法国
+      - _US_美国_8 2
+      - _US_美国_9 2
+      - _SG_新加坡 2
       - _US_美国_10
       - _CN_中国->🇫🇷_FR_法国
-      - _ES_西班牙->🇯🇵_JP_日本 2
-      - _CA_加拿大 2
+      - _ES_西班牙->🇯🇵_JP_日本
+      - _CA_加拿大
       - 未知
-      - _DE_德国 2
-      - _GB_英国_1 4
+      - _DE_德国 3
+      - _GB_英国_1 2
       - _US_美国->🇮🇪_IE_爱尔兰
   - name: 🍎 苹果服务
     type: select
@@ -2945,116 +3120,138 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - CA加拿大(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 2
+      - US美国(mibei77.com 米贝节点分享) 3
+      - US美国(mibei77.com 米贝节点分享) 4
+      - US美国(mibei77.com 米贝节点分享) 5
+      - US美国(mibei77.com 米贝节点分享) 6
+      - US美国(mibei77.com 米贝节点分享) 7
+      - US美国(mibei77.com 米贝节点分享) 8
+      - US美国(mibei77.com 米贝节点分享) 9
+      - US美国(mibei77.com 米贝节点分享) 10
+      - US美国(mibei77.com 米贝节点分享) 11
+      - US美国(mibei77.com 米贝节点分享) 12
+      - US美国(mibei77.com 米贝节点分享) 13
+      - US美国(mibei77.com 米贝节点分享) 14
+      - US美国(mibei77.com 米贝节点分享) 15
+      - US美国(mibei77.com 米贝节点分享) 16
+      - US美国(mibei77.com 米贝节点分享) 17
+      - US美国(mibei77.com 米贝节点分享) 18
+      - US美国(mibei77.com 米贝节点分享) 19
+      - US美国(mibei77.com 米贝节点分享) 20
+      - US美国(mibei77.com 米贝节点分享) 21
+      - US美国(mibei77.com 米贝节点分享) 22
+      - NL荷兰(mibei77.com 米贝节点分享)
+      - US美国(mibei77.com 米贝节点分享) 23
+      - US美国(mibei77.com 米贝节点分享) 24
+      - US美国(mibei77.com 米贝节点分享) 25
+      - US美国(mibei77.com 米贝节点分享) 26
+      - US美国(mibei77.com 米贝节点分享) 27
       - US美国(https://www.fuye.fun/免费节点)
       - US美国(https://www.fuye.fun/免费节点) 2
       - 6元高速机场：cczzuu.top
+      - _US_美国_1
       - _US_美国_2
       - _US_美国_3
-      - _US_美国_4
-      - _US_美国_5
-      - _FR_法国
-      - _GB_英国
-      - _US_美国_7
       - _US_美国->🇸🇬_SG_新加坡
+      - _US_美国->🇨🇳_CN_中国
+      - _US_美国->🇨🇳_CN_中国_1
+      - _SG_新加坡->🇺🇸_US_美国
       - _US_美国->🇸🇬_SG_新加坡_1
-      - _CA_加拿大
       - _US_美国_8
       - _US_美国_9
-      - _CN_中国->🇺🇸_US_美国
       - _CN_中国
-      - _UA_乌克兰
-      - _IN_印度
-      - _DE_德国
       - _US_美国_11
-      - _AF_阿富汗
-      - _US_美国_12
       - _SG_新加坡
-      - _GB_英国_1
-      - _IE_爱尔兰->🇫🇷_FR_法国
-      - _US_美国_1
-      - _US_美国_2 2
-      - _US_美国->🇸🇬_SG_新加坡 2
-      - _US_美国_3 2
-      - _US_美国_4 2
-      - _ES_西班牙->🇯🇵_JP_日本
-      - _US_美国_5 2
-      - _US_美国_6
-      - _US_美国_7 2
-      - _GB_英国_1 2
-      - _US_美国_8 2
-      - _GB_英国_2
-      - 高性价比机场:https://kfyun.uk
-      - 印度 v2rayfree.eu.org
-      - 俄罗斯+v2rayfree.eu.org
-      - 印度 v2rayfree.eu.org 2
-      - 意大利+v2rayfree.eu.org
+      - _US_美国->🇸🇬_SG_新加坡_2
+      - _IE_爱尔兰
+      - _JP_日本
       - _DE_德国->🇦🇫_AF_阿富汗
       - _US_美国_1 2
-      - _GB_英国_1 3
-      - _GB_英国_2 2
+      - _GB_英国_1
+      - _GB_英国_2
       - _US_美国->🇸🇬_SG_新加坡_1 2
       - _GB_英国_3
-      - _US_美国_2 3
-      - _US_美国->🇸🇬_SG_新加坡_2
+      - _US_美国_2 2
+      - _US_美国->🇸🇬_SG_新加坡_2 2
       - _GB_英国->🇺🇸_US_美国
-      - _US_美国_3 3
+      - _US_美国_3 2
       - _US_美国->🇸🇬_SG_新加坡_3
-      - _US_美国_4 3
-      - _US_美国_5 3
+      - _US_美国_4
+      - _US_美国_5
       - _GB_英国_4
-      - _US_美国_6 2
+      - _US_美国_6
       - _US_美国->🇸🇬_SG_新加坡_4
       - _GB_英国_5
+      - 高性价比机场:https://kfyun.uk
+      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 日本 东京Amazon数据中心
-      - 乌克兰 V2CROSS.COM
-      - 美国 CloudFlare节点 5
       - 广东省广州市 移动
-      - 德国下萨克森州萨尔茨吉特 德国电信
+      - 美国 CloudFlare节点 5
       - 美国 CloudFlare节点 6
-      - 德国下萨克森州萨尔茨吉特 德国电信 2
       - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
       - 美国 CloudFlare节点 11
-      - 意大利 V2CROSS.COM
       - 美国 CloudFlare节点 12
-      - 俄罗斯 莫斯科JustHost
-      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点 13
       - 美国 CloudFlare节点 14
-      - 广东省广州市 移动 2
       - 美国 CloudFlare节点 15
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
       - 美国 CloudFlare节点 18
-      - 美国 惠普HP
-      - 丹麦 V2CROSS.COM
       - 美国 CloudFlare节点 19
-      - 立陶宛 NGS新闻
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
-      - 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国 华盛顿Cogent通信公司
+      - 亚太地区 v2rayfree.eu.org
       - 美国 CloudFlare节点 22
       - 美国 CloudFlare节点 23
+      - 德国 黑森州法兰克福Amazon数据中心 2
       - 美国 CloudFlare节点 24
       - 美国 CloudFlare节点 25
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 26
       - 美国 CloudFlare节点 27
-      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点 28
+      - 江苏省扬州市+移动
       - 美国 CloudFlare节点 29
+      - 亚太地区 v2rayfree.eu.org 2
       - 美国 CloudFlare节点 30
       - 美国 CloudFlare节点 31
-      - 美国 华盛顿Cogent通信公司 2
+      - 日本 东京Amazon数据中心
+      - 美国 CloudFlare节点 32
+      - 美国 Amazon EC2服务器
+      - 美国 CloudFlare节点 33
+      - 北美地区+v2rayfree.eu.org
+      - 美国 CloudFlare节点 34
+      - 韩国+KT电信
+      - 美国 CloudFlare节点 35
+      - 美国 CloudFlare节点 36
+      - 美国 CloudFlare节点 37
+      - 广东省肇庆市 中移铁通
+      - _DE_德国->🇺🇸_US_美国_1
+      - _US_美国_1 3
+      - _US_美国_2 3
+      - _US_美国_3 3
+      - _CN_中国->🇺🇸_US_美国
+      - _US_美国_4 2
+      - _US_美国_5 2
+      - _DE_德国->🇺🇸_US_美国_2
+      - _US_美国_6 2
+      - _DE_德国_1
+      - _DE_德国_2
+      - _US_美国_7
+      - _NL_荷兰->🇨🇳_CN_中国
+      - _US_美国->🇨🇳_CN_中国 2
+      - 美国 CloudFlare节点 38
+      - 意大利 V2CROSS.COM
+      - 波兰 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
       - 爱尔兰+V2CROSS.COM
       - 北美地区+V2CROSS.COM
       - 北美地区+V2CROSS.COM 2
@@ -3312,50 +3509,53 @@ proxy-groups:
       - UM😈SSRSUB_770441610
       - JP😈SSRSUB_2911587685
       - TG😈SSRSUB_3079588268
-      - 6元高速机场：cczzuu.top 2
-      - _US_美国_1 3
-      - _US_美国_2 4
-      - _US_美国_3 4
-      - _US_美国->🇸🇬_SG_新加坡 3
-      - _US_美国->🇨🇳_CN_中国
-      - _US_美国->🇨🇳_CN_中国_1
-      - _SG_新加坡->🇺🇸_US_美国
-      - _US_美国->🇸🇬_SG_新加坡_1 3
-      - _US_美国_8 3
-      - _US_美国_9 2
-      - _CN_中国 2
-      - _US_美国_11 2
-      - _SG_新加坡 2
-      - _US_美国->🇸🇬_SG_新加坡_2 2
-      - _IE_爱尔兰
-      - _JP_日本
-      - _GB_英国 2
-      - _US_美国_1 4
-      - _US_美国_2 5
-      - _US_美国->🇸🇬_SG_新加坡 4
-      - _CN_中国 3
-      - _US_美国_3 5
-      - _TR_土耳其
+      - _US_美国 2
+      - _DE_德国->🇺🇸_US_美国
+      - _DE_德国
+      - _DE_德国->🇺🇸_US_美国 2
+      - _NL_荷兰->🇨🇳_CN_中国 2
+      - _NL_荷兰
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 7
+      - _CN_中国->🇺🇸_US_美国 2
+      - _US_美国 8
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国->🇨🇳_CN_中国 3
+      - _DE_德国 2
+      - _US_美国 11
+      - _CA_加拿大->🇺🇸_US_美国
+      - _US_美国 12
       - _EE_爱沙尼亚
-      - _US_美国->🇸🇬_SG_新加坡_1 4
-      - _US_美国->🇨🇳_CN_中国 2
-      - _US_美国_4 4
+      - _GB_英国
+      - _US_美国_1 4
+      - _US_美国_2 4
+      - _US_美国->🇸🇬_SG_新加坡 2
+      - _CN_中国 2
+      - _US_美国_3 4
+      - _TR_土耳其
+      - _EE_爱沙尼亚 2
+      - _US_美国->🇸🇬_SG_新加坡_1 3
+      - _US_美国->🇨🇳_CN_中国 4
+      - _US_美国_4 3
       - _US_美国->🇯🇵_JP_日本
-      - _US_美国_5 4
+      - _US_美国_5 3
       - _US_美国_6 3
       - _JP_日本->🇸🇬_SG_新加坡
-      - _FR_法国 2
-      - _IE_爱尔兰->🇫🇷_FR_法国 2
-      - _US_美国_8 4
-      - _US_美国_9 3
-      - _SG_新加坡 3
+      - _FR_法国
+      - _IE_爱尔兰->🇫🇷_FR_法国
+      - _US_美国_8 2
+      - _US_美国_9 2
+      - _SG_新加坡 2
       - _US_美国_10
       - _CN_中国->🇫🇷_FR_法国
-      - _ES_西班牙->🇯🇵_JP_日本 2
-      - _CA_加拿大 2
+      - _ES_西班牙->🇯🇵_JP_日本
+      - _CA_加拿大
       - 未知
-      - _DE_德国 2
-      - _GB_英国_1 4
+      - _DE_德国 3
+      - _GB_英国_1 2
       - _US_美国->🇮🇪_IE_爱尔兰
   - name: 🎯 全球直连
     type: select
@@ -3372,116 +3572,138 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - CA加拿大(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 2
+      - US美国(mibei77.com 米贝节点分享) 3
+      - US美国(mibei77.com 米贝节点分享) 4
+      - US美国(mibei77.com 米贝节点分享) 5
+      - US美国(mibei77.com 米贝节点分享) 6
+      - US美国(mibei77.com 米贝节点分享) 7
+      - US美国(mibei77.com 米贝节点分享) 8
+      - US美国(mibei77.com 米贝节点分享) 9
+      - US美国(mibei77.com 米贝节点分享) 10
+      - US美国(mibei77.com 米贝节点分享) 11
+      - US美国(mibei77.com 米贝节点分享) 12
+      - US美国(mibei77.com 米贝节点分享) 13
+      - US美国(mibei77.com 米贝节点分享) 14
+      - US美国(mibei77.com 米贝节点分享) 15
+      - US美国(mibei77.com 米贝节点分享) 16
+      - US美国(mibei77.com 米贝节点分享) 17
+      - US美国(mibei77.com 米贝节点分享) 18
+      - US美国(mibei77.com 米贝节点分享) 19
+      - US美国(mibei77.com 米贝节点分享) 20
+      - US美国(mibei77.com 米贝节点分享) 21
+      - US美国(mibei77.com 米贝节点分享) 22
+      - NL荷兰(mibei77.com 米贝节点分享)
+      - US美国(mibei77.com 米贝节点分享) 23
+      - US美国(mibei77.com 米贝节点分享) 24
+      - US美国(mibei77.com 米贝节点分享) 25
+      - US美国(mibei77.com 米贝节点分享) 26
+      - US美国(mibei77.com 米贝节点分享) 27
       - US美国(https://www.fuye.fun/免费节点)
       - US美国(https://www.fuye.fun/免费节点) 2
       - 6元高速机场：cczzuu.top
+      - _US_美国_1
       - _US_美国_2
       - _US_美国_3
-      - _US_美国_4
-      - _US_美国_5
-      - _FR_法国
-      - _GB_英国
-      - _US_美国_7
       - _US_美国->🇸🇬_SG_新加坡
+      - _US_美国->🇨🇳_CN_中国
+      - _US_美国->🇨🇳_CN_中国_1
+      - _SG_新加坡->🇺🇸_US_美国
       - _US_美国->🇸🇬_SG_新加坡_1
-      - _CA_加拿大
       - _US_美国_8
       - _US_美国_9
-      - _CN_中国->🇺🇸_US_美国
       - _CN_中国
-      - _UA_乌克兰
-      - _IN_印度
-      - _DE_德国
       - _US_美国_11
-      - _AF_阿富汗
-      - _US_美国_12
       - _SG_新加坡
-      - _GB_英国_1
-      - _IE_爱尔兰->🇫🇷_FR_法国
-      - _US_美国_1
-      - _US_美国_2 2
-      - _US_美国->🇸🇬_SG_新加坡 2
-      - _US_美国_3 2
-      - _US_美国_4 2
-      - _ES_西班牙->🇯🇵_JP_日本
-      - _US_美国_5 2
-      - _US_美国_6
-      - _US_美国_7 2
-      - _GB_英国_1 2
-      - _US_美国_8 2
-      - _GB_英国_2
-      - 高性价比机场:https://kfyun.uk
-      - 印度 v2rayfree.eu.org
-      - 俄罗斯+v2rayfree.eu.org
-      - 印度 v2rayfree.eu.org 2
-      - 意大利+v2rayfree.eu.org
+      - _US_美国->🇸🇬_SG_新加坡_2
+      - _IE_爱尔兰
+      - _JP_日本
       - _DE_德国->🇦🇫_AF_阿富汗
       - _US_美国_1 2
-      - _GB_英国_1 3
-      - _GB_英国_2 2
+      - _GB_英国_1
+      - _GB_英国_2
       - _US_美国->🇸🇬_SG_新加坡_1 2
       - _GB_英国_3
-      - _US_美国_2 3
-      - _US_美国->🇸🇬_SG_新加坡_2
+      - _US_美国_2 2
+      - _US_美国->🇸🇬_SG_新加坡_2 2
       - _GB_英国->🇺🇸_US_美国
-      - _US_美国_3 3
+      - _US_美国_3 2
       - _US_美国->🇸🇬_SG_新加坡_3
-      - _US_美国_4 3
-      - _US_美国_5 3
+      - _US_美国_4
+      - _US_美国_5
       - _GB_英国_4
-      - _US_美国_6 2
+      - _US_美国_6
       - _US_美国->🇸🇬_SG_新加坡_4
       - _GB_英国_5
+      - 高性价比机场:https://kfyun.uk
+      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 日本 东京Amazon数据中心
-      - 乌克兰 V2CROSS.COM
-      - 美国 CloudFlare节点 5
       - 广东省广州市 移动
-      - 德国下萨克森州萨尔茨吉特 德国电信
+      - 美国 CloudFlare节点 5
       - 美国 CloudFlare节点 6
-      - 德国下萨克森州萨尔茨吉特 德国电信 2
       - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
       - 美国 CloudFlare节点 11
-      - 意大利 V2CROSS.COM
       - 美国 CloudFlare节点 12
-      - 俄罗斯 莫斯科JustHost
-      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点 13
       - 美国 CloudFlare节点 14
-      - 广东省广州市 移动 2
       - 美国 CloudFlare节点 15
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
       - 美国 CloudFlare节点 18
-      - 美国 惠普HP
-      - 丹麦 V2CROSS.COM
       - 美国 CloudFlare节点 19
-      - 立陶宛 NGS新闻
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
-      - 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国 华盛顿Cogent通信公司
+      - 亚太地区 v2rayfree.eu.org
       - 美国 CloudFlare节点 22
       - 美国 CloudFlare节点 23
+      - 德国 黑森州法兰克福Amazon数据中心 2
       - 美国 CloudFlare节点 24
       - 美国 CloudFlare节点 25
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 26
       - 美国 CloudFlare节点 27
-      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点 28
+      - 江苏省扬州市+移动
       - 美国 CloudFlare节点 29
+      - 亚太地区 v2rayfree.eu.org 2
       - 美国 CloudFlare节点 30
       - 美国 CloudFlare节点 31
-      - 美国 华盛顿Cogent通信公司 2
+      - 日本 东京Amazon数据中心
+      - 美国 CloudFlare节点 32
+      - 美国 Amazon EC2服务器
+      - 美国 CloudFlare节点 33
+      - 北美地区+v2rayfree.eu.org
+      - 美国 CloudFlare节点 34
+      - 韩国+KT电信
+      - 美国 CloudFlare节点 35
+      - 美国 CloudFlare节点 36
+      - 美国 CloudFlare节点 37
+      - 广东省肇庆市 中移铁通
+      - _DE_德国->🇺🇸_US_美国_1
+      - _US_美国_1 3
+      - _US_美国_2 3
+      - _US_美国_3 3
+      - _CN_中国->🇺🇸_US_美国
+      - _US_美国_4 2
+      - _US_美国_5 2
+      - _DE_德国->🇺🇸_US_美国_2
+      - _US_美国_6 2
+      - _DE_德国_1
+      - _DE_德国_2
+      - _US_美国_7
+      - _NL_荷兰->🇨🇳_CN_中国
+      - _US_美国->🇨🇳_CN_中国 2
+      - 美国 CloudFlare节点 38
+      - 意大利 V2CROSS.COM
+      - 波兰 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
       - 爱尔兰+V2CROSS.COM
       - 北美地区+V2CROSS.COM
       - 北美地区+V2CROSS.COM 2
@@ -3739,50 +3961,53 @@ proxy-groups:
       - UM😈SSRSUB_770441610
       - JP😈SSRSUB_2911587685
       - TG😈SSRSUB_3079588268
-      - 6元高速机场：cczzuu.top 2
-      - _US_美国_1 3
-      - _US_美国_2 4
-      - _US_美国_3 4
-      - _US_美国->🇸🇬_SG_新加坡 3
-      - _US_美国->🇨🇳_CN_中国
-      - _US_美国->🇨🇳_CN_中国_1
-      - _SG_新加坡->🇺🇸_US_美国
-      - _US_美国->🇸🇬_SG_新加坡_1 3
-      - _US_美国_8 3
-      - _US_美国_9 2
-      - _CN_中国 2
-      - _US_美国_11 2
-      - _SG_新加坡 2
-      - _US_美国->🇸🇬_SG_新加坡_2 2
-      - _IE_爱尔兰
-      - _JP_日本
-      - _GB_英国 2
-      - _US_美国_1 4
-      - _US_美国_2 5
-      - _US_美国->🇸🇬_SG_新加坡 4
-      - _CN_中国 3
-      - _US_美国_3 5
-      - _TR_土耳其
+      - _US_美国 2
+      - _DE_德国->🇺🇸_US_美国
+      - _DE_德国
+      - _DE_德国->🇺🇸_US_美国 2
+      - _NL_荷兰->🇨🇳_CN_中国 2
+      - _NL_荷兰
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 7
+      - _CN_中国->🇺🇸_US_美国 2
+      - _US_美国 8
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国->🇨🇳_CN_中国 3
+      - _DE_德国 2
+      - _US_美国 11
+      - _CA_加拿大->🇺🇸_US_美国
+      - _US_美国 12
       - _EE_爱沙尼亚
-      - _US_美国->🇸🇬_SG_新加坡_1 4
-      - _US_美国->🇨🇳_CN_中国 2
-      - _US_美国_4 4
+      - _GB_英国
+      - _US_美国_1 4
+      - _US_美国_2 4
+      - _US_美国->🇸🇬_SG_新加坡 2
+      - _CN_中国 2
+      - _US_美国_3 4
+      - _TR_土耳其
+      - _EE_爱沙尼亚 2
+      - _US_美国->🇸🇬_SG_新加坡_1 3
+      - _US_美国->🇨🇳_CN_中国 4
+      - _US_美国_4 3
       - _US_美国->🇯🇵_JP_日本
-      - _US_美国_5 4
+      - _US_美国_5 3
       - _US_美国_6 3
       - _JP_日本->🇸🇬_SG_新加坡
-      - _FR_法国 2
-      - _IE_爱尔兰->🇫🇷_FR_法国 2
-      - _US_美国_8 4
-      - _US_美国_9 3
-      - _SG_新加坡 3
+      - _FR_法国
+      - _IE_爱尔兰->🇫🇷_FR_法国
+      - _US_美国_8 2
+      - _US_美国_9 2
+      - _SG_新加坡 2
       - _US_美国_10
       - _CN_中国->🇫🇷_FR_法国
-      - _ES_西班牙->🇯🇵_JP_日本 2
-      - _CA_加拿大 2
+      - _ES_西班牙->🇯🇵_JP_日本
+      - _CA_加拿大
       - 未知
-      - _DE_德国 2
-      - _GB_英国_1 4
+      - _DE_德国 3
+      - _GB_英国_1 2
       - _US_美国->🇮🇪_IE_爱尔兰
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连

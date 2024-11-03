@@ -1,0 +1,573 @@
+2024-10-10 00:58:02-9224-INFO-登陆成功
+2024-10-10 00:58:02-9224-INFO-{'Cookie': 'AWSALBAPP-1=_remove_; AWSALBAPP-2=_remove_; AWSALBAPP-3=_remove_; WLSESSION=2030268938.47873.0000; TS016349ac=01f15fc87cd8d6649d9e68aad8c8a871d9a02d2e4dd2d68e0bfa5b88341b98e0f987e6816333d4de745740fc12f2b41c5f67b9dee0; JSESSIONID=3AB9B0C5CCB78657BF1187C4AACADBC2; ERIGHTS=LlPFx2FmXD6Vxx39o3W6AJuE0gikvDjSDEg-18x2dI8VEKKfssgGzWi1gNwCL2gx3Dx3Dkx2BkmtndEAl7w5f5a65lW2Ax3Dx3D-kt9qdxxIkgOVRBopCx2FotxxXwx3Dx3D-fQSCesbSmuhiHx2Bdp5bwQwwx3Dx3D; ipList=113.249.13.17; xpluserinfo=eyJpc0luc3QiOiJ0cnVlIiwiaW5zdE5hbWUiOiJKSUxJTiBVTklWRVJTSVRZIiwicHJvZHVjdHMiOiJJT0p8SUVMfFZERXxOT0tJQSBCRUxMIExBQlN8In0=; seqId=96677; AWSALBAPP-0=AAAAAAAAAAAij+VGCYTX4+Q2F2XrjmJH+DqXI3YK8lsUBcueOgATIzMdYm6E0uEfXFZce7Pb7fIlVLh1uTc9cidXf5Aq8OX9RcimohKDVhqVoOoOPonoOyjW1C8F6xAwIIUxSiZD5cTYWFK+y4PMyttVQ/MYWi3tQafgp+oq8otkaHAAfg+9oTd6XCobFoTPk5JYk0XrQSXufgF79DISkg==; TSaf720a17029=0807dc117eab280091ff49bcf488c91e494e7a41ea71502edd902e0422aa44923a57546dc4a20b8826356d0886a5ffad; TS8b476361027=0807dc117eab20005dcd0e34155ade204c98f5c9e802d052c78d275be566ffdf823972aeee36fc9c08d1240e0011300061d12c53868c728d0cfd0077d5bc19e3a36c01fe185782917d3b5cdf87b69e28d8e31483fb9a0c04a272bac301da7d3d'}
+2024-10-10 00:58:02-9224-INFO-2024-10-10 00:58:02,570 - INFO - Pika version 1.3.2 connecting to ('192.168.1.186', 5672)
+2024-10-10 00:58:02-9224-INFO-2024-10-10 00:58:02,570 - INFO - Socket connected: <socket.socket fd=776, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.186', 63161), raddr=('192.168.1.186', 5672)>
+2024-10-10 00:58:02-9224-INFO-2024-10-10 00:58:02,571 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001E480896310>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001E480896310> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>).
+2024-10-10 00:58:02-9224-INFO-2024-10-10 00:58:02,574 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001E480896310> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 00:58:02-9224-INFO-2024-10-10 00:58:02,574 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001E480896310> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 00:58:02-9224-INFO-2024-10-10 00:58:02,575 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001E480896310> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 00:58:02-9224-INFO-2024-10-10 00:58:02,575 - INFO - Created channel=1
+2024-10-10 00:58:02-9224-INFO-2024-10-10 00:58:02,581 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 00:58:03-9224-INFO-2024-10-10 00:58:03,524 - INFO - PDF IS ERROR!
+2024-10-10 00:58:08-9224-INFO-2024-10-10 00:58:08,538 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 00:58:08-9224-INFO-2024-10-10 00:58:08,847 - INFO - PDF IS ERROR!
+2024-10-10 00:58:11-9224-INFO-2024-10-10 00:58:11,855 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 00:58:12-9224-INFO-2024-10-10 00:58:12,304 - INFO - PDF IS ERROR!
+2024-10-10 00:58:17-9224-INFO-2024-10-10 00:58:17,310 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 00:58:18-9224-INFO-2024-10-10 00:58:18,128 - INFO - PDF IS ERROR!
+2024-10-10 00:58:22-9224-INFO-2024-10-10 00:58:22,143 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 00:58:22-9224-INFO-2024-10-10 00:58:22,428 - INFO - PDF IS ERROR!
+2024-10-10 00:58:26-9224-INFO-2024-10-10 00:58:26,435 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 00:58:26-9224-INFO-2024-10-10 00:58:26,723 - INFO - PDF IS ERROR!
+2024-10-10 00:58:30-9224-INFO-2024-10-10 00:58:30,736 - INFO - 连续请求失败五次退出程序
+2024-10-10 00:58:30-9224-ERROR-Traceback (most recent call last):
+2024-10-10 00:58:30-9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9224.py", line 123, in <module>
+2024-10-10 00:58:30-9224-ERROR-main()
+2024-10-10 00:58:30-9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9224.py", line 117, in main
+2024-10-10 00:58:30-9224-ERROR-Consumer('IEEE').read_message(callback)
+2024-10-10 00:58:30-9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\message_que\rabbitmq.py", line 66, in read_message
+2024-10-10 00:58:30-9224-ERROR-self._channel.start_consuming()
+2024-10-10 00:58:30-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1883, in start_consuming
+2024-10-10 00:58:30-9224-ERROR-self._process_data_events(time_limit=None)
+2024-10-10 00:58:30-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 2044, in _process_data_events
+2024-10-10 00:58:30-9224-ERROR-self.connection.process_data_events(time_limit=time_limit)
+2024-10-10 00:58:30-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 851, in process_data_events
+2024-10-10 00:58:30-9224-ERROR-self._dispatch_channel_events()
+2024-10-10 00:58:30-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 567, in _dispatch_channel_events
+2024-10-10 00:58:30-9224-ERROR-impl_channel._get_cookie()._dispatch_events()
+2024-10-10 00:58:30-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1510, in _dispatch_events
+2024-10-10 00:58:30-9224-ERROR-consumer_info.on_message_callback(self, evt.method,
+2024-10-10 00:58:30-9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9224.py", line 67, in callback
+2024-10-10 00:58:30-9224-ERROR-raise RuntimeError('cookies失效')
+2024-10-10 00:58:30-9224-ERROR-RuntimeError: cookies失效
+2024-10-10 04:57:59-9224-INFO-登陆成功
+2024-10-10 04:57:59-9224-INFO-{'Cookie': 'AWSALBAPP-1=_remove_; AWSALBAPP-2=_remove_; AWSALBAPP-3=_remove_; WLSESSION=3439489546.47873.0000; TS016349ac=01f15fc87ce2d2f798d6319abe7446d16c611b1cf2c8f38684901dbbfc63c27553fb3b8eb6d49e6b9a1d3638b25604782c545473c8; JSESSIONID=ACC3FA242C073AAB6ACA4944512EA312; ERIGHTS=poTMx2Bact6PH5aaNg9imYDoqHWuSGPhc2-18x2dwCVbhTl0L4ZbOeWocRhsZgx3Dx3DIeQQx2Bpj4lTPvGh9k6gaIOgx3Dx3D-xxSjPuM2fUIr39FKIZ7DE4wx3Dx3D-UVhlBx2FP29HQDntaSxx2dV2wx3Dx3D; ipList=113.249.13.17; xpluserinfo=eyJpc0luc3QiOiJ0cnVlIiwiaW5zdE5hbWUiOiJKSUxJTiBVTklWRVJTSVRZIiwicHJvZHVjdHMiOiJJT0p8SUVMfFZERXxOT0tJQSBCRUxMIExBQlN8In0=; seqId=96677; AWSALBAPP-0=AAAAAAAAAAD3DxmTSFx/imEwx3Z5bXkcnhvMWtHi6GByOPgItFswIn9sCE9iBdwIHgQKEZtHuXBEegG98QsvEMIdCs+9XKjjh4uBXyqBW40Fko4D/WQexepJJ26DlWdt8pY8JAMzABgQQvPoONmPbaSdVJtI9O8KFP9L+3qsVnGKm+giCq/2yNt/SfUxYjExhS+Weh039B00kkW+TcWVAQ==; TSaf720a17029=0807dc117eab280095c5bb1bf442294f21ea687d966a0bc72e902b265d4f9226363a07cc150e14e9bdc3718decd9240e; TS8b476361027=0807dc117eab2000483269046b3e10d82d7f53faaf8dcd8e3c4531a4b4beb03d67dd13ea15b3d06208d29f25de113000e3defd21febda1ba15d564e475ae515f10351d5907405009653bf44ce621ba3f9f4447408e88320aeb2036c4a4b5fa5d'}
+2024-10-10 04:57:59-9224-INFO-2024-10-10 04:57:59,765 - INFO - Pika version 1.3.2 connecting to ('192.168.1.186', 5672)
+2024-10-10 04:57:59-9224-INFO-2024-10-10 04:57:59,767 - INFO - Socket connected: <socket.socket fd=1664, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.186', 63569), raddr=('192.168.1.186', 5672)>
+2024-10-10 04:57:59-9224-INFO-2024-10-10 04:57:59,767 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002A70D5A25E0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002A70D5A25E0> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>).
+2024-10-10 04:57:59-9224-INFO-2024-10-10 04:57:59,799 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002A70D5A25E0> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 04:57:59-9224-INFO-2024-10-10 04:57:59,800 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002A70D5A25E0> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 04:57:59-9224-INFO-2024-10-10 04:57:59,800 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002A70D5A25E0> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 04:57:59-9224-INFO-2024-10-10 04:57:59,800 - INFO - Created channel=1
+2024-10-10 04:57:59-9224-INFO-2024-10-10 04:57:59,819 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 04:58:00-9224-INFO-2024-10-10 04:58:00,521 - INFO - PDF IS ERROR!
+2024-10-10 04:58:04-9224-INFO-2024-10-10 04:58:04,525 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 04:58:05-9224-INFO-2024-10-10 04:58:05,211 - INFO - PDF IS ERROR!
+2024-10-10 04:58:09-9224-INFO-2024-10-10 04:58:09,219 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 04:58:09-9224-INFO-2024-10-10 04:58:09,510 - INFO - PDF IS ERROR!
+2024-10-10 04:58:12-9224-INFO-2024-10-10 04:58:12,520 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 04:58:12-9224-INFO-2024-10-10 04:58:12,812 - INFO - PDF IS ERROR!
+2024-10-10 04:58:15-9224-INFO-2024-10-10 04:58:15,825 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 04:58:16-9224-INFO-2024-10-10 04:58:16,502 - INFO - PDF IS ERROR!
+2024-10-10 04:58:20-9224-INFO-2024-10-10 04:58:20,513 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 04:58:20-9224-INFO-2024-10-10 04:58:20,789 - INFO - PDF IS ERROR!
+2024-10-10 04:58:25-9224-INFO-2024-10-10 04:58:25,805 - INFO - 连续请求失败五次退出程序
+2024-10-10 04:58:25-9224-ERROR-Traceback (most recent call last):
+2024-10-10 04:58:25-9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9224.py", line 123, in <module>
+2024-10-10 04:58:25-9224-ERROR-main()
+2024-10-10 04:58:25-9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9224.py", line 117, in main
+2024-10-10 04:58:25-9224-ERROR-Consumer('IEEE').read_message(callback)
+2024-10-10 04:58:25-9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\message_que\rabbitmq.py", line 66, in read_message
+2024-10-10 04:58:25-9224-ERROR-self._channel.start_consuming()
+2024-10-10 04:58:25-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1883, in start_consuming
+2024-10-10 04:58:25-9224-ERROR-self._process_data_events(time_limit=None)
+2024-10-10 04:58:25-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 2044, in _process_data_events
+2024-10-10 04:58:25-9224-ERROR-self.connection.process_data_events(time_limit=time_limit)
+2024-10-10 04:58:25-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 851, in process_data_events
+2024-10-10 04:58:25-9224-ERROR-self._dispatch_channel_events()
+2024-10-10 04:58:25-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 567, in _dispatch_channel_events
+2024-10-10 04:58:25-9224-ERROR-impl_channel._get_cookie()._dispatch_events()
+2024-10-10 04:58:25-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1510, in _dispatch_events
+2024-10-10 04:58:25-9224-ERROR-consumer_info.on_message_callback(self, evt.method,
+2024-10-10 04:58:25-9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9224.py", line 67, in callback
+2024-10-10 04:58:25-9224-ERROR-raise RuntimeError('cookies失效')
+2024-10-10 04:58:25-9224-ERROR-RuntimeError: cookies失效
+2024-10-10 08:57:59-9224-INFO-登陆成功
+2024-10-10 08:57:59-9224-INFO-{'Cookie': 'AWSALBAPP-1=_remove_; AWSALBAPP-2=_remove_; AWSALBAPP-3=_remove_; WLSESSION=2030268938.47873.0000; TS016349ac=01f15fc87c4bc0b1dc8a12ec5ac8980d0868220ab7754ad85b5e8ec2dbd0b569df414f8688f870f4b77b2f15f20eff299ce5a125d6; JSESSIONID=EA450DD4AC5E86FD374D660969E5EA45; ERIGHTS=x2BpY61yyXoJSix2BOxxSeGzebDWG8x2FXdCIx2Bl-18x2d9wBFudMLrBctGxx2qzD9Wzwx3Dx3DYghvj1YTmxxInc8x2FJO92uZAx3Dx3D-xxSjPuM2fUIr39FKIZ7DE4wx3Dx3D-UVhlBx2FP29HQDntaSxx2dV2wx3Dx3D; ipList=113.249.13.17; xpluserinfo=eyJpc0luc3QiOiJ0cnVlIiwiaW5zdE5hbWUiOiJKSUxJTiBVTklWRVJTSVRZIiwicHJvZHVjdHMiOiJJT0p8SUVMfFZERXxOT0tJQSBCRUxMIExBQlN8In0=; seqId=96677; AWSALBAPP-0=AAAAAAAAAADpPzE0myvRfo1tXTw2ElVRAqGe+yC9uGlm2ucr/I78WxPTY657to49vE+/bvnP9yWWicsgI9SmHdyURzMDKZKU3Pvtlve1BNpu/d2TJeUJ4VO5bAICDMiMY6bxI6oGjS7l0/dAy1J8eCN7hWNHr+lAs30LemVpiRGvaqVYznZs8anK5mdN7LAxDAR6zjpnbeGn4LJ06IaE1A==; TSaf720a17029=0807dc117eab2800636f9f6fefa77ceb4ce69ae106b8c8c8865ccbbc71a2ea177b868607e86842001c1f42b446516af5; TS8b476361027=0807dc117eab200069dc3668ead134c270d53daf281133c40de14a2b0ba6f423a938741e5750326408f5d14ca9113000efc766ea50fff5bf0c5e6eeacb556c19cc9675c734d4835ade9b7d2465515487218702d5f1452be389bec555a4037b2f'}
+2024-10-10 08:57:59-9224-INFO-2024-10-10 08:57:59,710 - INFO - Pika version 1.3.2 connecting to ('192.168.1.186', 5672)
+2024-10-10 08:57:59-9224-INFO-2024-10-10 08:57:59,711 - INFO - Socket connected: <socket.socket fd=1672, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.186', 54301), raddr=('192.168.1.186', 5672)>
+2024-10-10 08:57:59-9224-INFO-2024-10-10 08:57:59,712 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C83C9018B0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C83C9018B0> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>).
+2024-10-10 08:57:59-9224-INFO-2024-10-10 08:57:59,737 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C83C9018B0> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 08:57:59-9224-INFO-2024-10-10 08:57:59,738 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C83C9018B0> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 08:57:59-9224-INFO-2024-10-10 08:57:59,738 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C83C9018B0> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 08:57:59-9224-INFO-2024-10-10 08:57:59,738 - INFO - Created channel=1
+2024-10-10 08:57:59-9224-INFO-2024-10-10 08:57:59,746 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 08:58:00-9224-INFO-2024-10-10 08:58:00,548 - INFO - PDF IS ERROR!
+2024-10-10 08:58:03-9224-INFO-2024-10-10 08:58:03,554 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 08:58:03-9224-INFO-2024-10-10 08:58:03,885 - INFO - PDF IS ERROR!
+2024-10-10 08:58:07-9224-INFO-2024-10-10 08:58:07,899 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 08:58:08-9224-INFO-2024-10-10 08:58:08,641 - INFO - PDF IS ERROR!
+2024-10-10 08:58:12-9224-INFO-2024-10-10 08:58:12,644 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 08:58:12-9224-INFO-2024-10-10 08:58:12,948 - INFO - PDF IS ERROR!
+2024-10-10 08:58:16-9224-INFO-2024-10-10 08:58:16,951 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 08:58:17-9224-INFO-2024-10-10 08:58:17,256 - INFO - PDF IS ERROR!
+2024-10-10 08:58:22-9224-INFO-2024-10-10 08:58:22,269 - INFO - ('10496580', '/stamp/stamp.jsp?tp=&arnumber=10496580')
+2024-10-10 08:58:23-9224-INFO-2024-10-10 08:58:23,022 - INFO - PDF IS ERROR!
+2024-10-10 08:58:26-9224-INFO-2024-10-10 08:58:26,035 - INFO - 连续请求失败五次退出程序
+2024-10-10 08:58:26-9224-ERROR-Traceback (most recent call last):
+2024-10-10 08:58:26-9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9224.py", line 123, in <module>
+2024-10-10 08:58:26-9224-ERROR-main()
+2024-10-10 08:58:26-9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9224.py", line 117, in main
+2024-10-10 08:58:26-9224-ERROR-Consumer('IEEE').read_message(callback)
+2024-10-10 08:58:26-9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\message_que\rabbitmq.py", line 66, in read_message
+2024-10-10 08:58:26-9224-ERROR-self._channel.start_consuming()
+2024-10-10 08:58:26-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1883, in start_consuming
+2024-10-10 08:58:26-9224-ERROR-self._process_data_events(time_limit=None)
+2024-10-10 08:58:26-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 2044, in _process_data_events
+2024-10-10 08:58:26-9224-ERROR-self.connection.process_data_events(time_limit=time_limit)
+2024-10-10 08:58:26-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 851, in process_data_events
+2024-10-10 08:58:26-9224-ERROR-self._dispatch_channel_events()
+2024-10-10 08:58:26-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 567, in _dispatch_channel_events
+2024-10-10 08:58:26-9224-ERROR-impl_channel._get_cookie()._dispatch_events()
+2024-10-10 08:58:26-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1510, in _dispatch_events
+2024-10-10 08:58:26-9224-ERROR-consumer_info.on_message_callback(self, evt.method,
+2024-10-10 08:58:26-9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9224.py", line 67, in callback
+2024-10-10 08:58:26-9224-ERROR-raise RuntimeError('cookies失效')
+2024-10-10 08:58:26-9224-ERROR-RuntimeError: cookies失效
+2024-10-10 12:57:59-9224-INFO-登陆成功
+2024-10-10 12:57:59-9224-INFO-{'Cookie': 'AWSALBAPP-1=_remove_; AWSALBAPP-2=_remove_; AWSALBAPP-3=_remove_; WLSESSION=3439489546.47873.0000; TS016349ac=01f15fc87caca2bff6f8c175a0ecde469c0a39700e0860de067b6328a88831355116bafccc1a2491d95510e528809abd1077752af5; JSESSIONID=4625EF12EE983E488FE8F6051FAAEB2B; ERIGHTS=x2BM84AgXjxxPrexxrFJWMEfWStkbx2BM5jK0f-18x2deUtvFcirnuNRG56W8kjGUQx3Dx3DkpOAdqx2F5VZ8hctMm3Zz6Wgx3Dx3D-kt9qdxxIkgOVRBopCx2FotxxXwx3Dx3D-fQSCesbSmuhiHx2Bdp5bwQwwx3Dx3D; ipList=113.251.70.115; xpluserinfo=eyJpc0luc3QiOiJ0cnVlIiwiaW5zdE5hbWUiOiJKSUxJTiBVTklWRVJTSVRZIiwicHJvZHVjdHMiOiJJT0p8SUVMfFZERXxOT0tJQSBCRUxMIExBQlN8In0=; seqId=96677; AWSALBAPP-0=AAAAAAAAAAAtPLBVDNHJlzHnuyhwmvH8ocbOM29YaIGgIAhj4CxcqxlV8YR1bPdXesI92GeGHPbsXHY7Y2+24Mc971HU+e6brT2xEq6JfK1wE8+o5D6ho7S/79jB+yDCVsjQajpnCjojzzdXPir9I40MjDS4Odo/AGrEBAicvvMQVltW882W/9TmBStzMtOMMY1yUPoVHMH3KNJyGx0rDA==; TSaf720a17029=0807dc117eab28006baa15b5436351c98be3cdb3217edf480dcab9040045a940556075f6e4f9212bb9ff70dd283a0ea4; TS8b476361027=0807dc117eab2000c0bbfb82639f139b353e37acacdbd332fb0c5dc31f845d3fa4a10b7b5ac8384208d296c07b11300047fa0d5f0252f34d534b9ab5c90186e6751a1920ce0d55177f326a81093f552864051e510a8d714fed2adccc359dc55c'}
+2024-10-10 12:57:59-9224-INFO-2024-10-10 12:57:59,535 - INFO - socks5://192.168.1.186:42502
+2024-10-10 12:58:03-9224-INFO-第1次测试成功
+2024-10-10 12:58:10-9224-INFO-第2次测试成功
+2024-10-10 12:58:19-9224-INFO-第3次测试成功
+2024-10-10 12:58:24-9224-INFO-第4次测试失败
+2024-10-10 12:58:24-9224-INFO-80
+2024-10-10 12:58:24-9224-INFO-代理添加失败
+2024-10-10 12:58:24-9224-INFO-2024-10-10 12:58:24,727 - INFO - socks5://192.168.1.186:42086
+2024-10-10 12:58:29-9224-INFO-第1次测试成功
+2024-10-10 12:58:33-9224-INFO-第2次测试成功
+2024-10-10 12:58:40-9224-INFO-第3次测试成功
+2024-10-10 12:58:47-9224-INFO-第4次测试成功
+2024-10-10 12:58:52-9224-INFO-第5次测试成功
+2024-10-10 12:58:52-9224-INFO-100
+2024-10-10 12:58:52-9224-INFO-代理添加成功
+2024-10-10 12:58:52-9224-INFO-2024-10-10 12:58:52,939 - INFO - Pika version 1.3.2 connecting to ('192.168.1.186', 5672)
+2024-10-10 12:58:52-9224-INFO-2024-10-10 12:58:52,940 - INFO - Socket connected: <socket.socket fd=3384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.186', 54723), raddr=('192.168.1.186', 5672)>
+2024-10-10 12:58:52-9224-INFO-2024-10-10 12:58:52,942 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000019F4336B550>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000019F4336B550> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>).
+2024-10-10 12:58:52-9224-INFO-2024-10-10 12:58:52,956 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000019F4336B550> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 12:58:52-9224-INFO-2024-10-10 12:58:52,957 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000019F4336B550> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 12:58:52-9224-INFO-2024-10-10 12:58:52,957 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000019F4336B550> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 12:58:52-9224-INFO-2024-10-10 12:58:52,958 - INFO - Created channel=1
+2024-10-10 12:58:52-9224-INFO-2024-10-10 12:58:52,964 - INFO - ('9432922', '/stamp/stamp.jsp?tp=&arnumber=9432922')
+2024-10-10 12:59:32-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2922\9432922\9432922.pdf
+2024-10-10 12:59:32-9224-INFO-2024-10-10 12:59:32,797 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2922\9432922\9432922.pdf)
+2024-10-10 12:59:32-9224-INFO-2024-10-10 12:59:32,953 - INFO - 下载完成9432922
+2024-10-10 13:00:08-9224-INFO-2024-10-10 13:00:08,958 - INFO - ('9431186', '/stamp/stamp.jsp?tp=&arnumber=9431186')
+2024-10-10 13:00:21-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1186\9431186\9431186.pdf
+2024-10-10 13:00:21-9224-INFO-2024-10-10 13:00:21,644 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1186\9431186\9431186.pdf)
+2024-10-10 13:00:21-9224-INFO-2024-10-10 13:00:21,741 - INFO - 下载完成9431186
+2024-10-10 13:00:58-9224-INFO-2024-10-10 13:00:58,743 - INFO - ('9433571', '/stamp/stamp.jsp?tp=&arnumber=9433571')
+2024-10-10 13:01:10-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3571\9433571\9433571.pdf
+2024-10-10 13:01:10-9224-INFO-2024-10-10 13:01:10,528 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3571\9433571\9433571.pdf)
+2024-10-10 13:01:10-9224-INFO-2024-10-10 13:01:10,655 - INFO - 下载完成9433571
+2024-10-10 13:01:48-9224-INFO-2024-10-10 13:01:48,667 - INFO - ('9432909', '/stamp/stamp.jsp?tp=&arnumber=9432909')
+2024-10-10 13:01:57-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2909\9432909\9432909.pdf
+2024-10-10 13:01:57-9224-INFO-2024-10-10 13:01:57,836 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2909\9432909\9432909.pdf)
+2024-10-10 13:01:57-9224-INFO-2024-10-10 13:01:57,954 - INFO - 下载完成9432909
+2024-10-10 13:02:32-9224-INFO-2024-10-10 13:02:32,963 - INFO - ('9429238', '/stamp/stamp.jsp?tp=&arnumber=9429238')
+2024-10-10 13:02:41-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9238\9429238\9429238.pdf
+2024-10-10 13:02:41-9224-INFO-2024-10-10 13:02:41,902 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9238\9429238\9429238.pdf)
+2024-10-10 13:02:42-9224-INFO-2024-10-10 13:02:42,006 - INFO - 下载完成9429238
+2024-10-10 13:03:19-9224-INFO-2024-10-10 13:03:19,006 - INFO - ('9419060', '/stamp/stamp.jsp?tp=&arnumber=9419060')
+2024-10-10 13:03:39-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9060\9419060\9419060.pdf
+2024-10-10 13:03:39-9224-INFO-2024-10-10 13:03:39,476 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9060\9419060\9419060.pdf)
+2024-10-10 13:03:39-9224-INFO-2024-10-10 13:03:39,690 - INFO - 下载完成9419060
+2024-10-10 13:04:12-9224-INFO-2024-10-10 13:04:12,705 - INFO - ('9417232', '/stamp/stamp.jsp?tp=&arnumber=9417232')
+2024-10-10 13:04:17-9224-INFO-2024-10-10 13:04:17,856 - INFO - 请求失败！
+2024-10-10 13:04:22-9224-INFO-2024-10-10 13:04:22,870 - INFO - ('9417232', '/stamp/stamp.jsp?tp=&arnumber=9417232')
+2024-10-10 13:04:27-9224-INFO-2024-10-10 13:04:27,877 - INFO - 请求失败！
+2024-10-10 13:04:31-9224-INFO-2024-10-10 13:04:31,889 - INFO - ('9417232', '/stamp/stamp.jsp?tp=&arnumber=9417232')
+2024-10-10 13:04:58-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7232\9417232\9417232.pdf
+2024-10-10 13:04:58-9224-INFO-2024-10-10 13:04:58,540 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7232\9417232\9417232.pdf)
+2024-10-10 13:04:58-9224-INFO-2024-10-10 13:04:58,735 - INFO - 下载完成9417232
+2024-10-10 13:05:37-9224-INFO-2024-10-10 13:05:37,743 - INFO - ('9400862', '/stamp/stamp.jsp?tp=&arnumber=9400862')
+2024-10-10 13:05:42-9224-INFO-2024-10-10 13:05:42,932 - INFO - 请求失败！
+2024-10-10 13:05:46-9224-INFO-2024-10-10 13:05:46,945 - INFO - ('9400862', '/stamp/stamp.jsp?tp=&arnumber=9400862')
+2024-10-10 13:05:52-9224-INFO-2024-10-10 13:05:52,177 - INFO - 请求失败！
+2024-10-10 13:05:55-9224-INFO-2024-10-10 13:05:55,185 - INFO - ('9400862', '/stamp/stamp.jsp?tp=&arnumber=9400862')
+2024-10-10 13:06:00-9224-INFO-2024-10-10 13:06:00,434 - INFO - 请求失败！
+2024-10-10 13:06:04-9224-INFO-2024-10-10 13:06:04,442 - INFO - ('9400862', '/stamp/stamp.jsp?tp=&arnumber=9400862')
+2024-10-10 13:06:23-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0862\9400862\9400862.pdf
+2024-10-10 13:06:23-9224-INFO-2024-10-10 13:06:23,586 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0862\9400862\9400862.pdf)
+2024-10-10 13:06:23-9224-INFO-2024-10-10 13:06:23,710 - INFO - 下载完成9400862
+2024-10-10 13:07:01-9224-INFO-2024-10-10 13:07:01,714 - INFO - ('9324808', '/stamp/stamp.jsp?tp=&arnumber=9324808')
+2024-10-10 13:07:21-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4808\9324808\9324808.pdf
+2024-10-10 13:07:21-9224-INFO-2024-10-10 13:07:21,293 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4808\9324808\9324808.pdf)
+2024-10-10 13:07:21-9224-INFO-2024-10-10 13:07:21,455 - INFO - 下载完成9324808
+2024-10-10 13:07:59-9224-INFO-2024-10-10 13:07:59,462 - INFO - ('9245558', '/stamp/stamp.jsp?tp=&arnumber=9245558')
+2024-10-10 13:08:30-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5558\9245558\9245558.pdf
+2024-10-10 13:08:30-9224-INFO-2024-10-10 13:08:30,419 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5558\9245558\9245558.pdf)
+2024-10-10 13:08:30-9224-INFO-2024-10-10 13:08:30,589 - INFO - 下载完成9245558
+2024-10-10 13:09:07-9224-INFO-2024-10-10 13:09:07,615 - INFO - ('9399500', '/stamp/stamp.jsp?tp=&arnumber=9399500')
+2024-10-10 13:09:26-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9500\9399500\9399500.pdf
+2024-10-10 13:09:26-9224-INFO-2024-10-10 13:09:26,626 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9500\9399500\9399500.pdf)
+2024-10-10 13:09:26-9224-INFO-2024-10-10 13:09:26,962 - INFO - 下载完成9399500
+2024-10-10 13:10:00-9224-INFO-2024-10-10 13:10:00,962 - INFO - ('9399155', '/stamp/stamp.jsp?tp=&arnumber=9399155')
+2024-10-10 13:10:08-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9155\9399155\9399155.pdf
+2024-10-10 13:10:08-9224-INFO-2024-10-10 13:10:08,125 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9155\9399155\9399155.pdf)
+2024-10-10 13:10:08-9224-INFO-2024-10-10 13:10:08,240 - INFO - 下载完成9399155
+2024-10-10 16:58:07-9224-INFO-登陆成功
+2024-10-10 16:58:07-9224-INFO-{'Cookie': 'AWSALBAPP-1=_remove_; AWSALBAPP-2=_remove_; AWSALBAPP-3=_remove_; WLSESSION=3439489546.47873.0000; TS016349ac=01f15fc87c5666db6fbae6a447931a0ce8572cab9beabc56eaf02f45989335c6e7834a82b19a06e04e1fcc26edf5222d51556fd87b; JSESSIONID=3F9D211841A9C30DDA43988318007F87; ERIGHTS=0Ax2BUqVHHRlpb07k5ibfNiWQMvWrA3Zn7-18x2dqasxxgVpt7tofCUbPgDn7PQx3Dx3DsPiNE4B9hvdJ68bkJx2FSS2gx3Dx3D-Bx2B6Gx2BH9dz1lKd1m1Cx2BWTLQx3Dx3D-PHj1uIXuNf5L22d8rb2R2wx3Dx3D; xpluserinfo=eyJpc0luc3QiOiJ0cnVlIiwiaW5zdE5hbWUiOiJKSUxJTiBVTklWRVJTSVRZIiwicHJvZHVjdHMiOiJJT0p8SUVMfFZERXxOT0tJQSBCRUxMIExBQlN8In0=; seqId=96677; ipList=113.251.70.115; AWSALBAPP-0=AAAAAAAAAADQf381xBFljIbdyciYe9hE0GgjuAPqUNOJI+D8waP8GqHFGRPb2i7qdyobclvsEnD1CMH5nc7GdSvL63PERqoxSAGId2IjxqHE6Vcl0k0y+LaQcAoXFuL7cjjr12zoz55fmqKxEh2tEQdXb9/gj42HDi10Tk+m00xtmMORBxs7MeKh/fLDJiX6K9IrhH2zrq3VTYiWBDJOiw==; TSaf720a17029=0807dc117eab2800e608fda88cb3178d6ed4d0fb737f0cab4ad82fcd59a4d4c7d7af7478e55c319c0db9a26ba6bd1997; TS8b476361027=0807dc117eab200052c8db5b18dd732675ac352f7f02ebb43052a7b76b8d53d45dab5c790e66fa30082b75ed01113000b67d92af72df9b13ac9b247d082baac443ed064d41e96d065094ac507dd1b3347feacc70b8d462c8cdeadb6ce5ecb48b'}
+2024-10-10 16:58:07-9224-INFO-2024-10-10 16:58:07,482 - INFO - socks5://192.168.1.186:42153
+2024-10-10 16:58:14-9224-INFO-第1次测试成功
+2024-10-10 16:58:24-9224-INFO-第2次测试失败
+2024-10-10 16:58:24-9224-INFO-80
+2024-10-10 16:58:24-9224-INFO-代理添加失败
+2024-10-10 16:58:24-9224-INFO-2024-10-10 16:58:24,139 - INFO - socks5://192.168.1.186:42022
+2024-10-10 16:58:26-9224-INFO-第1次测试成功
+2024-10-10 16:58:28-9224-INFO-第2次测试成功
+2024-10-10 16:58:32-9224-INFO-第3次测试成功
+2024-10-10 16:58:35-9224-INFO-第4次测试成功
+2024-10-10 16:58:37-9224-INFO-第5次测试成功
+2024-10-10 16:58:37-9224-INFO-100
+2024-10-10 16:58:37-9224-INFO-代理添加成功
+2024-10-10 16:58:37-9224-INFO-2024-10-10 16:58:37,607 - INFO - Pika version 1.3.2 connecting to ('192.168.1.186', 5672)
+2024-10-10 16:58:37-9224-INFO-2024-10-10 16:58:37,608 - INFO - Socket connected: <socket.socket fd=3512, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.186', 62731), raddr=('192.168.1.186', 5672)>
+2024-10-10 16:58:37-9224-INFO-2024-10-10 16:58:37,608 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001F385EA1850>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001F385EA1850> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>).
+2024-10-10 16:58:37-9224-INFO-2024-10-10 16:58:37,616 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001F385EA1850> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 16:58:37-9224-INFO-2024-10-10 16:58:37,616 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001F385EA1850> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 16:58:37-9224-INFO-2024-10-10 16:58:37,616 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001F385EA1850> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 16:58:37-9224-INFO-2024-10-10 16:58:37,617 - INFO - Created channel=1
+2024-10-10 16:58:37-9224-INFO-2024-10-10 16:58:37,622 - INFO - ('9699102', '/stamp/stamp.jsp?tp=&arnumber=9699102')
+2024-10-10 16:58:51-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9102\9699102\9699102.pdf
+2024-10-10 16:58:51-9224-INFO-2024-10-10 16:58:51,108 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9102\9699102\9699102.pdf)
+2024-10-10 16:58:51-9224-INFO-2024-10-10 16:58:51,253 - INFO - 下载完成9699102
+2024-10-10 16:59:31-9224-INFO-2024-10-10 16:59:31,255 - INFO - ('9691869', '/stamp/stamp.jsp?tp=&arnumber=9691869')
+2024-10-10 16:59:51-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1869\9691869\9691869.pdf
+2024-10-10 16:59:51-9224-INFO-2024-10-10 16:59:51,329 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1869\9691869\9691869.pdf)
+2024-10-10 16:59:51-9224-INFO-2024-10-10 16:59:51,453 - INFO - 下载完成9691869
+2024-10-10 17:00:23-9224-INFO-2024-10-10 17:00:23,454 - INFO - ('9645313', '/stamp/stamp.jsp?tp=&arnumber=9645313')
+2024-10-10 17:00:41-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5313\9645313\9645313.pdf
+2024-10-10 17:00:41-9224-INFO-2024-10-10 17:00:41,210 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5313\9645313\9645313.pdf)
+2024-10-10 17:00:41-9224-INFO-2024-10-10 17:00:41,326 - INFO - 下载完成9645313
+2024-10-10 17:01:12-9224-INFO-2024-10-10 17:01:12,330 - INFO - ('9633171', '/stamp/stamp.jsp?tp=&arnumber=9633171')
+2024-10-10 17:01:32-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3171\9633171\9633171.pdf
+2024-10-10 17:01:32-9224-INFO-2024-10-10 17:01:32,579 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3171\9633171\9633171.pdf)
+2024-10-10 17:01:32-9224-INFO-2024-10-10 17:01:32,708 - INFO - 下载完成9633171
+2024-10-10 17:02:06-9224-INFO-2024-10-10 17:02:06,714 - INFO - ('9645335', '/stamp/stamp.jsp?tp=&arnumber=9645335')
+2024-10-10 17:02:38-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5335\9645335\9645335.pdf
+2024-10-10 17:02:38-9224-INFO-2024-10-10 17:02:38,492 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5335\9645335\9645335.pdf)
+2024-10-10 17:02:38-9224-INFO-2024-10-10 17:02:38,658 - INFO - 下载完成9645335
+2024-10-10 17:03:12-9224-INFO-2024-10-10 17:03:12,659 - INFO - ('9645061', '/stamp/stamp.jsp?tp=&arnumber=9645061')
+2024-10-10 17:04:12-9224-INFO-2024-10-10 17:04:12,670 - INFO - 请求失败！
+2024-10-10 17:04:16-9224-INFO-2024-10-10 17:04:16,673 - INFO - ('9645061', '/stamp/stamp.jsp?tp=&arnumber=9645061')
+2024-10-10 17:04:38-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5061\9645061\9645061.pdf
+2024-10-10 17:04:38-9224-INFO-2024-10-10 17:04:38,912 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5061\9645061\9645061.pdf)
+2024-10-10 17:04:39-9224-INFO-2024-10-10 17:04:39,144 - INFO - 下载完成9645061
+2024-10-10 17:05:12-9224-INFO-2024-10-10 17:05:12,155 - INFO - ('9638334', '/stamp/stamp.jsp?tp=&arnumber=9638334')
+2024-10-10 17:06:12-9224-INFO-2024-10-10 17:06:12,167 - INFO - 请求失败！
+2024-10-10 17:06:16-9224-INFO-2024-10-10 17:06:16,172 - INFO - ('9638334', '/stamp/stamp.jsp?tp=&arnumber=9638334')
+2024-10-10 17:07:16-9224-INFO-2024-10-10 17:07:16,175 - INFO - 请求失败！
+2024-10-10 17:07:19-9224-INFO-2024-10-10 17:07:19,178 - INFO - ('9638334', '/stamp/stamp.jsp?tp=&arnumber=9638334')
+2024-10-10 17:08:19-9224-INFO-2024-10-10 17:08:19,193 - INFO - 请求失败！
+2024-10-10 17:08:24-9224-INFO-2024-10-10 17:08:24,204 - INFO - ('9638334', '/stamp/stamp.jsp?tp=&arnumber=9638334')
+2024-10-10 17:09:24-9224-INFO-2024-10-10 17:09:24,220 - INFO - 请求失败！
+2024-10-10 17:09:27-9224-INFO-2024-10-10 17:09:27,233 - INFO - ('9638334', '/stamp/stamp.jsp?tp=&arnumber=9638334')
+2024-10-10 17:10:27-9224-INFO-2024-10-10 17:10:27,248 - INFO - 请求失败！
+2024-10-10 17:10:30-9224-INFO-2024-10-10 17:10:30,255 - INFO - ('9638334', '/stamp/stamp.jsp?tp=&arnumber=9638334')
+2024-10-10 17:11:30-9224-INFO-2024-10-10 17:11:30,266 - INFO - 请求失败！
+2024-10-10 17:11:33-9224-INFO-2024-10-10 17:11:33,280 - INFO - 连续请求失败五次退出程序
+2024-10-10 17:11:33-9224-ERROR-Traceback (most recent call last):
+2024-10-10 17:11:33-9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9224.py", line 123, in <module>
+2024-10-10 17:11:33-9224-ERROR-main()
+2024-10-10 17:11:33-9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9224.py", line 117, in main
+2024-10-10 17:11:33-9224-ERROR-Consumer('IEEE').read_message(callback)
+2024-10-10 17:11:33-9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\message_que\rabbitmq.py", line 66, in read_message
+2024-10-10 17:11:33-9224-ERROR-self._channel.start_consuming()
+2024-10-10 17:11:33-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1883, in start_consuming
+2024-10-10 17:11:33-9224-ERROR-self._process_data_events(time_limit=None)
+2024-10-10 17:11:33-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 2044, in _process_data_events
+2024-10-10 17:11:33-9224-ERROR-self.connection.process_data_events(time_limit=time_limit)
+2024-10-10 17:11:33-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 851, in process_data_events
+2024-10-10 17:11:33-9224-ERROR-self._dispatch_channel_events()
+2024-10-10 17:11:33-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 567, in _dispatch_channel_events
+2024-10-10 17:11:33-9224-ERROR-impl_channel._get_cookie()._dispatch_events()
+2024-10-10 17:11:33-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1510, in _dispatch_events
+2024-10-10 17:11:33-9224-ERROR-consumer_info.on_message_callback(self, evt.method,
+2024-10-10 17:11:33-9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9224.py", line 67, in callback
+2024-10-10 17:11:33-9224-ERROR-raise RuntimeError('cookies失效')
+2024-10-10 17:11:33-9224-ERROR-RuntimeError: cookies失效
+2024-10-10 20:57:59-9224-INFO-登陆成功
+2024-10-10 20:57:59-9224-INFO-{'Cookie': 'AWSALBAPP-1=_remove_; AWSALBAPP-2=_remove_; AWSALBAPP-3=_remove_; WLSESSION=1224831498.47873.0000; TS016349ac=01f15fc87c2f765f7d13f2d3873b556cba788e1868495f25ee6cc54521848bdcc455e5a1cc50967dc2d4705d4d2895244cd4dd670c; JSESSIONID=E955F9712942D1A780BE1AC8CF6C7BFC; ERIGHTS=I74VXDJYQFFMElU3cYj3aOdx2Frp964E8D-18x2dx2FtdzsSx2FXwM7w4gSQI4dBIQx3Dx3DMo6WBhMffOwW6BuCFI3Knwx3Dx3D-kt9qdxxIkgOVRBopCx2FotxxXwx3Dx3D-fQSCesbSmuhiHx2Bdp5bwQwwx3Dx3D; ipList=113.251.70.115; xpluserinfo=eyJpc0luc3QiOiJ0cnVlIiwiaW5zdE5hbWUiOiJKSUxJTiBVTklWRVJTSVRZIiwicHJvZHVjdHMiOiJJT0p8SUVMfFZERXxOT0tJQSBCRUxMIExBQlN8In0=; seqId=96677; AWSALBAPP-0=AAAAAAAAAABCMs7zXzIQ4upXGMRHB0jzdnhtFHSzKTuzb9yI5gmgpDghaVMc6mpNqaB7TkBQh7+0EzkD8Bg/TY/3sNFHUlhTy+/fJiN4VnqBGCgr2bnXoFHhTVKnpMKznfg2hBum/FFOvDAxrYRwYPboTCHn8CnrwO3Q6uieHHYJyDMJ48/GtkyjxNK4hCRQs5ZJUCrWM1HmVwNhtJ/lZw==; TSaf720a17029=0807dc117eab2800da58a52e41d4b393ac41786112d147df40933d6d3aa735e63f7569d91ab93c307e79220e961c04e2; TS8b476361027=0807dc117eab2000f30b874465ccf2554073180d6aacc009f9cd990d4b8e1164dcf32044688cf041089559658c1130007f9fc0026f2964ce33c69e747be8b96d9da101e82c096fcf33fce4462797d1ff5348606380aaa8581a716c47308de90c'}
+2024-10-10 20:57:59-9224-INFO-2024-10-10 20:57:59,408 - INFO - socks5://192.168.1.186:42306
+2024-10-10 20:58:02-9224-INFO-第1次测试成功
+2024-10-10 20:58:07-9224-INFO-第2次测试成功
+2024-10-10 20:58:09-9224-INFO-第3次测试成功
+2024-10-10 20:58:11-9224-INFO-第4次测试成功
+2024-10-10 20:58:14-9224-INFO-第5次测试成功
+2024-10-10 20:58:14-9224-INFO-100
+2024-10-10 20:58:14-9224-INFO-代理添加成功
+2024-10-10 20:58:14-9224-INFO-2024-10-10 20:58:14,418 - INFO - Pika version 1.3.2 connecting to ('192.168.1.186', 5672)
+2024-10-10 20:58:14-9224-INFO-2024-10-10 20:58:14,418 - INFO - Socket connected: <socket.socket fd=6096, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.186', 55926), raddr=('192.168.1.186', 5672)>
+2024-10-10 20:58:14-9224-INFO-2024-10-10 20:58:14,419 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000201D4D81F70>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000201D4D81F70> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>).
+2024-10-10 20:58:14-9224-INFO-2024-10-10 20:58:14,425 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000201D4D81F70> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 20:58:14-9224-INFO-2024-10-10 20:58:14,428 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000201D4D81F70> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 20:58:14-9224-INFO-2024-10-10 20:58:14,428 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000201D4D81F70> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-10 20:58:14-9224-INFO-2024-10-10 20:58:14,429 - INFO - Created channel=1
+2024-10-10 20:58:14-9224-INFO-2024-10-10 20:58:14,433 - INFO - ('9382849', '/stamp/stamp.jsp?tp=&arnumber=9382849')
+2024-10-10 20:58:20-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2849\9382849\9382849.pdf
+2024-10-10 20:58:20-9224-INFO-2024-10-10 20:58:20,112 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2849\9382849\9382849.pdf)
+2024-10-10 20:58:20-9224-INFO-2024-10-10 20:58:20,282 - INFO - 下载完成9382849
+2024-10-10 20:58:53-9224-INFO-2024-10-10 20:58:53,284 - INFO - ('9383842', '/stamp/stamp.jsp?tp=&arnumber=9383842')
+2024-10-10 20:59:01-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3842\9383842\9383842.pdf
+2024-10-10 20:59:01-9224-INFO-2024-10-10 20:59:01,970 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3842\9383842\9383842.pdf)
+2024-10-10 20:59:02-9224-INFO-2024-10-10 20:59:02,075 - INFO - 下载完成9383842
+2024-10-10 20:59:40-9224-INFO-2024-10-10 20:59:40,087 - INFO - ('9387092', '/stamp/stamp.jsp?tp=&arnumber=9387092')
+2024-10-10 20:59:50-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7092\9387092\9387092.pdf
+2024-10-10 20:59:50-9224-INFO-2024-10-10 20:59:50,449 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7092\9387092\9387092.pdf)
+2024-10-10 20:59:50-9224-INFO-2024-10-10 20:59:50,575 - INFO - 下载完成9387092
+2024-10-10 21:00:25-9224-INFO-2024-10-10 21:00:25,583 - INFO - ('9382084', '/stamp/stamp.jsp?tp=&arnumber=9382084')
+2024-10-10 21:01:17-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2084\9382084\9382084.pdf
+2024-10-10 21:01:17-9224-INFO-2024-10-10 21:01:17,302 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2084\9382084\9382084.pdf)
+2024-10-10 21:01:17-9224-INFO-2024-10-10 21:01:17,439 - INFO - 下载完成9382084
+2024-10-10 21:01:54-9224-INFO-2024-10-10 21:01:54,448 - INFO - ('9382088', '/stamp/stamp.jsp?tp=&arnumber=9382088')
+2024-10-10 21:02:18-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2088\9382088\9382088.pdf
+2024-10-10 21:02:18-9224-INFO-2024-10-10 21:02:18,429 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2088\9382088\9382088.pdf)
+2024-10-10 21:02:18-9224-INFO-2024-10-10 21:02:18,524 - INFO - 下载完成9382088
+2024-10-10 21:02:56-9224-INFO-2024-10-10 21:02:56,530 - INFO - ('9383844', '/stamp/stamp.jsp?tp=&arnumber=9383844')
+2024-10-10 21:02:56-9224-INFO-2024-10-10 21:02:56,765 - INFO - 请求失败！
+2024-10-10 21:03:01-9224-INFO-2024-10-10 21:03:01,775 - INFO - ('9383844', '/stamp/stamp.jsp?tp=&arnumber=9383844')
+2024-10-10 21:03:33-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3844\9383844\9383844.pdf
+2024-10-10 21:03:33-9224-INFO-2024-10-10 21:03:33,776 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3844\9383844\9383844.pdf)
+2024-10-10 21:03:33-9224-INFO-2024-10-10 21:03:33,969 - INFO - 下载完成9383844
+2024-10-10 21:04:08-9224-INFO-2024-10-10 21:04:08,975 - INFO - ('9380218', '/stamp/stamp.jsp?tp=&arnumber=9380218')
+2024-10-10 21:04:47-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0218\9380218\9380218.pdf
+2024-10-10 21:04:47-9224-INFO-2024-10-10 21:04:47,445 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0218\9380218\9380218.pdf)
+2024-10-10 21:04:47-9224-INFO-2024-10-10 21:04:47,604 - INFO - 下载完成9380218
+2024-10-10 21:05:22-9224-INFO-2024-10-10 21:05:22,617 - INFO - ('9380894', '/stamp/stamp.jsp?tp=&arnumber=9380894')
+2024-10-10 21:05:34-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0894\9380894\9380894.pdf
+2024-10-10 21:05:34-9224-INFO-2024-10-10 21:05:34,433 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0894\9380894\9380894.pdf)
+2024-10-10 21:05:34-9224-INFO-2024-10-10 21:05:34,543 - INFO - 下载完成9380894
+2024-10-10 21:06:12-9224-INFO-2024-10-10 21:06:12,546 - INFO - ('9381586', '/stamp/stamp.jsp?tp=&arnumber=9381586')
+2024-10-10 21:06:22-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1586\9381586\9381586.pdf
+2024-10-10 21:06:22-9224-INFO-2024-10-10 21:06:22,037 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1586\9381586\9381586.pdf)
+2024-10-10 21:06:22-9224-INFO-2024-10-10 21:06:22,123 - INFO - 下载完成9381586
+2024-10-10 21:06:54-9224-INFO-2024-10-10 21:06:54,124 - INFO - ('9381592', '/stamp/stamp.jsp?tp=&arnumber=9381592')
+2024-10-10 21:07:12-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1592\9381592\9381592.pdf
+2024-10-10 21:07:12-9224-INFO-2024-10-10 21:07:12,968 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1592\9381592\9381592.pdf)
+2024-10-10 21:07:13-9224-INFO-2024-10-10 21:07:13,111 - INFO - 下载完成9381592
+2024-10-10 21:07:52-9224-INFO-2024-10-10 21:07:52,122 - INFO - ('9376947', '/stamp/stamp.jsp?tp=&arnumber=9376947')
+2024-10-10 21:08:17-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6947\9376947\9376947.pdf
+2024-10-10 21:08:17-9224-INFO-2024-10-10 21:08:17,941 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6947\9376947\9376947.pdf)
+2024-10-10 21:08:18-9224-INFO-2024-10-10 21:08:18,074 - INFO - 下载完成9376947
+2024-10-10 21:08:48-9224-INFO-2024-10-10 21:08:48,084 - INFO - ('9382079', '/stamp/stamp.jsp?tp=&arnumber=9382079')
+2024-10-10 21:08:56-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2079\9382079\9382079.pdf
+2024-10-10 21:08:56-9224-INFO-2024-10-10 21:08:56,763 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2079\9382079\9382079.pdf)
+2024-10-10 21:08:56-9224-INFO-2024-10-10 21:08:56,855 - INFO - 下载完成9382079
+2024-10-10 21:09:34-9224-INFO-2024-10-10 21:09:34,871 - INFO - ('9380889', '/stamp/stamp.jsp?tp=&arnumber=9380889')
+2024-10-10 21:09:39-9224-INFO-2024-10-10 21:09:39,978 - INFO - 请求失败！
+2024-10-10 21:09:42-9224-INFO-2024-10-10 21:09:42,989 - INFO - ('9380889', '/stamp/stamp.jsp?tp=&arnumber=9380889')
+2024-10-10 21:10:15-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0889\9380889\9380889.pdf
+2024-10-10 21:10:15-9224-INFO-2024-10-10 21:10:15,780 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0889\9380889\9380889.pdf)
+2024-10-10 21:10:15-9224-INFO-2024-10-10 21:10:15,947 - INFO - 下载完成9380889
+2024-10-10 21:10:55-9224-INFO-2024-10-10 21:10:55,962 - INFO - ('9376919', '/stamp/stamp.jsp?tp=&arnumber=9376919')
+2024-10-10 21:11:01-9224-INFO-2024-10-10 21:11:01,046 - INFO - 请求失败！
+2024-10-10 21:11:04-9224-INFO-2024-10-10 21:11:04,049 - INFO - ('9376919', '/stamp/stamp.jsp?tp=&arnumber=9376919')
+2024-10-10 21:11:19-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6919\9376919\9376919.pdf
+2024-10-10 21:11:19-9224-INFO-2024-10-10 21:11:19,514 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6919\9376919\9376919.pdf)
+2024-10-10 21:11:19-9224-INFO-2024-10-10 21:11:19,648 - INFO - 下载完成9376919
+2024-10-10 21:11:57-9224-INFO-2024-10-10 21:11:57,649 - INFO - ('9376099', '/stamp/stamp.jsp?tp=&arnumber=9376099')
+2024-10-10 21:12:20-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6099\9376099\9376099.pdf
+2024-10-10 21:12:20-9224-INFO-2024-10-10 21:12:20,282 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6099\9376099\9376099.pdf)
+2024-10-10 21:12:20-9224-INFO-2024-10-10 21:12:20,411 - INFO - 下载完成9376099
+2024-10-10 21:12:51-9224-INFO-2024-10-10 21:12:51,421 - INFO - ('9376107', '/stamp/stamp.jsp?tp=&arnumber=9376107')
+2024-10-10 21:12:57-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6107\9376107\9376107.pdf
+2024-10-10 21:12:57-9224-INFO-2024-10-10 21:12:57,488 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6107\9376107\9376107.pdf)
+2024-10-10 21:12:57-9224-INFO-2024-10-10 21:12:57,686 - INFO - 下载完成9376107
+2024-10-10 21:13:35-9224-INFO-2024-10-10 21:13:35,687 - INFO - ('9374649', '/stamp/stamp.jsp?tp=&arnumber=9374649')
+2024-10-10 21:13:58-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4649\9374649\9374649.pdf
+2024-10-10 21:13:58-9224-INFO-2024-10-10 21:13:58,054 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4649\9374649\9374649.pdf)
+2024-10-10 21:13:58-9224-INFO-2024-10-10 21:13:58,203 - INFO - 下载完成9374649
+2024-10-10 21:14:35-9224-INFO-2024-10-10 21:14:35,208 - INFO - ('9364357', '/stamp/stamp.jsp?tp=&arnumber=9364357')
+2024-10-10 21:15:17-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4357\9364357\9364357.pdf
+2024-10-10 21:15:17-9224-INFO-2024-10-10 21:15:17,732 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4357\9364357\9364357.pdf)
+2024-10-10 21:15:17-9224-INFO-2024-10-10 21:15:17,914 - INFO - 下载完成9364357
+2024-10-10 21:15:48-9224-INFO-2024-10-10 21:15:48,930 - INFO - ('9373896', '/stamp/stamp.jsp?tp=&arnumber=9373896')
+2024-10-10 21:16:38-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3896\9373896\9373896.pdf
+2024-10-10 21:16:38-9224-INFO-2024-10-10 21:16:38,462 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3896\9373896\9373896.pdf)
+2024-10-10 21:16:38-9224-INFO-2024-10-10 21:16:38,625 - INFO - 下载完成9373896
+2024-10-10 21:17:18-9224-INFO-2024-10-10 21:17:18,637 - INFO - ('9373889', '/stamp/stamp.jsp?tp=&arnumber=9373889')
+2024-10-10 21:17:33-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3889\9373889\9373889.pdf
+2024-10-10 21:17:33-9224-INFO-2024-10-10 21:17:33,898 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3889\9373889\9373889.pdf)
+2024-10-10 21:17:34-9224-INFO-2024-10-10 21:17:34,016 - INFO - 下载完成9373889
+2024-10-10 21:18:10-9224-INFO-2024-10-10 21:18:10,031 - INFO - ('9373898', '/stamp/stamp.jsp?tp=&arnumber=9373898')
+2024-10-10 21:18:33-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3898\9373898\9373898.pdf
+2024-10-10 21:18:33-9224-INFO-2024-10-10 21:18:33,970 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3898\9373898\9373898.pdf)
+2024-10-10 21:18:34-9224-INFO-2024-10-10 21:18:34,090 - INFO - 下载完成9373898
+2024-10-10 21:19:08-9224-INFO-2024-10-10 21:19:08,095 - INFO - ('9373905', '/stamp/stamp.jsp?tp=&arnumber=9373905')
+2024-10-10 21:19:23-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3905\9373905\9373905.pdf
+2024-10-10 21:19:23-9224-INFO-2024-10-10 21:19:23,195 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3905\9373905\9373905.pdf)
+2024-10-10 21:19:23-9224-INFO-2024-10-10 21:19:23,357 - INFO - 下载完成9373905
+2024-10-10 21:19:58-9224-INFO-2024-10-10 21:19:58,372 - INFO - ('9373901', '/stamp/stamp.jsp?tp=&arnumber=9373901')
+2024-10-10 21:20:13-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3901\9373901\9373901.pdf
+2024-10-10 21:20:13-9224-INFO-2024-10-10 21:20:13,739 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3901\9373901\9373901.pdf)
+2024-10-10 21:20:13-9224-INFO-2024-10-10 21:20:13,882 - INFO - 下载完成9373901
+2024-10-10 21:20:51-9224-INFO-2024-10-10 21:20:51,895 - INFO - ('9369047', '/stamp/stamp.jsp?tp=&arnumber=9369047')
+2024-10-10 21:21:51-9224-INFO-2024-10-10 21:21:51,905 - INFO - 请求失败！
+2024-10-10 21:21:55-9224-INFO-2024-10-10 21:21:55,920 - INFO - ('9369047', '/stamp/stamp.jsp?tp=&arnumber=9369047')
+2024-10-10 21:22:33-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9047\9369047\9369047.pdf
+2024-10-10 21:22:33-9224-INFO-2024-10-10 21:22:33,166 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9047\9369047\9369047.pdf)
+2024-10-10 21:22:33-9224-INFO-2024-10-10 21:22:33,326 - INFO - 下载完成9369047
+2024-10-10 21:23:04-9224-INFO-2024-10-10 21:23:04,341 - INFO - ('9366883', '/stamp/stamp.jsp?tp=&arnumber=9366883')
+2024-10-10 21:23:37-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6883\9366883\9366883.pdf
+2024-10-10 21:23:37-9224-INFO-2024-10-10 21:23:37,558 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6883\9366883\9366883.pdf)
+2024-10-10 21:23:37-9224-INFO-2024-10-10 21:23:37,760 - INFO - 下载完成9366883
+2024-10-10 21:24:10-9224-INFO-2024-10-10 21:24:10,767 - INFO - ('9371377', '/stamp/stamp.jsp?tp=&arnumber=9371377')
+2024-10-10 21:24:48-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1377\9371377\9371377.pdf
+2024-10-10 21:24:48-9224-INFO-2024-10-10 21:24:48,478 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1377\9371377\9371377.pdf)
+2024-10-10 21:24:48-9224-INFO-2024-10-10 21:24:48,599 - INFO - 下载完成9371377
+2024-10-10 21:25:24-9224-INFO-2024-10-10 21:25:24,603 - INFO - ('9372754', '/stamp/stamp.jsp?tp=&arnumber=9372754')
+2024-10-10 21:26:24-9224-INFO-2024-10-10 21:26:24,604 - INFO - 请求失败！
+2024-10-10 21:26:28-9224-INFO-2024-10-10 21:26:28,607 - INFO - ('9372754', '/stamp/stamp.jsp?tp=&arnumber=9372754')
+2024-10-10 21:27:22-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2754\9372754\9372754.pdf
+2024-10-10 21:27:22-9224-INFO-2024-10-10 21:27:22,113 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2754\9372754\9372754.pdf)
+2024-10-10 21:27:22-9224-INFO-2024-10-10 21:27:22,293 - INFO - 下载完成9372754
+2024-10-10 21:27:52-9224-INFO-2024-10-10 21:27:52,299 - INFO - ('9364672', '/stamp/stamp.jsp?tp=&arnumber=9364672')
+2024-10-10 21:28:09-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4672\9364672\9364672.pdf
+2024-10-10 21:28:09-9224-INFO-2024-10-10 21:28:09,421 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4672\9364672\9364672.pdf)
+2024-10-10 21:28:09-9224-INFO-2024-10-10 21:28:09,528 - INFO - 下载完成9364672
+2024-10-10 21:28:42-9224-INFO-2024-10-10 21:28:42,534 - INFO - ('9362240', '/stamp/stamp.jsp?tp=&arnumber=9362240')
+2024-10-10 21:29:32-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2240\9362240\9362240.pdf
+2024-10-10 21:29:32-9224-INFO-2024-10-10 21:29:32,476 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2240\9362240\9362240.pdf)
+2024-10-10 21:29:32-9224-INFO-2024-10-10 21:29:32,614 - INFO - 下载完成9362240
+2024-10-10 21:30:05-9224-INFO-2024-10-10 21:30:05,621 - INFO - ('9345976', '/stamp/stamp.jsp?tp=&arnumber=9345976')
+2024-10-10 21:30:15-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5976\9345976\9345976.pdf
+2024-10-10 21:30:15-9224-INFO-2024-10-10 21:30:15,338 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5976\9345976\9345976.pdf)
+2024-10-10 21:30:15-9224-INFO-2024-10-10 21:30:15,439 - INFO - 下载完成9345976
+2024-10-10 21:30:55-9224-INFO-2024-10-10 21:30:55,448 - INFO - ('9362243', '/stamp/stamp.jsp?tp=&arnumber=9362243')
+2024-10-10 21:31:03-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2243\9362243\9362243.pdf
+2024-10-10 21:31:03-9224-INFO-2024-10-10 21:31:03,278 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2243\9362243\9362243.pdf)
+2024-10-10 21:31:03-9224-INFO-2024-10-10 21:31:03,394 - INFO - 下载完成9362243
+2024-10-10 21:31:33-9224-INFO-2024-10-10 21:31:33,403 - INFO - ('9366959', '/stamp/stamp.jsp?tp=&arnumber=9366959')
+2024-10-10 21:32:05-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6959\9366959\9366959.pdf
+2024-10-10 21:32:05-9224-INFO-2024-10-10 21:32:05,680 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6959\9366959\9366959.pdf)
+2024-10-10 21:32:05-9224-INFO-2024-10-10 21:32:05,864 - INFO - 下载完成9366959
+2024-10-10 21:32:41-9224-INFO-2024-10-10 21:32:41,874 - INFO - ('9363695', '/stamp/stamp.jsp?tp=&arnumber=9363695')
+2024-10-10 21:32:54-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\3695\9363695\9363695.pdf
+2024-10-10 21:32:54-9224-INFO-2024-10-10 21:32:54,446 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\3695\9363695\9363695.pdf)
+2024-10-10 21:32:54-9224-INFO-2024-10-10 21:32:54,621 - INFO - 下载完成9363695
+2024-10-10 21:33:26-9224-INFO-2024-10-10 21:33:26,627 - INFO - ('9362249', '/stamp/stamp.jsp?tp=&arnumber=9362249')
+2024-10-10 21:33:39-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2249\9362249\9362249.pdf
+2024-10-10 21:33:39-9224-INFO-2024-10-10 21:33:39,377 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2249\9362249\9362249.pdf)
+2024-10-10 21:33:39-9224-INFO-2024-10-10 21:33:39,491 - INFO - 下载完成9362249
+2024-10-10 21:34:15-9224-INFO-2024-10-10 21:34:15,501 - INFO - ('9359357', '/stamp/stamp.jsp?tp=&arnumber=9359357')
+2024-10-10 21:34:28-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9357\9359357\9359357.pdf
+2024-10-10 21:34:28-9224-INFO-2024-10-10 21:34:28,729 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9357\9359357\9359357.pdf)
+2024-10-10 21:34:28-9224-INFO-2024-10-10 21:34:28,844 - INFO - 下载完成9359357
+2024-10-10 21:34:59-9224-INFO-2024-10-10 21:34:59,855 - INFO - ('9339870', '/stamp/stamp.jsp?tp=&arnumber=9339870')
+2024-10-10 21:35:24-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9870\9339870\9339870.pdf
+2024-10-10 21:35:24-9224-INFO-2024-10-10 21:35:24,316 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9870\9339870\9339870.pdf)
+2024-10-10 21:35:24-9224-INFO-2024-10-10 21:35:24,440 - INFO - 下载完成9339870
+2024-10-10 21:35:56-9224-INFO-2024-10-10 21:35:56,443 - INFO - ('9335040', '/stamp/stamp.jsp?tp=&arnumber=9335040')
+2024-10-10 21:36:10-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5040\9335040\9335040.pdf
+2024-10-10 21:36:10-9224-INFO-2024-10-10 21:36:10,327 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5040\9335040\9335040.pdf)
+2024-10-10 21:36:10-9224-INFO-2024-10-10 21:36:10,448 - INFO - 下载完成9335040
+2024-10-10 21:36:46-9224-INFO-2024-10-10 21:36:46,455 - INFO - ('9328553', '/stamp/stamp.jsp?tp=&arnumber=9328553')
+2024-10-10 21:37:08-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\8553\9328553\9328553.pdf
+2024-10-10 21:37:08-9224-INFO-2024-10-10 21:37:08,245 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\8553\9328553\9328553.pdf)
+2024-10-10 21:37:08-9224-INFO-2024-10-10 21:37:08,374 - INFO - 下载完成9328553
+2024-10-10 21:37:47-9224-INFO-2024-10-10 21:37:47,380 - INFO - ('9309328', '/stamp/stamp.jsp?tp=&arnumber=9309328')
+2024-10-10 21:37:58-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\9328\9309328\9309328.pdf
+2024-10-10 21:37:58-9224-INFO-2024-10-10 21:37:58,057 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\9328\9309328\9309328.pdf)
+2024-10-10 21:37:58-9224-INFO-2024-10-10 21:37:58,150 - INFO - 下载完成9309328
+2024-10-10 21:38:32-9224-INFO-2024-10-10 21:38:32,155 - INFO - ('9314702', '/stamp/stamp.jsp?tp=&arnumber=9314702')
+2024-10-10 21:39:03-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4702\9314702\9314702.pdf
+2024-10-10 21:39:03-9224-INFO-2024-10-10 21:39:03,111 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4702\9314702\9314702.pdf)
+2024-10-10 21:39:03-9224-INFO-2024-10-10 21:39:03,284 - INFO - 下载完成9314702
+2024-10-10 21:39:35-9224-INFO-2024-10-10 21:39:35,295 - INFO - ('9300157', '/stamp/stamp.jsp?tp=&arnumber=9300157')
+2024-10-10 21:39:49-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0157\9300157\9300157.pdf
+2024-10-10 21:39:49-9224-INFO-2024-10-10 21:39:49,927 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0157\9300157\9300157.pdf)
+2024-10-10 21:39:50-9224-INFO-2024-10-10 21:39:50,076 - INFO - 下载完成9300157
+2024-10-10 21:40:29-9224-INFO-2024-10-10 21:40:29,081 - INFO - ('9305703', '/stamp/stamp.jsp?tp=&arnumber=9305703')
+2024-10-10 21:40:41-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\5703\9305703\9305703.pdf
+2024-10-10 21:40:41-9224-INFO-2024-10-10 21:40:41,163 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\5703\9305703\9305703.pdf)
+2024-10-10 21:40:41-9224-INFO-2024-10-10 21:40:41,284 - INFO - 下载完成9305703
+2024-10-10 21:41:14-9224-INFO-2024-10-10 21:41:14,287 - INFO - ('9296836', '/stamp/stamp.jsp?tp=&arnumber=9296836')
+2024-10-10 21:41:43-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6836\9296836\9296836.pdf
+2024-10-10 21:41:43-9224-INFO-2024-10-10 21:41:43,382 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6836\9296836\9296836.pdf)
+2024-10-10 21:41:43-9224-INFO-2024-10-10 21:41:43,535 - INFO - 下载完成9296836
+2024-10-10 21:42:20-9224-INFO-2024-10-10 21:42:20,537 - INFO - ('9254005', '/stamp/stamp.jsp?tp=&arnumber=9254005')
+2024-10-10 21:42:42-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4005\9254005\9254005.pdf
+2024-10-10 21:42:42-9224-INFO-2024-10-10 21:42:42,401 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4005\9254005\9254005.pdf)
+2024-10-10 21:42:42-9224-INFO-2024-10-10 21:42:42,513 - INFO - 下载完成9254005
+2024-10-10 21:43:21-9224-INFO-2024-10-10 21:43:21,513 - INFO - ('9250481', '/stamp/stamp.jsp?tp=&arnumber=9250481')
+2024-10-10 21:43:42-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\0481\9250481\9250481.pdf
+2024-10-10 21:43:42-9224-INFO-2024-10-10 21:43:42,037 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\0481\9250481\9250481.pdf)
+2024-10-10 21:43:42-9224-INFO-2024-10-10 21:43:42,256 - INFO - 下载完成9250481
+2024-10-10 21:44:14-9224-INFO-2024-10-10 21:44:14,257 - INFO - ('9246216', '/stamp/stamp.jsp?tp=&arnumber=9246216')
+2024-10-10 21:44:26-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6216\9246216\9246216.pdf
+2024-10-10 21:44:26-9224-INFO-2024-10-10 21:44:26,100 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6216\9246216\9246216.pdf)
+2024-10-10 21:44:26-9224-INFO-2024-10-10 21:44:26,201 - INFO - 下载完成9246216
+2024-10-10 21:45:02-9224-INFO-2024-10-10 21:45:02,215 - INFO - ('9244561', '/stamp/stamp.jsp?tp=&arnumber=9244561')
+2024-10-10 21:45:11-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4561\9244561\9244561.pdf
+2024-10-10 21:45:11-9224-INFO-2024-10-10 21:45:11,590 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4561\9244561\9244561.pdf)
+2024-10-10 21:45:11-9224-INFO-2024-10-10 21:45:11,678 - INFO - 下载完成9244561
+2024-10-10 21:45:49-9224-INFO-2024-10-10 21:45:49,689 - INFO - ('9247143', '/stamp/stamp.jsp?tp=&arnumber=9247143')
+2024-10-10 21:46:49-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\7143\9247143\9247143.pdf
+2024-10-10 21:46:49-9224-INFO-2024-10-10 21:46:49,629 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\7143\9247143\9247143.pdf)
+2024-10-10 21:46:49-9224-INFO-2024-10-10 21:46:49,794 - INFO - 下载完成9247143
+2024-10-10 21:47:20-9224-INFO-2024-10-10 21:47:20,807 - INFO - ('9246208', '/stamp/stamp.jsp?tp=&arnumber=9246208')
+2024-10-10 21:47:41-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6208\9246208\9246208.pdf
+2024-10-10 21:47:41-9224-INFO-2024-10-10 21:47:41,437 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6208\9246208\9246208.pdf)
+2024-10-10 21:47:41-9224-INFO-2024-10-10 21:47:41,543 - INFO - 下载完成9246208
+2024-10-10 21:48:20-9224-INFO-2024-10-10 21:48:20,556 - INFO - ('9244556', '/stamp/stamp.jsp?tp=&arnumber=9244556')
+2024-10-10 21:49:06-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4556\9244556\9244556.pdf
+2024-10-10 21:49:06-9224-INFO-2024-10-10 21:49:06,717 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4556\9244556\9244556.pdf)
+2024-10-10 21:49:06-9224-INFO-2024-10-10 21:49:06,831 - INFO - 下载完成9244556
+2024-10-10 21:49:46-9224-INFO-2024-10-10 21:49:46,836 - INFO - ('9242236', '/stamp/stamp.jsp?tp=&arnumber=9242236')
+2024-10-10 21:50:36-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2236\9242236\9242236.pdf
+2024-10-10 21:50:36-9224-INFO-2024-10-10 21:50:36,817 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2236\9242236\9242236.pdf)
+2024-10-10 21:50:36-9224-INFO-2024-10-10 21:50:36,945 - INFO - 下载完成9242236
+2024-10-10 21:51:15-9224-INFO-2024-10-10 21:51:15,946 - INFO - ('9242238', '/stamp/stamp.jsp?tp=&arnumber=9242238')
+2024-10-10 21:52:15-9224-INFO-2024-10-10 21:52:15,949 - INFO - 请求失败！
+2024-10-10 21:52:20-9224-INFO-2024-10-10 21:52:20,959 - INFO - ('9242238', '/stamp/stamp.jsp?tp=&arnumber=9242238')
+2024-10-10 21:53:20-9224-INFO-2024-10-10 21:53:20,967 - INFO - 请求失败！
+2024-10-10 21:53:23-9224-INFO-2024-10-10 21:53:23,975 - INFO - ('9242238', '/stamp/stamp.jsp?tp=&arnumber=9242238')
+2024-10-10 21:54:23-9224-INFO-2024-10-10 21:54:23,988 - INFO - 请求失败！
+2024-10-10 21:54:26-9224-INFO-2024-10-10 21:54:26,998 - INFO - ('9242238', '/stamp/stamp.jsp?tp=&arnumber=9242238')
+2024-10-10 21:55:27-9224-INFO-2024-10-10 21:55:27,008 - INFO - 请求失败！
+2024-10-10 21:55:30-9224-INFO-2024-10-10 21:55:30,020 - INFO - ('9242238', '/stamp/stamp.jsp?tp=&arnumber=9242238')
+2024-10-10 21:56:15-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2238\9242238\9242238.pdf
+2024-10-10 21:56:15-9224-INFO-2024-10-10 21:56:15,729 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2238\9242238\9242238.pdf)
+2024-10-10 21:56:15-9224-INFO-2024-10-10 21:56:15,880 - INFO - 下载完成9242238
+2024-10-10 21:56:55-9224-INFO-2024-10-10 21:56:55,880 - INFO - ('9242230', '/stamp/stamp.jsp?tp=&arnumber=9242230')
+2024-10-10 21:57:14-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\2230\9242230\9242230.pdf
+2024-10-10 21:57:14-9224-INFO-2024-10-10 21:57:14,971 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\2230\9242230\9242230.pdf)
+2024-10-10 21:57:15-9224-INFO-2024-10-10 21:57:15,075 - INFO - 下载完成9242230
+2024-10-10 21:57:45-9224-INFO-2024-10-10 21:57:45,080 - INFO - ('9244552', '/stamp/stamp.jsp?tp=&arnumber=9244552')
+2024-10-10 21:58:08-9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\4552\9244552\9244552.pdf
+2024-10-10 21:58:08-9224-INFO-2024-10-10 21:58:08,235 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\4552\9244552\9244552.pdf)
+2024-10-10 21:58:08-9224-INFO-2024-10-10 21:58:08,470 - INFO - 下载完成9244552
+2024-10-10 21:58:39-9224-INFO-2024-10-10 21:58:39,484 - INFO - ('9328512', '/stamp/stamp.jsp?tp=&arnumber=9328512')
+2024-10-10 21:58:43-9224-INFO-2024-10-10 21:58:43,175 - INFO - PDF IS ERROR!
+2024-10-10 21:58:46-9224-INFO-2024-10-10 21:58:46,187 - INFO - ('9328512', '/stamp/stamp.jsp?tp=&arnumber=9328512')
+2024-10-10 21:58:47-9224-INFO-2024-10-10 21:58:47,006 - INFO - PDF IS ERROR!
+2024-10-10 21:58:52-9224-INFO-2024-10-10 21:58:52,008 - INFO - ('9328512', '/stamp/stamp.jsp?tp=&arnumber=9328512')
+2024-10-10 21:58:53-9224-INFO-2024-10-10 21:58:53,715 - INFO - PDF IS ERROR!
+2024-10-10 21:58:57-9224-INFO-2024-10-10 21:58:57,728 - INFO - ('9328512', '/stamp/stamp.jsp?tp=&arnumber=9328512')
+2024-10-10 21:58:59-9224-INFO-2024-10-10 21:58:59,652 - INFO - PDF IS ERROR!
+2024-10-10 21:59:02-9224-INFO-2024-10-10 21:59:02,657 - INFO - ('9328512', '/stamp/stamp.jsp?tp=&arnumber=9328512')
+2024-10-10 21:59:03-9224-INFO-2024-10-10 21:59:03,378 - INFO - PDF IS ERROR!
+2024-10-10 21:59:07-9224-INFO-2024-10-10 21:59:07,394 - INFO - ('9328512', '/stamp/stamp.jsp?tp=&arnumber=9328512')
+2024-10-10 21:59:09-9224-INFO-2024-10-10 21:59:09,384 - INFO - PDF IS ERROR!
+2024-10-10 21:59:14-9224-INFO-2024-10-10 21:59:14,391 - INFO - 连续请求失败五次退出程序
+2024-10-10 21:59:14-9224-ERROR-Traceback (most recent call last):
+2024-10-10 21:59:14-9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9224.py", line 123, in <module>
+2024-10-10 21:59:14-9224-ERROR-main()
+2024-10-10 21:59:14-9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9224.py", line 117, in main
+2024-10-10 21:59:14-9224-ERROR-Consumer('IEEE').read_message(callback)
+2024-10-10 21:59:14-9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\message_que\rabbitmq.py", line 66, in read_message
+2024-10-10 21:59:14-9224-ERROR-self._channel.start_consuming()
+2024-10-10 21:59:14-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1883, in start_consuming
+2024-10-10 21:59:14-9224-ERROR-self._process_data_events(time_limit=None)
+2024-10-10 21:59:14-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 2044, in _process_data_events
+2024-10-10 21:59:14-9224-ERROR-self.connection.process_data_events(time_limit=time_limit)
+2024-10-10 21:59:14-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 851, in process_data_events
+2024-10-10 21:59:14-9224-ERROR-self._dispatch_channel_events()
+2024-10-10 21:59:14-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 567, in _dispatch_channel_events
+2024-10-10 21:59:14-9224-ERROR-impl_channel._get_cookie()._dispatch_events()
+2024-10-10 21:59:14-9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1510, in _dispatch_events
+2024-10-10 21:59:14-9224-ERROR-consumer_info.on_message_callback(self, evt.method,
+2024-10-10 21:59:14-9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9224.py", line 67, in callback
+2024-10-10 21:59:14-9224-ERROR-raise RuntimeError('cookies失效')
+2024-10-10 21:59:14-9224-ERROR-RuntimeError: cookies失效

@@ -1,0 +1,24 @@
+2024-10-27 00:59:53-con9224-INFO-Timeout 30000ms exceeded.
+2024-10-27 00:59:53-con9224-INFO-=========================== logs ===========================
+2024-10-27 00:59:53-con9224-INFO-navigating to "https://ieeexplore.ieee.org/", waiting until "load"
+2024-10-27 00:59:53-con9224-INFO-============================================================
+2024-10-27 01:00:12-con9224-INFO-登陆成功
+2024-10-27 01:00:12-con9224-INFO-{'Cookie': 'AWSALBAPP-1=_remove_; AWSALBAPP-2=_remove_; AWSALBAPP-3=_remove_; WLSESSION=3187765770.47873.0000; TS016349ac=01f15fc87c65fdf6139b0face1e3d85ebcd4bea0b64fd645490db0a772e36f8fb45572d301b0b8a5df993de49e30137d3794e3a67e; JSESSIONID=A385A4620C180A10C1ACF633B162CACB; ERIGHTS=zO8TYdjgg6ftWW9bTcEFdx2BkmsNea8JhZ-18x2dDBGD2CcdLmq0m8eOljZOx2Fwx3Dx3DPhK6npriIx2BBUK0Nx2Ft7IfDAx3Dx3D-kt9qdxxIkgOVRBopCx2FotxxXwx3Dx3D-fQSCesbSmuhiHx2Bdp5bwQwwx3Dx3D; ipList=113.248.223.112; xpluserinfo=eyJpc0luc3QiOiJ0cnVlIiwiaW5zdE5hbWUiOiJKSUxJTiBVTklWRVJTSVRZIiwicHJvZHVjdHMiOiJJT0p8SUVMfFZERXxOT0tJQSBCRUxMIExBQlN8In0=; seqId=96677; AWSALBAPP-0=AAAAAAAAAABysJfbRho/DyQTvbSRB6cbATgQgcvGXmbmT+lF6mMJMzCrnsA53j193fh0VpOYk2u3KLNOdCB05P67ywXWXdAroChRVyWGkIbw70Z7gDqBSj/hlX6ybw0iGdjXaqj2qk+aHbR5bdg7fRs0r+MWkLkaU7FEKyWlhC6r/AD6KamBUCX6COS4nBcJZQVD0hIBpxEPxuYurIGU+Q==; TSaf720a17029=0807dc117eab28001e02cdb4dde7f3b504e22847ae6d7c0c845d6ca476fd12149c4c77b582120379b7f89e6690f6d9d0; TS8b476361027=0807dc117eab2000108fc298ee9b01462304fedc2d6f8c3b3ea0b591faf4e0f8487ea77fb7a8acf808caca53da1130006cf03859b4fde16d9c1fb35ae0cf4f7902f9cd09ad105509564bda44f48ec31e0772c1a126a2186ff6af3097d3a0d972'}
+2024-10-27 01:00:13-con9224-INFO-2024-10-27 01:00:13,077 - INFO - socks5://192.168.1.186:42415
+2024-10-27 01:00:18-con9224-INFO-第1次测试失败
+2024-10-27 01:00:18-con9224-INFO-代理添加失败
+2024-10-27 01:00:18-con9224-INFO-2024-10-27 01:00:18,165 - INFO - socks5://192.168.1.186:42258
+2024-10-27 01:00:20-con9224-INFO-第1次测试成功
+2024-10-27 01:00:22-con9224-INFO-第2次测试成功
+2024-10-27 01:00:24-con9224-INFO-第3次测试成功
+2024-10-27 01:00:26-con9224-INFO-第4次测试成功
+2024-10-27 01:00:29-con9224-INFO-第5次测试成功
+2024-10-27 01:00:29-con9224-INFO-100
+2024-10-27 01:00:29-con9224-INFO-代理添加成功
+2024-10-27 01:00:29-con9224-INFO-2024-10-27 01:00:29,571 - INFO - Pika version 1.3.2 connecting to ('192.168.1.186', 5672)
+2024-10-27 01:00:29-con9224-INFO-2024-10-27 01:00:29,573 - INFO - Socket connected: <socket.socket fd=4804, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.186', 8192), raddr=('192.168.1.186', 5672)>
+2024-10-27 01:00:29-con9224-INFO-2024-10-27 01:00:29,574 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000018A8CA96AF0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000018A8CA96AF0> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>).
+2024-10-27 01:00:29-con9224-INFO-2024-10-27 01:00:29,585 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000018A8CA96AF0> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-27 01:00:29-con9224-INFO-2024-10-27 01:00:29,586 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000018A8CA96AF0> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-27 01:00:29-con9224-INFO-2024-10-27 01:00:29,586 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000018A8CA96AF0> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-27 01:00:29-con9224-INFO-2024-10-27 01:00:29,587 - INFO - Created channel=1

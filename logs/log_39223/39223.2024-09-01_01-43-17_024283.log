@@ -1,0 +1,82 @@
+2024-09-01 01:43:17-39223-INFO-账户还未登录
+2024-09-01 01:43:39-39223-INFO-登陆成功
+2024-09-01 01:43:39-39223-INFO-{'Cookie': 'JSESSIONID=DB2505368980A277F26A8B74C520B623; ipCheck=113.251.79.190; AWSALBAPP-1=_remove_; AWSALBAPP-2=_remove_; AWSALBAPP-3=_remove_; WLSESSION=3842077194.47873.0000; TS016349ac=01f15fc87c55912b2e033338d6c27c07285c2b02dbbe5dc6f792252d14e3e7b4257a6e89a27e80f846376ffa91cb4b684dd385a51d; ERIGHTS=n3AV30BkAYuWU4A9t5oRsQr6OIqTlhWv-18x2dZIZcSR8Cx2BHQKx2Fk5shoQ73Qx3Dx3DtFmx2BvGsBzPqUx2FbAIc2hg1Qx3Dx3D-mEjGbp7x2FDleWTLnGjuY1KAx3Dx3D-5f6yx2F5lFOeakMmsg8x2FRRtgx3Dx3D; ipList=113.251.79.190; xpluserinfo=eyJpc0luc3QiOiJ0cnVlIiwiaW5zdE5hbWUiOiJOQU5LQUkgVU5JVkVSU0lUWSIsInByb2R1Y3RzIjoiSUVMfFZERXxOT0tJQSBCRUxMIExBQlN8In0=; seqId=18345; AWSALBAPP-0=AAAAAAAAAADdsQ+wll7JNyncxC9B2wT6ZMIE3ZSOUcuoo66OuNPqpmYveyUG2TYdZNd6aPsZ7OwlIEw6Ouit/D/eEDNvKQ4yBfxaPgPW1ke8jVsISZKYloDgyylIqentR6URZIqgkEzaeBDlKEBeJWSMns9MCzFtbLvamCVfJKNB0sAFqkbJbjk5Uy2QzWTx/5HreQIHEHK0a8y/giC/kw==; TSaf720a17029=0807dc117eab2800c77964a2dfc8b9bd39368cd9368b0e20d1d80a622c26a29eeae28e819bc6b367c20a44dbe4296a55; TS8b476361027=0807dc117eab20008f2e01ea30c9f548fa4ec2eb6c5e6ef2210e81afeccba2fda9dbd626c3ede2da083998ca281130000a2c337c44a316c80d1c6490622d6ce6e1ea69452a18671b9eed1b63e20b9a5f68b75123063f1f0c43d830c81ba5b7bd'}
+2024-09-01 01:43:41-39223-INFO-0
+2024-09-01 04:43:16-39223-INFO-账户还未登录
+2024-09-01 04:43:36-39223-INFO-登陆成功
+2024-09-01 04:43:37-39223-INFO-{'Cookie': 'JSESSIONID=D035C3EB1D9270E3539D405C517878BB; ipCheck=113.251.79.190; AWSALBAPP-1=_remove_; AWSALBAPP-2=_remove_; AWSALBAPP-3=_remove_; WLSESSION=3842077194.47873.0000; TS016349ac=01f15fc87c78aed1577a5b26916f9e419ec7c6bf95e8dc9ab43eeebafccea6393d485ab5d09750d955f264cf7ab06306766dbcf9a9; ERIGHTS=0IWKTx2Ful3OQhx2BGRvhkoMNKaGune3On5F-18x2d7Vw2PQlmqIrqaQSdx2FtgLIgx3Dx3DOMBIhsL8Jgx2BxxbGYchanjYwx3Dx3D-kt9qdxxIkgOVRBopCx2FotxxXwx3Dx3D-fQSCesbSmuhiHx2Bdp5bwQwwx3Dx3D; ipList=113.251.79.190; xpluserinfo=eyJpc0luc3QiOiJ0cnVlIiwiaW5zdE5hbWUiOiJOQU5LQUkgVU5JVkVSU0lUWSIsInByb2R1Y3RzIjoiSUVMfFZERXxOT0tJQSBCRUxMIExBQlN8In0=; seqId=18345; AWSALBAPP-0=AAAAAAAAAAAHtAehcw6jwMLrifxaDg4pbZQrO3BShHmF1KHB18qmpA2WB2fss3u+sSyfDf8S3haAp1pPvUd3f+BNhK+Ke/mtT0NcIHnwLUuDWaXfzoTSmarZgcYtO99ZXTz5NyuReLgG6jozgLHNZxQZE/yY19Gb2IaPkYqNxab/zfZXdqx1wCxBuMBtKIIB0c+r/JgmePvi//5Xsvu+kA==; TSaf720a17029=0807dc117eab28003683c4f03f6571b5f724eba4ec744202e53825e160786c662c409081d75c4efd3baba5eb2819c4ed; TS8b476361027=0807dc117eab20000c0309d18edc1d8203316e34e8a7d61b200f7efe84119870a8e4756b2d5dffd70832687a8b113000cf39ce934cf64a2c2e410126d5399090ffa2dd161a899b4834fca4dedbe41db84e0c538c5e1cf414109d817665cbc554'}
+2024-09-01 04:43:40-39223-INFO-0
+2024-09-01 07:43:11-39223-INFO-账户还未登录
+2024-09-01 07:43:34-39223-INFO-登陆成功
+2024-09-01 07:43:34-39223-INFO-{'Cookie': 'JSESSIONID=6D18EE08667AB5F93F0D93790D201502; ipCheck=113.251.79.190; AWSALBAPP-1=_remove_; AWSALBAPP-2=_remove_; AWSALBAPP-3=_remove_; WLSESSION=503542282.47873.0000; TS016349ac=01f15fc87c1b813f8ee0696588976a3196f07c776834b7c43cec72be69172f1a0d914690215b50f1e689c6728de21e5890e55c0d5b; ERIGHTS=RWB5mIvX6EaI0b3t05Pq32svdYtxxF7qr-18x2dqwpupPAx2BGcvatlk7duxxghgx3Dx3DoXUcUNcxxFHU1EPkx2Fgx2BYH1Qx3Dx3D-kt9qdxxIkgOVRBopCx2FotxxXwx3Dx3D-fQSCesbSmuhiHx2Bdp5bwQwwx3Dx3D; ipList=113.251.79.190; xpluserinfo=eyJpc0luc3QiOiJ0cnVlIiwiaW5zdE5hbWUiOiJOQU5LQUkgVU5JVkVSU0lUWSIsInByb2R1Y3RzIjoiSUVMfFZERXxOT0tJQSBCRUxMIExBQlN8In0=; seqId=18345; AWSALBAPP-0=AAAAAAAAAADfBJk5V3hP2K7sYp1KLTclRuqMIiQ9wAe4IVOem+zmDzoO6jLZAksCxFSCCVk1Tl75m41VR6KEH1S+/CWg9M3Xg4zzvL4rTjwnnPilqNRE3DYql3ai6Y9MSIV9uqYjQvzaAzpA1Mz5FIVhvcqmd72saD2i55Pnsg3gNtNS+5eOd01FhEDA/j+YmfdwhMt85AG1YnbADd1dBA==; TSaf720a17029=0807dc117eab28008fdf7c13b4e34f7837f9d251deeb4931a845bd1786820e4cc03ff1897ca0f727d1982daab0662d0b; TS8b476361027=0807dc117eab2000e8654808ea0fc4fbc23c8e300b0c658c14c79eeaad82f8cde6f455a99d08300208561c1fc21130006b9e2b30120552f57c4fb8bbda4dc2041367ecf4ab68c7572c7b4cbc91db887d50005b97090b642556ddea6a50430f71'}
+2024-09-01 07:43:34-39223-INFO-0
+2024-09-01 10:43:14-39223-INFO-账户还未登录
+2024-09-01 10:43:34-39223-INFO-登陆成功
+2024-09-01 10:43:34-39223-INFO-{'Cookie': 'JSESSIONID=10A2E5B2EDC08A853F12DA32A6A696E3; ipCheck=113.251.79.190; AWSALBAPP-1=_remove_; AWSALBAPP-2=_remove_; AWSALBAPP-3=_remove_; WLSESSION=503542282.47873.0000; TS016349ac=01f15fc87cbb1c0b6a6d2a619c529543c77f9a0711572ee2ce33e012384fcb90059a595f6667e2ad57fe9e24497bec5a3b7f1e7d4e; ERIGHTS=SOTAn0hore3HZql5x2BODFBocry7Z4homx2B-18x2d646JS9UKCMLWoFjZpZuHOwx3Dx3DqI4Jx2F4BiEClx2FewKbB7NAPAx3Dx3D-eI3qZRBPEpptHrsBwmDJWwx3Dx3D-PHtmiFx2BHcxxRmFWzvhDaEhQx3Dx3D; ipList=113.251.79.190; xpluserinfo=eyJpc0luc3QiOiJ0cnVlIiwiaW5zdE5hbWUiOiJOQU5LQUkgVU5JVkVSU0lUWSIsInByb2R1Y3RzIjoiSUVMfFZERXxOT0tJQSBCRUxMIExBQlN8In0=; seqId=18345; AWSALBAPP-0=AAAAAAAAAAAKnr8w4gZ9iUF16csP+PZjW3Lx1N0ILZdI96HiAUv4/7e25wtYCLjtzOaUKp5GtV6V6na4+RHRA7UbzVntrltMwSuWymtTFgoAxwTfjeDFEciajR0JDdodi6jo897N8M0LwTtZdoirdT/hI8lrJDNf6UBB8aen3K9wJWxZKbIirthfQRCJc3AYeTVGF8mA3fMRTaHNbKfK2g==; TSaf720a17029=0807dc117eab2800c29fe74bc707dbd93f1254e1a53b07edae4a2a6cf56766fe5bd39b343f9e9dd3abfb4b3ce8812292; TS8b476361027=0807dc117eab20009fb28d1751a84ce7e19f349622cd2596e88f5b902f60d4ae09afc819c65791620891981fc4113000a600b6828def86496f0f123011b03b148410e3770f2e904ccf690658c6aee36a193f11263443d227366de2105cb5c3f0'}
+2024-09-01 10:43:36-39223-INFO-0
+2024-09-01 13:43:35-39223-ERROR-Traceback (most recent call last):
+2024-09-01 13:43:35-39223-ERROR-File "D:\workfile\PycharmProjects\ieee\采集\crawler_journal_html.py", line 124, in <module>
+2024-09-01 13:43:35-39223-ERROR-main()
+2024-09-01 13:43:35-39223-ERROR-File "D:\workfile\PycharmProjects\ieee\采集\crawler_journal_html.py", line 107, in main
+2024-09-01 13:43:35-39223-ERROR-set_cookies(base_url)
+2024-09-01 13:43:35-39223-ERROR-File "D:\workfile\PycharmProjects\ieee\采集\crawler_journal_html.py", line 70, in set_cookies
+2024-09-01 13:43:35-39223-ERROR-start_playwright(test,'39223')
+2024-09-01 13:43:35-39223-ERROR-File "D:\workfile\PycharmProjects\ieee\采集\request_client\cdp_client.py", line 10, in start_playwright
+2024-09-01 13:43:35-39223-ERROR-entry(browser)
+2024-09-01 13:43:35-39223-ERROR-File "D:\workfile\PycharmProjects\ieee\采集\crawler_journal_html.py", line 40, in test
+2024-09-01 13:43:35-39223-ERROR-page.goto(url)
+2024-09-01 13:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\sync_api\_generated.py", line 9256, in goto
+2024-09-01 13:43:35-39223-ERROR-self._sync(
+2024-09-01 13:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_sync_base.py", line 104, in _sync
+2024-09-01 13:43:35-39223-ERROR-return task.result()
+2024-09-01 13:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_page.py", line 495, in goto
+2024-09-01 13:43:35-39223-ERROR-return await self._main_frame.goto(**locals_to_params(locals()))
+2024-09-01 13:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_frame.py", line 147, in goto
+2024-09-01 13:43:35-39223-ERROR-await self._channel.send("goto", locals_to_params(locals()))
+2024-09-01 13:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+2024-09-01 13:43:35-39223-ERROR-return await self._connection.wrap_api_call(
+2024-09-01 13:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_connection.py", line 461, in wrap_api_call
+2024-09-01 13:43:35-39223-ERROR-return await cb()
+2024-09-01 13:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_connection.py", line 96, in inner_send
+2024-09-01 13:43:35-39223-ERROR-result = next(iter(done)).result()
+2024-09-01 13:43:35-39223-ERROR-playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.
+2024-09-01 13:43:35-39223-ERROR-=========================== logs ===========================
+2024-09-01 13:43:35-39223-ERROR-navigating to "https://ieeexplore.ieee.org/", waiting until "load"
+2024-09-01 13:43:35-39223-ERROR-============================================================
+2024-09-01 16:43:35-39223-ERROR-Traceback (most recent call last):
+2024-09-01 16:43:35-39223-ERROR-File "D:\workfile\PycharmProjects\ieee\采集\crawler_journal_html.py", line 124, in <module>
+2024-09-01 16:43:35-39223-ERROR-main()
+2024-09-01 16:43:35-39223-ERROR-File "D:\workfile\PycharmProjects\ieee\采集\crawler_journal_html.py", line 107, in main
+2024-09-01 16:43:35-39223-ERROR-set_cookies(base_url)
+2024-09-01 16:43:35-39223-ERROR-File "D:\workfile\PycharmProjects\ieee\采集\crawler_journal_html.py", line 70, in set_cookies
+2024-09-01 16:43:35-39223-ERROR-start_playwright(test,'39223')
+2024-09-01 16:43:35-39223-ERROR-File "D:\workfile\PycharmProjects\ieee\采集\request_client\cdp_client.py", line 10, in start_playwright
+2024-09-01 16:43:35-39223-ERROR-entry(browser)
+2024-09-01 16:43:35-39223-ERROR-File "D:\workfile\PycharmProjects\ieee\采集\crawler_journal_html.py", line 40, in test
+2024-09-01 16:43:35-39223-ERROR-page.goto(url)
+2024-09-01 16:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\sync_api\_generated.py", line 9256, in goto
+2024-09-01 16:43:35-39223-ERROR-self._sync(
+2024-09-01 16:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_sync_base.py", line 104, in _sync
+2024-09-01 16:43:35-39223-ERROR-return task.result()
+2024-09-01 16:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_page.py", line 495, in goto
+2024-09-01 16:43:35-39223-ERROR-return await self._main_frame.goto(**locals_to_params(locals()))
+2024-09-01 16:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_frame.py", line 147, in goto
+2024-09-01 16:43:35-39223-ERROR-await self._channel.send("goto", locals_to_params(locals()))
+2024-09-01 16:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+2024-09-01 16:43:35-39223-ERROR-return await self._connection.wrap_api_call(
+2024-09-01 16:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_connection.py", line 461, in wrap_api_call
+2024-09-01 16:43:35-39223-ERROR-return await cb()
+2024-09-01 16:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_connection.py", line 96, in inner_send
+2024-09-01 16:43:35-39223-ERROR-result = next(iter(done)).result()
+2024-09-01 16:43:35-39223-ERROR-playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.
+2024-09-01 16:43:35-39223-ERROR-=========================== logs ===========================
+2024-09-01 16:43:35-39223-ERROR-navigating to "https://ieeexplore.ieee.org/", waiting until "load"
+2024-09-01 16:43:35-39223-ERROR-============================================================
+2024-09-01 19:43:22-39223-INFO-账户还未登录
+2024-09-01 19:43:49-39223-INFO-登陆成功
+2024-09-01 19:43:49-39223-INFO-{'Cookie': 'JSESSIONID=97BD4125F13DA2DD949A24EE14B48320; ipCheck=113.251.79.190; AWSALBAPP-1=_remove_; AWSALBAPP-2=_remove_; AWSALBAPP-3=_remove_; WLSESSION=3389157898.47873.0000; TS016349ac=01f15fc87c89c3c3f7758ee67dbeebaf44cd9ba361593948faabe54c083764fb3044fa64324a0243f592dbcdeed02b151e36d25c81; ERIGHTS=9CFx2BBvUr5ls06KrCLx2BykD0cfMUqSZ05d-18x2d4qlgsGm2XnKJfaZNGvFrqwx3Dx3DCi6ebvFx2FxxCPl4PMLiYsI1wx3Dx3D-Bx2B6Gx2BH9dz1lKd1m1Cx2BWTLQx3Dx3D-PHj1uIXuNf5L22d8rb2R2wx3Dx3D; xpluserinfo=eyJpc0luc3QiOiJ0cnVlIiwiaW5zdE5hbWUiOiJOQU5LQUkgVU5JVkVSU0lUWSIsInByb2R1Y3RzIjoiSUVMfFZERXxOT0tJQSBCRUxMIExBQlN8In0=; seqId=18345; ipList=113.251.79.190; AWSALBAPP-0=AAAAAAAAAACXgZcGrjMT15jAqvSFBgYtdC3ogh3GmETSMQY1yasCUxDKx6Fjn2B6IvvdG8iErvczN1zLF+Xm5RNCSfHAPOeMgp4n7LH7GS10i8zPMo2UrzkykW+343IiMeyNY1hdKo48E7itKUkVsZ62dHBxYzcS09cSl6cJ+55eqagCibK//94WI3EK1H1Fr98W36yWK6LLVtAmC70Jtw==; TSaf720a17029=0807dc117eab28000a272cf72c8fa2f3337e0170f301fa32c696b5584d30b2cdb030da0ea1634dfc37227aa40b2f610b; TS8b476361027=0807dc117eab20003fa4d1d9893f2b93b38c394b0b535c984468a2f56ba64d46ed79f29594c4c40608370bd0b4113000b3808b622dd316d6e3db263c4f39b90d779f714e6ba9e7d3197e2fe9a71aa23b27b3a08bccbae5f9d10f6cbc5aa7cf16'}
+2024-09-01 19:43:52-39223-INFO-0
+2024-09-01 22:43:25-39223-INFO-账户还未登录
+2024-09-01 22:43:46-39223-INFO-登陆成功
+2024-09-01 22:43:46-39223-INFO-{'Cookie': 'JSESSIONID=1C4F09E3487AC5A108F376B6A26D748B; ipCheck=113.251.79.190; AWSALBAPP-1=_remove_; AWSALBAPP-2=_remove_; AWSALBAPP-3=_remove_; WLSESSION=503542282.47873.0000; TS016349ac=01f15fc87ccedb21994107a030c96a0dc222b26a188aa0c81980e7e5209a197464b1e8f520b763de4d69a5c1fd535fe5d06b9efc14; ERIGHTS=VxxAeUEC1yOl3ZaUdffSw4SSJ9aUadQOB-18x2dKrNsHokdaREJMPrxxzPI8uwx3Dx3DmkZwKHex2FZAULCYsyWFdEiQx3Dx3D-eI3qZRBPEpptHrsBwmDJWwx3Dx3D-PHtmiFx2BHcxxRmFWzvhDaEhQx3Dx3D; ipList=113.251.79.190; xpluserinfo=eyJpc0luc3QiOiJ0cnVlIiwiaW5zdE5hbWUiOiJOQU5LQUkgVU5JVkVSU0lUWSIsInByb2R1Y3RzIjoiSUVMfFZERXxOT0tJQSBCRUxMIExBQlN8In0=; seqId=18345; AWSALBAPP-0=AAAAAAAAAAAZgbcIhGFFH1GqDNJWAe1hMu45u2N9ofxTp3yDT7iv/1iRID1MDx7aGYWmNLdG5BJoFyZCUOm0Cvk6PjRV5l8Ytatg5pA2CaGSj0JNBD/LefrRpS/xKN9J+1D5T0JWCCwtY5gOMbcxd/ecg1GmudUgisec2nFL+9ZsWuhw/fqcI4G8mA8IRO7ZM9MFPjZGoZPyGLWbDmQ/iw==; TSaf720a17029=0807dc117eab2800439b6c157ebc8dfff335c5c7262a1c407620ab236b74ace7f1c4b0a7f2e15d2603955a7c66524f87; TS8b476361027=0807dc117eab2000001158f6d13efb4093207548cefa4f01309e476f9309ffdb04fb3df37b7419c008689306441130007bbfb667a6992d18e34186b90a9e4c7fb6136dd31179bc3cc028f5aef4e6ea9ef95bb4203bd14de226e3c9db27857eb1'}
+2024-09-01 22:43:47-39223-INFO-0

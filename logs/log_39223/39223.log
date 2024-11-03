@@ -1,0 +1,62 @@
+2024-09-02 01:43:14-39223-INFO-账户还未登录
+2024-09-02 01:43:34-39223-INFO-登陆成功
+2024-09-02 01:43:34-39223-INFO-{'Cookie': 'JSESSIONID=E9D544C854C5E94FD02DEBB8F4CD214C; ipCheck=113.251.79.190; AWSALBAPP-1=_remove_; AWSALBAPP-2=_remove_; AWSALBAPP-3=_remove_; WLSESSION=3842077194.47873.0000; TS016349ac=01f15fc87ccfc9498ebce0a46f955a1cb02a7a84b86fb1e61fc29fc70065285778808c7c9c5749c19d45f8a8c600a98d18f26789ec; ERIGHTS=pCBSfix2BWT27W4BbZxxzGoKAXV0bQeC7qw-18x2dxxqNM7UawiOmXqW7gn9xx33Ax3Dx3DMjFtV94Qj5M9QXxxOGZ1tJgx3Dx3D-Bx2B6Gx2BH9dz1lKd1m1Cx2BWTLQx3Dx3D-PHj1uIXuNf5L22d8rb2R2wx3Dx3D; ipList=113.251.79.190; xpluserinfo=eyJpc0luc3QiOiJ0cnVlIiwiaW5zdE5hbWUiOiJOQU5LQUkgVU5JVkVSU0lUWSIsInByb2R1Y3RzIjoiSUVMfFZERXxOT0tJQSBCRUxMIExBQlN8In0=; seqId=18345; AWSALBAPP-0=AAAAAAAAAAAcJfnIZVR6OLb3MRlcmN4HqLumE5Qa0obbEB8j51LvRMsl6/LXlioNtJECwPNIjK2JIXvREO6ZLomAv6GyhybvNBKEJ8APopLgYdg8X53jnMPSDqhz7uB6I9aYV3KSyTRhlqAzxex1AjQQv2071HVtuhnRhpkuh/Qc9iQz/p1jH1AGO1TgXQGEyVdW6/Mv0rPgewEzVV6yRQ==; TSaf720a17029=0807dc117eab2800c23bf54b016d11594f1c03ef95c045f5037f6d34f79057d8b5092a3d4fff10806e84e46b4ee4355c; TS8b476361027=0807dc117eab20009e7f63259a08e31fb6b6c357cb277e5168771e1e533c77eb8324ab9fd2a22420085885344d11300048ce44803a27a4147090c7966b0f49fba8a4066de184d92e44e0272f4fdea166c959c0a2f6bccd09bb920f8499b0966c'}
+2024-09-02 01:43:35-39223-INFO-0
+2024-09-02 04:43:35-39223-ERROR-Traceback (most recent call last):
+2024-09-02 04:43:35-39223-ERROR-File "D:\workfile\PycharmProjects\ieee\采集\crawler_journal_html.py", line 124, in <module>
+2024-09-02 04:43:35-39223-ERROR-main()
+2024-09-02 04:43:35-39223-ERROR-File "D:\workfile\PycharmProjects\ieee\采集\crawler_journal_html.py", line 107, in main
+2024-09-02 04:43:35-39223-ERROR-set_cookies(base_url)
+2024-09-02 04:43:35-39223-ERROR-File "D:\workfile\PycharmProjects\ieee\采集\crawler_journal_html.py", line 70, in set_cookies
+2024-09-02 04:43:35-39223-ERROR-start_playwright(test,'39223')
+2024-09-02 04:43:35-39223-ERROR-File "D:\workfile\PycharmProjects\ieee\采集\request_client\cdp_client.py", line 10, in start_playwright
+2024-09-02 04:43:35-39223-ERROR-entry(browser)
+2024-09-02 04:43:35-39223-ERROR-File "D:\workfile\PycharmProjects\ieee\采集\crawler_journal_html.py", line 40, in test
+2024-09-02 04:43:35-39223-ERROR-page.goto(url)
+2024-09-02 04:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\sync_api\_generated.py", line 9256, in goto
+2024-09-02 04:43:35-39223-ERROR-self._sync(
+2024-09-02 04:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_sync_base.py", line 104, in _sync
+2024-09-02 04:43:35-39223-ERROR-return task.result()
+2024-09-02 04:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_page.py", line 495, in goto
+2024-09-02 04:43:35-39223-ERROR-return await self._main_frame.goto(**locals_to_params(locals()))
+2024-09-02 04:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_frame.py", line 147, in goto
+2024-09-02 04:43:35-39223-ERROR-await self._channel.send("goto", locals_to_params(locals()))
+2024-09-02 04:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+2024-09-02 04:43:35-39223-ERROR-return await self._connection.wrap_api_call(
+2024-09-02 04:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_connection.py", line 461, in wrap_api_call
+2024-09-02 04:43:35-39223-ERROR-return await cb()
+2024-09-02 04:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_connection.py", line 96, in inner_send
+2024-09-02 04:43:35-39223-ERROR-result = next(iter(done)).result()
+2024-09-02 04:43:35-39223-ERROR-playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.
+2024-09-02 04:43:35-39223-ERROR-=========================== logs ===========================
+2024-09-02 04:43:35-39223-ERROR-navigating to "https://ieeexplore.ieee.org/", waiting until "load"
+2024-09-02 04:43:35-39223-ERROR-============================================================
+2024-09-02 07:43:35-39223-ERROR-Traceback (most recent call last):
+2024-09-02 07:43:35-39223-ERROR-File "D:\workfile\PycharmProjects\ieee\采集\crawler_journal_html.py", line 124, in <module>
+2024-09-02 07:43:35-39223-ERROR-main()
+2024-09-02 07:43:35-39223-ERROR-File "D:\workfile\PycharmProjects\ieee\采集\crawler_journal_html.py", line 107, in main
+2024-09-02 07:43:35-39223-ERROR-set_cookies(base_url)
+2024-09-02 07:43:35-39223-ERROR-File "D:\workfile\PycharmProjects\ieee\采集\crawler_journal_html.py", line 70, in set_cookies
+2024-09-02 07:43:35-39223-ERROR-start_playwright(test,'39223')
+2024-09-02 07:43:35-39223-ERROR-File "D:\workfile\PycharmProjects\ieee\采集\request_client\cdp_client.py", line 10, in start_playwright
+2024-09-02 07:43:35-39223-ERROR-entry(browser)
+2024-09-02 07:43:35-39223-ERROR-File "D:\workfile\PycharmProjects\ieee\采集\crawler_journal_html.py", line 40, in test
+2024-09-02 07:43:35-39223-ERROR-page.goto(url)
+2024-09-02 07:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\sync_api\_generated.py", line 9256, in goto
+2024-09-02 07:43:35-39223-ERROR-self._sync(
+2024-09-02 07:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_sync_base.py", line 104, in _sync
+2024-09-02 07:43:35-39223-ERROR-return task.result()
+2024-09-02 07:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_page.py", line 495, in goto
+2024-09-02 07:43:35-39223-ERROR-return await self._main_frame.goto(**locals_to_params(locals()))
+2024-09-02 07:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_frame.py", line 147, in goto
+2024-09-02 07:43:35-39223-ERROR-await self._channel.send("goto", locals_to_params(locals()))
+2024-09-02 07:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+2024-09-02 07:43:35-39223-ERROR-return await self._connection.wrap_api_call(
+2024-09-02 07:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_connection.py", line 461, in wrap_api_call
+2024-09-02 07:43:35-39223-ERROR-return await cb()
+2024-09-02 07:43:35-39223-ERROR-File "D:\python\lib\site-packages\playwright\_impl\_connection.py", line 96, in inner_send
+2024-09-02 07:43:35-39223-ERROR-result = next(iter(done)).result()
+2024-09-02 07:43:35-39223-ERROR-playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.
+2024-09-02 07:43:35-39223-ERROR-=========================== logs ===========================
+2024-09-02 07:43:35-39223-ERROR-navigating to "https://ieeexplore.ieee.org/", waiting until "load"
+2024-09-02 07:43:35-39223-ERROR-============================================================

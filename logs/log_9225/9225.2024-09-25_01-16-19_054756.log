@@ -1,0 +1,156 @@
+2024-09-25 01:16:18-9225-INFO-Timeout 30000ms exceeded.
+2024-09-25 01:16:18-9225-INFO-=========================== logs ===========================
+2024-09-25 01:16:18-9225-INFO-navigating to "https://ieeexplore.ieee.org/servlet/wayf.jsp?entityId=https://idp.cup.edu.cn/idp/shibboleth&url=https%3A%2F%2Fieeexplore.ieee.org%2FXplore%2Fhome.jsp", waiting until "load"
+2024-09-25 01:16:18-9225-INFO-============================================================
+2024-09-25 01:16:31-9225-INFO-net::ERR_NAME_NOT_RESOLVED at https://ieeexplore.ieee.org/servlet/wayf.jsp?entityId=https://idp.cup.edu.cn/idp/shibboleth&url=https%3A%2F%2Fieeexplore.ieee.org%2FXplore%2Fhome.jsp
+2024-09-25 01:16:31-9225-INFO-=========================== logs ===========================
+2024-09-25 01:16:31-9225-INFO-navigating to "https://ieeexplore.ieee.org/servlet/wayf.jsp?entityId=https://idp.cup.edu.cn/idp/shibboleth&url=https%3A%2F%2Fieeexplore.ieee.org%2FXplore%2Fhome.jsp", waiting until "load"
+2024-09-25 01:16:31-9225-INFO-============================================================
+2024-09-25 01:17:03-9225-INFO-net::ERR_NAME_NOT_RESOLVED at https://ieeexplore.ieee.org/servlet/wayf.jsp?entityId=https://idp.cup.edu.cn/idp/shibboleth&url=https%3A%2F%2Fieeexplore.ieee.org%2FXplore%2Fhome.jsp
+2024-09-25 01:17:03-9225-INFO-=========================== logs ===========================
+2024-09-25 01:17:03-9225-INFO-navigating to "https://ieeexplore.ieee.org/servlet/wayf.jsp?entityId=https://idp.cup.edu.cn/idp/shibboleth&url=https%3A%2F%2Fieeexplore.ieee.org%2FXplore%2Fhome.jsp", waiting until "load"
+2024-09-25 01:17:03-9225-INFO-============================================================
+2024-09-25 01:17:03-9225-INFO-2024-09-25 01:17:03,742 - INFO - Pika version 1.3.2 connecting to ('192.168.1.186', 5672)
+2024-09-25 01:17:03-9225-INFO-2024-09-25 01:17:03,743 - INFO - Socket connected: <socket.socket fd=2112, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.186', 54114), raddr=('192.168.1.186', 5672)>
+2024-09-25 01:17:03-9225-INFO-2024-09-25 01:17:03,744 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001EF887AF310>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001EF887AF310> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>).
+2024-09-25 01:17:03-9225-INFO-2024-09-25 01:17:03,747 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001EF887AF310> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-09-25 01:17:03-9225-INFO-2024-09-25 01:17:03,747 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001EF887AF310> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-09-25 01:17:03-9225-INFO-2024-09-25 01:17:03,747 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001EF887AF310> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-09-25 01:17:03-9225-INFO-2024-09-25 01:17:03,748 - INFO - Created channel=1
+2024-09-25 01:17:03-9225-INFO-2024-09-25 01:17:03,760 - INFO - ('10597352', '/stamp/stamp.jsp?tp=&arnumber=10597352')
+2024-09-25 01:17:04-9225-INFO-2024-09-25 01:17:04,490 - INFO - PDF IS ERROR!
+2024-09-25 01:17:09-9225-INFO-2024-09-25 01:17:09,503 - INFO - ('10579732', '/stamp/stamp.jsp?tp=&arnumber=10579732')
+2024-09-25 01:17:09-9225-INFO-2024-09-25 01:17:09,796 - INFO - PDF IS ERROR!
+2024-09-25 01:17:13-9225-INFO-2024-09-25 01:17:13,801 - INFO - ('10593804', '/stamp/stamp.jsp?tp=&arnumber=10593804')
+2024-09-25 01:17:14-9225-INFO-2024-09-25 01:17:14,547 - INFO - PDF IS ERROR!
+2024-09-25 01:17:17-9225-INFO-2024-09-25 01:17:17,552 - INFO - ('10594741', '/stamp/stamp.jsp?tp=&arnumber=10594741')
+2024-09-25 01:17:17-9225-INFO-2024-09-25 01:17:17,863 - INFO - PDF IS ERROR!
+2024-09-25 01:17:22-9225-INFO-2024-09-25 01:17:22,878 - INFO - ('10596067', '/stamp/stamp.jsp?tp=&arnumber=10596067')
+2024-09-25 01:17:23-9225-INFO-2024-09-25 01:17:23,195 - INFO - PDF IS ERROR!
+2024-09-25 01:17:27-9225-INFO-2024-09-25 01:17:27,201 - INFO - ('10586864', '/stamp/stamp.jsp?tp=&arnumber=10586864')
+2024-09-25 01:18:12-9225-INFO-2024-09-25 01:18:12,991 - INFO - 请求失败！
+2024-09-25 01:18:16-9225-INFO-2024-09-25 01:18:16,995 - INFO - 连续请求失败五次退出程序
+2024-09-25 01:18:16-9225-ERROR-Traceback (most recent call last):
+2024-09-25 01:18:16-9225-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9225.py", line 121, in <module>
+2024-09-25 01:18:16-9225-ERROR-main()
+2024-09-25 01:18:17-9225-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9225.py", line 115, in main
+2024-09-25 01:18:17-9225-ERROR-Consumer('IEEE').read_message(callback)
+2024-09-25 01:18:17-9225-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\message_que\rabbitmq.py", line 66, in read_message
+2024-09-25 01:18:17-9225-ERROR-self._channel.start_consuming()
+2024-09-25 01:18:17-9225-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1883, in start_consuming
+2024-09-25 01:18:17-9225-ERROR-self._process_data_events(time_limit=None)
+2024-09-25 01:18:17-9225-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 2044, in _process_data_events
+2024-09-25 01:18:17-9225-ERROR-self.connection.process_data_events(time_limit=time_limit)
+2024-09-25 01:18:17-9225-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 851, in process_data_events
+2024-09-25 01:18:17-9225-ERROR-self._dispatch_channel_events()
+2024-09-25 01:18:17-9225-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 567, in _dispatch_channel_events
+2024-09-25 01:18:17-9225-ERROR-impl_channel._get_cookie()._dispatch_events()
+2024-09-25 01:18:17-9225-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1510, in _dispatch_events
+2024-09-25 01:18:17-9225-ERROR-consumer_info.on_message_callback(self, evt.method,
+2024-09-25 01:18:17-9225-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9225.py", line 70, in callback
+2024-09-25 01:18:17-9225-ERROR-raise RuntimeError('cookies失效')
+2024-09-25 01:18:17-9225-ERROR-RuntimeError: cookies失效
+2024-09-25 05:16:01-9225-INFO-net::ERR_NAME_NOT_RESOLVED at https://ieeexplore.ieee.org/servlet/wayf.jsp?entityId=https://idp.cup.edu.cn/idp/shibboleth&url=https%3A%2F%2Fieeexplore.ieee.org%2FXplore%2Fhome.jsp
+2024-09-25 05:16:01-9225-INFO-=========================== logs ===========================
+2024-09-25 05:16:01-9225-INFO-navigating to "https://ieeexplore.ieee.org/servlet/wayf.jsp?entityId=https://idp.cup.edu.cn/idp/shibboleth&url=https%3A%2F%2Fieeexplore.ieee.org%2FXplore%2Fhome.jsp", waiting until "load"
+2024-09-25 05:16:01-9225-INFO-============================================================
+2024-09-25 05:16:24-9225-INFO-net::ERR_NAME_NOT_RESOLVED at https://ieeexplore.ieee.org/servlet/wayf.jsp?entityId=https://idp.cup.edu.cn/idp/shibboleth&url=https%3A%2F%2Fieeexplore.ieee.org%2FXplore%2Fhome.jsp
+2024-09-25 05:16:24-9225-INFO-=========================== logs ===========================
+2024-09-25 05:16:24-9225-INFO-navigating to "https://ieeexplore.ieee.org/servlet/wayf.jsp?entityId=https://idp.cup.edu.cn/idp/shibboleth&url=https%3A%2F%2Fieeexplore.ieee.org%2FXplore%2Fhome.jsp", waiting until "load"
+2024-09-25 05:16:24-9225-INFO-============================================================
+2024-09-25 05:16:43-9225-INFO-net::ERR_NAME_NOT_RESOLVED at https://ieeexplore.ieee.org/servlet/wayf.jsp?entityId=https://idp.cup.edu.cn/idp/shibboleth&url=https%3A%2F%2Fieeexplore.ieee.org%2FXplore%2Fhome.jsp
+2024-09-25 05:16:43-9225-INFO-=========================== logs ===========================
+2024-09-25 05:16:43-9225-INFO-navigating to "https://ieeexplore.ieee.org/servlet/wayf.jsp?entityId=https://idp.cup.edu.cn/idp/shibboleth&url=https%3A%2F%2Fieeexplore.ieee.org%2FXplore%2Fhome.jsp", waiting until "load"
+2024-09-25 05:16:43-9225-INFO-============================================================
+2024-09-25 05:16:43-9225-INFO-2024-09-25 05:16:43,468 - INFO - Pika version 1.3.2 connecting to ('192.168.1.186', 5672)
+2024-09-25 05:16:43-9225-INFO-2024-09-25 05:16:43,468 - INFO - Socket connected: <socket.socket fd=1424, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.186', 61831), raddr=('192.168.1.186', 5672)>
+2024-09-25 05:16:43-9225-INFO-2024-09-25 05:16:43,469 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000024600843910>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000024600843910> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>).
+2024-09-25 05:16:43-9225-INFO-2024-09-25 05:16:43,473 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000024600843910> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-09-25 05:16:43-9225-INFO-2024-09-25 05:16:43,473 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000024600843910> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-09-25 05:16:43-9225-INFO-2024-09-25 05:16:43,473 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000024600843910> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-09-25 05:16:43-9225-INFO-2024-09-25 05:16:43,474 - INFO - Created channel=1
+2024-09-25 05:16:43-9225-INFO-2024-09-25 05:16:43,476 - INFO - ('9956938', '/stamp/stamp.jsp?tp=&arnumber=9956938')
+2024-09-25 05:16:44-9225-INFO-2024-09-25 05:16:44,212 - INFO - PDF IS ERROR!
+2024-09-25 05:16:48-9225-INFO-2024-09-25 05:16:48,213 - INFO - ('9956941', '/stamp/stamp.jsp?tp=&arnumber=9956941')
+2024-09-25 05:16:48-9225-INFO-2024-09-25 05:16:48,512 - INFO - PDF IS ERROR!
+2024-09-25 05:16:53-9225-INFO-2024-09-25 05:16:53,521 - INFO - ('9956943', '/stamp/stamp.jsp?tp=&arnumber=9956943')
+2024-09-25 05:16:57-9225-INFO-2024-09-25 05:16:57,536 - INFO - 请求失败！
+2024-09-25 05:17:00-9225-INFO-2024-09-25 05:17:00,552 - INFO - ('9932566', '/stamp/stamp.jsp?tp=&arnumber=9932566')
+2024-09-25 05:17:01-9225-INFO-2024-09-25 05:17:01,246 - INFO - PDF IS ERROR!
+2024-09-25 05:17:06-9225-INFO-2024-09-25 05:17:06,261 - INFO - ('9867962', '/stamp/stamp.jsp?tp=&arnumber=9867962')
+2024-09-25 05:17:06-9225-INFO-2024-09-25 05:17:06,557 - INFO - PDF IS ERROR!
+2024-09-25 05:17:10-9225-INFO-2024-09-25 05:17:10,566 - INFO - ('9867959', '/stamp/stamp.jsp?tp=&arnumber=9867959')
+2024-09-25 05:17:10-9225-INFO-2024-09-25 05:17:10,855 - INFO - PDF IS ERROR!
+2024-09-25 05:17:14-9225-INFO-2024-09-25 05:17:14,862 - INFO - 连续请求失败五次退出程序
+2024-09-25 05:17:14-9225-ERROR-Traceback (most recent call last):
+2024-09-25 05:17:14-9225-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9225.py", line 121, in <module>
+2024-09-25 05:17:14-9225-ERROR-main()
+2024-09-25 05:17:14-9225-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9225.py", line 115, in main
+2024-09-25 05:17:14-9225-ERROR-Consumer('IEEE').read_message(callback)
+2024-09-25 05:17:14-9225-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\message_que\rabbitmq.py", line 66, in read_message
+2024-09-25 05:17:14-9225-ERROR-self._channel.start_consuming()
+2024-09-25 05:17:14-9225-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1883, in start_consuming
+2024-09-25 05:17:14-9225-ERROR-self._process_data_events(time_limit=None)
+2024-09-25 05:17:14-9225-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 2044, in _process_data_events
+2024-09-25 05:17:14-9225-ERROR-self.connection.process_data_events(time_limit=time_limit)
+2024-09-25 05:17:14-9225-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 851, in process_data_events
+2024-09-25 05:17:14-9225-ERROR-self._dispatch_channel_events()
+2024-09-25 05:17:14-9225-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 567, in _dispatch_channel_events
+2024-09-25 05:17:14-9225-ERROR-impl_channel._get_cookie()._dispatch_events()
+2024-09-25 05:17:14-9225-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1510, in _dispatch_events
+2024-09-25 05:17:14-9225-ERROR-consumer_info.on_message_callback(self, evt.method,
+2024-09-25 05:17:14-9225-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9225.py", line 70, in callback
+2024-09-25 05:17:14-9225-ERROR-raise RuntimeError('cookies失效')
+2024-09-25 05:17:14-9225-ERROR-RuntimeError: cookies失效
+2024-09-25 09:15:38-9225-INFO-net::ERR_CONNECTION_RESET at https://ieeexplore.ieee.org/
+2024-09-25 09:15:38-9225-INFO-=========================== logs ===========================
+2024-09-25 09:15:38-9225-INFO-navigating to "https://ieeexplore.ieee.org/", waiting until "load"
+2024-09-25 09:15:38-9225-INFO-============================================================
+2024-09-25 09:15:40-9225-INFO-net::ERR_CONNECTION_RESET at https://ieeexplore.ieee.org/
+2024-09-25 09:15:40-9225-INFO-=========================== logs ===========================
+2024-09-25 09:15:40-9225-INFO-navigating to "https://ieeexplore.ieee.org/", waiting until "load"
+2024-09-25 09:15:40-9225-INFO-============================================================
+2024-09-25 09:15:43-9225-INFO-net::ERR_CONNECTION_RESET at https://ieeexplore.ieee.org/
+2024-09-25 09:15:43-9225-INFO-=========================== logs ===========================
+2024-09-25 09:15:43-9225-INFO-navigating to "https://ieeexplore.ieee.org/", waiting until "load"
+2024-09-25 09:15:43-9225-INFO-============================================================
+2024-09-25 09:15:43-9225-INFO-2024-09-25 09:15:43,138 - INFO - Pika version 1.3.2 connecting to ('192.168.1.186', 5672)
+2024-09-25 09:15:43-9225-INFO-2024-09-25 09:15:43,139 - INFO - Socket connected: <socket.socket fd=1236, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.186', 57347), raddr=('192.168.1.186', 5672)>
+2024-09-25 09:15:43-9225-INFO-2024-09-25 09:15:43,140 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000222B32AFE20>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000222B32AFE20> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>).
+2024-09-25 09:15:43-9225-INFO-2024-09-25 09:15:43,145 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000222B32AFE20> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-09-25 09:15:43-9225-INFO-2024-09-25 09:15:43,145 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000222B32AFE20> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-09-25 09:15:43-9225-INFO-2024-09-25 09:15:43,145 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000222B32AFE20> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-09-25 09:15:43-9225-INFO-2024-09-25 09:15:43,146 - INFO - Created channel=1
+2024-09-25 09:15:43-9225-INFO-2024-09-25 09:15:43,150 - INFO - ('9942929', '/stamp/stamp.jsp?tp=&arnumber=9942929')
+2024-09-25 09:15:43-9225-INFO-2024-09-25 09:15:43,880 - INFO - PDF IS ERROR!
+2024-09-25 09:15:47-9225-INFO-2024-09-25 09:15:47,891 - INFO - ('9940961', '/stamp/stamp.jsp?tp=&arnumber=9940961')
+2024-09-25 09:15:48-9225-INFO-2024-09-25 09:15:48,189 - INFO - PDF IS ERROR!
+2024-09-25 09:15:53-9225-INFO-2024-09-25 09:15:53,199 - INFO - ('9940923', '/stamp/stamp.jsp?tp=&arnumber=9940923')
+2024-09-25 09:15:53-9225-INFO-2024-09-25 09:15:53,948 - INFO - PDF IS ERROR!
+2024-09-25 09:15:56-9225-INFO-2024-09-25 09:15:56,955 - INFO - ('9940919', '/stamp/stamp.jsp?tp=&arnumber=9940919')
+2024-09-25 09:15:57-9225-INFO-2024-09-25 09:15:57,268 - INFO - PDF IS ERROR!
+2024-09-25 09:16:02-9225-INFO-2024-09-25 09:16:02,277 - INFO - ('9940969', '/stamp/stamp.jsp?tp=&arnumber=9940969')
+2024-09-25 09:16:02-9225-INFO-2024-09-25 09:16:02,583 - INFO - PDF IS ERROR!
+2024-09-25 09:16:07-9225-INFO-2024-09-25 09:16:07,590 - INFO - ('9940928', '/stamp/stamp.jsp?tp=&arnumber=9940928')
+2024-09-25 09:16:08-9225-INFO-2024-09-25 09:16:08,364 - INFO - PDF IS ERROR!
+2024-09-25 09:16:11-9225-INFO-2024-09-25 09:16:11,376 - INFO - 连续请求失败五次退出程序
+2024-09-25 09:16:11-9225-ERROR-Traceback (most recent call last):
+2024-09-25 09:16:11-9225-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9225.py", line 121, in <module>
+2024-09-25 09:16:11-9225-ERROR-main()
+2024-09-25 09:16:11-9225-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9225.py", line 115, in main
+2024-09-25 09:16:11-9225-ERROR-Consumer('IEEE').read_message(callback)
+2024-09-25 09:16:11-9225-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\message_que\rabbitmq.py", line 66, in read_message
+2024-09-25 09:16:11-9225-ERROR-self._channel.start_consuming()
+2024-09-25 09:16:11-9225-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1883, in start_consuming
+2024-09-25 09:16:11-9225-ERROR-self._process_data_events(time_limit=None)
+2024-09-25 09:16:11-9225-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 2044, in _process_data_events
+2024-09-25 09:16:11-9225-ERROR-self.connection.process_data_events(time_limit=time_limit)
+2024-09-25 09:16:11-9225-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 851, in process_data_events
+2024-09-25 09:16:11-9225-ERROR-self._dispatch_channel_events()
+2024-09-25 09:16:11-9225-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 567, in _dispatch_channel_events
+2024-09-25 09:16:11-9225-ERROR-impl_channel._get_cookie()._dispatch_events()
+2024-09-25 09:16:11-9225-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1510, in _dispatch_events
+2024-09-25 09:16:11-9225-ERROR-consumer_info.on_message_callback(self, evt.method,
+2024-09-25 09:16:11-9225-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院期刊9225.py", line 70, in callback
+2024-09-25 09:16:11-9225-ERROR-raise RuntimeError('cookies失效')
+2024-09-25 09:16:11-9225-ERROR-RuntimeError: cookies失效

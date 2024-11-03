@@ -1,0 +1,137 @@
+2024-10-15 18:59:52-con9224-INFO-登陆成功
+2024-10-15 18:59:52-con9224-INFO-{'Cookie': 'AWSALBAPP-1=_remove_; AWSALBAPP-2=_remove_; AWSALBAPP-3=_remove_; WLSESSION=1224831498.47873.0000; TS016349ac=01f15fc87c57cf38fb35b07177c87da6edce9b96f67217e077d53043aa943f83eb9a2264fef0f142cfad4cfc932c9324311afc5baf; JSESSIONID=08B5CFB97079C90B14CD18837AD3B9A2; ERIGHTS=Dsfr5aMmfoL1VQxxJyAO4x2FVIIp1Lq5anm-18x2dy45mlrnmOEnatlk7duxxghgx3Dx3DKqrx2Fx2FWlz4ert2SObKxxMePwx3Dx3D-6x2FElvnhdxxWsZrF2g6I0ckwx3Dx3D-X32Vx2FNg8j7SzyFTcKkmYqwx3Dx3D; ipList=125.80.197.103; xpluserinfo=eyJpc0luc3QiOiJ0cnVlIiwiaW5zdE5hbWUiOiJKSUxJTiBVTklWRVJTSVRZIiwicHJvZHVjdHMiOiJJT0p8SUVMfFZERXxOT0tJQSBCRUxMIExBQlN8In0=; seqId=96677; AWSALBAPP-0=AAAAAAAAAADJaHNpuOZIc+VgkkIEh1NJr2S44Ad2A2uHIJCx4dGEtPSmRoaT4EsmYYqVUxAnwQnLCUz5a4+WTdbXnHqN5OykM7t3no+bn/ui84RMR/8Z6k8eLQ3SBCk/k5D45MU0vNdHqEdFgj/acL93WfxX/ql6HSHLXyiZWBxOQnGajaAeC53k6hpkeBxBYINjl7Bgzg7pNRkUI1nEdw==; TSaf720a17029=0807dc117eab280072fe382a3fa8dbf1ab3307d824dc28e2d30aba7f01e6d4ce259bd25c2a1a1ec6cb8c07cdfafd5280; TS8b476361027=0807dc117eab2000396d4cc90c17f0fb720e4b28b28412fec49ec4c10163ab5d7fd4d3e300edcce3085f232e7611300049faf74cbfb474a189ce8324f6df446ee2a03fe6bac7a4de45051daa92d666a946be63ad6bace89944dd50d1a6c95bd7'}
+2024-10-15 18:59:52-con9224-INFO-2024-10-15 18:59:52,986 - INFO - socks5://192.168.1.186:42006
+2024-10-15 18:59:54-con9224-INFO-第1次测试成功
+2024-10-15 18:59:56-con9224-INFO-第2次测试成功
+2024-10-15 18:59:58-con9224-INFO-第3次测试成功
+2024-10-15 19:00:01-con9224-INFO-第4次测试成功
+2024-10-15 19:00:05-con9224-INFO-第5次测试成功
+2024-10-15 19:00:05-con9224-INFO-100
+2024-10-15 19:00:05-con9224-INFO-代理添加成功
+2024-10-15 19:00:05-con9224-INFO-2024-10-15 19:00:05,725 - INFO - Pika version 1.3.2 connecting to ('192.168.1.186', 5672)
+2024-10-15 19:00:05-con9224-INFO-2024-10-15 19:00:05,726 - INFO - Socket connected: <socket.socket fd=2240, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.186', 53461), raddr=('192.168.1.186', 5672)>
+2024-10-15 19:00:05-con9224-INFO-2024-10-15 19:00:05,726 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000018AFFA3AD90>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000018AFFA3AD90> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>).
+2024-10-15 19:00:05-con9224-INFO-2024-10-15 19:00:05,746 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000018AFFA3AD90> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-15 19:00:05-con9224-INFO-2024-10-15 19:00:05,747 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000018AFFA3AD90> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-15 19:00:05-con9224-INFO-2024-10-15 19:00:05,747 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000018AFFA3AD90> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-15 19:00:05-con9224-INFO-2024-10-15 19:00:05,747 - INFO - Created channel=1
+2024-10-15 19:00:05-con9224-INFO-2024-10-15 19:00:05,756 - INFO - ('9956214', '/stamp/stamp.jsp?tp=&arnumber=9956214')
+2024-10-15 19:32:57-con9224-INFO-2024-10-15 19:32:57,405 - INFO - 请求失败！
+2024-10-15 19:32:57-con9224-INFO-2024-10-15 19:32:57,405 - WARNING - Received remote Channel.Close (406): 'PRECONDITION_FAILED - delivery acknowledgement on channel 1 timed out. Timeout value used: 1800000 ms. This timeout value can be configured, see consumers doc guide to learn more' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000018AFFA3AD90> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>>
+2024-10-15 19:32:57-con9224-INFO-2024-10-15 19:32:57,405 - CRITICAL - Received METHOD frame for unregistered channel 1 on <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000018AFFA3AD90> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-15 19:32:57-con9224-INFO-2024-10-15 19:32:57,406 - CRITICAL - Received METHOD frame for unregistered channel 1 on <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000018AFFA3AD90> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-15 19:32:57-con9224-ERROR-Traceback (most recent call last):
+2024-10-15 19:32:57-con9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院会议9224.py", line 74, in callback
+2024-10-15 19:32:57-con9224-ERROR-response = http.get(pdf_url, headers=headers)
+2024-10-15 19:32:57-con9224-ERROR-File "D:\workfile\PycharmProjects\ieee\采集\request_client\pycurl_client.py", line 84, in get
+2024-10-15 19:32:57-con9224-ERROR-return self.__request(url, headers)
+2024-10-15 19:32:57-con9224-ERROR-File "D:\workfile\PycharmProjects\ieee\采集\request_client\pycurl_client.py", line 74, in __request
+2024-10-15 19:32:57-con9224-ERROR-response.content = self.handle.perform_rb()
+2024-10-15 19:32:57-con9224-ERROR-pycurl.error: (92, 'HTTP/2 stream 1 was not closed cleanly before end of the underlying stream')
+2024-10-15 19:32:57-con9224-ERROR-
+2024-10-15 19:32:57-con9224-ERROR-During handling of the above exception, another exception occurred:
+2024-10-15 19:32:57-con9224-ERROR-
+2024-10-15 19:32:57-con9224-ERROR-Traceback (most recent call last):
+2024-10-15 19:32:57-con9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院会议9224.py", line 122, in <module>
+2024-10-15 19:32:57-con9224-ERROR-main()
+2024-10-15 19:32:57-con9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院会议9224.py", line 116, in main
+2024-10-15 19:32:57-con9224-ERROR-Consumer('con_xkfwpt').read_message(callback)
+2024-10-15 19:32:57-con9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\message_que\rabbitmq.py", line 66, in read_message
+2024-10-15 19:32:57-con9224-ERROR-self._channel.start_consuming()
+2024-10-15 19:32:57-con9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1883, in start_consuming
+2024-10-15 19:32:57-con9224-ERROR-self._process_data_events(time_limit=None)
+2024-10-15 19:32:57-con9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 2044, in _process_data_events
+2024-10-15 19:32:57-con9224-ERROR-self.connection.process_data_events(time_limit=time_limit)
+2024-10-15 19:32:57-con9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 851, in process_data_events
+2024-10-15 19:32:57-con9224-ERROR-self._dispatch_channel_events()
+2024-10-15 19:32:57-con9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 567, in _dispatch_channel_events
+2024-10-15 19:32:57-con9224-ERROR-impl_channel._get_cookie()._dispatch_events()
+2024-10-15 19:32:57-con9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1510, in _dispatch_events
+2024-10-15 19:32:57-con9224-ERROR-consumer_info.on_message_callback(self, evt.method,
+2024-10-15 19:32:57-con9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院会议9224.py", line 79, in callback
+2024-10-15 19:32:57-con9224-ERROR-ch.basic_ack(delivery_tag=method.delivery_tag)
+2024-10-15 19:32:57-con9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 2130, in basic_ack
+2024-10-15 19:32:57-con9224-ERROR-self._flush_output()
+2024-10-15 19:32:57-con9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1357, in _flush_output
+2024-10-15 19:32:57-con9224-ERROR-raise self._closing_reason  # pylint: disable=E0702
+2024-10-15 19:32:57-con9224-ERROR-pika.exceptions.ChannelClosedByBroker: (406, 'PRECONDITION_FAILED - delivery acknowledgement on channel 1 timed out. Timeout value used: 1800000 ms. This timeout value can be configured, see consumers doc guide to learn more')
+2024-10-15 21:59:46-con9224-INFO-登陆成功
+2024-10-15 21:59:46-con9224-INFO-{'Cookie': 'AWSALBAPP-1=_remove_; AWSALBAPP-2=_remove_; AWSALBAPP-3=_remove_; WLSESSION=2030268938.47873.0000; TS016349ac=01f15fc87cbfbb7fe3e5999b11b51f735690589f6de722a0270d68c18db0fe2d2da76ee13c7e7b4dd0522e5c95f3df07bf008745fa; JSESSIONID=F9CBC887A8F366512E5612217206117B; ERIGHTS=RTVLiZYJbYgqcHay8wLCfe6FknoWGQ4T-18x2dKwrkOeOEfUfWoFjZpZuHOwx3Dx3DhAg6DRIPO6NrEY0M9hIx2FLQx3Dx3D-xxSjPuM2fUIr39FKIZ7DE4wx3Dx3D-UVhlBx2FP29HQDntaSxx2dV2wx3Dx3D; ipList=125.80.197.103; xpluserinfo=eyJpc0luc3QiOiJ0cnVlIiwiaW5zdE5hbWUiOiJKSUxJTiBVTklWRVJTSVRZIiwicHJvZHVjdHMiOiJJT0p8SUVMfFZERXxOT0tJQSBCRUxMIExBQlN8In0=; seqId=96677; AWSALBAPP-0=AAAAAAAAAAAY63pr3HU17rwM6PLmZvWkE5mgB32gwebfxo/3OpaaIIX2WZcKoyEOJML6agFThW/BoAUGX4yttfxPcmwDDzzwNBeDGWghcJVqIINOIOzUJTpqZ6li2P281Ux+Vl8ctjZQIAMEbYYVQjt9qM9OSeZPqWwQyyXzm3tpzFWb8LQYc/Q+KvMD4H8tF1XtdE/DUWWNLAA8E6H9dw==; TSaf720a17029=0807dc117eab28009cf260e048966d5a2f1d636eed4ff3804be52ef6ac7984ba2a5ebc6e9185ed63702b91ebb9ab609d; TS8b476361027=0807dc117eab2000fd219df365b2782b1135c610b79ee2084ed2b728fba2f3c1733b73557a1c34e108dc3bdafa113000b1fa7488ea188692888de69c24e432d74515c1be8c4d0c369fa5fd40493ee7e4b6df84ebb1959d3ddbac15e96f6e8db7'}
+2024-10-15 21:59:46-con9224-INFO-2024-10-15 21:59:46,682 - INFO - socks5://192.168.1.186:42090
+2024-10-15 21:59:49-con9224-INFO-第1次测试成功
+2024-10-15 21:59:51-con9224-INFO-第2次测试成功
+2024-10-15 21:59:53-con9224-INFO-第3次测试成功
+2024-10-15 21:59:55-con9224-INFO-第4次测试成功
+2024-10-15 21:59:56-con9224-INFO-第5次测试成功
+2024-10-15 21:59:56-con9224-INFO-100
+2024-10-15 21:59:56-con9224-INFO-代理添加成功
+2024-10-15 21:59:56-con9224-INFO-2024-10-15 21:59:56,918 - INFO - Pika version 1.3.2 connecting to ('192.168.1.186', 5672)
+2024-10-15 21:59:56-con9224-INFO-2024-10-15 21:59:56,919 - INFO - Socket connected: <socket.socket fd=4236, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.186', 57408), raddr=('192.168.1.186', 5672)>
+2024-10-15 21:59:56-con9224-INFO-2024-10-15 21:59:56,920 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000253B3723D60>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000253B3723D60> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>).
+2024-10-15 21:59:56-con9224-INFO-2024-10-15 21:59:56,931 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000253B3723D60> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-15 21:59:56-con9224-INFO-2024-10-15 21:59:56,931 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000253B3723D60> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-15 21:59:56-con9224-INFO-2024-10-15 21:59:56,931 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000253B3723D60> params=<ConnectionParameters host=192.168.1.186 port=5672 virtual_host=/ ssl=False>>
+2024-10-15 21:59:56-con9224-INFO-2024-10-15 21:59:56,932 - INFO - Created channel=1
+2024-10-15 21:59:56-con9224-INFO-2024-10-15 21:59:56,937 - INFO - ('9956238', '/stamp/stamp.jsp?tp=&arnumber=9956238')
+2024-10-15 22:08:23-con9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6238\9956238\9956238.pdf
+2024-10-15 22:08:23-con9224-INFO-2024-10-15 22:08:23,244 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6238\9956238\9956238.pdf)
+2024-10-15 22:08:23-con9224-INFO-2024-10-15 22:08:23,424 - INFO - 下载完成9956238
+2024-10-15 22:08:52-con9224-INFO-2024-10-15 22:08:52,436 - INFO - ('9956186', '/stamp/stamp.jsp?tp=&arnumber=9956186')
+2024-10-15 22:10:00-con9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6186\9956186\9956186.pdf
+2024-10-15 22:10:00-con9224-INFO-2024-10-15 22:10:00,643 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6186\9956186\9956186.pdf)
+2024-10-15 22:10:00-con9224-INFO-2024-10-15 22:10:00,704 - INFO - 下载完成9956186
+2024-10-15 22:10:28-con9224-INFO-2024-10-15 22:10:28,706 - INFO - ('9956660', '/stamp/stamp.jsp?tp=&arnumber=9956660')
+2024-10-15 22:11:01-con9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6660\9956660\9956660.pdf
+2024-10-15 22:11:01-con9224-INFO-2024-10-15 22:11:01,662 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6660\9956660\9956660.pdf)
+2024-10-15 22:11:01-con9224-INFO-2024-10-15 22:11:01,768 - INFO - 下载完成9956660
+2024-10-15 22:11:23-con9224-INFO-2024-10-15 22:11:23,784 - INFO - ('9956592', '/stamp/stamp.jsp?tp=&arnumber=9956592')
+2024-10-15 22:11:38-con9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6592\9956592\9956592.pdf
+2024-10-15 22:11:38-con9224-INFO-2024-10-15 22:11:38,724 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6592\9956592\9956592.pdf)
+2024-10-15 22:11:38-con9224-INFO-2024-10-15 22:11:38,820 - INFO - 下载完成9956592
+2024-10-15 22:12:04-con9224-INFO-2024-10-15 22:12:04,827 - INFO - ('9956173', '/stamp/stamp.jsp?tp=&arnumber=9956173')
+2024-10-15 22:12:48-con9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6173\9956173\9956173.pdf
+2024-10-15 22:12:48-con9224-INFO-2024-10-15 22:12:48,699 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6173\9956173\9956173.pdf)
+2024-10-15 22:12:48-con9224-INFO-2024-10-15 22:12:48,803 - INFO - 下载完成9956173
+2024-10-15 22:13:08-con9224-INFO-2024-10-15 22:13:08,811 - INFO - ('9956059', '/stamp/stamp.jsp?tp=&arnumber=9956059')
+2024-10-15 22:28:03-con9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\6059\9956059\9956059.pdf
+2024-10-15 22:28:03-con9224-INFO-2024-10-15 22:28:03,277 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\6059\9956059\9956059.pdf)
+2024-10-15 22:28:03-con9224-INFO-2024-10-15 22:28:03,410 - INFO - 下载完成9956059
+2024-10-15 22:28:26-con9224-INFO-2024-10-15 22:28:26,422 - INFO - ('10650530', '/stamp/stamp.jsp?tp=&arnumber=10650530')
+2024-10-15 22:28:43-con9224-INFO-2024-10-15 22:28:43,673 - INFO - PDF IS ERROR!
+2024-10-15 22:28:48-con9224-INFO-2024-10-15 22:28:48,689 - INFO - ('10651254', '/stamp/stamp.jsp?tp=&arnumber=10651254')
+2024-10-15 22:31:16-con9224-INFO-\\192.168.1.143\d\外文全文\ieee\full_text\1254\10651254\10651254.pdf
+2024-10-15 22:31:16-con9224-INFO-2024-10-15 22:31:16,656 - INFO - write file: (\\192.168.1.143\d\外文全文\ieee\full_text\1254\10651254\10651254.pdf)
+2024-10-15 22:31:16-con9224-INFO-2024-10-15 22:31:16,759 - INFO - 下载完成10651254
+2024-10-15 22:31:44-con9224-INFO-2024-10-15 22:31:44,774 - INFO - ('10650297', '/stamp/stamp.jsp?tp=&arnumber=10650297')
+2024-10-15 22:31:47-con9224-INFO-2024-10-15 22:31:47,248 - INFO - PDF IS ERROR!
+2024-10-15 22:31:52-con9224-INFO-2024-10-15 22:31:52,252 - INFO - ('10650275', '/stamp/stamp.jsp?tp=&arnumber=10650275')
+2024-10-15 22:31:52-con9224-INFO-2024-10-15 22:31:52,765 - INFO - PDF IS ERROR!
+2024-10-15 22:31:57-con9224-INFO-2024-10-15 22:31:57,775 - INFO - ('10650281', '/stamp/stamp.jsp?tp=&arnumber=10650281')
+2024-10-15 22:31:59-con9224-INFO-2024-10-15 22:31:59,110 - INFO - PDF IS ERROR!
+2024-10-15 22:32:03-con9224-INFO-2024-10-15 22:32:03,113 - INFO - ('10650422', '/stamp/stamp.jsp?tp=&arnumber=10650422')
+2024-10-15 22:32:03-con9224-INFO-2024-10-15 22:32:03,627 - INFO - PDF IS ERROR!
+2024-10-15 22:32:06-con9224-INFO-2024-10-15 22:32:06,630 - INFO - ('10651234', '/stamp/stamp.jsp?tp=&arnumber=10651234')
+2024-10-15 22:32:08-con9224-INFO-2024-10-15 22:32:08,691 - INFO - PDF IS ERROR!
+2024-10-15 22:32:11-con9224-INFO-2024-10-15 22:32:11,702 - INFO - ('10651316', '/stamp/stamp.jsp?tp=&arnumber=10651316')
+2024-10-15 22:32:16-con9224-INFO-2024-10-15 22:32:16,978 - INFO - PDF IS ERROR!
+2024-10-15 22:32:20-con9224-INFO-2024-10-15 22:32:20,982 - INFO - 连续请求失败五次退出程序
+2024-10-15 22:32:20-con9224-ERROR-Traceback (most recent call last):
+2024-10-15 22:32:20-con9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院会议9224.py", line 122, in <module>
+2024-10-15 22:32:20-con9224-ERROR-main()
+2024-10-15 22:32:20-con9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院会议9224.py", line 116, in main
+2024-10-15 22:32:20-con9224-ERROR-Consumer('con_xkfwpt').read_message(callback)
+2024-10-15 22:32:20-con9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\message_que\rabbitmq.py", line 66, in read_message
+2024-10-15 22:32:20-con9224-ERROR-self._channel.start_consuming()
+2024-10-15 22:32:20-con9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1883, in start_consuming
+2024-10-15 22:32:20-con9224-ERROR-self._process_data_events(time_limit=None)
+2024-10-15 22:32:20-con9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 2044, in _process_data_events
+2024-10-15 22:32:20-con9224-ERROR-self.connection.process_data_events(time_limit=time_limit)
+2024-10-15 22:32:20-con9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 851, in process_data_events
+2024-10-15 22:32:21-con9224-ERROR-self._dispatch_channel_events()
+2024-10-15 22:32:21-con9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 567, in _dispatch_channel_events
+2024-10-15 22:32:21-con9224-ERROR-impl_channel._get_cookie()._dispatch_events()
+2024-10-15 22:32:21-con9224-ERROR-File "D:\python\lib\site-packages\pika\adapters\blocking_connection.py", line 1510, in _dispatch_events
+2024-10-15 22:32:21-con9224-ERROR-consumer_info.on_message_callback(self, evt.method,
+2024-10-15 22:32:21-con9224-ERROR-File "D:\workfile\PycharmProjects\ieee\消息队列采集pdf\IEEE中物院pdf采集\中物院会议9224.py", line 66, in callback
+2024-10-15 22:32:21-con9224-ERROR-raise RuntimeError('cookies失效')
+2024-10-15 22:32:21-con9224-ERROR-RuntimeError: cookies失效
