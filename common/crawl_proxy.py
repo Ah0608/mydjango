@@ -12,7 +12,7 @@ def crawl():
     res = requests.get(url='http://127.0.0.1:8000/proxypool/allproxy/').json()
     ips = res['data']
     ip_num = len(ips)
-    if ip_num > 50:
+    if ip_num > 30:
         print(f'代理池现有ip个数{ip_num},本次采集已跳过')
         return
     freeclashnode()
