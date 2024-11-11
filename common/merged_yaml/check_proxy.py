@@ -68,8 +68,12 @@ def fetch_url(ip):
         host = ip.split('://')[-1]
         type = ip.split('://')[0]
         avg_speed = round(speed_five / 2, 2)
-        right_ips.append(ip)
-        ProxyPool.objects.create(ip=host, type=type, speed=avg_speed)
+        try:
+            right_ips.append(ip)
+            ProxyPool.objects.create(ip=host, type=type, speed=avg_speed)
+        except:
+            logger.info('数据插入失败')
+            pass
 
 
 def check_socks_proxy():
@@ -77,8 +81,6 @@ def check_socks_proxy():
     local_ip = get_local_ip()
     socks_proxy = ['socks5://{}:{}'.format(local_ip, port) for port in socks5_ports]
     logger.info('共有{}个代理'.format(len(socks_proxy)))
-    if len(socks_proxy) == 0:
-        raise FileNotFoundError('代理数量为0')
     logger.info(socks_proxy)
     ProxyPool.objects.all().delete()
     right_ips.clear()

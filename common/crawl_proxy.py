@@ -18,7 +18,7 @@ def crawl():
     freeclashnode()
     sleep(5)
     times = 1
-    while times <= 5:
+    while times <= 3:
         try:
             merge_and_import_proxy()
             sleep(5)

@@ -11,17 +11,16 @@ from loguru import logger
 from itertools import combinations
 
 
-def merge_yaml(exclude_files=[]):
+def merge_yaml(all_files=[]):
     process = subprocess.Popen(['common/merged_yaml/subconverter_win64/subconverter/subconverter.exe'])
     time.sleep(1)
     folder_path = 'common/merged_yaml/yaml_list'
     path_list = []
-    for item in os.listdir(folder_path):
-        if item not in exclude_files:
-            item_path = os.path.join(folder_path, item)
-            absolute_path = os.path.abspath(item_path)
-            path_list.append('\"' + absolute_path + '\"')
-            logger.info(absolute_path)
+    for item in all_files:
+        item_path = os.path.join(folder_path, item)
+        absolute_path = os.path.abspath(item_path)
+        path_list.append('\"' + absolute_path + '\"')
+        logger.info(absolute_path)
     path_list_str = '|'.join(path_list)
     encoded_filepath = urllib.parse.quote(path_list_str)
     url = f'http://127.0.0.1:25500/sub?target=clash&url={encoded_filepath}&insert=false'
@@ -32,9 +31,11 @@ def merge_yaml(exclude_files=[]):
     logger.success('合并文件已写入')
     logger.info('开始转换yaml文件')
     time.sleep(1)
-    subprocess.run(['node', 'common/merged_yaml/clash_proxy/format_conversion.js'], capture_output=True, text=True,
-                            encoding='utf-8')
-    logger.success('订阅文件转换成功')
+    result = subprocess.run(['node', 'common/merged_yaml/clash_proxy/format_conversion.js'], capture_output=True, text=True,encoding='utf-8')
+    if result.returncode == 0:
+        logger.success('订阅文件转换成功')
+    else:
+        raise RuntimeError('订阅文件转换失败')
     process.terminate()
     process.wait()
 
@@ -95,16 +96,14 @@ def merge_and_import_proxy():
 
     folder_path = 'common/merged_yaml/yaml_list'
     yaml_files = os.listdir(folder_path)
-    all_combinations = []
 
-    for i in range(1, len(yaml_files) + 1):
-        all_combinations.extend(combinations(yaml_files, i))
-    for combo in all_combinations:
+    yaml_lists = []
+    for file in yaml_files:
+        yaml_lists.append(file)
+        logger.info(f'正在合并文件：{yaml_lists}')
         try:
-            logger.info(f"尝试排除文件组合: {combo}")
-            merge_yaml(exclude_files=list(combo))
-            auto_import_proxy()
-            return
-        except:
-            logger.error(f"排除文件组合 {combo} 后仍然报错")
-            logger.info(f"恢复文件组合 {combo} 的合并")
+            merge_yaml(yaml_lists)
+        except Exception:
+            logger.error(f"合并文件 {yaml_lists} 失败.")
+            yaml_lists.remove(file)
+    logger.info(f'成功合并{yaml_lists}')
