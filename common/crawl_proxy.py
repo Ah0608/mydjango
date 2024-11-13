@@ -8,7 +8,7 @@ from common.merged_yaml.crawl_yaml_file import freeclashnode
 
 
 def crawl():
-    sleep(15)
+    sleep(10)
     res = requests.get(url='http://127.0.0.1:8000/proxypool/allproxy/').json()
     ips = res['data']
     ip_num = len(ips)

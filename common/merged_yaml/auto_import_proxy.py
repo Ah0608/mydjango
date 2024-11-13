@@ -8,7 +8,6 @@ import time
 import urllib.parse
 from curl_cffi import requests
 from loguru import logger
-from itertools import combinations
 
 
 def merge_yaml(all_files=[]):
@@ -104,6 +103,7 @@ def merge_and_import_proxy():
         try:
             merge_yaml(yaml_lists)
         except Exception:
-            logger.error(f"合并文件 {yaml_lists} 失败.")
+            logger.error(f"合并文件失败.已经排除文件{file}")
             yaml_lists.remove(file)
     logger.info(f'成功合并{yaml_lists}')
+    auto_import_proxy()

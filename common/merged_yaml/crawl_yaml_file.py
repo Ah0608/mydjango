@@ -51,7 +51,6 @@ def freeclashnode():
         f'https://oneclash.githubrowcontent.com/{year}/{month.zfill(2)}/{year}{month.zfill(2)}{day.zfill(2)}.yaml',
         'https://proxy.v2gh.com/https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub',
         'https://raw.githubusercontent.com/ssrsub/ssr/master/ss-sub',
-        f'http://wzm.api-node.shop/node/{date.replace("-","")}-clash.yaml'
     ]
     url = 'https://www.freeclashnode.com/free-node/'
     res = get_clash(url)
