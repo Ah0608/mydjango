@@ -51,6 +51,10 @@ def freeclashnode():
         f'https://oneclash.githubrowcontent.com/{year}/{month.zfill(2)}/{year}{month.zfill(2)}{day.zfill(2)}.yaml',
         'https://proxy.v2gh.com/https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub',
         'https://raw.githubusercontent.com/ssrsub/ssr/master/ss-sub',
+        'https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml',
+        'https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml',
+        'https://ghp.ci/https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/c.yaml',
+        'https://raw.githubusercontent.com/adiwzx/freenode/main/adispeed.yml',
     ]
     url = 'https://www.freeclashnode.com/free-node/'
     res = get_clash(url)
@@ -61,17 +65,12 @@ def freeclashnode():
     sel1 = Selector(res1.text)
     yaml_url_list = sel1.xpath("//p[contains(text(),'ml')]/text()").getall()
     yaml_url_list.extend(node_urls)
-    try:
-        res2 = get_clash(f'https://telegeam.github.io/clashnode/free-nodes/{year}-{month}-{day}-clash-ssr.htm', proxies=proxies).text
-        sel2 = Selector(res2)
-        node_urls1 = sel2.xpath("//p[contains(text(),'ml')]/text()").getall()[:2]
-        yaml_url_list.extend(node_urls1)
-    except Exception as e:
-        logger.error(f'请求失败: {e}')
     if yaml_url_list:
         delete_all_files_in_directory('common/merged_yaml/yaml_list')
         logger.success('文件清除成功')
         for index, yaml_url in enumerate(yaml_url_list):
+            if index == 4 or index == 2:
+                continue
             logger.info('正在请求：{}'.format(yaml_url))
             file_name = 'common/merged_yaml/yaml_list/{}_{}.yaml'.format(date, index)
             try:

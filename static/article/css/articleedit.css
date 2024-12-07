@@ -35,3 +35,7 @@
 .breadcrumb > li > a {
     text-decoration: none;
 }
+
+.update {
+    width: 90%;
+}

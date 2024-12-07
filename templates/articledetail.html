@@ -4,7 +4,7 @@
 {% block extracss %}
     <link rel="stylesheet" href="{% static 'article/css/articledetail.css' %}">
     <link rel="stylesheet" href="{% static 'article/css/code.css' %}">
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+    <link rel="stylesheet" href="{% static 'other/css/sweetalert2.css' %}">
 {% endblock %}
 
 {% block title %}文章详情页{% endblock %}
@@ -70,6 +70,4 @@
 
 {% block extrajs %}
     <script src="{% static 'article/js/articledetail.js' %}"></script>
-    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 {% endblock %}

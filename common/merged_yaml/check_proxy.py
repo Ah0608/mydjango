@@ -81,6 +81,8 @@ def check_socks_proxy():
     local_ip = get_local_ip()
     socks_proxy = ['socks5://{}:{}'.format(local_ip, port) for port in socks5_ports]
     logger.info('共有{}个代理'.format(len(socks_proxy)))
+    if len(socks_proxy) == 0:
+        raise RuntimeError("没有找到可用的代理")
     logger.info(socks_proxy)
     ProxyPool.objects.all().delete()
     right_ips.clear()

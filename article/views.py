@@ -41,11 +41,11 @@ def article_detail(request, pk):
     article = Article.objects.filter(id=pk, author_id=user.id).first()
 
     # 获取前一篇文章的 id
-    previous_article = Article.objects.filter(id__lt=pk,is_delete=False).order_by('-id').first()
+    previous_article = Article.objects.filter(id__gt=pk,is_delete=False).order_by('id').first()
     previous_article_obj = previous_article if previous_article else None
 
     # 获取后一篇文章的 id
-    next_article = Article.objects.filter(id__gt=pk,is_delete=False).order_by('id').first()
+    next_article = Article.objects.filter(id__lt=pk,is_delete=False).order_by('-id').first()
     next_article_obj = next_article if next_article else None
 
     article.content = markdown.markdown(article.content, extensions=mark_config)

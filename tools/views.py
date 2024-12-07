@@ -99,12 +99,6 @@ def List(request):
             'introduction': '功能齐全，SEO、各网站权重、友链、备案、IP 查询等等实用工具。'
         },
         {
-            'url': 'https://jihuo.online',
-            'image': 'user/images/jihuo.png',
-            'name': '小鹿激活码',
-            'introduction': 'JetBrains 全家桶激活，系统镜像下载。'
-        },
-        {
             'url': 'https://spiderapi.cn',
             'image': 'user/images/spiderapi.png',
             'name': 'SpiderApi',
@@ -153,16 +147,22 @@ def List(request):
             'introduction': 'JSON数据可视化工具，支持放大/缩小、展开/收缩、搜索节点、导出图片等操作。'
         },
         {
-            'url': 'https://wanglin2.github.io/mind-map/',
-            'image': 'user/images/mindmap.ico',
-            'name': '思绪思维导图',
-            'introduction': '一个相对强大的Web思维导图工具。它提供了灵活的绘图功能和易于使用的界面，帮助用户有效地组织和展示思维。'
+            'url': 'https://zhimap.com/',
+            'image': 'user/images/zhimap.png',
+            'name': 'ZhiMap思维导图',
+            'introduction': '一款在线思维导图工具，可以帮助用户创建、编辑和分享思维导图。'
         },
         {
             'url': 'https://www.cnblogs.com/xiaoweigege/p/14954648.html',
             'image': 'user/images/hook.ico',
             'name': 'js-Hook代码',
             'introduction': '常见的js-hook代码合集。'
+        },
+        {
+            'url': 'https://www.runoob.com',
+            'image': 'user/images/cainiao.ico',
+            'name': '菜鸟教程',
+            'introduction': '提供了编程的基础技术教程, 介绍了HTML、CSS、Javascript、Python，Java，Ruby，C，PHP , MySQL等各种编程语言的基础知识。'
         },
     ]
     lapping_tools = [
