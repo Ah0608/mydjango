@@ -1,0 +1,193 @@
+/* 动画 */
+@keyframes bg {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes modify {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+html,
+body,
+.main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    min-width: 1600px;
+
+    overflow: hidden;
+}
+
+/* 背景 */
+.background {
+    display: flex;
+    flex-direction: row-reverse;
+    /* 根据图片需求可以修改表单所处位置 */
+    width: 100%;
+    height: 100vh;
+    background: url("../images/register.jpg") no-repeat center;
+    background-size: cover;
+
+    animation: bg 0.5s;
+}
+
+/* 重置密码表单域 */
+.modify-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 600px;
+    height: 100%;
+    background: rgb(143, 132, 100, .4);
+    backdrop-filter: blur(16px);
+
+    animation: modify 1.2s;
+}
+
+.modify-block .modify-title {
+    font-size: 32px;
+    color: white;
+}
+
+.modify-block .modify-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+}
+
+.modify-block .modify-form input {
+    width: 100%;
+    height: 42px;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    padding: 0 8px;
+    text-align: center;
+    transition: all 0.5s;
+    margin-bottom: 20px;
+}
+
+.modify-block .modify-form input::placeholder {
+    color: white !important;
+    font-size: 15px;
+    opacity: 0.65;
+}
+
+#sendButton {
+    color: white !important;
+    font-size: 15px;
+}
+
+.modify-block .modify-form input:focus {
+    border-bottom: 1px solid rgb(255, 125, 147);
+}
+
+.modify-block .modify-form .code-pane {
+    width: 370px;
+    border-bottom: 1px solid white;
+    margin-bottom: 32px;
+    transition: all 0.5s;
+}
+
+.modify-block .modify-form .code-pane:focus-within {
+    border-bottom: 1px solid rgb(255, 125, 147);
+}
+
+.modify-block .modify-form .code-pane #email {
+    width: 55%;
+    border: none;
+    margin: 0;
+}
+
+.modify-block .modify-form .code-pane .code-button {
+    width: 30%;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s;
+    opacity: 0.65;
+}
+
+.modify-block .modify-form .modify-button {
+    background-color: rgb(255, 125, 147);
+    width: 370px;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border: none;
+    border-radius: 1px;
+    display: block;
+    cursor: pointer;
+    margin: 20px 0 30px 0
+
+}
+
+.modify-block .modify-form .modify-button:hover {
+    opacity: 0.5;
+}
+
+.modify-block .link {
+    display: flex;
+    justify-content: space-between;
+    width: 370px;
+}
+
+.modify-block .link a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+.modify-block .link a:hover {
+    color: rgb(255, 125, 147);
+}
+
+.modify_tip {
+    margin-top: -15px;
+    height: 20px;
+    color: red;
+    font-size: 0.8em;
+}
+
+#email_error {
+    margin-top: -15px;
+}
+
+.log-icon {
+    position: relative;
+    width: 150px;
+    height: 120px;
+    background-image: url('../images/log.png');
+    background-size: cover;
+    opacity: 0.8;
+    margin-top: -200px;
+}

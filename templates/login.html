@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome后台登录</title>
+    <link rel="stylesheet" href="{% static 'user/css/login.css' %}">
+    <script src="{% static 'jquery/2.1.2_jquery.js' %}"></script>
+</head>
+
+<body>
+<div class="main">
+    <div class="background">
+        <div class="login-block">
+            <span class="log-icon"></span>
+            <p class="login-title">用户登录</p>
+            <form class="login-form" action="" method="post">
+                {% csrf_token %}
+                {{ login_form.username }}
+                <label><img src="../static/user/images/close.png" id="eyes" alt=""></label>
+                {{ login_form.password }}
+                <div class="code-pane">
+                    {{ login_form.captcha }}
+                    {% if login_form.captcha.errors %}
+                        <p class="captcha_error">验证码输入错误</p>
+                    {% endif %}
+                </div>
+                {% if messages %}
+                    {% for message in messages %}
+                        <div id="error-message" class="error-message">{{ message }}</div>
+                    {% endfor %}
+                {% else %}
+                    <div id="error-message" class="error-message"></div>
+                {% endif %}
+                <button type="submit" class="login-button">登录</button>
+            </form>
+            <div class="link">
+                <a href="{% url 'register' %}" class="register">注册账号</a>
+                <a href="{% url 'forgetpassword' %}" class="forget">忘记密码？</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="{% static 'user/js/login.js' %}"></script>
+
+</html>

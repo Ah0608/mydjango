@@ -1,0 +1,52 @@
+.calendar-area {
+    width: 800px;
+    max-width: 800px;
+    min-height: 600px;
+    height: 600px;
+}
+
+.content {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+}
+
+.fc-title {
+    word-wrap: break-word; /* 对长单词进行换行 */
+    overflow-wrap: break-word; /* 处理旧浏览器 */
+    white-space: normal; /* 确保文本可以正常换行 */
+}
+
+.legend {
+    width: 100%;
+    margin: 10px 5px;
+}
+
+.legend-item {
+    width: 65px;
+    height: 20px;
+    margin-right: 5px;
+    float: right;
+    border-radius: 3px;
+    text-align: center;
+    color: white;
+}
+
+.legend-description {
+    color: black;
+    width: 70px;
+}
+
+.fc-right {
+    margin-right: 5px;
+}
+
+.fc-left {
+    margin-left: 5px;
+}
+
+.has-feedback .form-control {
+    padding-right: 0;
+}

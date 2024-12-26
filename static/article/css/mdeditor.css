@@ -1,0 +1,77 @@
+.content {
+    background-color: #f9f2f4;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.breadcrumb-area {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.breadcrumb {
+    float: left;
+}
+
+.breadcrumb > li > a {
+    text-decoration: none;
+}
+
+.create {
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 调整表单元素的间距 */
+.create form p {
+    margin-bottom: 15px;
+}
+
+/* 美化输入框 */
+.create input[type="text"],
+.create textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.create textarea {
+    height: 100px;
+}
+
+.create input[type="text"]:focus,
+.create textarea:focus {
+    border-color: #5cb3fd;
+    outline: none;
+}
+
+.center-button {
+    text-align: center;
+}
+
+.btn-info {
+    background-color: #5cb3fd;
+    border-color: #5cb3fd;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-info:hover {
+    background-color: #4aa0e6;
+    border-color: #4aa0e6;
+}

@@ -1,0 +1,116 @@
+.content {
+    margin: 0 auto;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: auto;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.column_6 {
+    width: 180px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.Platform-area {
+    max-width: 600px;
+    min-height: 550px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.modal {
+    text-align: center;
+}
+
+.task-modal {
+    text-align: left;
+}
+
+.modal:after {
+    display: inline-block;
+    height: 100%;
+    margin-left: -0.05em;
+    content: "";
+    vertical-align: middle;
+}
+
+.task-form > input {
+    margin-bottom: 20px;
+}
+
+.create-button, .modify-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.more_menu {
+    min-width: 80px;
+    max-width: 100px;
+}
+
+#drop4 {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-menu > li > button {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    margin: 3px 0;
+    border: none;
+    white-space: nowrap;
+    background-color: transparent;
+}
+
+.dropdown-menu > li > button:hover {
+    background-color: #3c8dbc;
+}
+
+.platform-head {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 95%;
+    margin: 15px auto;
+}
+
+.task-search {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.add-task {
+    margin-left: 10px;
+}
+
+.more-option {
+    margin-right: auto;
+}
+
+#inputBox {
+    height: 28px;
+}

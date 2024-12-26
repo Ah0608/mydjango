@@ -1,0 +1,32 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.form-group {
+    position: relative;
+}
+
+pre {
+    position: relative;
+}
+
+.btn-copy {
+    margin-left: 10px;
+}
+
+#errormessage {
+    display: none;
+}
+
+.code {
+    display: none;
+}

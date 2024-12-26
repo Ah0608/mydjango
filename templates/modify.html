@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome后台重置密码</title>
+    <link rel="stylesheet" href="{% static 'user/css/modify.css' %}">
+    <script src="{% static 'jquery/2.1.2_jquery.js' %}"></script>
+</head>
+
+<body>
+<div class="main">
+    <div class="background">
+        <div class="modify-block">
+            <span class="log-icon"></span>
+            <p class="modify-title">重置密码</p>
+            <form class="modify-form" action="{% url 'modifypassword' %}" method="post">
+                {% csrf_token %}
+                <input type="hidden" value="{{ email }}" name="email">
+                <input type="password" name="password" maxlength="16" minlength="8" class="form-control"
+                       placeholder="请输入密码" id="password" required="">
+                <span class="modify_tip" id="password_feedback"></span>
+                <input type="password" name="confirm_pwd" maxlength="16" minlength="8" class="form-control"
+                       placeholder="请输确认入密码" id="confirm_pwd" required="">
+                <span class="modify_tip" id="password_error"></span>
+                <button type="submit" class="modify-button">修改密码</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="{% static 'user/js/modify.js' %}"></script>
+
+</html>

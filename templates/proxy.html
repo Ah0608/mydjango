@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extracss %}
+    <link href="{% static 'proxypool/css/proxy.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}Awesome后台代理池{% endblock %}
+
+{% block main_content %}
+    <h1>代理池</h1>
+
+    <div class="check-content">
+        <input type="text" name="check" class="form-control" placeholder="检测目标网站" id="check" required="">
+        <span class="tip" id="request-error"></span>
+        <button type="submit" class="btn btn-success check-button" id="start-check">开始检测</button>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>IP</th>
+            <th>IP类型</th>
+            <th>验证时间</th>
+            <th>请求速度</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for proxy in page_obj %}
+            <tr>
+                <td>{{ proxy.ip }}</td>
+                <td>{{ proxy.type }}</td>
+                <td>{{ proxy.validation_time }}</td>
+                <td>{{ proxy.speed }}/s</td>
+                <td class="option">
+                <button type="submit" class="btn btn-danger del-btn" data-id="{{ proxy.id }}">删除</button>
+                <button type="button" class="btn btn-info" id="copy{{ forloop.counter }}">复制IP</button>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% if page_obj.has_other_pages %}
+        <ul class="pagination">
+            {% if page_obj.has_previous %}
+                <li><a href="?page=1">First</a></li>
+                <li><a href="?page={{ page_obj.previous_page_number }}">Previous</a></li>
+            {% endif %}
+
+            {% for num in page_range %}
+                {% if page_obj.number == num %}
+                    <li class="active"><span>{{ num }}</span></li>
+                {% else %}
+                    <li><a href="?page={{ num }}">{{ num }}</a></li>
+                {% endif %}
+            {% endfor %}
+
+            {% if page_obj.has_next %}
+                <li><a href="?page={{ page_obj.next_page_number }}">Next</a></li>
+                <li><a href="?page={{ page_obj.paginator.num_pages }}">Last</a></li>
+            {% endif %}
+        </ul>
+    {% endif %}
+{% endblock %}
+
+{% block extrajs %}
+    <script src="{% static 'proxypool/js/proxy.js' %}"></script>
+{% endblock %}

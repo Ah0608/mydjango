@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome后台邮箱验证</title>
+    <script src="{% static 'jquery/2.1.2_jquery.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'user/css/forget.css' %}">
+</head>
+
+<body>
+<div class="main">
+    <div class="background">
+        <div class="forget-block">
+            <span class="log-icon"></span>
+            <p class="forget-title">邮箱验证</p>
+            <form class="forget-form" action="" method="post">
+                {% csrf_token %}
+                <div class="code-pane">
+                    {{ forget_form.email }}
+                    <input type="button" class="code-button" id="sendButton" onclick="sendEmail()" value="获取验证码"/>
+                    <span id="countdown"></span>
+                </div>
+                <span class="forget_tip" id="email_error"></span>
+                {{ forget_form.verifycode }}
+                <span class="forget_tip" id="code_error"></span>
+                <button type="submit" class="forget-button">立即验证</button>
+            </form>
+            <div class="link">
+                <a href="{% url 'login' %}" class="login">返回登录</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="{% static 'user/js/forget.js' %}"></script>
+
+</html>

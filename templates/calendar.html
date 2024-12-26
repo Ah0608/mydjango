@@ -1,0 +1,218 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extracss %}
+    <link rel="stylesheet" href="{% static 'plan/css/fullcalendar.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plan/css/select2.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plan/css/bootstrap-datetimepicker.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plan/css/calendar.css' %}">
+{% endblock %}
+
+{% block title %}Awesome工作计划{% endblock %}
+
+{% block main_content %}
+    <div class="legend">
+        <span class="legend-item" style="background-color: #00a65a;">项目记录</span>
+        <span class="legend-item" style="background-color: #dd4b39;">日程安排</span>
+        <span class="legend-item" style="background-color: #0073b7;">工作报告</span>
+        <span class="legend-item legend-description" style="background-color: #f1f1f1">图例说明：</span>
+    </div>
+    <section class="c-content">
+        <div class="box box-primary">
+            <div class="box-body no-padding">
+                <div id="calendar">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="CalendarModal" tabindex="-1" role="dialog" aria-labelledby="CalendarModalLabel">
+        <div class="modal-dialog calendar-area" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="CalendarModalLabel">新建计划</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="box box-danger">
+                        <form class="form-horizontal" id="addForm" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name='user' value="{{ request.user.id }}"/>
+                            <p class="box-body">
+                            <fieldset>
+                                <div class="form-group has-feedback">
+                                    <label class="col-sm-2 control-label">日报类型</label>
+                                    <div class="col-sm-3">
+                                        <select class="form-control select2" style="width:100%;" name="category">
+                                            {% for category in category_all %}
+                                                <option value="{{ category.key }}">{{ category.value }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group has-feedback">
+                                    <label class="col-sm-2 control-label">开始时间</label>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control pull-right form_datetime"
+                                               name="start_time" readonly>
+                                    </div>
+                                    <label class="col-sm-2 control-label">结束时间</label>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control pull-right form_datetime" name="end_time"
+                                               readonly/>
+                                    </div>
+                                </div>
+                                <div class="form-group has-feedback">
+                                    <label class="col-sm-2 control-label">报告内容</label>
+                                    <div class="col-sm-8">
+                                        <textarea class="form-control" name="content" rows="5"></textarea>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <div class="box-footer ">
+                                <div class="row span7 text-center ">
+                                    <button type="button" id="resetBtn" class="btn btn-info margin-right ">重置
+                                    </button>
+                                    <button type="button" id="btnSave" class="btn btn-success margin-right ">保存</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block extrajs %}
+    <script src="{% static 'plan/js/moment.min.js' %}"></script>
+    <script src="{% static 'plan/js/fullcalendar.min.js' %}"></script>
+    <script src="{% static 'plan/js/bootstrap-datetimepicker.js' %}"></script>
+    <script src="{% static 'plan/js/select2.full.min.js' %}"></script>
+    <script type="text/javascript">
+        // 重置表单所有内容
+        $("#resetBtn").click(function () {
+            $("form input[type='text'],form textarea").val("");
+        });
+
+        $("#btnSave").click(function () {
+            const data = $("#addForm").serialize();
+            $.ajax({
+                type: 'post',
+                url: "{% url 'calendar_create' %}",
+                data: data,
+                cache: false,
+                success: function (response) {
+                    if (response.status) {
+                        window.location.reload();
+                    } else {
+                    }
+                }
+            });
+        });
+
+        /*input 时间输入选择*/
+        $(".form_datetime").datetimepicker({
+            language: 'zh',
+            //minView: 'month',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            forceParse: 0,
+            //format: 'yyyy-mm-dd hh:ss'
+        }).on('changeDate', function (ev) {
+            $(this).datetimepicker('hide');
+        });
+
+        // select2
+        $(function () {
+            //Initialize Select2 Elements
+            $(".select2").select2();
+        });
+
+        $(function () {
+            //初始化FullCalendar
+            $('#calendar').fullCalendar({
+                buttonText: {
+                    today: '今天',
+                    month: '月',
+                    week: '周',
+                    day: '日',
+                },
+                allDayText: "全天",
+                timeFormat: 'HH:mm',
+                views: {
+                    month: {titleFormat: 'YYYY年MMMM月'},
+                    week: {titleFormat: 'YYYY年MMMM月'},
+                    day: {titleFormat: 'YYYY年MMMM月D日'},
+                },
+                monthNames: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+                monthNamesShort: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+                dayNames: ["星期天", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
+                dayNamesShort: ["星期天", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
+                //defaultView: 'agendaWeek',
+                contentHeight: 650,
+                header: {
+                    //日历头部左边：初始化切换按钮
+                    left: 'prev,next today,myCustomButton',
+                    //日历头部中间：显示当前日期信息
+                    center: 'title',
+                    //日历头部右边：初始化视图，并添加自定义按钮
+                    right: 'month,agendaWeek,agendaDay'
+                },
+                // 增添新建计划按钮
+                customButtons: {
+                    myCustomButton: {
+                        text: '添加',
+                        click: function () {
+                            $('#CalendarModal').modal('show'); // 显示模态框
+                        },
+                    }
+                },
+                //设置是否显示周六和周日，设为false则不显示
+                weekends: true,
+                // 点击日期进行添加计划
+                dayClick: function (date, view) {
+                    $('#CalendarModal').modal('show'); // 显示模态框
+                    $("input[name='start_time']").val(date.format("YYYY-MM-DD") + " 00:00");
+                },
+                //修改日程数据
+                eventClick: function (calEvent, jsEvent, view) {
+                    window.location.href = '/plan/detail/' + calEvent.id;
+                },
+                // 日程展示
+                displayEventEnd: true,
+                eventRender: function (event, element) {
+                    // 获取事件的开始和结束时间
+                    const star_tTime = event.start.format('MM-DD HH:mm');
+
+                    const end_tTime = event.end.format('MM-DD HH:mm');
+
+                    // 在事件元素中添加结束时间
+                    element.find('.fc-time').text(star_tTime + ' 至 ' + end_tTime);
+                },
+                events: [
+                    {% for my_report in my_report_all %}
+                        {
+                            id: '{{ my_report.id }}',
+                            title: '{{ my_report.content }}',
+                            start: '{{ my_report.start_time | date:"Y-m-d H:i" }}',
+                            end: '{{ my_report.end_time | date:"Y-m-d H:i" }}',
+                            {% if my_report.category == '0'  %}
+                                backgroundColor: '#0073b7',
+                            {% elif my_report.category == '1' %}
+                                backgroundColor: '#00a65a',
+                            {% else %}
+                                backgroundColor: '#dd4b39',
+                            {% endif %}
+                        },
+                    {% endfor %}
+                ],
+            });
+        });
+    </script>
+{% endblock %}

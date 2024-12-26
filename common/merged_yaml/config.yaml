@@ -1,0 +1,566 @@
+allow-lan: true
+dns:
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+    - 114.114.114.114
+  nameserver:
+    - https://doh.pub/dns-query
+listeners:
+  - name: mixed0
+    type: mixed
+    port: 42000
+    proxy: 香港01
+  - name: mixed1
+    type: mixed
+    port: 42001
+    proxy: 香港02
+  - name: mixed2
+    type: mixed
+    port: 42002
+    proxy: 香港03
+  - name: mixed3
+    type: mixed
+    port: 42003
+    proxy: 香港04
+  - name: mixed4
+    type: mixed
+    port: 42004
+    proxy: 香港05
+  - name: mixed5
+    type: mixed
+    port: 42005
+    proxy: 香港06 -NF
+  - name: mixed6
+    type: mixed
+    port: 42006
+    proxy: 香港07 -NF
+  - name: mixed7
+    type: mixed
+    port: 42007
+    proxy: 新加坡01 -NF/GPT
+  - name: mixed8
+    type: mixed
+    port: 42008
+    proxy: 新加坡02 -NF/GPT
+  - name: mixed9
+    type: mixed
+    port: 42009
+    proxy: 新加坡03 -NF/GPT
+  - name: mixed10
+    type: mixed
+    port: 42010
+    proxy: 新加坡04 -NF/GPT
+  - name: mixed11
+    type: mixed
+    port: 42011
+    proxy: 新加坡05 -NF/GPT
+  - name: mixed12
+    type: mixed
+    port: 42012
+    proxy: 新加坡06 -NF
+  - name: mixed13
+    type: mixed
+    port: 42013
+    proxy: 新加坡07 -NF/GPT
+  - name: mixed14
+    type: mixed
+    port: 42014
+    proxy: 新加坡08 -NF/GPT
+  - name: mixed15
+    type: mixed
+    port: 42015
+    proxy: 日本01 -NF/GPT
+  - name: mixed16
+    type: mixed
+    port: 42016
+    proxy: 日本02 -NF/GPT
+  - name: mixed17
+    type: mixed
+    port: 42017
+    proxy: 日本03 -NF/GPT
+  - name: mixed18
+    type: mixed
+    port: 42018
+    proxy: 日本04  -NF/GPT
+  - name: mixed19
+    type: mixed
+    port: 42019
+    proxy: 日本05 -NF/GPT
+  - name: mixed20
+    type: mixed
+    port: 42020
+    proxy: 日本06 -NF/GPT
+  - name: mixed21
+    type: mixed
+    port: 42021
+    proxy: 美国01 -NF/GPT
+  - name: mixed22
+    type: mixed
+    port: 42022
+    proxy: 美国02 -NF/GPT
+  - name: mixed23
+    type: mixed
+    port: 42023
+    proxy: 美国03 -NF/GPT
+  - name: mixed24
+    type: mixed
+    port: 42024
+    proxy: 美国04 -NF/GPT
+  - name: mixed25
+    type: mixed
+    port: 42025
+    proxy: 美国05 -NF/GPT
+  - name: mixed26
+    type: mixed
+    port: 42026
+    proxy: 美国06  -NF/GPT
+  - name: mixed27
+    type: mixed
+    port: 42027
+    proxy: 美国07  -NF/GPT
+  - name: mixed28
+    type: mixed
+    port: 42028
+    proxy: 美国08  -NF/GPT
+  - name: mixed29
+    type: mixed
+    port: 42029
+    proxy: 台湾01  -NF/GPT
+  - name: mixed30
+    type: mixed
+    port: 42030
+    proxy: 台湾02  -NF/GPT
+  - name: mixed31
+    type: mixed
+    port: 42031
+    proxy: 台湾03  -NF/GPT
+  - name: mixed32
+    type: mixed
+    port: 42032
+    proxy: 台湾04  -NF/GPT
+  - name: mixed33
+    type: mixed
+    port: 42033
+    proxy: 加拿大
+  - name: mixed34
+    type: mixed
+    port: 42034
+    proxy: 澳洲
+  - name: mixed35
+    type: mixed
+    port: 42035
+    proxy: 巴西
+  - name: mixed36
+    type: mixed
+    port: 42036
+    proxy: 印度
+  - name: mixed37
+    type: mixed
+    port: 42037
+    proxy: 泰国
+  - name: mixed38
+    type: mixed
+    port: 42038
+    proxy: 马来西亚
+  - name: mixed39
+    type: mixed
+    port: 42039
+    proxy: 菲律宾
+  - name: mixed40
+    type: mixed
+    port: 42040
+    proxy: 韩国
+  - name: mixed41
+    type: mixed
+    port: 42041
+    proxy: 德国
+  - name: mixed42
+    type: mixed
+    port: 42042
+    proxy: 法国
+  - name: mixed43
+    type: mixed
+    port: 42043
+    proxy: 意大利
+  - name: mixed44
+    type: mixed
+    port: 42044
+    proxy: 英国
+  - name: mixed45
+    type: mixed
+    port: 42045
+    proxy: 荷兰
+  - name: mixed46
+    type: mixed
+    port: 42046
+    proxy: 瑞典
+  - name: mixed47
+    type: mixed
+    port: 42047
+    proxy: 土耳其
+  - name: mixed48
+    type: mixed
+    port: 42048
+    proxy: 越南
+proxies:
+  - name: 香港01
+    server: hk01.fiwekljked.top
+    port: 18591
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 香港02
+    server: hk02.fiwekljked.top
+    port: 22932
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 香港03
+    server: hk03.fiwekljked.top
+    port: 30752
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 香港04
+    server: hk04.fiwekljked.top
+    port: 29973
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 香港05
+    server: hk05.fiwekljked.top
+    port: 50960
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 香港06 -NF
+    server: hk06.fiwekljked.top
+    port: 34074
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 香港07 -NF
+    server: hk07.fiwekljked.top
+    port: 23359
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 新加坡01 -NF/GPT
+    server: sg01.gjilwemc.sbs
+    port: 13211
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 新加坡02 -NF/GPT
+    server: sg02.gjilwemc.sbs
+    port: 39744
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 新加坡03 -NF/GPT
+    server: sg03.gjilwemc.sbs
+    port: 51013
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 新加坡04 -NF/GPT
+    server: sg04.gjilwemc.sbs
+    port: 47506
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 新加坡05 -NF/GPT
+    server: sg05.gjilwemc.sbs
+    port: 34883
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 新加坡06 -NF
+    server: sg06.gjilwemc.sbs
+    port: 59179
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 新加坡07 -NF/GPT
+    server: sgp07.jilweidf.buzz
+    port: 80
+    type: vmess
+    uuid: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: sgp07.jilweidf.buzz
+    udp: true
+  - name: 新加坡08 -NF/GPT
+    server: sgp08.jilweidf.buzz
+    port: 8080
+    type: vmess
+    uuid: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: sgp08.jilweidf.buzz
+    udp: true
+  - name: 日本01 -NF/GPT
+    server: jp01.ijglsdfwefdc.top
+    port: 44218
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 日本02 -NF/GPT
+    server: jp02.ijglsdfwefdc.top
+    port: 20929
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 日本03 -NF/GPT
+    server: jp03.ijglsdfwefdc.top
+    port: 25561
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 日本04  -NF/GPT
+    server: jp04.ijglsdfwefdc.top
+    port: 18284
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 日本05 -NF/GPT
+    server: jp05.ijglsdfwefdc.top
+    port: 10685
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 日本06 -NF/GPT
+    server: jp06.ijglsdfwefdc.top
+    port: 25261
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 美国01 -NF/GPT
+    server: us01.ijglsdfwefdc.top
+    port: 27246
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 美国02 -NF/GPT
+    server: us02.ijglsdfwefdc.top
+    port: 41652
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 美国03 -NF/GPT
+    server: us03.ijglsdfwefdc.top
+    port: 41072
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 美国04 -NF/GPT
+    server: us04.ijglsdfwefdc.top
+    port: 13746
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 美国05 -NF/GPT
+    server: us05.ijglsdfwefdc.top
+    port: 44564
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 美国06  -NF/GPT
+    server: us06.ijglsdfwefdc.top
+    port: 27748
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 美国07  -NF/GPT
+    server: us07.ijglsdfwefdc.top
+    port: 36227
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 美国08  -NF/GPT
+    server: us08.ijglsdfwefdc.top
+    port: 17267
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 台湾01  -NF/GPT
+    server: tw01.jilweidf.buzz
+    port: 50920
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 台湾02  -NF/GPT
+    server: tw02.jilweidf.buzz
+    port: 50616
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 台湾03  -NF/GPT
+    server: tw03.jilweidf.buzz
+    port: 10528
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 台湾04  -NF/GPT
+    server: tw04.jilweidf.buzz
+    port: 25409
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 加拿大
+    server: ca.jilweidf.buzz
+    port: 10735
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 澳洲
+    server: au.jilweidf.buzz
+    port: 41576
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 巴西
+    server: br.jilweidf.buzz
+    port: 14327
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 印度
+    server: in.jilweidf.buzz
+    port: 32983
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 泰国
+    server: th01.jilweidf.buzz
+    port: 53502
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 马来西亚
+    server: my01.jilweidf.buzz
+    port: 49463
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 菲律宾
+    server: ph01.jilweidf.buzz
+    port: 55341
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 韩国
+    server: kr01.jilweidf.buzz
+    port: 15921
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 德国
+    server: de.jilweidf.buzz
+    port: 49439
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 法国
+    server: fr.jilweidf.buzz
+    port: 40625
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 意大利
+    server: it.jilweidf.buzz
+    port: 22779
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 英国
+    server: gb.jilweidf.buzz
+    port: 36464
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 荷兰
+    server: nl.jilweidf.buzz
+    port: 37940
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 瑞典
+    server: se.jilweidf.buzz
+    port: 47373
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 土耳其
+    server: tr.jilweidf.buzz
+    port: 26627
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true
+  - name: 越南
+    server: vn.jilweidf.buzz
+    port: 56747
+    type: ss
+    cipher: aes-128-gcm
+    password: 243b2c16-2a80-4292-8b59-5f213fdc69a7
+    udp: true

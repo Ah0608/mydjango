@@ -1,0 +1,382 @@
+.app-container {
+    height: 100vh;
+}
+
+.main-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 200px;
+    transition: left .25s ease;
+}
+
+.sidebar {
+    background-color: #d9edf7;
+    border-right: 1px solid rgba(0, 0, 0, .07);
+    overflow-y: auto;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition: transform .25s ease-out;
+    width: 200px;
+    z-index: 20;
+}
+
+.sidebar li {
+    margin-top: 20px;
+    margin-left: -20px;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-icon {
+    margin-right: 5px;
+}
+
+.menu-link:hover {
+    color: #66afe9;
+    text-decoration: none;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.header {
+    background-color: #d9edf7;
+    color: #fff;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+.h-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.log-icon {
+    width: 90px;
+    height: 60px;
+    background-image: url('../images/log.png');
+    background-size: cover;
+    opacity: 0.8;
+    left: 15px;
+    position: relative;
+}
+
+.user-info {
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.login-info {
+    display: flex;
+    align-items: center;
+    right: 30px;
+    height: 50px;
+    position: absolute;
+}
+
+.login-info > span {
+    color: black;
+}
+
+.username {
+    color: black;
+}
+
+.i-notice {
+    position: absolute;
+    right: 150px;
+}
+
+.i-message {
+    position: absolute;
+    right: 200px;
+}
+
+.user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 7px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.modal-dialog {
+    max-width: 450px;
+    min-height: 550px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.modal {
+    text-align: center;
+}
+
+.modal:after {
+    display: inline-block;
+    height: 100%;
+    margin-left: -0.05em;
+    content: "";
+    vertical-align: middle;
+}
+
+#select-avatar {
+    padding: 10px 0 0 34px;
+
+}
+
+.avatar-detail {
+    width: 350px;
+    height: 350px;
+}
+
+.modal-footer {
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+
+.setpassword-form input {
+    width: 100%;
+    height: 42px;
+    outline: none;
+    font-size: 15px;
+    padding: 0 10px;
+    transition: all 0.5s;
+    margin-bottom: 20px;
+}
+
+.modify_tip {
+    display: inline-block;
+    height: 14px;
+    color: red;
+    font-size: 0.8em;
+    position: relative;
+    top: -20px;
+}
+
+.setpassword-form {
+    text-align: left;
+}
+
+.e-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.menu ul li a {
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+}
+
+.header i {
+    display: flex;
+    margin: 0 10px;
+}
+
+.header i a {
+    display: flex;
+    color: black;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-style: normal;
+}
+
+.main-weather-container {
+    display: flex;
+    position: absolute;
+    left: 80px;
+    column-gap: 5px;
+    color: #333333;
+    font-size: 1em;
+    align-items: center;
+}
+
+.weather-container {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-25%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 450px;
+    min-width: 400px;
+    background: #D3D3D3;
+    transition: all 0.2s ease 0s;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 20px;
+    z-index: 99;
+}
+
+.main-weather-container:hover .weather-container {
+    visibility: visible;
+    opacity: 1;
+}
+
+.weather-timeline {
+    display: flex;
+    overflow: hidden;
+    padding: 5px 0;
+    flex-grow: 1;
+    scroll-behavior: smooth;
+}
+
+.weather-item {
+    min-width: 50px;
+    margin-right: 10px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.weather-icon {
+    max-width: 30px;
+}
+
+#recently_temperature {
+    font-size: 4em;
+    margin-right: 15px;
+}
+
+.realtime_weather {
+    display: flex;
+}
+
+.recently_weather {
+    font-size: 1.5em;
+
+}
+
+.weather-range {
+    font-size: 1.5em;
+}
+
+.weather-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.weather-item1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+    color: white;
+}
+
+.weather-item1:last-child {
+    border-bottom: none;
+}
+
+.weather-item1 > div {
+    flex: 1;
+}
+
+.date, .week {
+    font-size: 14px;
+}
+
+.day_weather {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    min-width: 120px;
+}
+
+.day_weather img {
+    max-width: 30px;
+    margin-right: 8px;
+}
+
+.temperature {
+    font-weight: bold;
+}
+
+.humidity {
+    font-size: 12px;
+}
+
+#weather-img {
+    max-width: 26px;
+}
+
+.updatetime {
+    margin-left: auto;
+}
+
+.weather-timeline-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 1.5em;
+    user-select: none;
+    color: whitesmoke;
+}
+
+.arrow i {
+    margin: 0;
+}
+
+.left-arrow {
+    margin-right: 10px;
+}
+
+.right-arrow {
+    margin-left: 10px;
+}

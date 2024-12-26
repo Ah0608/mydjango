@@ -1,0 +1,401 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}基础模板{% endblock %}</title>
+    <script src="{% static 'jquery/2.1.2_jquery.js' %}"></script>
+    <script src="{% static 'bootstrap-3.4.1/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'other/js/sweetalert2@11.js' %}"></script>
+    <script src="{% static 'other/js/clipboard.min.js' %}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="{% static 'bootstrap-3.4.1/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'user/images/awe.ico' %}" rel="shortcut icon">
+    <link href="{% static 'user/css/base.css' %}" rel="stylesheet">
+    {% block extracss %}
+
+    {% endblock %}
+</head>
+<body>
+<div class="app-container">
+    <div class="sidebar">
+        <div class="log-icon"></div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="{% url 'index' %}" class="menu-link"><i class="fa-solid fa-house menu-icon"></i>首页</a>
+                </li>
+                <li>
+                    <a href="{% url 'proxypool' %}" class="menu-link"><i class="fa-solid fa-globe menu-icon"></i>代理池</a>
+                </li>
+                <li>
+                    <a href="{% url 'article_list' %}" class="menu-link"><i
+                            class="fa-solid fa-pen-to-square menu-icon"></i>我的笔记</a>
+                </li>
+                <li>
+                    <a href="{% url 'calendar' %}" class="menu-link"><i
+                            class="fa-regular fa-calendar-check menu-icon"></i>工作计划</a>
+                </li>
+                <li>
+                    <a href="{% url 'platform_list' %}" class="menu-link"><i
+                            class="fa-solid fa-list-check menu-icon"></i>调度平台</a>
+                </li>
+                <li>
+                    <a href="{% url 'toollist' %}" class="menu-link"><i class="fa-solid fa-toolbox menu-icon"></i>工具</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="menu-link"><i
+                            class="fa-brands fa-github menu-icon"></i>GitHub</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <div class="main-weather-container">
+                <div id="city-name"></div>
+                <div id="city-weather">
+                    <img id="weather-img" src="" alt="">
+                </div>
+                <div id="city-temperature"></div>
+                <div class="weather-container">
+                    <div class="realtime_weather">
+                        <div id="recently_temperature"></div>
+                        <div>
+                            <div class="recently_weather">
+                                <span id="hour_weather"></span>
+                                <span id="wind_direction"></span>
+                            </div>
+                            <div class="weather-range" id="temperature-range"></div>
+                        </div>
+                        <div class="updatetime" id="update-time"></div>
+                    </div>
+                    <div class="weather-timeline-wrapper">
+                        <div class="arrow left-arrow"><i class="fa-solid fa-circle-chevron-left"></i></div>
+                        <div id="weather-timeline" class="weather-timeline"></div>
+                        <div class="arrow right-arrow"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                    </div>
+                    <ul class="weather-list">
+                    </ul>
+                </div>
+            </div>
+            <i>
+                <img class="h-icon" src="{% static 'user/images/category.png' %}" alt="">
+            </i>
+            {% if user.is_authenticated %}
+                <i class="i-message">
+                    <img class="h-icon" src="{% static 'user/images/message.png' %}" alt="">
+                </i>
+                <i class="i-notice">
+                    <img class="h-icon" src="{% static 'user/images/notice.png' %}" alt="">
+                </i>
+                <div class="user-info dropdown " id="userinfo">
+                    <img src="{{ MEDIA_URL }}{{ user.avatar }}" alt="">
+                    <div class="username">Hi,{{ user.username }},<span class="greeting"></span></div>
+                    <div class="dropdown-content">
+                        <a data-toggle="modal" data-target="#AvatarModal">修改头像</a>
+                        <a data-toggle="modal" data-target="#passwordModal">修改密码</a>
+                        <a href="{% url 'logout' %}">注销</a>
+                    </div>
+                </div>
+            {% else %}
+                <div class="login-info" id="userinfo">
+                    <span>请登录或注册：</span>
+                    <a href="{% url 'login' %}">登录</a> |
+                    <a href="{% url 'register' %}">注册</a>
+                </div>
+            {% endif %}
+        </div>
+        <div class="content">
+            {% block main_content %}
+
+            {% endblock %}
+        </div>
+    </div>
+</div>
+{#修改头像模态框#}
+<div class="modal fade" id="AvatarModal" tabindex="-1" role="dialog" aria-labelledby="AvatarModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="AvatarModalLabel">修改个人头像</h4>
+            </div>
+            <div class="modal-body">
+                <img src="{{ MEDIA_URL }}{{ user.avatar }}" alt="" class="avatar-detail">
+                <form method="post" enctype="multipart/form-data" action="{% url 'UploadAvatar' %}">
+                    {% csrf_token %}
+                    <div class="form-group" id="select-avatar">
+                        <input type="file" class="form-control-file" name="avatar" id="avatar" accept="image/*">
+                    </div>
+                    <div class="modal-footer">
+                        <input class="btn btn-info" type="submit" value="确认修改">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{#修改密码#}
+<div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="passwordModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="passwordModalLabel">修改账户密码</h4>
+            </div>
+            <div class="modal-body">
+                <form class="setpassword-form" method="post" action="{% url 'resetpassword' %}">
+                    {% csrf_token %}
+                    <input type="password" name="initial-password" maxlength="16" minlength="8" class="form-control"
+                           placeholder="请输入初始密码" required="">
+                    <span class="modify_tip" id="newpassword_error"></span>
+                    <input type="password" name="new-password" maxlength="16" minlength="8" class="form-control"
+                           placeholder="请输入新的密码" required="" id="new-pwd">
+                    <span class="modify_tip" id="password_feedback"></span>
+                    <input type="password" name="confirm-password" maxlength="16" minlength="8" class="form-control"
+                           placeholder="请输入确认密码" required="" id="confirm-pwd">
+                    <span class="modify_tip" id="password_error"></span>
+                    <div class="modal-footer">
+                        <button class="btn btn-info" type="submit">确认修改</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script src="{% static 'user/js/base.js' %}"></script>
+
+<script>
+    $(document).ready(function () {
+        const scrollAmount = 350;
+        const timeline = $('#weather-timeline')
+
+        $('.left-arrow').click(function () {
+            timeline.scrollLeft(timeline.scrollLeft() - scrollAmount);
+        });
+
+        $('.right-arrow').click(function () {
+            timeline.scrollLeft(timeline.scrollLeft() + scrollAmount);
+        });
+    });
+
+    function timeDifferenceLessThan30Minutes(time1, time2) {
+
+        const date1 = new Date(time1);
+        const date2 = new Date(time2);
+        const differenceInMs = Math.abs(date1 - date2);
+        const differenceInMinutes = differenceInMs / (1000 * 60);
+
+        return differenceInMinutes < 30;
+    }
+
+    function getTime() {
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = String(now.getMonth() + 1).padStart(2, '0');
+        const day = String(now.getDate()).padStart(2, '0');
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+
+        return `${year}-${month}-${day} ${hours}:${minutes}`;
+    }
+
+    function updateweatherDate(weatherData, weatherData1) {
+        const currentDateTime = new Date();
+        const currentHour = currentDateTime.getHours();
+        const hourlyData = weatherData[0].hourly;
+
+        const currentData = hourlyData.find(function (entry) {
+            var entryHour = new Date(entry.time).getHours();
+            return entryHour === currentHour;
+        });
+
+        // 更新天气信息
+        $('#recently_temperature').text(`${currentData.temperature}°`)
+        $('#hour_weather').text(`${currentData.text}`)
+        $('#wind_direction').text(`${currentData.wind_direction}风`)
+        $('#city-name').text(`${weatherData[0].location.name}`)
+        $('#city-weather').append(currentData.text);
+        $('#city-temperature').text(`${currentData.temperature}°`)
+        $('#weather-img').attr('src', `/media/weather/${currentData.code}@1x.png`);
+
+        const weatherCondition = currentData.text;
+        let background;
+
+        switch (weatherCondition) {
+            case '晴':
+                background = 'linear-gradient(rgb(40, 105, 233), rgb(121, 191, 255))';
+                break;
+            case '多云':
+                background = 'linear-gradient(rgb(111, 124, 133), rgb(145, 155, 159))';
+                break;
+            case '阴':
+                background = 'linear-gradient(rgb(111, 124, 133), rgb(145, 155, 159))';
+                break;
+            case '小雨':
+            case '中雨':
+            case '大雨':
+                background = '#4682B4';
+                break;
+            default:
+                background = '#D3D3D3';
+                break;
+        }
+
+        $('.weather-container').css('background', background);
+
+        const weatherTimeline = $('#weather-timeline');
+        weatherTimeline.empty();
+
+        hourlyData.forEach(function (hourly) {
+            const weatherTime = new Date(hourly.time);
+            const isCurrent = currentDateTime.getHours() === weatherTime.getHours();
+            const tem = hourly.temperature
+            const timeDisplay = isCurrent ? '现在' : `${weatherTime.getHours()}:00`;
+            const weatherItem = `
+                <div class="weather-item ${isCurrent ? 'current' : ''}">
+                    <p>${timeDisplay}</p>
+                    <p><img class="weather-icon" src="/media/weather/${hourly.code}@1x.png"></p>
+                    <p>${tem}°</p>
+                </div>`;
+            weatherTimeline.append(weatherItem);
+        });
+
+        // 日期和天气信息
+        function getWeekday(dateString) {
+            const date = new Date(dateString);
+            const weekdays = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+            return weekdays[date.getDay()];
+        }
+
+        // 日期格式转换为 MM/DD
+        function formatDateToMMDD(dateString) {
+            const date = new Date(dateString);
+            const month = (date.getMonth() + 1).toString().padStart(2, '0');
+            const day = date.getDate().toString().padStart(2, '0');
+            return `${month}/${day}`;
+        }
+
+        const today = new Date();
+        const tomorrow = new Date(today);
+        tomorrow.setDate(today.getDate() + 1);
+
+        // 清空并更新天气预报列表
+        const weatherList = $('.weather-list');
+        weatherList.empty(); // 清空内容
+
+        weatherData1.forEach((data, index) => {
+            const displayDate = formatDateToMMDD(data.date);
+            const humidity = parseInt(data.humidity)
+
+            let weekday;
+            if (index === 0) {
+                weekday = "今天";
+                $('#temperature-range').text(`${data.low}°~${data.high}°`)
+            } else if (index === 1) {
+                weekday = "明天";
+            } else {
+                weekday = getWeekday(data.date);
+            }
+
+            let all_day_weather;
+            if (data.text_day === data.text_night) {
+                all_day_weather = data.text_day
+            } else {
+                all_day_weather = `${data.text_day}转${data.text_night}`
+            }
+            const HumidityLevel = {
+                VERY_DRY: '极干燥',
+                DRY: '干燥',
+                MODERATE: '适中',
+                HUMID: '潮湿',
+                VERY_HUMID: '极潮湿',
+                INVALID: '无效的湿度值'
+            };
+            let level;
+            if (humidity < 20) {
+                level = HumidityLevel.VERY_DRY;
+            } else if (humidity >= 20 && humidity < 40) {
+                level = HumidityLevel.DRY;
+            } else if (humidity >= 40 && humidity < 60) {
+                level = HumidityLevel.MODERATE;
+            } else if (humidity >= 60 && humidity < 80) {
+                level = HumidityLevel.HUMID;
+            } else if (humidity >= 80) {
+                level = HumidityLevel.VERY_HUMID;
+            } else {
+                level = HumidityLevel.INVALID;
+            }
+
+            const weatherItem1 = `
+                <li class="weather-item1">
+                    <div class="date">${displayDate}</div>
+                    <div class="week">${weekday}</div>
+                    <div class="day_weather">
+                        <img src="/media/weather/${data.code_day}@1x.png">
+                        ${all_day_weather}
+                    </div>
+                    <div class="temperature">
+                        <span>${data.low}°</span> <span>${data.high}°</span>
+                    </div>
+                    <div class="humidity">${level}</div>
+                </li>`;
+            weatherList.append(weatherItem1);
+        });
+    }
+
+    function sendDate() {
+        $.ajax({
+            url: '/tools/getweather/',
+            type: 'GET',
+            success: function (response) {
+                weatherData = response.hours_data
+                weatherData1 = response.days_data
+                updateweatherDate(weatherData, weatherData1)
+                const updatetime = getTime()
+                $('#update-time').html(`${updatetime}更新`)
+                localStorage.setItem('lasttime', updatetime);
+                localStorage.setItem('hourdata', JSON.stringify(weatherData));
+                localStorage.setItem('daydata', JSON.stringify(weatherData1));
+            },
+            error: function (xhr, status, error) {
+                console.log('失败:', error);
+            },
+        });
+    }
+
+    function getweather() {
+        const last_time = localStorage.getItem('lasttime');
+        if (last_time === null) {
+            sendDate()
+        } else {
+            now_time = getTime()
+            res = timeDifferenceLessThan30Minutes(now_time, last_time)
+            if (res === false) {
+                sendDate()
+            } else {
+                const weatherData = JSON.parse(localStorage.getItem('hourdata'));
+                const weatherData1 = JSON.parse(localStorage.getItem('daydata'));
+                updateweatherDate(weatherData, weatherData1)
+                $('#update-time').html(`${last_time}更新`)
+            }
+        }
+    }
+
+    $(document).ready(function () {
+        {#getweather();#}
+    });
+</script>
+
+{% block extrajs %}
+{% endblock %}
+
+</html>

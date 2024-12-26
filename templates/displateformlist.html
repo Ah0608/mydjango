@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extracss %}
+    <link rel="stylesheet" href="{% static 'platform/css/platformlist.css' %}">
+    <link rel="stylesheet" href="{% static 'other/css/bootstrap-datetimepicker.css' %}">
+{% endblock %}
+
+{% block title %}Awesome后台调度列表{% endblock %}
+
+{% block main_content %}
+    <div class="platform-head">
+        <li role="presentation" class="dropdown more-option">
+            <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+               aria-haspopup="true" aria-expanded="false">
+                操作
+                <span class="caret"></span>
+            </a>
+            <ul id="menu{{ forloop.counter }}" class="dropdown-menu dropdown-menu-left more_menu"
+                aria-labelledby="drop4">
+                <li>
+                    <button class="more-start" id="start-tasks">一键启动</button>
+                    <button class="more-pause" id="pause-tasks">一键暂停</button>
+                    <button class="more-resume" id="resume-tasks">一键恢复</button>
+                    <button class="more-remove" id="remove-tasks">一键删除</button>
+                </li>
+            </ul>
+        </li>
+        <span class="task-search">任务名：
+            <form id="search-form" action="{% url 'platform_search' %}" method="post">
+                {% csrf_token %}
+                <input type="text" name="search-task" id="inputBox" placeholder="回车搜索">
+            </form>
+        </span>
+        <button type="button" data-toggle="modal" data-target="#PlatFormModal" class="add-task">添加任务</button>
+    </div>
+    <div class="platform-content">
+        <table>
+            <thead>
+            <tr>
+                <th><input type="checkbox" id="checkAll"></th>
+                <th>ID</th>
+                <th>任务名</th>
+                <th>执行文件</th>
+                <th>运行状态</th>
+                <th>调度状态</th>
+                <th>调度时间</th>
+                <th>定时类型</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for task in tasks %}
+                <tr>
+                    <td><input type="checkbox" class="row-checkbox" value="{{ task.job_id }}"></td>
+                    <td>{{ task.job_id }}</td>
+                    <td>{{ task.task_name }}</td>
+                    <td>{{ task.task_file }}</td>
+                    <td>
+                        {% if task.job_id in id_list %}
+                            running
+                        {% else %}
+                            stopped
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if task.scheduler_state %}
+                            启动
+                        {% else %}
+                            禁用
+                        {% endif %}
+                    </td>
+                    <td class="column_6">
+                        {% if ran_id == task.job_id %}
+                            任务已执行
+                        {% else %}
+                            {% for item in time_list %}
+                                {% for key, value in item.items %}
+                                    {% if key == task.job_id %}
+                                        {{ value|default_if_none:""|date:"Y-m-d H:i:s" }}
+                                    {% endif %}
+                                {% endfor %}
+                            {% endfor %}
+                        {% endif %}
+                    </td>
+                    <td>{{ task.time_type }}</td>
+                    <td>
+                        <button class="btn btn-info start-btn" data-id="{{ task.job_id }}">启动</button>
+                        <li role="presentation" class="dropdown">
+                            <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">
+                                更多
+                                <span class="caret"></span>
+                            </a>
+                            <ul id="menu{{ forloop.counter }}" class="dropdown-menu dropdown-menu-right more_menu"
+                                aria-labelledby="drop4">
+                                <li>
+                                    <button class="modify-btn" data-id="{{ task.job_id }}">编辑任务</button>
+                                </li>
+                                <li>
+                                    <button class="pause-btn" data-id="{{ task.job_id }}">暂停任务</button>
+                                </li>
+                                <li>
+                                    <button class="resume-btn" data-id="{{ task.job_id }}">恢复任务</button>
+                                </li>
+                                <li>
+                                    <button class="remove-btn" data-id="{{ task.job_id }}">删除任务</button>
+                                </li>
+                                <li>
+                                    <button class="view-log" data-id="{{ task.job_id }}">查看日志</button>
+                                </li>
+                            </ul>
+                        </li>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="modal fade" id="PlatFormModal" tabindex="-1" role="dialog" aria-labelledby="PlatFormModalLabel">
+        <div class="modal-dialog Platform-area" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="PlatFormModalLabel">新建任务</h4>
+                </div>
+                <div class="modal-body task-modal">
+                    <form class="task-form">
+                        {% csrf_token %}
+                        <label for="">任务名:</label>
+                        <input type="text" name="taskname" class="form-control" required="" id="taskname">
+                        <label for="">解释器路径:</label>
+                        <input type="text" name="python-path" class="form-control" required="" id="python-path">
+                        <label for="">执行文件:</label>
+                        <input type="text" name="taskfile" class="form-control" required="" id="taskfile">
+                        <label for="">环境变量:</label>
+                        <input type="text" name="env-variable" class="form-control" required="" id="env">
+                        <label for="">任务ID:</label>
+                        <input type="text" name="job_id" class="form-control" required="" id="job_id">
+                        <label for="">定时类型:</label>
+                        <select class="select-field" name="select-option" id="select-field">
+                            <option value="date">date</option>
+                            <option value="interval">interval</option>
+                            <option value="cron">cron</option>
+                        </select>
+                        <div class="time-container">
+                            <div class='input-group date' id='date-input'>
+                                <input type='text' name="datetime_input" class="form-control">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <button type="button" class="create-button" id="task-btn">创建任务</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block extrajs %}
+    <script src="{% static 'plan/js/moment.min.js' %}"></script>
+    <script src="{% static 'other/js/bootstrap-datetimepicker.min.js' %}"></script>
+    <script src="{% static 'platform/js/platformcreate.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404错误页面</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+        #home_link {
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: cornflowerblue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>404找不到您所请求的页面：{{request_path}}</h1>
+<div id="home_link">
+    <a href="http://127.0.0.1:8000">返回主页</a>
+</div>
+</body>
+</html>

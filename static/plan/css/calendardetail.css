@@ -1,0 +1,30 @@
+.img-circle {
+    width: 50px;
+    height: 50px;
+
+}
+
+.content {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+}
+
+.box-danger {
+    width: 800px;
+    background-color: #f9f2f4;
+}
+
+.with-border {
+    margin: 10px 0 0 15px;
+}
+
+#btnSave, #btnDelete {
+    margin-bottom: 15px;
+}
+
+.has-feedback .form-control {
+    padding-right: 0;
+}

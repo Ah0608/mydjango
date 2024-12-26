@@ -1,0 +1,66 @@
+.content {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1300px;
+}
+
+.article-item {
+    background-color: #f8f8f8;
+    width: 1200px;
+    box-shadow: -5px 5px 5px #f9f2f4;
+    padding: 2px 10px;
+    margin-bottom: 10px;
+}
+
+.article-footer {
+    float: right;
+}
+
+.article-item h4 a {
+    color: black;
+}
+
+.article-item h4 a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+.add-btn {
+    float: right;
+}
+
+.article-head {
+    width: 1200px;
+    height: 40px;
+}
+
+.search-input {
+    width: 91%;
+    height: 40px;
+    font-size: 20px;
+}
+
+.search-btn, .add-btn {
+    font-size: 18px;
+}
+
+.article-intro {
+    font-size: 15px;
+}
+
+.search-btn {
+    float: right;
+}
+
+.search {
+    height: 40px;
+    width: 70%;
+}
+
+.search, .add-btn {
+    display: inline-block;
+    vertical-align: middle;
+}

@@ -1,0 +1,83 @@
+.content {
+    background-color: #f5f7f9;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.tool_list_container {
+    width: 95%;
+    margin: auto;
+    background-color: white;
+    padding: 20px 30px 40px 20px;
+    border-radius: 5px;
+}
+
+.split {
+    width: 95%;
+    margin: auto;
+    height: 20px;
+    background-color: #f5f7f9;
+}
+
+.tool_title {
+    width: 200px;
+    display: flex;
+
+}
+
+.tool_title span {
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+    font-size: 1em;
+}
+
+.tools-container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 25px;
+}
+
+.box {
+    width: 23%;
+    height: 100px;
+    background-color: #f5f7f9;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.tool-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.t-title {
+    font-size: 1.5em;
+}
+
+.t-title a {
+    text-decoration: none;
+    color: #0f0f0f;
+}
+
+.t-title a:hover {
+    color: #337ab7;
+}
+
+.t-introduction {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}

@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extracss %}
+    <link rel="stylesheet" href="{% static 'article/css/articledetail.css' %}">
+    <link rel="stylesheet" href="{% static 'article/css/code.css' %}">
+    <link rel="stylesheet" href="{% static 'other/css/sweetalert2.css' %}">
+{% endblock %}
+
+{% block title %}文章详情页{% endblock %}
+
+{% block main_content %}
+    <div class="breadcrumb-area">
+        <ol class="breadcrumb">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'article_list' %}">List</a></li>
+            <li class="active">Detail</li>
+        </ol>
+    </div>
+    <div class="article-content">
+        <div class="detail-area">
+            <h1>{{ article.title }}</h1>
+            <div class="article-info">
+                <span>
+                    <img class="i-icon" src="{% static 'user/images/user.png' %}" alt="">
+                    <i>{{ article.author }}</i>
+                </span>
+                <span>
+                    <img class="i-icon" src="{% static 'user/images/create_time.png' %}" alt="">
+                    <i>{{ article.created_at }}</i>
+                </span>
+                <span>
+                    <img class="i-icon" src="{% static 'user/images/category.png' %}" alt="">
+                    <i>{{ article.category }}</i>
+                </span>
+            </div>
+            <br>
+            {{ article.content | safe }}
+        </div>
+        <hr>
+        <div class="page">
+            {% if previous_article_obj %}
+                <p>上一篇：
+                    <a href="{% url 'article_detail' previous_article_obj.id %}">{{ previous_article_obj.title }}</a>
+                </p>
+            {% endif %}
+            {% if next_article_obj %}
+                <p>下一篇：
+                    <a href="{% url 'article_detail' next_article_obj.id %}">{{ next_article_obj.title }}</a>
+                </p>
+            {% endif %}
+        </div>
+        <div class="option">
+            <a type="button" class="btn btn-info editor" href="{% url 'article_edit' article.id %}">重新编辑</a>
+            <a type="button" class="btn btn-danger delete" href="{% url 'article_delete' article.id %}">删除</a>
+        </div>
+    </div>
+    <div id="backToTopBtn">
+        <img src="{% static 'user/images/rocket.png' %}" alt="返回顶部">
+        <p class="top-msg">返回顶部</p>
+    </div>
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img id="modal-img" src="" alt="Expanded view">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+        <button class="rotate"><i class="fa-solid fa-rotate"></i></button>
+    </div>
+{% endblock %}
+
+{% block extrajs %}
+    <script src="{% static 'article/js/articledetail.js' %}"></script>
+{% endblock %}

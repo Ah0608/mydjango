@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extracss %}
+    <link rel="stylesheet" href="{% static 'tools/css/toollist.css' %}">
+{% endblock %}
+
+{% block title %}Awesome后台工具列表{% endblock %}
+
+{% block main_content %}
+    <div class="tool_list_container">
+        <div class="tool_title">
+            <img class="e-icon" src="{% static 'user/images/tools.png' %}" alt="">
+            <span>自制工具</span>
+        </div>
+        <div class="tools-container">
+            {% for tool in lapping_tools %}
+                <div class="box" data-url="{% url tool.url %}">
+                    <img class="tool-icon" src="{% static tool.image %}" alt="">
+                    <div class="vertical-container">
+                        <div class="t-title">
+                            <a href="{% url tool.url %}" target="_blank">{{ tool.name }}</a>
+                        </div>
+                        <div class="t-introduction">{{ tool.introduction }}</div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="split">
+    </div>
+    <div class="tool_list_container">
+        <div class="tool_title">
+            <img class="e-icon" src="{% static 'user/images/onlinetools.png' %}" alt="">
+            <span>在线工具</span>
+        </div>
+        <div class="tools-container">
+            {% for tool in online_tools %}
+                <div class="box" data-url="{{ tool.url }}">
+                    <img class="tool-icon" src="{% static tool.image %}" alt="">
+                    <div class="vertical-container">
+                        <div class="t-title">
+                            <a href="{{ tool.url }}" target="_blank">{{ tool.name }}</a>
+                        </div>
+                        <div class="t-introduction">{{ tool.introduction }}</div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block extrajs %}
+    <script src="{% static 'tools/js/toollist.js' %}"></script>
+{% endblock %}

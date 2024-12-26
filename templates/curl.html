@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extracss %}
+    <link rel="stylesheet" href="{% static 'tools/css/curl.css' %}">
+{% endblock %}
+
+{% block title %}Awesome后台curl请求转换器{% endblock %}
+
+{% block main_content %}
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">CURL请求转换器</h3>
+                <div class="form-group">
+                    <textarea class="form-control" id="curlInput" name="curl_command" rows="10" placeholder="这里粘贴CURL命令" spellcheck="false"></textarea>
+                </div>
+                <button type="button" id="clearButton" class="btn btn-info">Clear</button>
+                <button type="button" id="copyButton" class="btn btn-success btn-copy">Copy</button>
+                <div id="errormessage" class="alert alert-danger mt-4"></div>
+                <div class="code">
+                    <h3 class="mt-4">转换的请求代码：</h3>
+                    <pre id="pythonOutput" class="p-3 bg-light border"></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block extrajs %}
+    <script src="{% static 'tools/js/curl.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome后台注册</title>
+    <link rel="stylesheet" href="{% static 'user/css/register.css' %}">
+    <script src="{% static 'jquery/2.1.2_jquery.js' %}"></script>
+</head>
+
+<body>
+<div class="main">
+    <div class="background">
+        <div class="register-block">
+            <span class="log-icon"></span>
+            <p class="register-title">用户注册</p>
+            <form class="register-form" action="{% url 'register' %}" method="post">
+                {% csrf_token %}
+                {{ register_form.username }}
+                <span class="res_tip" id="username_feedback"></span>
+                {{ register_form.password }}
+                <span class="res_tip" id="password_feedback"></span>
+                {{ register_form.confirm_pwd }}
+                <span class="res_tip" id="password_error"></span>
+                <div class="code-pane">
+                    {{ register_form.email }}
+                    <input type="button" class="code-button" id="sendButton" onclick="sendEmail()" value="获取验证码"/>
+                    <span id="countdown"></span>
+                </div>
+                <span class="res_tip" id="email_error"></span>
+                {{ register_form.verifycode }}
+                <span class="res_tip" id="code_error"></span>
+                <button type="submit" class="register-button">注册</button>
+            </form>
+            <div class="link">
+                <a href="{% url 'login' %}" class="login">登录账号</a>
+                <a href="" class="index">返回主页</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="{% static 'user/js/register.js' %}"></script>
+
+</html>

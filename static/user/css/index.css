@@ -1,0 +1,95 @@
+.content {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f7f9;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    margin-bottom: 20px;
+    height: 220px;
+    align-items: center;
+    background-color: white;
+    margin-top: 20px;
+
+}
+
+.box {
+    align-items: flex-start;
+    height: 150px;
+    flex-direction: column; /* 垂直排列 */
+    display: flex;
+    margin: 0 20px;
+    border-radius: 8px;
+}
+
+.proxypool {
+    width: 23%;
+    background-color: #5bc0de;
+}
+
+.task {
+    width: 23%;
+    background-color: #4cae4c;
+}
+
+.note {
+    width: 23%;
+    background-color: #c0a16b;
+}
+
+.plan {
+    width: 23%;
+    background-color: #846183;
+}
+
+#carousel-example-generic {
+    width: 50%;
+}
+
+.carousel-inner img {
+    width: 100%;
+}
+
+.show-content {
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: "YaHei Consolas Hybrid", Consolas, "微软雅黑", "Meiryo UI", "Malgun Gothic", "Segoe UI", "Trebuchet MS", Helvetica, Monaco, courier, monospace;
+}
+
+.show-content span {
+    font-weight: normal;
+}
+
+.show-content p {
+    font-weight: normal;
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.today_plan {
+    font-size: 0.8em;
+}
+
+.show-content, .box-content {
+    margin: 2px 10px;
+}
+
+.box-content {
+    overflow: auto;
+    padding-right: 10px;
+}
+
+.box-title {
+    margin: 0 auto;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    margin-top: 5px;
+}

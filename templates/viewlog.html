@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extracss %}
+    <link rel="stylesheet" href="{% static 'platform/css/log.css' %}">
+{% endblock %}
+
+{% block title %}Awesome后台查看日志{% endblock %}
+
+{% block main_content %}
+    {% if log %}
+        <div class="header-container">
+            <h2>{{ job_id }}的实时日志</h2>
+            <div id="controls">
+                <span id="last-refresh-time">上次刷新时间：未刷新</span>
+                <select id="refresh-interval">
+                    <option value="5000">5秒</option>
+                    <option value="10000">10秒</option>
+                    <option value="15000">15秒</option>
+                    <option value="30000">30秒</option>
+                </select>
+            </div>
+        </div>
+        <pre id="log-content">{{ log }}</pre>
+    {% else %}
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+            Swal.fire({
+                icon: 'info',
+                toast: true,
+                position: 'top',
+                showConfirmButton: false,
+                timer: 5000,
+                title: '{{ job_id }}没有日志',
+                width: '180px',
+                height: '60px',
+                customClass: {
+                    title: 'custom-title' // 为标题添加自定义类
+                }
+            })
+        </script>
+    {% endif %}
+{% endblock %}
+
+{% block extrajs %}
+    {% if log %}
+        <script>
+        let refreshInterval = 5000;
+        let refreshIntervalId;
+
+        function fetchLog() {
+            $.get('{% url 'realtimelog' job_id %}', function (data) {
+                $('#log-content').text(data.log);
+                let now = new Date().toLocaleTimeString();
+                $('#last-refresh-time').text('上次刷新时间：' + now);
+            });
+        }
+
+        function setRefreshInterval(interval) {
+            clearInterval(refreshIntervalId);
+            refreshIntervalId = setInterval(fetchLog, interval);
+        }
+
+        $(document).ready(function () {
+            setRefreshInterval(refreshInterval);
+
+            $('#refresh-interval').change(function () {
+                refreshInterval = parseInt($(this).val());
+                setRefreshInterval(refreshInterval);
+            });
+        });
+    {% endif %}
+</script>
+{% endblock %}

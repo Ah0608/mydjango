@@ -1,0 +1,265 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f7f9;
+}
+
+.content {
+    height: 90vh;
+    padding-top: 25px;
+}
+
+.json_container {
+    display: flex;
+    width: 95%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: auto;
+
+}
+
+/* Left panel styles */
+.left-panel {
+    width: 45%;
+    box-sizing: border-box;
+}
+
+textarea#json-input {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    font-family: monospace;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+.right-panel {
+    width: 55%;
+    box-sizing: border-box;
+    position: relative;
+    /*padding: 0 1em;*/
+}
+
+pre#json-renderer {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #aaa;
+    padding: 20px;
+    background-color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 0;
+}
+
+.options {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+.options label {
+    margin-right: 10px;
+}
+
+.options input[type=checkbox] {
+    vertical-align: middle;
+    margin: 0;
+}
+
+/* Path info styles */
+#path-info {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
+
+#copy-path-btn:hover {
+    color: #E40000;
+}
+
+#copy-path-btn {
+    display: none;
+    border: none;
+    background-color: white;
+}
+
+/* JSON viewer styles */
+.json-document {
+    margin: 0;
+    height: 100%;
+    word-break: break-word;
+}
+
+ul.json-dict, ol.json-array {
+    list-style-type: none;
+    margin: 0 0 0 1px;
+    border-left: 1px dotted #ccc;
+    padding-left: 2em;
+}
+
+.json-key {
+    color: #92278f;
+    /*margin-left: 5px;*/
+}
+
+.json-string {
+    color: #57b73b;
+}
+
+.json-number {
+    color: #25aae2;
+}
+
+.json-literal {
+    font-weight: bold;
+}
+
+a.json-toggle {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    top: 2px;
+    right: 5px;
+}
+
+a.json-toggle:focus {
+    outline: none;
+}
+
+a.json-toggle:before {
+    font-size: 1.5em; /* 增加字体大小 */
+    font-weight: bold; /* 加粗 */
+    display: inline-block;
+    width: 1em;
+    text-align: center;
+    line-height: 1em;
+    left: -1.2em;
+}
+
+a.json-toggle:hover:before {
+    color: #aaa;
+}
+
+a.json-toggle.collapsed:before {
+    font-size: 1.5em; /* 增加字体大小 */
+    font-weight: bold; /* 加粗 */
+}
+
+a.json-placeholder {
+    color: #aaa;
+    padding: 0 1em;
+    text-decoration: none;
+}
+
+a.json-placeholder:hover {
+    text-decoration: underline;
+}
+
+#toggle-collapsed-btn, #copy-json-btn, #fullscreen-btn {
+    border: none;
+    background-color: white;
+}
+
+#toggle-collapsed-btn {
+    width: 60px;
+}
+
+#copy-json-btn:hover {
+    color: #E40000;
+}
+
+#toggle-collapsed-btn:hover {
+    color: #E40000;
+}
+
+#fullscreen-btn:hover {
+    color: #E40000;
+}
+
+#error-message {
+    color: red;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 30px;
+}
+
+.fixed-search {
+    position: absolute;
+    top: 10px;
+    right: 300px;
+}
+
+#search-box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#search-box:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+#search-box::placeholder {
+    color: #999;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.highlight-navigation {
+    background-color: #ff9632;
+}
+
+.match-count {
+    margin-left: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    width: 60px;
+    display: inline-block;
+}
+
+#next-btn, #prev-btn {
+    border: none;
+    background-color: white;
+}
+
+#next-btn:hover, #prev-btn:hover {
+    color: #E40000;
+}
+
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white; /* 根据需要调整背景 */
+    z-index: 9999; /* 确保处于最顶层 */
+    overflow: auto;
+}
+
+.json-string {
+    overflow-wrap: break-word; /* 处理旧浏览器 */
+    white-space: normal; /* 确保文本可以正常换行 */
+}
+
+.swal2-container {
+    z-index: 9999 !important;
+}

@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extracss %}
+    <link rel="stylesheet" href="{% static 'article/css/articlelist.css' %}">
+{% endblock %}
+
+{% block title %}文章列表页{% endblock %}
+
+{% block main_content %}
+    <h1>我的文章</h1>
+    <br>
+    <div class="article-head">
+        <form class="search" method="post" action="{% url 'article_search' %}">
+            {% csrf_token %}
+            <input type="text" name="query" class="search-input" placeholder="输入关键字检索文章">
+            <button type="submit" class="btn btn-danger search-btn">搜索</button>
+        </form>
+        <button type="button" class="btn btn-info add-btn" id="add_article">新增</button>
+    </div>
+    <br>
+    {% for item in page_obj %}
+        <div class="article-item">
+            <h4>
+                <a href="{% url 'article_detail' item.id %}" target="_blank">{{ item.title }}</a>
+            </h4>
+            <div class="article-intro">{{ item.intro }}</div>
+            <div class="article-footer">
+                <span>{{ item.author }}</span>
+                <span>{{ item.created_at }}</span>
+            </div>
+        </div>
+    {% endfor %}
+
+    {% if page_obj.has_other_pages %}
+        <ul class="pagination">
+            {% if page_obj.has_previous %}
+                <li><a href="?page=1">First</a></li>
+                <li><a href="?page={{ page_obj.previous_page_number }}">Previous</a></li>
+            {% endif %}
+
+            {% for num in page_range %}
+                {% if page_obj.number == num %}
+                    <li class="active"><span>{{ num }}</span></li>
+                {% else %}
+                    <li><a href="?page={{ num }}">{{ num }}</a></li>
+                {% endif %}
+            {% endfor %}
+
+            {% if page_obj.has_next %}
+                <li><a href="?page={{ page_obj.next_page_number }}">Next</a></li>
+                <li><a href="?page={{ page_obj.paginator.num_pages }}">Last</a></li>
+            {% endif %}
+        </ul>
+    {% endif %}
+
+{% endblock %}
+
+{% block extrajs %}
+    <script src="{% static 'article/js/articlelist.js' %}"></script>
+{% endblock %}

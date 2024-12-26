@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extracss %}
+    <link rel="stylesheet" href="{% static 'tools/css/jsonformat.css' %}">
+{% endblock %}
+
+{% block title %}Awesome后台JSON格式化{% endblock %}
+
+{% block main_content %}
+    <div class="json_container" id="json_container">
+        <div class="left-panel">
+            <label for="json-input"></label><textarea id="json-input" autocomplete="off" spellcheck="false"></textarea>
+        </div>
+        <div class="right-panel">
+            <pre id="json-renderer"></pre>
+            <div id="error-message"></div>
+            <div class="fixed-search">
+                <input type="text" id="search-box" placeholder="Search">
+                <button id="next-btn"><i class="fa-solid fa-angle-down"></i></button>
+                <button id="prev-btn"><i class="fa-solid fa-angle-up"></i></button>
+                <span class="match-count" id="match-count">1 / 0</span>
+            </div>
+            <div class="options">
+                操作:
+                <button id="toggle-collapsed-btn"><i class="fas fa-minimize"></i><span> 折叠</span></button>
+                <button id="copy-json-btn"><i class="fas fa-copy"></i><span> 复制</span></button>
+                <button id="fullscreen-btn"><i class="fas fa-expand"></i><span> 全屏</span></button>
+            </div>
+            <div id="path-info">
+                <span id="path-display"></span>
+                <button id="copy-path-btn">复制路径</button>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block extrajs %}
+    <script src="{% static 'tools/js/jsonformat.js' %}"></script>
+{% endblock %}
