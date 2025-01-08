@@ -54,7 +54,7 @@ def Curl(request):
         if is_curl_command(curl_command):
             try:
                 result = subprocess.run(
-                    ['node', 'D:\workfile\PycharmProjects\mydjango\common\curl_converter\curl.js', curl_command],
+                    ['node', 'common\curl_converter\curl.js', curl_command],
                     capture_output=True,
                     text=True,
                     encoding='utf-8'
@@ -178,6 +178,12 @@ def List(request):
             'name': 'JSON格式化.',
             'introduction': '对无序、压缩的json进行格式化。'
         },
+        {
+            'url': 'urlcompare',
+            'image': 'user/images/urlcompare.png',
+            'name': 'URL对比.',
+            'introduction': 'url参数对比。'
+        },
     ]
     return render(request, 'toollist.html', {'online_tools': online_tools, 'lapping_tools': lapping_tools})
 
@@ -197,3 +203,8 @@ def getweather(request):
     days_data = res2.json()['results'][0]['daily']
 
     return JsonResponse({'hours_data': hours_data, 'days_data': days_data})
+
+
+def URLcompare(request):
+    return render(request, 'urlcompare.html')
+

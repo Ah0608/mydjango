@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extracss %}
+    <link rel="stylesheet" href="{% static 'tools/css/urlcompare.css' %}">
+{% endblock %}
+
+{% block title %}Awesome后台URL对比{% endblock %}
+
+{% block main_content %}
+    <h1 style="text-align: center;">URL比较工具</h1>
+
+    <div class="container">
+        <div class="column">
+            <button class="float-button" onclick="showParamsJson(1)">查看参数</button>
+            <div class="input-group">
+                <label for="url1">第一组URL:</label>
+                <textarea id="url1" placeholder="请输入URL，每行一个"></textarea>
+            </div>
+        </div>
+
+        <div class="column">
+            <button class="float-button" onclick="showParamsJson(2)">查看参数</button>
+            <div class="input-group">
+                <label for="url2">第二组URL:</label>
+                <textarea id="url2" placeholder="请输入URL，每行一个"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button onclick="compareURLs()">比较</button>
+    </div>
+
+    <div id="result"></div>
+
+    <div id="paramsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h3 id="modalTitle">URL参数</h3>
+            <pre id="modalContent"></pre>
+            <button class="copy-button" onclick="copyModalContent()">复制JSON数据</button>
+        </div>
+    </div>
+{% endblock %}
+
+{% block extrajs %}
+    <script src="{% static 'tools/js/urlcompare.js' %}"></script>
+{% endblock %}

@@ -6,6 +6,7 @@ urlpatterns = [
     path('curl/', views.Curl, name='curl'),
     path('getweather/', views.getweather, name='getweather'),
     path('josnformat/', views.Josnformat, name='josnformat'),
+    path('urlcompare/', views.URLcompare, name='urlcompare'),
 
 ]
 

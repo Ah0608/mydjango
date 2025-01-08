@@ -321,10 +321,23 @@ $(function () {
 });
 
 $(document).ready(function () {
-    $('#fullscreen-btn').on('click', function () {
-        const jsonContainer = $('#json_container');
-        const btn = $(this);
+    const jsonContainer = $('#json_container');
+    const btn = $('#fullscreen-btn');
 
+    // 监听全屏状态变化
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
+    document.addEventListener('msfullscreenchange', handleFullscreenChange);
+
+    function handleFullscreenChange() {
+        if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
+            // 退出全屏
+            jsonContainer.removeClass('fullscreen'); // 取消自定义样式
+            btn.html('<i class="fas fa-expand"></i> 全屏');
+        }
+    }
+
+    btn.on('click', function () {
         // 检查是否在全屏模式
         if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
             // 退出全屏
@@ -335,8 +348,6 @@ $(document).ready(function () {
             } else if (document.msExitFullscreen) {
                 document.msExitFullscreen();
             }
-            jsonContainer.removeClass('fullscreen'); // 取消自定义样式
-            btn.html('<i class="fas fa-expand"></i> 全屏');
         } else {
             // 进入全屏模式
             const element = document.documentElement; // 整个页面
@@ -358,4 +369,3 @@ $(document).ready(function () {
         }
     });
 });
-
