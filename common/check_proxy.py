@@ -46,13 +46,12 @@ def fetch_url(ip):
 
 
 def multi_thread_check_proxy(url):
-    pass
-    # global check_url
-    # check_url = url
-    # all_proxies = ProxyPool.objects.all()
-    # # 提取 ip 字段并转换为列表
-    # proxy_list = list(all_proxies.values_list('ip', flat=True))
-    # last_proxy = ['socks5://{}'.format(proxy) for proxy in proxy_list]
-    # ProxyPool.objects.all().delete()
-    # with ThreadPoolExecutor(max_workers=20) as executor:
-    #     executor.map(fetch_url, last_proxy)
+    global check_url
+    check_url = url
+    all_proxies = ProxyPool.objects.all()
+    # 提取 ip 字段并转换为列表
+    proxy_list = list(all_proxies.values_list('ip', flat=True))
+    last_proxy = ['socks5://{}'.format(proxy) for proxy in proxy_list]
+    ProxyPool.objects.all().delete()
+    with ThreadPoolExecutor(max_workers=20) as executor:
+        executor.map(fetch_url, last_proxy)

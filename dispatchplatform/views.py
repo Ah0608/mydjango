@@ -23,7 +23,7 @@ scheduler = BackgroundScheduler()
 scheduler.add_jobstore(DjangoJobStore(), "default")
 
 crawl_trigger = CronTrigger.from_crontab('00 12 * * *')
-scheduler.add_job(crawl, trigger=crawl_trigger, id='proxy_crawl', max_instances=5, replace_existing=True)
+scheduler.add_job(crawl, trigger=crawl_trigger, id='proxy_crawl', max_instances=5, replace_existing=True,next_run_time=datetime.now())
 check_trigger = IntervalTrigger(hours=6)
 scheduler.add_job(multi_thread_check_proxy, trigger=check_trigger, id='proxy_check', max_instances=5,
                   replace_existing=True, # multi_thread_check_proxy方法我已经注释掉
