@@ -9,6 +9,7 @@
 
 **1、安装**
 clone项目后，使用pip安装：pip install requirements.txt
+
 **2、创建数据库**
 终端执行：
 ```bash
