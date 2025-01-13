@@ -8,9 +8,11 @@
  - 工具：包含自制工具和在线爬虫工具集合。
 
 **1、安装**
+
 clone项目后，使用pip安装：pip install requirements.txt
 
 **2、创建数据库**
+
 终端执行：
 ```bash
 python manage.py makemigrations
@@ -28,11 +30,13 @@ python manage.py migrate
 # scheduler.start()
 ```
 **3、创建超级用户**
+
 终端执行：(密码长度需大于8位)
 ```bash
 python manage.py createsuperuser
 ```
 **4、执行**
+
 终端执行：
 ```bash
 python manage.py runserver
