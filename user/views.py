@@ -20,6 +20,7 @@ from article.models import Article
 from dispatchplatform.models import DisPlatform
 from plan.models import DailyReport
 from proxypool.models import ProxyPool
+from tools.models import ProjectCase
 from user.forms import LoginForm, RegisterForm, ForgetForm
 from user.models import EmailVerify, User
 from mydjango.settings import EMAIL_HOST_USER
@@ -34,13 +35,13 @@ class IndexView(View):
         ip_num = ProxyPool.objects.count()
         last_check_time = DjangoJobExecution.objects.filter(job_id='proxy_check').aggregate(Max('run_time'))['run_time__max']
         tasks_num= DisPlatform.objects.all().count()
-        running_num = DjangoJob.objects.exclude(id__in=('proxy_crawl','proxy_check')).filter(next_run_time__isnull=False).count()
+        running_num = DjangoJob.objects.exclude(id__in=('proxy_crawl','proxy_check','github_crawl')).filter(next_run_time__isnull=False).count()
         note_num = Article.objects.count()
+        project_cases = ProjectCase.objects.all()
         current_notes = Article.objects.order_by('-created_at')[:3]
         return render(request, 'index.html', {'ip_num':ip_num,'user':user,'last_check_time':last_check_time,
                                               'events':events,'tasks_num':tasks_num,'running_num':running_num,
-                                              'note_num':note_num,'current_notes':current_notes})
-
+                                              'note_num':note_num,'current_notes':current_notes,'project_cases':project_cases})
 
 
 @csrf_exempt

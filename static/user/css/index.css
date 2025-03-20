@@ -23,7 +23,7 @@
 .box {
     align-items: flex-start;
     height: 150px;
-    flex-direction: column; /* 垂直排列 */
+    flex-direction: column;
     display: flex;
     margin: 0 20px;
     border-radius: 8px;
@@ -50,7 +50,8 @@
 }
 
 #carousel-example-generic {
-    width: 50%;
+    width: 900px;
+    height: 100%;
 }
 
 .carousel-inner img {
@@ -92,4 +93,92 @@
     font-weight: bold;
     color: white;
     margin-top: 5px;
+}
+
+.horizontal-container {
+    display: flex;
+}
+
+.hot-project, .other-project {
+    height: 100%;
+    width: 400px;
+    padding: 0 30px;
+    background-color: #f9f9f9;
+}
+
+.gtihub-container {
+    max-width: 500px;
+    margin: 0 auto;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.g-title {
+    text-align: center;
+    color: #2f363d;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.list-item {
+    background: #fff;
+    list-style: none;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 10px;
+    transition: background-color 0.2s;
+}
+
+.project-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 100%;
+}
+
+.list-item:hover {
+    background-color: #f6f8fa;
+}
+
+.item-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0969da;
+    margin-bottom: 4px;
+}
+
+.item-describe {
+    font-size: 14px;
+    color: #57606a;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: default;
+}
+
+.meta-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 12px;
+    color: #57606a;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.language {
+    padding: 2px 6px;
+    background-color: #f3f4f6;
+    border-radius: 4px;
+}
+
+.fas {
+    font-size: 14px;
+    color: #6a737d;
 }

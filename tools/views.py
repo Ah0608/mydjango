@@ -164,6 +164,18 @@ def List(request):
             'name': '菜鸟教程',
             'introduction': '提供了编程的基础技术教程, 介绍了HTML、CSS、Javascript、Python，Java，Ruby，C，PHP , MySQL等各种编程语言的基础知识。'
         },
+        {
+            'url': 'https://chat.deepseek.com',
+            'image': 'user/images/deepseek.png',
+            'name': 'deepseek',
+            'introduction': '国内先进的大模型。'
+        },
+        {
+            'url': 'https://www.sojson.com',
+            'image': 'user/images/sojson.png',
+            'name': 'SO JSON',
+            'introduction': 'JSON解析格式化—SO JSON在线工具。'
+        },
     ]
     lapping_tools = [
         {

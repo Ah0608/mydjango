@@ -15,6 +15,7 @@ from django_apscheduler.models import DjangoJob
 
 from common.check_proxy import multi_thread_check_proxy
 from common.cmd_task import wrapper_my_job
+from common.crawl_github_project import crawl_project_case
 from common.crawl_proxy import crawl
 from dispatchplatform.models import DisPlatform
 from serializers.modelserializers import PlatformSerializer
@@ -22,8 +23,12 @@ from serializers.modelserializers import PlatformSerializer
 scheduler = BackgroundScheduler()
 scheduler.add_jobstore(DjangoJobStore(), "default")
 
+github_trigger = CronTrigger.from_crontab('00 08 * * *')
+scheduler.add_job(crawl_project_case, trigger=github_trigger, id='github_crawl', max_instances=5, replace_existing=True,)
+
 crawl_trigger = CronTrigger.from_crontab('00 12 * * *')
-scheduler.add_job(crawl, trigger=crawl_trigger, id='proxy_crawl', max_instances=5, replace_existing=True,next_run_time=datetime.now())
+scheduler.add_job(crawl, trigger=crawl_trigger, id='proxy_crawl', max_instances=5, replace_existing=True)
+
 check_trigger = IntervalTrigger(hours=6)
 scheduler.add_job(multi_thread_check_proxy, trigger=check_trigger, id='proxy_check', max_instances=5,
                   replace_existing=True, # multi_thread_check_proxy方法我已经注释掉

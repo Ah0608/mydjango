@@ -6,16 +6,17 @@ from common.merged_yaml.crawl_yaml_file import freeclashnode
 
 
 def crawl():
-    sleep(5)
-    freeclashnode()
-    sleep(5)
-    times = 1
-    while times <= 3:
-        try:
-            merge_and_import_proxy()
-            sleep(5)
-            check_socks_proxy()
-            break
-        except FileNotFoundError as e:
-            print(e)
-            times += 1
+    pass
+    # sleep(5)
+    # freeclashnode()
+    # sleep(5)
+    # times = 1
+    # while times <= 3:
+    #     try:
+    #         merge_and_import_proxy()
+    #         sleep(5)
+    #         check_socks_proxy()
+    #         break
+    #     except FileNotFoundError as e:
+    #         print(e)
+    #         times += 1

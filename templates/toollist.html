@@ -21,7 +21,7 @@
                         <div class="t-title">
                             <a href="{% url tool.url %}" target="_blank">{{ tool.name }}</a>
                         </div>
-                        <div class="t-introduction">{{ tool.introduction }}</div>
+                        <div class="t-introduction" title="{{ tool.introduction }}">{{ tool.introduction }}</div>
                     </div>
                 </div>
             {% endfor %}
@@ -42,7 +42,7 @@
                         <div class="t-title">
                             <a href="{{ tool.url }}" target="_blank">{{ tool.name }}</a>
                         </div>
-                        <div class="t-introduction">{{ tool.introduction }}</div>
+                        <div class="t-introduction" title="{{ tool.introduction }}">{{ tool.introduction }}</div>
                     </div>
                 </div>
             {% endfor %}
